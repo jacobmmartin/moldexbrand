@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import { Router, Route, Link, browserHistory, IndexRoute  } from 'react-router';
 
 
-import Home from 'Home';
-import About from 'About';
-import Products from 'Products';
+import Home from './components/container/Home';
+import About from './components/container/About';
+import Product from './components/container/Product';
 
 
 class App extends React.Component {
@@ -15,7 +15,7 @@ class App extends React.Component {
         <ul>
           <li><Link to="/home">Home</Link></li>
           <li><Link to="/about">About</Link></li>
-          <li><Link to="/products">Products</Link></li>
+          <li><Link to="/product">Product</Link></li>
         </ul>
 
         {this.props.children}
@@ -33,7 +33,7 @@ ReactDOM.render((
          <IndexRoute component = {Home} />
          <Route path = "home" component = {Home} />
          <Route path = "about" component = {About} />
-         <Route path = "products" component = {Products} />
+         <Route path = "product" component = {Product} />
       </Route>
    </Router>
 

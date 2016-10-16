@@ -9,7 +9,7 @@ import Product from './components/container/Product';
 
 
 import AppHeader from './components/presentation/appHeader/appHeader';
-import Footer from './components/presentation/Footer/Footer';
+import AppFooter from './components/presentation/appFooter/appFooter';
 
 
 
@@ -28,7 +28,7 @@ class App extends React.Component {
 
           {this.props.children}
         </div>
-        <Footer />
+        <AppFooter />
       </div>
     )
   }

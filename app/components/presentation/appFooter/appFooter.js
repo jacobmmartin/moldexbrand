@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
-require("./stylesheet.css")
+import "./stylesheet.css"
 
-class Footer extends Component {
+class appFooter extends Component {
     render() {
         return (
             <div>
                 <div className="footer1">
                     <div className="container">
-                        <div className="col-md-3">
+                        <div className="col-xs-3">
                             <ul className="faddress">
                                 <li><img src="https://www.moldexbrands.com/images/footer-logo.png" alt=""/></li>
                                 <li><i className="fa fa-map-marker fa-lg"></i> 866 Horan Drive
@@ -16,10 +16,9 @@ class Footer extends Component {
                                 <li><i className="fa fa-phone"></i>&nbsp; Phone: 1.636.349.5855</li>
                                 <li><i className="fa fa-print"></i>&nbsp; Fax: 1.636.349.5335</li>
                                 <li><a href="mailto:info@moldexbrands.com"><i className="fa fa-envelope"></i> info @moldexbrands.com</a></li>
-                                <li></li>
                             </ul>
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-xs-3">
                             <div className="qlinks">
                                 <h4 className="lmb">Useful Links</h4>
                                 <ul>
@@ -32,7 +31,7 @@ class Footer extends Component {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-xs-6">
                             <div className="siteinfo">
                                 <h4 className="lmb">Our Story...</h4>
                                 <p>We were tired of cleaning only to watch it grow back.It seemed to be a never-ending.Why?What makes mold grow back?Why can't you get rid of it? Once we figure it out, we wanted to share it with the world. We set out to change the way people view mold &amp; mildew...
@@ -62,6 +61,6 @@ class Footer extends Component {
     }
 }
 
-export default Footer;
+export default appFooter;
 
 

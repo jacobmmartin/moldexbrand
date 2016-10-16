@@ -9,6 +9,8 @@ import Product from './components/container/Product';
 
 
 import AppHeader from './components/presentation/appHeader';
+import Footer from './components/presentation/Footer';
+
 
 
 
@@ -26,6 +28,7 @@ class App extends React.Component {
 
           {this.props.children}
         </div>
+        <Footer />
       </div>
     )
   }

@@ -1,21 +1,18 @@
+//js imports
 import React from 'react';
 import { Link } from 'react-router';
 
-// require("./appHeader.css");
-var myImage = require('file?name=public/images/opacity2.png!./assets/opacity2.png');
-var logoarea = {
-    backgroundImage: "url(" + myImage + ")",
-    float: 'left',
-    width: '100%',
-    height: '84px',
-}
+//Load CSS and images
+require("./appHeader.css");
+var background = require('./assets/opacity2.png');
+var logo = require('./assets/logo.png');
 
-var PropTypes = React.PropTypes;
+//Cretate Class
 var AppHeader = React.createClass({
 
   render: function() {
     return (
-      <div style={logoarea}>
+      <div className="logoarea">
         <div className="container">
             <div className="logo">
                 <Link to="/" id="logo" >Home</Link>

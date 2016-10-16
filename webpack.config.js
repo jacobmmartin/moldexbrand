@@ -1,15 +1,20 @@
+var path = require('path');
+
 module.exports = {
     entry: "./app/app.js",
     output: {
-        filename: "public/bundle.js"
+        path: path.resolve("public/"),
+        filename: "bundle.js"
     },
     module:{
         loaders : [
             {
-              test: /\.css$/, loader: "style-loader!css-loader"
+              test: /\.css$/,
+              loader: "style-loader!css-loader"
             },
             {
-              test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/, loader: "file"
+              test: /\.jpe?g$|\.gif$|\.png$|\.svg$/,
+              loader: "url-loader?limit=10000&names=images/[name].[ext]"
             },
             {
               test : /\.jsx?$/,

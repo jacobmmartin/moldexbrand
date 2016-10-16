@@ -3,15 +3,14 @@ import ReactDOM from 'react-dom';
 import { Router, Route, Link, hashHistory, IndexRoute  } from 'react-router';
 
 
+require("./styles/reset.css");
+
 import Home from './components/container/Home';
 import About from './components/container/About';
 import Product from './components/container/Product';
 
-
 import AppHeader from './components/presentation/appHeader/appHeader';
 import AppFooter from './components/presentation/appFooter/appFooter';
-
-
 
 
 class App extends React.Component {

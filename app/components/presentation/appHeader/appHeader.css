@@ -1,6 +1,80 @@
 .logoarea {
+  float: left;
+  width: 100%;
+  height: 84px;
+  background: url('./assets/opacity2.png') repeat left top;
+}
+
+.logo {
     float: left;
-    width: 100%;
-    height: 84px;
-    background: url('./assets/opacity2.png') repeat left top;
+    width: 25%;
+}
+
+#logo {
+  float: left;
+  display: block;
+  width: 100%;
+  min-height: 70px;
+  margin-top: 9px;
+  position: relative;
+  text-indent: -999em;
+  background: url('./assets/logo.png') no-repeat left bottom;
+}
+
+.right_links {
+  float: right;
+  margin-top: 18px;
+}
+
+.right_links ul {
+  float: right;
+  padding: 0px;
+  margin: 0px;
+}
+
+.right_links li {
+  float: left;
+  font-size: 13px;
+  padding: 0px;
+}
+
+.right_links li a:hover {
+	color: #fff;
+}
+
+.right_links li.link {
+  float: left;
+  font-size: 13px;
+  margin-right: 18px;
+  margin-top: 1px;
+}
+
+.right_links li.link i {
+    margin-right: 3px;
+}
+
+.right_links li.social {
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 27px;
+  border-radius: 100%;
+  background-color: #454545;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.right_links li.social i {
+	color: #999;
+}
+.right_links li.social:hover {
+	background-color: #999;
+}
+.right_links li.social:hover i {
+	color: #fff;
+}
+
+.right_links li a {
+    color: #999;
 }

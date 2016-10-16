@@ -2,14 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 // require("./appHeader.css");
-
-//import Background from './assets/opacity2.png';
 var myImage = require('file?name=public/images/opacity2.png!./assets/opacity2.png');
-
-
-
-
-var PropTypes = React.PropTypes;
 var logoarea = {
     backgroundImage: "url(" + myImage + ")",
     float: 'left',
@@ -17,7 +10,7 @@ var logoarea = {
     height: '84px',
 }
 
-
+var PropTypes = React.PropTypes;
 var AppHeader = React.createClass({
 
   render: function() {

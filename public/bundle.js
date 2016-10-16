@@ -74,6 +74,10 @@
 
 	var _Product2 = _interopRequireDefault(_Product);
 
+	var _appHeader = __webpack_require__(238);
+
+	var _appHeader2 = _interopRequireDefault(_appHeader);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -97,38 +101,43 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
+	        _react2.default.createElement(_appHeader2.default, null),
 	        _react2.default.createElement(
-	          'ul',
+	          'div',
 	          null,
 	          _react2.default.createElement(
-	            'li',
+	            'ul',
 	            null,
 	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/home' },
-	              'Home'
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/home' },
+	                'Home'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/about' },
+	                'About'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/product' },
+	                'Product'
+	              )
 	            )
 	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/about' },
-	              'About'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/product' },
-	              'Product'
-	            )
-	          )
-	        ),
-	        this.props.children
+	          this.props.children
+	        )
 	      );
 	    }
 	  }]);
@@ -27248,6 +27257,137 @@
 	};
 
 	exports.default = Product;
+
+/***/ },
+/* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(172);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	// require("./appHeader.css");
+
+	//import Background from './assets/opacity2.png';
+	var myImage = __webpack_require__(242);
+
+	var PropTypes = _react2.default.PropTypes;
+	var logoarea = {
+	    backgroundImage: "url(" + myImage + ")",
+	    float: 'left',
+	    width: '100%',
+	    height: '84px'
+	};
+
+	var AppHeader = _react2.default.createClass({
+	    displayName: 'AppHeader',
+
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            { style: logoarea },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'container' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'logo' },
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: '/', id: 'logo' },
+	                        'Home'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'right_links' },
+	                    _react2.default.createElement(
+	                        'ul',
+	                        null,
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: 'link' },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'mailto:info@moldexbrands.com' },
+	                                _react2.default.createElement('i', { className: 'fa fa-envelope' }),
+	                                'info@moldexbrands.com'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: 'social', 'data-anim-type': 'zoomIn', 'data-anim-delay': '200' },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://www.facebook.com/moldexbrands' },
+	                                _react2.default.createElement('i', { className: 'fa fa-facebook' })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: 'social', 'data-anim-type': 'zoomIn', 'data-anim-delay': '300' },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'http://www.instagram.com/moldexbrands' },
+	                                _react2.default.createElement('i', { className: 'fa fa-instagram' })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: 'social', 'data-anim-type': 'zoomIn', 'data-anim-delay': '550' },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'http://www.pinterest.com/moldexbrands' },
+	                                _react2.default.createElement('i', { className: 'fa fa-pinterest' })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: 'social', 'data-anim-type': 'zoomIn', 'data-anim-delay': '550' },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'http://www.twitter.com/moldexbrands' },
+	                                _react2.default.createElement('i', { className: 'fa fa-twitter' })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: 'social', 'data-anim-type': 'zoomIn', 'data-anim-delay': '550' },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://www.youtube.com/channel/UCOhsM9FUmFDxWbgpKMr3Daw' },
+	                                _react2.default.createElement('i', { className: 'fa fa-youtube' })
+	                            )
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+
+	});
+
+	exports.default = AppHeader;
+
+/***/ },
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "public/images/opacity2.png";
 
 /***/ }
 /******/ ]);

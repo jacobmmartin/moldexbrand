@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, Link, browserHistory, IndexRoute  } from 'react-router';
+import { Router, Route, Link, hashHistory, IndexRoute  } from 'react-router';
 
 
 import Home from './components/container/Home';
@@ -9,6 +9,8 @@ import Product from './components/container/Product';
 
 
 import AppHeader from './components/presentation/appHeader/appHeader';
+import Footer from './components/presentation/Footer/Footer';
+
 
 
 
@@ -26,6 +28,7 @@ class App extends React.Component {
 
           {this.props.children}
         </div>
+        <Footer />
       </div>
     )
   }
@@ -35,7 +38,7 @@ export default App;
 
 
 ReactDOM.render((
-   <Router history = {browserHistory}>
+   <Router history = {hashHistory}>
       <Route path = "/" component = {App}>
          <IndexRoute component = {Home} />
          <Route path = "home" component = {Home} />

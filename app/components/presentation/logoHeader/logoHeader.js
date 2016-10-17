@@ -3,12 +3,12 @@ import React from 'react';
 import { Link } from 'react-router';
 
 //Load CSS and images
-require("./appHeader.css");
+require("./logoHeader.css");
 var background = require('./assets/opacity2.png');
 var logo = require('./assets/logo.png');
 
 //Cretate Class
-var AppHeader = React.createClass({
+var LogoHeader = React.createClass({
 
   render: function() {
     return (
@@ -34,4 +34,4 @@ var AppHeader = React.createClass({
 
 });
 
-export default AppHeader;
+export default LogoHeader;

@@ -9,7 +9,7 @@ import Home from './components/container/Home';
 import About from './components/container/About';
 import Product from './components/container/Product';
 
-import AppHeader from './components/presentation/appHeader/appHeader';
+import MainHeader from './components/presentation/mainHeader/mainHeader';
 import AppFooter from './components/presentation/appFooter/appFooter';
 
 
@@ -17,14 +17,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <AppHeader />
+        <MainHeader />
         <div>
-          <ul>
-            <li><Link to="/home">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/product">Product</Link></li>
-          </ul>
-
           {this.props.children}
         </div>
         <AppFooter />
@@ -34,7 +28,6 @@ class App extends React.Component {
 }
 
 export default App;
-
 
 ReactDOM.render((
    <Router history = {hashHistory}>

@@ -13,12 +13,19 @@ module.exports = {
               loader: "style-loader!css-loader"
             },
             {
-              test: /\.jpe?g$|\.gif$|\.png$|\.svg$/,
-              loader: "url-loader?limit=10000&names=images/[name].[ext]"
+                test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
+                loader: 'url-loader?limit=10000'
+            },
+            {
+                test: /\.(eot|ttf|wav|mp3)$/,
+                loader: 'file-loader'
+            },
+            {
+              test: /vendor\/.+\.(jsx|js)$/,
+              loader: 'imports?jQuery=jquery,$=jquery,this=>window'
             },
             {
               test : /\.jsx?$/,
-              exclude: /(node_modules|bower_components)/,
               loader: 'babel',
               query:{
                   presets: [

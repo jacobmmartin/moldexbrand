@@ -1,10 +1,17 @@
+global.jQuery = require('jquery');
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, Link, hashHistory, IndexRoute  } from 'react-router';
 
 
-require("./styles/reset.css");
+//IMPORT NODE MODULES TODO: CHANGE THIS
+require('bootstrap');
 
+//IMPORT GENERAL CSS
+require("./styles/reset.css");
+require("./styles/yamm.css");
+
+//IMPORT custom components
 import Home from './components/container/Home';
 import About from './components/container/About';
 import Product from './components/container/Product';

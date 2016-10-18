@@ -1,0 +1,103 @@
+/* CSS for animate options in product dropdown */
+
+.list-unstyled li:first-child {
+
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 12px;
+}
+.list-unstyled li p { font-size: 16px;
+color: #272727;
+font-weight: normal;
+}
+
+.list-unstyled li i { color:#727272;}
+
+
+.list-unstyled li { padding: 5px 0;}
+.list-unstyled a {
+    color: #272727;
+    padding: 4px 8px;
+    width: 100%;
+	transition-property: margin-left, background-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+.list-unstyled a:hover {
+    color: #272727;
+    background-color: #eee;
+    text-decoration: none;
+    margin-left: 8px;
+	transition-property: margin-left, background-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+	border-radius: 3px;
+}
+
+.list-unstyled a:before {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.row-border + .row .caption h3 {
+    margin-top: 0px;
+}
+
+.row-border {border-bottom: 1px solid #d1d1d1;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+@media (max-width:767px){
+  .list-unstyled li:first-child {
+    border-bottom: 0px;
+    margin-bottom: 0px;
+    top-bottom: 15px;
+  }
+  .list-unstyled li p {
+    font-size: 16px;
+    color: #bbb;
+  }
+  .list-unstyled li {
+    padding: 8px 0;
+  }
+  .list-unstyled a {
+    color: #BBBBBB;
+  }
+  .list-unstyled a:hover {
+    color: #fff;
+    background-color: #666;
+  }
+  .yamm .yamm-content .thumbnail {
+    background-color: transparent;
+    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075);
+  }
+  .yamm .yamm-content .caption p {
+      color: #ccc;
+  }
+  .yamm .yamm-content .caption h3 {
+      color: #ccc;
+  }
+  .yamm .yamm-content .thumbnail>img {
+      margin-left: 0;
+  }
+  .row-border {
+      border-bottom:0;
+  }
+}
+
+
+@media (max-width:768px){
+  .list-unstyled a {
+      color: #BBBBBB;
+  }
+  .list-unstyled li:first-child {
+      border-bottom: 1px solid #3b3b3b;
+      margin-bottom: 16px;
+  }
+  .list-unstyled li p {
+      color: #fff;
+  	padding-top:10px;
+  }
+}

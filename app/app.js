@@ -6,18 +6,23 @@ import { Router, Route, Link, hashHistory, IndexRoute  } from 'react-router';
 
 //IMPORT NODE MODULES TODO: CHANGE THIS
 require('bootstrap');
+require("./js/animations/js/animations.js"); // TODO: FIX THIS IMPORT
+
 
 //IMPORT GENERAL CSS
+require("./js/animations/css/animations.css");
 require("./styles/reset.css");
 require("./styles/yamm.css");
 
 //IMPORT custom components
-import Home from './components/container/Home';
+import Home from './components/container/home/Home';
 import About from './components/container/About';
 import Product from './components/container/Product';
 
 import MainHeader from './components/presentation/mainHeader/mainHeader';
 import AppFooter from './components/presentation/appFooter/appFooter';
+
+
 
 
 class App extends React.Component {

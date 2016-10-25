@@ -6,6 +6,7 @@ module.exports = {
         path: path.resolve("public/"),
         filename: "bundle.js"
     },
+    watch: true,
     module:{
         loaders : [
             {
@@ -35,6 +36,8 @@ module.exports = {
               }
             }
         ]
+    },
+    devServer: {
+      contentBase: './public'
     }
-
 }

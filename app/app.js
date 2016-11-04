@@ -6,11 +6,21 @@ import { Router, Route, Link, hashHistory, IndexRoute  } from 'react-router';
 
 //IMPORT NODE MODULES TODO: CHANGE THIS
 require('bootstrap');
+
+//IMPORT FOR ANIMATIONS JS
 require("./js/animations/js/animations.js"); // TODO: FIX THIS IMPORT
+require("./js/animations/css/animations.css");
+
+//IMPORT FOR MASTERSLIDER JS
+require("./js/masterslider/jquery.easing.min.js");
+require("./js/masterslider/masterslider.min.js");
+require("./js/masterslider/style/masterslider.css");
+require("./js/masterslider/skins/default/style.css");
+require("./js/masterslider/style.css");
+require("./js/masterslider/style/ms-staff-style.css");
 
 
 //IMPORT GENERAL CSS
-require("./js/animations/css/animations.css");
 require("./styles/reset.css");
 require("./styles/yamm.css");
 

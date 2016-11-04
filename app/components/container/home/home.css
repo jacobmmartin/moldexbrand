@@ -8,3 +8,15 @@
 .fusection5 img {
 	border: 7px solid #fff;
 }
+
+.green_section {
+		float: left;
+    width: 100%;
+    text-align: center;
+    padding: 60px 0px 0px 0px;
+    background: #7ab700;
+}
+
+.white {
+    color: #fff;
+}

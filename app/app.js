@@ -27,7 +27,11 @@ require("./styles/yamm.css");
 //IMPORT custom components
 import Home from './components/container/home/Home';
 import About from './components/container/About';
+import MoldGuide from './components/container/moldGuide/MoldGuide';
 import Product from './components/container/Product';
+import Retail from './components/container/retail/Retail';
+import Contact from './components/container/contact/Contact';
+
 
 import MainHeader from './components/presentation/mainHeader/mainHeader';
 import AppFooter from './components/presentation/appFooter/appFooter';
@@ -56,6 +60,9 @@ ReactDOM.render((
          <Route path = "home" component = {Home} />
          <Route path = "about" component = {About} />
          <Route path = "product" component = {Product} />
+         <Route path = "mold_guide" component = {MoldGuide} />
+         <Route path = "retail" component = {Retail} />
+         <Route path = "contact" component = {Contact} />
       </Route>
    </Router>
 

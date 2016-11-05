@@ -1,5 +1,5 @@
 var path = require('path');
-
+var webpack = require("webpack")
 module.exports = {
     entry: "./app/app.js",
     output: {
@@ -7,6 +7,12 @@ module.exports = {
         filename: "bundle.js"
     },
     watch: true,
+     plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+        })
+    ],
     module:{
         loaders : [
             {

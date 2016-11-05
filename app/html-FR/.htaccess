@@ -1,0 +1,18 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.moldexbrands.com/$1 [R,L]
+Redirect 301 /about.html https://www.moldexbrands.com/about-mold-and-mildew-remover.html
+Redirect 301 /factors.html https://www.moldexbrands.com/how-to-get-rid-of-mold-and-mildew.html
+Redirect 301 /cart/index.php/mold-mildew-killer.htmll https://www.moldexbrands.com/mold-mildew-killer.html
+Redirect 301 /cart/index.php/disinfectant-concentrate.html https://www.moldexbrands.com/disinfectant-conc.html
+Redirect 301 /cart/index.php/instant-stain-remover.html https://www.moldexbrands.com/instant-mold-mildew-stain-remover.html
+Redirect 301 /cart/index.php/instant-house-wash.html https://www.moldexbrands.com/instant-house-wash.html
+Redirect 301 /cart/index.php/instant-deck-wash-26.html https://www.moldexbrands.com/instant-deck-fence-wash.html
+Redirect 301 /cart/index.php/deep-stain-remover.html https://www.moldexbrands.com/non-bleach-stain-remover.html
+Redirect 301 /cart/index.php/paint-prep.html https://www.moldexbrands.com/paint-prep.html
+Redirect 301 /cart/index.php/power-outdoor-cleaner.html https://www.moldexbrands.com/power-outdoor-cleaner.html
+Redirect 301 /cart/index.php/patio-furniture-cleaner-37.html https://www.moldexbrands.com/cleaning-mold-on-patio-furniture.html
+Redirect 301 /cart/index.php/cleaning-mold-on-patio-furniture.html https://www.moldexbrands.com/cleaning-mold-on-patio-furniture.html
+Redirect 301 /cart/index.php/3-factors-bundle.html https://www.moldexbrands.com/instant-mold-mildew-stain-remover.html
+Redirect 301 /cart/index.php/instant-stain-remover-super.html https://www.moldexbrands.com/instant-mold-mildew-stain-remover.html
+Redirect 301 /cart/index.php/sealant.html https://www.moldexbrands.com/sealant-mold-mildew-blocker.html

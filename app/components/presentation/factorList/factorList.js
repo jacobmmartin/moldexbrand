@@ -37,8 +37,8 @@ class FactorList extends React.Component {
       <div>
         {
           this.state.factorList.map(function (factor){
-            return <div className="one_third animate fadeInUp" data-anim-type="fadeInUp" data-anim-delay={factor.delay}>
-                    <Factor model={factor}/>
+            return <div  key={factor.title} className="one_third animate fadeInUp" data-anim-type="fadeInUp" data-anim-delay={factor.delay}>
+                    <Factor  model={factor}/>
                   </div>
 
           })

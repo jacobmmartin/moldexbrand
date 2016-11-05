@@ -22,9 +22,9 @@ const Home = () =>{
               <FactorList />
             </div>
           </div>
-          <div class="green_section">
-            <div class="container">
-                <h2 class="white">
+          <div className="green_section">
+            <div className="container">
+                <h2 className="white">
                   Our <strong>PRODUCTS</strong>
                 </h2>
                 <Carousel />

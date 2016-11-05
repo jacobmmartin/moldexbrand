@@ -21,6 +21,12 @@ module.exports = Object.keys(languages).map(function (language) {
             )
         ],
 
+        watch: true,
+
+        devServer: {
+            contentBase: './public'
+        },
+
         module: {
             loaders: [
                 {

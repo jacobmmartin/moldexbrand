@@ -1,17 +1,11 @@
 import React from 'react';
+import PageTitle from "../../presentation/pageTitle/pageTitle"
 
 
 const MoldGuide = () =>{
     return(
             <div>
-                <div className="page_title2">
-                    <div className="container">
-                        <div className="title">
-                            <h1>Mold &amp; Mildew Guide</h1>
-                            <br/>
-                        </div>
-                    </div>
-            </div>
+            <PageTitle  title="Mold & Nildew Guide"/>
             <div className="container">
                 <div className="content_fullwidth">
                         <div className="one_full">

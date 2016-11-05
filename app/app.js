@@ -29,6 +29,8 @@ import Home from './components/container/home/Home';
 import About from './components/container/About';
 import MoldGuide from './components/container/moldGuide/MoldGuide';
 import Product from './components/container/Product';
+import Retail from './components/container/retail/Retail';
+import Contact from './components/container/contact/Contact';
 
 
 import MainHeader from './components/presentation/mainHeader/mainHeader';
@@ -61,6 +63,8 @@ ReactDOM.render((
          <Route path = "about" component = {About} />
          <Route path = "product" component = {Product} />
          <Route path = "mold_guide" component = {MoldGuide} />
+         <Route path = "retail" component = {Retail} />
+         <Route path = "contact" component = {Contact} />
       </Route>
    </Router>
 

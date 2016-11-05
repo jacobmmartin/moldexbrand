@@ -1,9 +1,10 @@
 import React from 'react';
-
+import PageTitle from "../presentation/pageTitle/pageTitle"
 
 const About = () =>{
     return(
         <div>
+        <PageTitle  title="Moldex Brands"/>
         <div className="container">
             <div className="col-md-6">
                 <h3>We grew <strong>tired of cleaning mold &amp; mildew</strong> only to watch it grow back.</h3>

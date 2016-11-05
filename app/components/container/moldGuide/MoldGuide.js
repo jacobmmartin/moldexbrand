@@ -1,5 +1,5 @@
 import React from 'react';
-import PageTitle from "../../presentation/pageTitle/pageTitle"
+import PageTitle from "../../presentation/pageTitle/pageTitle";
 
 
 const MoldGuide = () =>{

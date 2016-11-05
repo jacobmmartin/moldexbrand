@@ -1,5 +1,6 @@
 var path = require('path');
 var I18nPlugin = require("i18n-webpack-plugin");
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var languages = {
     "en": require("./en.json"),
@@ -12,13 +13,16 @@ module.exports = Object.keys(languages).map(function (language) {
         entry: "./app/app.js",
          output: {
             path: path.join(__dirname, "public"),
-            filename: language + ".output.js"
+            filename: language + ".output.js",
         },
 
         plugins: [
             new I18nPlugin(
                 languages[language]
-            )
+            ),
+            new CopyWebpackPlugin([
+               {from: 'images/**/*', to: ''}
+            ])
         ],
 
         watch: true,

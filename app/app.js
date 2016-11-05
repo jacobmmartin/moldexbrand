@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import { Router, Route, Link, hashHistory, IndexRoute  } from 'react-router';
 
 
-
 //IMPORT NODE MODULES TODO: CHANGE THIS
 require('bootstrap');
 
@@ -32,9 +31,6 @@ import Product from './components/container/Product';
 
 import MainHeader from './components/presentation/mainHeader/mainHeader';
 import AppFooter from './components/presentation/appFooter/appFooter';
-console.log(__("1921707e"));
-console.log(__("Missing Text"));
-
 
 
 class App extends React.Component {
@@ -42,7 +38,9 @@ class App extends React.Component {
     return (
       <div>
         <MainHeader />
-          <div  className="rest" dangerouslySetInnerHTML={ {__html:  __("3401e36f")}  }  ></div> 
+        <div>
+          {this.props.children}
+        </div>
         <AppFooter />
       </div>
     )

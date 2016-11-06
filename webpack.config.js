@@ -14,8 +14,8 @@ module.exports = Object.keys(languages).map(function (language) {
         name: language,
         entry:{ 
             app:"./app/app.js",
-            vendor: ["jquery", "./app/js/animations/js/animations.min.js","./app/js/animations/js/smoothscroll.js",
-            "./app/js/form/jquery.form.min.js", "./app/js/form/jquery.validate.min.js",
+            vendor: ["jquery", "./app/js/animations/js/animations.min.js","smoothscroll-for-websites",
+             "jquery-validation",
             ],
             }
             ,

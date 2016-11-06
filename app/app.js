@@ -34,6 +34,7 @@ import MoldGuide from './components/container/moldGuide/MoldGuide';
 import Product from './components/container/Product';
 import Retail from './components/container/retail/Retail';
 import Contact from './components/container/contact/Contact';
+import Factors from './components/container/factors/Factors';
 
 
 import MainHeader from './components/presentation/mainHeader/mainHeader';
@@ -66,6 +67,7 @@ ReactDOM.render((
          <Route path = "mold_guide" component = {MoldGuide} />
          <Route path = "retail" component = {Retail} />
          <Route path = "contact" component = {Contact} />
+         <Route path = "factors" component = {Factors} />
       </Route>
    </Router>
 

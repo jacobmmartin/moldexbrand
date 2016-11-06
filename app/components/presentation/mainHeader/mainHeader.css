@@ -3,6 +3,7 @@
   left:0;
   right:0;
   background: #fff;
+  position: relative;
   box-shadow:0 1px 5px rgba(0,0,0,0.3);
   -khtml-box-shadow:0 1px 5px rgba(0,0,0,0.3);
   -webkit-box-shadow:0 1px 5px rgba(0,0,0,0.3);

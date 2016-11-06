@@ -37,16 +37,20 @@
     background-position: 100% 0;
 }
 
+.feature_section81 {
+  float: left;
+  width: 100%;
+  padding: 30px 0px 58px 0px;
+}
+
 .container_full {
 	width: 100%;
 	float: left;
 	margin: auto auto auto auto;
 }
 
-.feature_section81 {
-  float: left;
-  width: 100%;
-  padding: 30px 0px 58px 0px;
+.container_full.slidertop {
+	margin-top: -133px;
 }
 
 .white {

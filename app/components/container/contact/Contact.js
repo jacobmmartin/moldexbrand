@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 //Load CSS and images
 require("../../../js/form/sky-forms.css");
-console.log($);
 (function($) {
  "use strict";
 
@@ -9,7 +8,7 @@ console.log($);
 	{
 		// Validation
 		$("#sky-form").validate(
-		{					
+		{
 			// Rules for form validation
 			rules:
 			{
@@ -28,7 +27,7 @@ console.log($);
 					minlength: 10
 				}
 			},
-								
+
 			// Messages for form validation
 			messages:
 			{
@@ -46,8 +45,8 @@ console.log($);
 					required: 'Veuillez inclure un message'
 				}
 			},
-								
-			// Ajax form submition					
+
+			// Ajax form submition
 			submitHandler: function(form)
 			{
 				$(form).ajaxSubmit(
@@ -58,14 +57,14 @@ console.log($);
 					}
 				});
 			},
-			
+
 			// Do not change code below
 			errorPlacement: function(error, element)
 			{
 				error.insertAfter(element.parent());
 			}
 		});
-	});			
+	});
 
 })(jQuery);
 

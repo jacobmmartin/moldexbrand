@@ -2,8 +2,8 @@ import React from 'react';
 
 //Load CSS and images
 require("./home.css");
-//require("../../../images/fullbg_mold_dish.jpg");
 
+import MainSlider from '../../../components/presentation/mainSlider/mainSlider';
 import FactorList from '../../../components/presentation/factorList/factorList';
 import Carousel from '../../../components/presentation/carousel/carousel';
 import MoldInfo from '../../../components/presentation/moldInfo/moldInfo';
@@ -13,9 +13,9 @@ import FeaturedProducts from '../../../components/presentation/featuredProducts/
 const Home = () =>{
     return(
         <div>
-          <h2>
-              Home page
-          </h2>
+          <div className="container_full slidertop">
+            <MainSlider />
+          </div>
           <div className="fusection5">
             <div className="container">
               <h2>

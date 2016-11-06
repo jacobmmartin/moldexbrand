@@ -40,8 +40,6 @@ import MainHeader from './components/presentation/mainHeader/mainHeader';
 import AppFooter from './components/presentation/appFooter/appFooter';
 
 
-
-
 class App extends React.Component {
   render() {
     return (

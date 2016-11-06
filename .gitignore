@@ -1,4 +1,5 @@
 node_modules/*
 public/*.png
 public/bundle.js
+public/images/*
 Icon?

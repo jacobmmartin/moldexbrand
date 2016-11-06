@@ -4,34 +4,34 @@ import React from 'react';
 //Load CSS and images
 require("./carousel.css");
 
-// var slider5 = new MasterSlider();
-// slider5.setup('', {
-//     loop: true,
-//     width: 240,
-//     height: 240,
-//     speed: 20,
-//     view: 'focus',
-//     preload: 0,
-//     space: 35,
-//     viewOptions: {
-//         centerSpace: 1.6
-//     }
-// });
-// slider5.control('arrows');
-// slider5.control('slideinfo', {
-//     insertTo: '#staff-info'
-// });
-
-
 class Carousel extends React.Component {
   constructor() {
     super();
+  }
+  componentDidMount(){
+    var slider5 = new MasterSlider();
+    slider5.setup('productSlider', {
+        loop: true,
+        width: 240,
+        height: 240,
+        speed: 20,
+        view: 'focus',
+        preload: 0,
+        space: 35,
+        viewOptions: {
+            centerSpace: 1.6
+        }
+    });
+    slider5.control('arrows');
+    slider5.control('slideinfo', {
+        insertTo: '#staff-info'
+    });
   }
   render() {
     return (
       <div>
         <div className="ms-staff-carousel ms-round">
-              <div className="master-slider" id="className=">
+              <div className="master-slider" id="productSlider">
                   <div className="ms-slide">
                       <img src="https://www.moldexbrands.com/images/products_images/32oz_instant_stain_remover_circle.jpg" data-src="images/products_images/32oz_instant_stain_remover_circle.jpg" alt="" />
                       <div className="ms-info">
@@ -120,7 +120,7 @@ class Carousel extends React.Component {
                       </div>
                   </div>
                   <div className="ms-slide">
-                      <img src="32oz_mold_killer_circle.jpg" data-src="images/products_images/32oz_mold_killer_circle.jpg" alt="" />
+                      <img src="https://www.moldexbrands.com/images/products_images/32oz_mold_killer_circle.jpg" data-src="images/products_images/32oz_mold_killer_circle.jpg" alt="" />
                       <div className="ms-info">
                           <h4>MOLD KILLER</h4>
                           <p>Kills Mold & Mildew. Destroys and Neutralizes Mold, Mildew, Bacteria, Fungus and Odors at their source

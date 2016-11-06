@@ -1,0 +1,23 @@
+/* HOTFIX */
+#productSlider .ms-slide .ms-slide-bgcont img {
+  height: 224.003px !important;
+  width: 224.003px !important;
+  margin-top: 0px !important;
+  margin-left: 0px !important;
+}
+
+.readmore_but11 {
+	color: #fff;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 14px 35px;
+	border-radius: 4px;
+	background-color: #466900;
+	-webkit-transition: background-color .3s, -webkit-transform .3s;
+    transition: background-color .3s, transform .3s;
+}
+
+.readmore_but11:hover {
+	color: #fff;
+	background-color: #272727;
+}

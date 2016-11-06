@@ -1,0 +1,29 @@
+.one_half{
+	position: relative;
+	margin-right: 4%;
+	float: left;
+	width: 48%;
+}
+
+.last {
+	margin-right: 0 !important;
+	clear: right;
+}
+
+.grayc {
+  color: #999;
+}
+
+
+.readmore_but9 {
+	color: #fff;
+	padding: 16px 40px;
+	border-radius: 4px;
+	background-color: #7ab700;
+	-webkit-transition: background-color .3s, -webkit-transform .3s;
+    transition: background-color .3s, transform .3s;
+}
+.readmore_but9:hover {
+	color: #fff;
+	background-color: #272727;
+}

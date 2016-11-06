@@ -23,6 +23,32 @@
 	padding: 59px 0px 40px 0px;
 }
 
+.fusection9 {
+		float: left;
+    width: 100%;
+    text-align: center;
+    padding: 60px 0px 70px 0px;
+    background: url('/images/fullbg_mold_dish.jpg');
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.container_full {
+	width: 100%;
+	float: left;
+	margin: auto auto auto auto;
+}
+
+.feature_section81 {
+  float: left;
+  width: 100%;
+  padding: 30px 0px 58px 0px;
+}
+
 .white {
     color: #fff;
 }

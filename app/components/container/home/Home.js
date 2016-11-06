@@ -5,6 +5,7 @@ require("./home.css");
 
 import FactorList from '../../../components/presentation/factorList/factorList';
 import Carousel from '../../../components/presentation/carousel/carousel';
+import MoldInfo from '../../../components/presentation/moldInfo/moldInfo';
 
 
 const Home = () =>{
@@ -28,6 +29,11 @@ const Home = () =>{
                   Our <strong>PRODUCTS</strong>
                 </h2>
                 <Carousel />
+            </div>
+          </div>
+          <div className="features_sec44">
+            <div className="container">
+              <MoldInfo />
             </div>
           </div>
         </div>

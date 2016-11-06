@@ -25664,7 +25664,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -25679,64 +25679,77 @@
 
 	var _carousel2 = _interopRequireDefault(_carousel);
 
+	var _moldInfo = __webpack_require__(318);
+
+	var _moldInfo2 = _interopRequireDefault(_moldInfo);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	//Load CSS and images
 	__webpack_require__(247);
 
 	var Home = function Home() {
-	    return _react2.default.createElement(
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'h2',
+	      null,
+	      'Home page'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'fusection5' },
+	      _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'container' },
 	        _react2.default.createElement(
-	            'h2',
+	          'h2',
+	          null,
+	          '3 Factors in ',
+	          _react2.default.createElement(
+	            'strong',
 	            null,
-	            'Home page'
+	            'MOLD FIGHTING'
+	          ),
+	          _react2.default.createElement(
+	            'b',
+	            null,
+	            'Products we offer. Solutions made easy. Which one is for you? Find out.'
+	          )
 	        ),
+	        _react2.default.createElement(_factorList2.default, null)
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'green_section' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'container' },
 	        _react2.default.createElement(
-	            'div',
-	            { className: 'fusection5' },
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'container' },
-	                _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '3 Factors in ',
-	                    _react2.default.createElement(
-	                        'strong',
-	                        null,
-	                        'MOLD FIGHTING'
-	                    ),
-	                    _react2.default.createElement(
-	                        'b',
-	                        null,
-	                        'Products we offer. Solutions made easy. Which one is for you? Find out.'
-	                    )
-	                ),
-	                _react2.default.createElement(_factorList2.default, null)
-	            )
+	          'h2',
+	          { className: 'white' },
+	          'Our ',
+	          _react2.default.createElement(
+	            'strong',
+	            null,
+	            'PRODUCTS'
+	          )
 	        ),
-	        _react2.default.createElement(
-	            'div',
-	            { className: 'green_section' },
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'container' },
-	                _react2.default.createElement(
-	                    'h2',
-	                    { className: 'white' },
-	                    'Our ',
-	                    _react2.default.createElement(
-	                        'strong',
-	                        null,
-	                        'PRODUCTS'
-	                    )
-	                ),
-	                _react2.default.createElement(_carousel2.default, null)
-	            )
-	        )
-	    );
+	        _react2.default.createElement(_carousel2.default, null)
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'features_sec44' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'container' },
+	        _react2.default.createElement(_moldInfo2.default, null)
+	      )
+	    )
+	  );
 	};
 
 	exports.default = Home;
@@ -26767,7 +26780,7 @@
 
 
 	// module
-	exports.push([module.id, ".fusection5 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tpadding: 70px 0px;\r\n\ttext-align: center;\r\n}\r\n\r\n.fusection5 img {\r\n\tborder: 7px solid #fff;\r\n}\r\n\r\n.green_section {\r\n\t\tfloat: left;\r\n    width: 100%;\r\n    text-align: center;\r\n    padding: 60px 0px 0px 0px;\r\n    background: #7ab700;\r\n}\r\n\r\n.white {\r\n    color: #fff;\r\n}\r\n", ""]);
+	exports.push([module.id, ".fusection5 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tpadding: 70px 0px;\r\n\ttext-align: center;\r\n}\r\n\r\n.fusection5 img {\r\n\tborder: 7px solid #fff;\r\n}\r\n\r\n.green_section {\r\n\t\tfloat: left;\r\n    width: 100%;\r\n    text-align: center;\r\n    padding: 60px 0px 0px 0px;\r\n    background: #7ab700;\r\n}\r\n\r\n.features_sec44{\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tpadding: 59px 0px 40px 0px;\r\n}\r\n\r\n.white {\r\n    color: #fff;\r\n}\r\n", ""]);
 
 	// exports
 
@@ -34045,6 +34058,152 @@
 
 	// module
 	exports.push([module.id, "/*!\r\n * Yamm!3 - Yet another megamenu for Bootstrap 3\r\n * http://geedmo.github.com/yamm3\r\n * \r\n * @geedmo - Licensed under the MIT license\r\n */\r\n.yamm .nav,\r\n.yamm .collapse,\r\n.yamm .dropup,\r\n.yamm .dropdown {\r\n  position: static;\r\n}\r\n.yamm .container {\r\n  position: relative;\r\n}\r\n.yamm .dropdown-menu {\r\n  left: auto;\r\n}\r\n.yamm .yamm-content {\r\n  padding: 20px 30px;\r\n}\r\n.yamm .dropdown.yamm-fw .dropdown-menu {\r\n  left: 0;\r\n  right: 0;\r\n}\r\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 318 */
+/***/ function(module, exports, __webpack_require__) {
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //js imports
+
+
+	//Load CSS and images
+	__webpack_require__(319);
+
+	var MoldInfo = function (_React$Component) {
+	  _inherits(MoldInfo, _React$Component);
+
+	  function MoldInfo() {
+	    _classCallCheck(this, MoldInfo);
+
+	    return _possibleConstructorReturn(this, (MoldInfo.__proto__ || Object.getPrototypeOf(MoldInfo)).call(this));
+	  }
+
+	  _createClass(MoldInfo, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "div",
+	          { className: "one_half" },
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Mold Killer vs.",
+	            _react2.default.createElement("br", null),
+	            "Mold Stain Remover"
+	          ),
+	          _react2.default.createElement(
+	            "h6",
+	            { className: "grayc" },
+	            "People ask us all the time... \"What is the difference between a ",
+	            _react2.default.createElement(
+	              "em",
+	              null,
+	              "Mold Killer"
+	            ),
+	            "and ",
+	            _react2.default.createElement(
+	              "em",
+	              null,
+	              "Mold Stain Remover?"
+	            ),
+	            " We aim to answer."
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "The goal of the clean-up process is to eliminate the mold and fungal growth and restore the surface to its original beauty. Killing the mold & mildew growth with an EPA registered biocide is preferred. Biocides can be good cleaners, but are not the best stain removers. In contrast, stain removers lack the ability to effectively kill the living organisms that cause mold & mildew. A combination of a biocide mold cleaner and a non-biocide mold remover is best."
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://moldexbrands.com/blog/", className: "readmore_but9" },
+	            "Learn More."
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "one_half last" },
+	          _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/killer_vs_stain_remover.png", alt: "", className: "img_right" })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return MoldInfo;
+	}(_react2.default.Component);
+
+	;
+
+	MoldInfo.propTypes = {
+	  initialValue: _react2.default.PropTypes.string
+	};
+	MoldInfo.defaultProps = {
+	  initialValue: ''
+	};
+
+	exports.default = MoldInfo;
+
+/***/ },
+/* 319 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(320);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(241)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./moldInfo.css", function() {
+				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./moldInfo.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 320 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(240)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".one_half{\r\n\tposition: relative;\r\n\tmargin-right: 4%;\r\n\tfloat: left;\r\n\twidth: 48%;\r\n}\r\n\r\n.last {\r\n\tmargin-right: 0 !important;\r\n\tclear: right;\r\n}\r\n\r\n.grayc {\r\n  color: #999;\r\n}\r\n\r\n\r\n.readmore_but9 {\r\n\tcolor: #fff;\r\n\tpadding: 16px 40px;\r\n\tborder-radius: 4px;\r\n\tbackground-color: #7ab700;\r\n\t-webkit-transition: background-color .3s, -webkit-transform .3s;\r\n    transition: background-color .3s, transform .3s;\r\n}\r\n.readmore_but9:hover {\r\n\tcolor: #fff;\r\n\tbackground-color: #272727;\r\n}\r\n", ""]);
 
 	// exports
 

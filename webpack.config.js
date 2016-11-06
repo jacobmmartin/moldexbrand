@@ -1,6 +1,8 @@
 var path = require('path');
+
 var I18nPlugin = require("i18n-webpack-plugin");
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var webpack = require("webpack")
 
 var languages = {
     "en": require("./en.json"),
@@ -22,7 +24,11 @@ module.exports = Object.keys(languages).map(function (language) {
             ),
             new CopyWebpackPlugin([
                {from: 'images/**/*', to: ''}
-            ])
+            ]),
+             new webpack.ProvidePlugin({
+                $: "jquery",
+                jQuery: "jquery"
+            })
         ],
 
         watch: true,

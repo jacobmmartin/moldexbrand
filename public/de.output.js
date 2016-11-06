@@ -68,15 +68,27 @@
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Product = __webpack_require__(250);
+	var _MoldGuide = __webpack_require__(251);
+
+	var _MoldGuide2 = _interopRequireDefault(_MoldGuide);
+
+	var _Product = __webpack_require__(252);
 
 	var _Product2 = _interopRequireDefault(_Product);
 
-	var _mainHeader = __webpack_require__(251);
+	var _Retail = __webpack_require__(253);
+
+	var _Retail2 = _interopRequireDefault(_Retail);
+
+	var _Contact = __webpack_require__(254);
+
+	var _Contact2 = _interopRequireDefault(_Contact);
+
+	var _mainHeader = __webpack_require__(259);
 
 	var _mainHeader2 = _interopRequireDefault(_mainHeader);
 
-	var _appFooter = __webpack_require__(267);
+	var _appFooter = __webpack_require__(275);
 
 	var _appFooter2 = _interopRequireDefault(_appFooter);
 
@@ -88,32 +100,32 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	global.jQuery = __webpack_require__(270);
+	global.jQuery = __webpack_require__(255);
 
 
 	//IMPORT NODE MODULES TODO: CHANGE THIS
-	__webpack_require__(272);
+	__webpack_require__(278);
 
 	//IMPORT FOR ANIMATIONS JS
-	__webpack_require__(285); // TODO: FIX THIS IMPORT
-	__webpack_require__(286);
+	__webpack_require__(291); // TODO: FIX THIS IMPORT
+	__webpack_require__(292);
 
 	//IMPORT FOR MASTERSLIDER JS
-	__webpack_require__(288);
-	__webpack_require__(289);
-	__webpack_require__(290);
+	__webpack_require__(294);
+	__webpack_require__(295);
 	__webpack_require__(296);
-	__webpack_require__(300);
 	__webpack_require__(302);
-
-	//IMPORT GENERAL CSS
 	__webpack_require__(306);
 	__webpack_require__(308);
 
-	//IMPORT custom components
+	__webpack_require__(312);
+	__webpack_require__(313);
 
-	console.log("1921707e");
-	console.log("Missing Text");
+	//IMPORT GENERAL CSS
+	__webpack_require__(314);
+	__webpack_require__(316);
+
+	//IMPORT custom components
 
 	var App = function (_React$Component) {
 	  _inherits(App, _React$Component);
@@ -131,7 +143,11 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_mainHeader2.default, null),
-	        _react2.default.createElement('div', { className: 'rest', dangerouslySetInnerHTML: { __html: "<a href=\"downloads/1Gal_Moldex_Mold_Killer.pdf\" title=\"1 gallon Moldex Mold Killer\" target=\"new\">Étiquette de la bouteille de 3,78 l (1 gal US) </a>" } }),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          this.props.children
+	        ),
 	        _react2.default.createElement(_appFooter2.default, null)
 	      );
 	    }
@@ -152,7 +168,10 @@
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'home', component: _Home2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _About2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'product', component: _Product2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: 'product', component: _Product2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'mold_guide', component: _MoldGuide2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'retail', component: _Retail2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'contact', component: _Contact2.default })
 	  )
 	), document.getElementById('app'));
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
@@ -25645,7 +25664,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -25660,64 +25679,77 @@
 
 	var _carousel2 = _interopRequireDefault(_carousel);
 
+	var _moldInfo = __webpack_require__(318);
+
+	var _moldInfo2 = _interopRequireDefault(_moldInfo);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	//Load CSS and images
 	__webpack_require__(247);
 
 	var Home = function Home() {
-	    return _react2.default.createElement(
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'h2',
+	      null,
+	      'Home page'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'fusection5' },
+	      _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'container' },
 	        _react2.default.createElement(
-	            'h2',
+	          'h2',
+	          null,
+	          '3 Factors in ',
+	          _react2.default.createElement(
+	            'strong',
 	            null,
-	            'Home page'
+	            'MOLD FIGHTING'
+	          ),
+	          _react2.default.createElement(
+	            'b',
+	            null,
+	            'Products we offer. Solutions made easy. Which one is for you? Find out.'
+	          )
 	        ),
+	        _react2.default.createElement(_factorList2.default, null)
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'green_section' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'container' },
 	        _react2.default.createElement(
-	            'div',
-	            { className: 'fusection5' },
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'container' },
-	                _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '3 Factors in ',
-	                    _react2.default.createElement(
-	                        'strong',
-	                        null,
-	                        'MOLD FIGHTING'
-	                    ),
-	                    _react2.default.createElement(
-	                        'b',
-	                        null,
-	                        'Products we offer. Solutions made easy. Which one is for you? Find out.'
-	                    )
-	                ),
-	                _react2.default.createElement(_factorList2.default, null)
-	            )
+	          'h2',
+	          { className: 'white' },
+	          'Our ',
+	          _react2.default.createElement(
+	            'strong',
+	            null,
+	            'PRODUCTS'
+	          )
 	        ),
-	        _react2.default.createElement(
-	            'div',
-	            { 'class': 'green_section' },
-	            _react2.default.createElement(
-	                'div',
-	                { 'class': 'container' },
-	                _react2.default.createElement(
-	                    'h2',
-	                    { 'class': 'white' },
-	                    'Our ',
-	                    _react2.default.createElement(
-	                        'strong',
-	                        null,
-	                        'PRODUCTS'
-	                    )
-	                ),
-	                _react2.default.createElement(_carousel2.default, null)
-	            )
-	        )
-	    );
+	        _react2.default.createElement(_carousel2.default, null)
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'features_sec44' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'container' },
+	        _react2.default.createElement(_moldInfo2.default, null)
+	      )
+	    )
+	  );
 	};
 
 	exports.default = Home;
@@ -25764,17 +25796,17 @@
 	      factorList: [{ title: "Mold Killers",
 	        img: "https://www.moldexbrands.com/images/home_page_killer_box.jpg",
 	        info: "Broad spectrum disinfectant cleaners designed to destroy and neutralize mold, mildew, bacteria, fungus and odors at their source.",
-	        linkg: "/killers",
+	        link: "/killers",
 	        delay: '200'
 	      }, { title: "Stain Removers",
 	        img: "https://www.moldexbrands.com/images/home_page_stain_box.jpg",
 	        info: "Powerful cleaners for the removal of deeply seated mold and mildew stains. Available in bleach and non-bleach.",
-	        linkg: "/stain_removers",
+	        link: "/stain_removers",
 	        delay: '350'
 	      }, { title: "Prevention",
 	        img: "https://www.moldexbrands.com/images/home_page_seal_box.jpg",
 	        info: "Provide long-lasting protection by creating a barrier between the surface and the bacteria, mold & mildew growth.",
-	        linkg: "/prevention",
+	        link: "/prevention",
 	        delay: '500'
 	      }]
 	    };
@@ -25790,7 +25822,7 @@
 	        this.state.factorList.map(function (factor) {
 	          return _react2.default.createElement(
 	            'div',
-	            { className: 'one_third animate fadeInUp', 'data-anim-type': 'fadeInUp', 'data-anim-delay': factor.delay },
+	            { key: factor.title, className: 'one_third animate fadeInUp', 'data-anim-type': 'fadeInUp', 'data-anim-delay': factor.delay },
 	            _react2.default.createElement(_factor2.default, { model: factor })
 	          );
 	        })
@@ -26311,25 +26343,6 @@
 	//Load CSS and images
 	__webpack_require__(245);
 
-	// var slider5 = new MasterSlider();
-	// slider5.setup('', {
-	//     loop: true,
-	//     width: 240,
-	//     height: 240,
-	//     speed: 20,
-	//     view: 'focus',
-	//     preload: 0,
-	//     space: 35,
-	//     viewOptions: {
-	//         centerSpace: 1.6
-	//     }
-	// });
-	// slider5.control('arrows');
-	// slider5.control('slideinfo', {
-	//     insertTo: '#staff-info'
-	// });
-
-
 	var Carousel = function (_React$Component) {
 	    _inherits(Carousel, _React$Component);
 
@@ -26340,318 +26353,339 @@
 	    }
 
 	    _createClass(Carousel, [{
-	        key: "render",
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            var slider5 = new MasterSlider();
+	            slider5.setup('productSlider', {
+	                loop: true,
+	                width: 240,
+	                height: 240,
+	                speed: 20,
+	                view: 'focus',
+	                preload: 0,
+	                space: 35,
+	                viewOptions: {
+	                    centerSpace: 1.6
+	                }
+	            });
+	            slider5.control('arrows');
+	            slider5.control('slideinfo', {
+	                insertTo: '#staff-info'
+	            });
+	        }
+	    }, {
+	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
-	                "div",
+	                'div',
 	                null,
 	                _react2.default.createElement(
-	                    "div",
-	                    { className: "ms-staff-carousel ms-round" },
+	                    'div',
+	                    { className: 'ms-staff-carousel ms-round' },
 	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "master-slider", id: "className=" },
+	                        'div',
+	                        { className: 'master-slider', id: 'productSlider' },
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "ms-slide" },
-	                            _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/products_images/32oz_instant_stain_remover_circle.jpg", "data-src": "images/products_images/32oz_instant_stain_remover_circle.jpg", alt: "" }),
+	                            'div',
+	                            { className: 'ms-slide' },
+	                            _react2.default.createElement('img', { src: 'https://www.moldexbrands.com/images/products_images/32oz_instant_stain_remover_circle.jpg', 'data-src': 'images/products_images/32oz_instant_stain_remover_circle.jpg', alt: '' }),
 	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "ms-info" },
+	                                'div',
+	                                { className: 'ms-info' },
 	                                _react2.default.createElement(
-	                                    "h4",
+	                                    'h4',
 	                                    null,
-	                                    "INSTANT STAIN REMOVER"
+	                                    'INSTANT STAIN REMOVER'
 	                                ),
 	                                _react2.default.createElement(
-	                                    "p",
+	                                    'p',
 	                                    null,
-	                                    "Removes Mold, Mildew, Algae Stains. No Scrubbing. Provides Instant Results.",
+	                                    'Removes Mold, Mildew, Algae Stains. No Scrubbing. Provides Instant Results.',
 	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "../instant-mold-mildew-stain-remover.html", className: "readmore_but11 margin_top2", "data-anim-type": "zoomIn", "data-anim-delay": "750" },
-	                                        " Learn more."
+	                                        'a',
+	                                        { href: '../instant-mold-mildew-stain-remover.html', className: 'readmore_but11 margin_top2', 'data-anim-type': 'zoomIn', 'data-anim-delay': '750' },
+	                                        ' Learn more.'
 	                                    )
 	                                )
 	                            )
 	                        ),
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "ms-slide" },
-	                            _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/products_images/64oz_house_wash_circle.jpg", "data-src": "images/products_images/64oz_house_wash_circle.jpg", alt: "" }),
+	                            'div',
+	                            { className: 'ms-slide' },
+	                            _react2.default.createElement('img', { src: 'https://www.moldexbrands.com/images/products_images/64oz_house_wash_circle.jpg', 'data-src': 'images/products_images/64oz_house_wash_circle.jpg', alt: '' }),
 	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "ms-info" },
+	                                'div',
+	                                { className: 'ms-info' },
 	                                _react2.default.createElement(
-	                                    "h4",
+	                                    'h4',
 	                                    null,
-	                                    "INSTANT HOUSE WASH"
+	                                    'INSTANT HOUSE WASH'
 	                                ),
 	                                _react2.default.createElement(
-	                                    "p",
+	                                    'p',
 	                                    null,
-	                                    "No Ladder, No Scrubbing, No Problem. Spray on, Wash off. Instant Results.",
+	                                    'No Ladder, No Scrubbing, No Problem. Spray on, Wash off. Instant Results.',
 	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "../instant-house-wash.html", className: "readmore_but11 margin_top2", "data-anim-type": "zoomIn", "data-anim-delay": "750" },
-	                                        " Learn more."
+	                                        'a',
+	                                        { href: '../instant-house-wash.html', className: 'readmore_but11 margin_top2', 'data-anim-type': 'zoomIn', 'data-anim-delay': '750' },
+	                                        ' Learn more.'
 	                                    )
 	                                )
 	                            )
 	                        ),
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "ms-slide" },
-	                            _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/products_images/64oz_deck_wash_circle.jpg", "data-src": "images/products_images/64oz_deck_wash_circle.jpg", alt: "" }),
+	                            'div',
+	                            { className: 'ms-slide' },
+	                            _react2.default.createElement('img', { src: 'https://www.moldexbrands.com/images/products_images/64oz_deck_wash_circle.jpg', 'data-src': 'images/products_images/64oz_deck_wash_circle.jpg', alt: '' }),
 	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "ms-info" },
+	                                'div',
+	                                { className: 'ms-info' },
 	                                _react2.default.createElement(
-	                                    "h4",
+	                                    'h4',
 	                                    null,
-	                                    "INSTANT DECK WASH"
+	                                    'INSTANT DECK WASH'
 	                                ),
 	                                _react2.default.createElement(
-	                                    "p",
+	                                    'p',
 	                                    null,
-	                                    "Cleans & Brightens Decks & Fences. No Scrubbing. Spray on, Wash off.",
+	                                    'Cleans & Brightens Decks & Fences. No Scrubbing. Spray on, Wash off.',
 	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "../instant-deck-fence-wash.html", className: "readmore_but11 margin_top2", "data-anim-type": "zoomIn", "data-anim-delay": "750" },
-	                                        " Learn more."
+	                                        'a',
+	                                        { href: '../instant-deck-fence-wash.html', className: 'readmore_but11 margin_top2', 'data-anim-type': 'zoomIn', 'data-anim-delay': '750' },
+	                                        ' Learn more.'
 	                                    )
 	                                )
 	                            )
 	                        ),
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "ms-slide" },
-	                            _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/products_images/32oz_deep_stain_remover_circle.jpg", "data-src": "images/products_images/32oz_deep_stain_remover_circle.jpg", alt: "" }),
+	                            'div',
+	                            { className: 'ms-slide' },
+	                            _react2.default.createElement('img', { src: 'https://www.moldexbrands.com/images/products_images/32oz_deep_stain_remover_circle.jpg', 'data-src': 'images/products_images/32oz_deep_stain_remover_circle.jpg', alt: '' }),
 	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "ms-info" },
+	                                'div',
+	                                { className: 'ms-info' },
 	                                _react2.default.createElement(
-	                                    "h4",
+	                                    'h4',
 	                                    null,
-	                                    "Non-Bleach Stain Remover"
+	                                    'Non-Bleach Stain Remover'
 	                                ),
 	                                _react2.default.createElement(
-	                                    "p",
+	                                    'p',
 	                                    null,
 	                                    _react2.default.createElement(
-	                                        "strong",
+	                                        'strong',
 	                                        null,
-	                                        "Bleach-Free / Oxy-Power"
+	                                        'Bleach-Free / Oxy-Power'
 	                                    ),
-	                                    " Mold & Mildew Stain Remover",
+	                                    ' Mold & Mildew Stain Remover',
 	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "../non-bleach-stain-remover.html", className: "readmore_but11 margin_top2", "data-anim-type": "zoomIn", "data-anim-delay": "750" },
-	                                        " Learn more."
+	                                        'a',
+	                                        { href: '../non-bleach-stain-remover.html', className: 'readmore_but11 margin_top2', 'data-anim-type': 'zoomIn', 'data-anim-delay': '750' },
+	                                        ' Learn more.'
 	                                    )
 	                                )
 	                            )
 	                        ),
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "ms-slide" },
-	                            _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/products_images/32oz_deep_stain_remover_he_circle.jpg", "data-src": "images/products_images/32oz_deep_stain_remover_he_circle.jpg", alt: "" }),
+	                            'div',
+	                            { className: 'ms-slide' },
+	                            _react2.default.createElement('img', { src: 'https://www.moldexbrands.com/images/products_images/32oz_deep_stain_remover_he_circle.jpg', 'data-src': 'images/products_images/32oz_deep_stain_remover_he_circle.jpg', alt: '' }),
 	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "ms-info" },
+	                                'div',
+	                                { className: 'ms-info' },
 	                                _react2.default.createElement(
-	                                    "h4",
+	                                    'h4',
 	                                    null,
-	                                    "Non-Bleach Stain Remover (HOSE END)"
+	                                    'Non-Bleach Stain Remover (HOSE END)'
 	                                ),
 	                                _react2.default.createElement(
-	                                    "p",
+	                                    'p',
 	                                    null,
-	                                    "Multi-Surface ",
+	                                    'Multi-Surface ',
 	                                    _react2.default.createElement(
-	                                        "strong",
+	                                        'strong',
 	                                        null,
-	                                        "Bleach-Free"
+	                                        'Bleach-Free'
 	                                    ),
-	                                    " Outdoor Cleaner. Cleans up to 3,000 sq. ft. Easy-Peasy ",
+	                                    ' Outdoor Cleaner. Cleans up to 3,000 sq. ft. Easy-Peasy ',
 	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "../non-bleach-stain-remover.html", className: "readmore_but11 margin_top2", "data-anim-type": "zoomIn", "data-anim-delay": "750" },
-	                                        " Learn more."
+	                                        'a',
+	                                        { href: '../non-bleach-stain-remover.html', className: 'readmore_but11 margin_top2', 'data-anim-type': 'zoomIn', 'data-anim-delay': '750' },
+	                                        ' Learn more.'
 	                                    )
 	                                )
 	                            )
 	                        ),
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "ms-slide" },
-	                            _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/products_images/32oz_sealant_circle.jpg", "data-src": "images/products_images/32oz_sealant_circle.jpg", alt: "" }),
+	                            'div',
+	                            { className: 'ms-slide' },
+	                            _react2.default.createElement('img', { src: 'https://www.moldexbrands.com/images/products_images/32oz_sealant_circle.jpg', 'data-src': 'images/products_images/32oz_sealant_circle.jpg', alt: '' }),
 	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "ms-info" },
+	                                'div',
+	                                { className: 'ms-info' },
 	                                _react2.default.createElement(
-	                                    "h4",
+	                                    'h4',
 	                                    null,
-	                                    "SEALANT"
+	                                    'SEALANT'
 	                                ),
 	                                _react2.default.createElement(
-	                                    "p",
+	                                    'p',
 	                                    null,
-	                                    "Clear Water-Based Film. Resists Mold & Mildew Stains. Provides Long-lasting Resistance to Mold Discoloration.",
+	                                    'Clear Water-Based Film. Resists Mold & Mildew Stains. Provides Long-lasting Resistance to Mold Discoloration.',
 	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "../sealant-mold-mildew-blocker.html", className: "readmore_but11 margin_top2", "data-anim-type": "zoomIn", "data-anim-delay": "750" },
-	                                        " Learn more."
+	                                        'a',
+	                                        { href: '../sealant-mold-mildew-blocker.html', className: 'readmore_but11 margin_top2', 'data-anim-type': 'zoomIn', 'data-anim-delay': '750' },
+	                                        ' Learn more.'
 	                                    )
 	                                )
 	                            )
 	                        ),
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "ms-slide" },
-	                            _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/products_images/32oz_sealant_he_circle.jpg", "data-src": "images/products_images/32oz_sealant_he_circle.jpg", alt: "" }),
+	                            'div',
+	                            { className: 'ms-slide' },
+	                            _react2.default.createElement('img', { src: 'https://www.moldexbrands.com/images/products_images/32oz_sealant_he_circle.jpg', 'data-src': 'images/products_images/32oz_sealant_he_circle.jpg', alt: '' }),
 	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "ms-info" },
+	                                'div',
+	                                { className: 'ms-info' },
 	                                _react2.default.createElement(
-	                                    "h4",
+	                                    'h4',
 	                                    null,
-	                                    "SEALANT (HOSE END)"
+	                                    'SEALANT (HOSE END)'
 	                                ),
 	                                _react2.default.createElement(
-	                                    "p",
+	                                    'p',
 	                                    null,
-	                                    "Multi-Surface Outdoor Blocker that Resists Mold & Mildew Stains. Covers up to 3,000 sq. ft.",
+	                                    'Multi-Surface Outdoor Blocker that Resists Mold & Mildew Stains. Covers up to 3,000 sq. ft.',
 	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "../sealant-mold-mildew-blocker.html", className: "readmore_but11 margin_top2", "data-anim-type": "zoomIn", "data-anim-delay": "750" },
-	                                        " Learn more."
+	                                        'a',
+	                                        { href: '../sealant-mold-mildew-blocker.html', className: 'readmore_but11 margin_top2', 'data-anim-type': 'zoomIn', 'data-anim-delay': '750' },
+	                                        ' Learn more.'
 	                                    )
 	                                )
 	                            )
 	                        ),
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "ms-slide" },
-	                            _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/products_images/22oz_paint_prep_circle.jpg", "data-src": "images/products_images/22oz_paint_prep_circle.jpg", alt: "" }),
+	                            'div',
+	                            { className: 'ms-slide' },
+	                            _react2.default.createElement('img', { src: 'https://www.moldexbrands.com/images/products_images/22oz_paint_prep_circle.jpg', 'data-src': 'images/products_images/22oz_paint_prep_circle.jpg', alt: '' }),
 	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "ms-info" },
+	                                'div',
+	                                { className: 'ms-info' },
 	                                _react2.default.createElement(
-	                                    "h4",
+	                                    'h4',
 	                                    null,
-	                                    "PAINT PREP"
+	                                    'PAINT PREP'
 	                                ),
 	                                _react2.default.createElement(
-	                                    "p",
+	                                    'p',
 	                                    null,
-	                                    "Hard Surface Cleaner / TSP Alternative. Cleans and Deglosses to Improve Paint Adhesion.",
+	                                    'Hard Surface Cleaner / TSP Alternative. Cleans and Deglosses to Improve Paint Adhesion.',
 	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "../paint-preparation.html", className: "readmore_but11 margin_top2", "data-anim-type": "zoomIn", "data-anim-delay": "750" },
-	                                        " Learn more."
+	                                        'a',
+	                                        { href: '../paint-preparation.html', className: 'readmore_but11 margin_top2', 'data-anim-type': 'zoomIn', 'data-anim-delay': '750' },
+	                                        ' Learn more.'
 	                                    )
 	                                )
 	                            )
 	                        ),
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "ms-slide" },
-	                            _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/products_images/1gal_power_circle.jpg", "data-src": "images/products_images/1gal_power_circle.jpg", alt: "" }),
+	                            'div',
+	                            { className: 'ms-slide' },
+	                            _react2.default.createElement('img', { src: 'https://www.moldexbrands.com/images/products_images/1gal_power_circle.jpg', 'data-src': 'images/products_images/1gal_power_circle.jpg', alt: '' }),
 	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "ms-info" },
+	                                'div',
+	                                { className: 'ms-info' },
 	                                _react2.default.createElement(
-	                                    "h4",
+	                                    'h4',
 	                                    null,
-	                                    "POWER OUTDOOR"
+	                                    'POWER OUTDOOR'
 	                                ),
 	                                _react2.default.createElement(
-	                                    "p",
+	                                    'p',
 	                                    null,
-	                                    "Multi-Purpose Outdoor Cleaner & Power Washer Concentrate.",
+	                                    'Multi-Purpose Outdoor Cleaner & Power Washer Concentrate.',
 	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "../power-outdoor-cleaner.html", className: "readmore_but11 margin_top2", "data-anim-type": "zoomIn", "data-anim-delay": "750" },
-	                                        " Learn more."
+	                                        'a',
+	                                        { href: '../power-outdoor-cleaner.html', className: 'readmore_but11 margin_top2', 'data-anim-type': 'zoomIn', 'data-anim-delay': '750' },
+	                                        ' Learn more.'
 	                                    )
 	                                )
 	                            )
 	                        ),
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "ms-slide" },
-	                            _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/products_images/22oz_patio_circle.jpg", "data-src": "images/products_images/22oz_patio_circle.jpg", alt: "" }),
+	                            'div',
+	                            { className: 'ms-slide' },
+	                            _react2.default.createElement('img', { src: 'https://www.moldexbrands.com/images/products_images/22oz_patio_circle.jpg', 'data-src': 'images/products_images/22oz_patio_circle.jpg', alt: '' }),
 	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "ms-info" },
+	                                'div',
+	                                { className: 'ms-info' },
 	                                _react2.default.createElement(
-	                                    "h4",
+	                                    'h4',
 	                                    null,
-	                                    "PATIO FURNITURE CLEANER"
+	                                    'PATIO FURNITURE CLEANER'
 	                                ),
 	                                _react2.default.createElement(
-	                                    "p",
+	                                    'p',
 	                                    null,
-	                                    "Removes Mold, Mildew, Dirt and More! 2-in-1 Formula that Cleans & Protects.",
+	                                    'Removes Mold, Mildew, Dirt and More! 2-in-1 Formula that Cleans & Protects.',
 	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "../cleaning-mold-on-patio-furniture.html", className: "readmore_but11 margin_top2", "data-anim-type": "zoomIn", "data-anim-delay": "750" },
-	                                        " Learn more."
+	                                        'a',
+	                                        { href: '../cleaning-mold-on-patio-furniture.html', className: 'readmore_but11 margin_top2', 'data-anim-type': 'zoomIn', 'data-anim-delay': '750' },
+	                                        ' Learn more.'
 	                                    )
 	                                )
 	                            )
 	                        ),
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "ms-slide" },
-	                            _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/products_images/64oz_disinfectant_concentrate_circle.jpg", "data-src": "images/products_images/64oz_disinfectant_concentrate_circle.jpg", alt: "" }),
+	                            'div',
+	                            { className: 'ms-slide' },
+	                            _react2.default.createElement('img', { src: 'https://www.moldexbrands.com/images/products_images/64oz_disinfectant_concentrate_circle.jpg', 'data-src': 'images/products_images/64oz_disinfectant_concentrate_circle.jpg', alt: '' }),
 	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "ms-info" },
+	                                'div',
+	                                { className: 'ms-info' },
 	                                _react2.default.createElement(
-	                                    "h4",
+	                                    'h4',
 	                                    null,
-	                                    "MOLD DISINFECTANT (CONCENTRATE)"
+	                                    'MOLD DISINFECTANT (CONCENTRATE)'
 	                                ),
 	                                _react2.default.createElement(
-	                                    "p",
+	                                    'p',
 	                                    null,
-	                                    "cleans, disinfects, and deodorizes surfaces by killing odor-causing microorganisms and prevents the growth of mold and mildew.",
+	                                    'cleans, disinfects, and deodorizes surfaces by killing odor-causing microorganisms and prevents the growth of mold and mildew.',
 	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "../disinfectant-conc.html", className: "readmore_but11 margin_top2", "data-anim-type": "zoomIn", "data-anim-delay": "750" },
-	                                        " Learn more."
+	                                        'a',
+	                                        { href: '../disinfectant-conc.html', className: 'readmore_but11 margin_top2', 'data-anim-type': 'zoomIn', 'data-anim-delay': '750' },
+	                                        ' Learn more.'
 	                                    )
 	                                )
 	                            )
 	                        ),
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "ms-slide" },
-	                            _react2.default.createElement("img", { src: "32oz_mold_killer_circle.jpg", "data-src": "images/products_images/32oz_mold_killer_circle.jpg", alt: "" }),
+	                            'div',
+	                            { className: 'ms-slide' },
+	                            _react2.default.createElement('img', { src: 'https://www.moldexbrands.com/images/products_images/32oz_mold_killer_circle.jpg', 'data-src': 'images/products_images/32oz_mold_killer_circle.jpg', alt: '' }),
 	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "ms-info" },
+	                                'div',
+	                                { className: 'ms-info' },
 	                                _react2.default.createElement(
-	                                    "h4",
+	                                    'h4',
 	                                    null,
-	                                    "MOLD KILLER"
+	                                    'MOLD KILLER'
 	                                ),
 	                                _react2.default.createElement(
-	                                    "p",
+	                                    'p',
 	                                    null,
-	                                    "Kills Mold & Mildew. Destroys and Neutralizes Mold, Mildew, Bacteria, Fungus and Odors at their source",
+	                                    'Kills Mold & Mildew. Destroys and Neutralizes Mold, Mildew, Bacteria, Fungus and Odors at their source',
 	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "https://www.moldexbrands.com/mold-mildew-killer.html", className: "readmore_but11 margin_top2", "data-anim-type": "zoomIn", "data-anim-delay": "750" },
-	                                        " Learn more."
+	                                        'a',
+	                                        { href: 'https://www.moldexbrands.com/mold-mildew-killer.html', className: 'readmore_but11 margin_top2', 'data-anim-type': 'zoomIn', 'data-anim-delay': '750' },
+	                                        ' Learn more.'
 	                                    )
 	                                )
 	                            )
 	                        )
 	                    ),
-	                    _react2.default.createElement("div", { className: "ms-staff-info", id: "staff-info" })
+	                    _react2.default.createElement('div', { className: 'ms-staff-info', id: 'staff-info' })
 	                )
 	            );
 	        }
@@ -26706,7 +26740,7 @@
 
 
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, "/* HOTFIX */\r\n#productSlider .ms-slide .ms-slide-bgcont img {\r\n  height: 224.003px !important;\r\n  width: 224.003px !important;\r\n  margin-top: 0px !important;\r\n  margin-left: 0px !important;\r\n}\r\n\r\n.readmore_but11 {\r\n\tcolor: #fff;\r\n\tfont-size: 14px;\r\n\tfont-weight: normal;\r\n\tpadding: 14px 35px;\r\n\tborder-radius: 4px;\r\n\tbackground-color: #466900;\r\n\t-webkit-transition: background-color .3s, -webkit-transform .3s;\r\n    transition: background-color .3s, transform .3s;\r\n}\r\n\r\n.readmore_but11:hover {\r\n\tcolor: #fff;\r\n\tbackground-color: #272727;\r\n}\r\n", ""]);
 
 	// exports
 
@@ -26746,7 +26780,7 @@
 
 
 	// module
-	exports.push([module.id, ".fusection5 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tpadding: 70px 0px;\r\n\ttext-align: center;\r\n}\r\n\r\n.fusection5 img {\r\n\tborder: 7px solid #fff;\r\n}\r\n\r\n.green_section {\r\n\t\tfloat: left;\r\n    width: 100%;\r\n    text-align: center;\r\n    padding: 60px 0px 0px 0px;\r\n    background: #7ab700;\r\n}\r\n\r\n.white {\r\n    color: #fff;\r\n}\r\n", ""]);
+	exports.push([module.id, ".fusection5 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tpadding: 70px 0px;\r\n\ttext-align: center;\r\n}\r\n\r\n.fusection5 img {\r\n\tborder: 7px solid #fff;\r\n}\r\n\r\n.green_section {\r\n\t\tfloat: left;\r\n    width: 100%;\r\n    text-align: center;\r\n    padding: 60px 0px 0px 0px;\r\n    background: #7ab700;\r\n}\r\n\r\n.features_sec44{\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tpadding: 59px 0px 40px 0px;\r\n}\r\n\r\n.white {\r\n    color: #fff;\r\n}\r\n", ""]);
 
 	// exports
 
@@ -26763,12 +26797,17 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _pageTitle = __webpack_require__(250);
+
+	var _pageTitle2 = _interopRequireDefault(_pageTitle);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var About = function About() {
 	    return _react2.default.createElement(
 	        "div",
 	        null,
+	        _react2.default.createElement(_pageTitle2.default, { title: "Moldex Brands" }),
 	        _react2.default.createElement(
 	            "div",
 	            { className: "container" },
@@ -26913,6 +26952,243 @@
 	    value: true
 	});
 
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var PageTitle = function (_Component) {
+	    _inherits(PageTitle, _Component);
+
+	    function PageTitle() {
+	        _classCallCheck(this, PageTitle);
+
+	        return _possibleConstructorReturn(this, (PageTitle.__proto__ || Object.getPrototypeOf(PageTitle)).apply(this, arguments));
+	    }
+
+	    _createClass(PageTitle, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "page_title2" },
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "container" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "title" },
+	                        _react2.default.createElement(
+	                            "h1",
+	                            null,
+	                            this.props.title
+	                        ),
+	                        _react2.default.createElement("br", null)
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return PageTitle;
+	}(_react.Component);
+
+	exports.default = PageTitle;
+
+/***/ },
+/* 251 */
+/***/ function(module, exports, __webpack_require__) {
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _pageTitle = __webpack_require__(250);
+
+	var _pageTitle2 = _interopRequireDefault(_pageTitle);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var MoldGuide = function MoldGuide() {
+	    return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(_pageTitle2.default, { title: "Mold & Nildew Guide" }),
+	        _react2.default.createElement(
+	            "div",
+	            { className: "container" },
+	            _react2.default.createElement(
+	                "div",
+	                { className: "content_fullwidth" },
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "one_full" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "big_text1" },
+	                        "Mold & Mildew Basic Training:"
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        "Mold comes in many forms \u2013 try more than 100,000 types. Alternaria, Aspergillus, Cladosporium, and Penicillium are the types of mold commonly found in homes. Black mold (also known as Stachybotrys chartarum, Stachybotrys atra, or SC) is a hazardous house mold that made headlines when a school was shut down and an unusual number of babies in Cleveland suffering from pulmonary hemorrhage were found to be living in homes hosting SC.",
+	                        _react2.default.createElement("br", null),
+	                        _react2.default.createElement("br", null),
+	                        " Although known as black mold, stachybotrys may also be white or greenish-black. It grows on material with a high cellulose content (drywall, cardboard, wood, paper, drop-ceiling tiles) that has been wet for several days. Sometimes, Stachybotrys, like other molds, can produce chemicals called mycotoxins (myco from the Greek for fungus) that may cause asthma and lung diseases.",
+	                        _react2.default.createElement("br", null),
+	                        _react2.default.createElement("br", null),
+	                        " Here\u2019s a rundown on common household molds, where to look for them, and the ill effects they bring..."
+	                    )
+	                ),
+	                _react2.default.createElement("div", { className: "clearfix" }),
+	                _react2.default.createElement("div", { className: "clearfix divider_dashed6" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "one_third" },
+	                    _react2.default.createElement("img", { src: "images/mold_1.jpg", alt: "", className: "img_size1" })
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "two_third last" },
+	                    _react2.default.createElement(
+	                        "h3",
+	                        null,
+	                        _react2.default.createElement(
+	                            "strong",
+	                            null,
+	                            "Alternaria"
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        "A large spore mold that can deposit in the nose, mouth and upper respiratory tract causing an allergic response. Indoors, it is often found in carpets, textiles, house dust and potentially damp areas like window frames and showers. It can also be found in plant soil."
+	                    )
+	                ),
+	                _react2.default.createElement("div", { className: "clearfix margin_top6" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "one_third" },
+	                    _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/mold_2.jpg", alt: "", className: "img_size1" })
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "two_third last" },
+	                    _react2.default.createElement(
+	                        "h3",
+	                        null,
+	                        _react2.default.createElement(
+	                            "strong",
+	                            null,
+	                            "Aspergillus"
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        "Usually found in warmer climates in areas of water damage or extreme dampness. Aspergillus species are also commonly found in house dust. Many species produce mycotoxins which may be associated with disease in humans and some animals. Also found in building materials and in fall leaves and other decomposing matter like compost piles."
+	                    )
+	                ),
+	                _react2.default.createElement("div", { className: "clearfix margin_top6" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "one_third" },
+	                    _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/mold_3.jpg", alt: "", className: "img_size1" })
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "two_third last" },
+	                    _react2.default.createElement(
+	                        "h3",
+	                        null,
+	                        _react2.default.createElement(
+	                            "strong",
+	                            null,
+	                            "Cladosporium"
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        "The most commonly identified outdoor fungus, but it can easily enter into the house through the HVAC and other airflow entryways. Cladosporium also has an indoor species that grows on textiles, wood and other porous, damp areas. Both indoor and outdoor species are triggers for hay fever and asthma symptoms. "
+	                    )
+	                ),
+	                _react2.default.createElement("div", { className: "clearfix margin_top6" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "one_third" },
+	                    _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/mold_4.jpg", alt: "", className: "img_size1" })
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "two_third last" },
+	                    _react2.default.createElement(
+	                        "h3",
+	                        null,
+	                        _react2.default.createElement(
+	                            "strong",
+	                            null,
+	                            "Penicillium"
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        "A very common mold known to cause allergies, hay fever and asthma. Species may be found growing on wallpaper, wallpaper glue and decaying fabrics in water-damaged buildings or homes. It is also found in carpet and in interior fiberglass duct insulation. Some species can produce mycotoxins."
+	                    )
+	                ),
+	                _react2.default.createElement("div", { className: "clearfix margin_top6" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "one_third" },
+	                    _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/mold_5.jpg", alt: "", className: "img_size1" })
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "two_third last" },
+	                    _react2.default.createElement(
+	                        "h3",
+	                        null,
+	                        _react2.default.createElement(
+	                            "strong",
+	                            null,
+	                            "Stachybotrys"
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        "Pronounced (stack-ee-BOT-ris), this is an especially toxic black mold that produces airborne toxins (mycotoxins) that can cause serious breathing difficulties, memory and hearing loss, dizziness, flu-like symptoms and bleeding in the lungs. Stachybotrys requires excessive moisture to thrive (usually running water) and is a slimy black mold. Fortunately, stachybotrys is not found in homes as often as the other molds listed above."
+	                    )
+	                )
+	            )
+	        )
+	    );
+	};
+
+	exports.default = MoldGuide;
+
+/***/ },
+/* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -26930,761 +27206,7 @@
 	exports.default = Product;
 
 /***/ },
-/* 251 */
-/***/ function(module, exports, __webpack_require__) {
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	var _logoHeader = __webpack_require__(252);
-
-	var _logoHeader2 = _interopRequireDefault(_logoHeader);
-
-	var _navbar = __webpack_require__(257);
-
-	var _navbar2 = _interopRequireDefault(_navbar);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	//Load CSS and images
-	//js imports
-	__webpack_require__(265);
-
-	//Cretate Class
-	var MainHeader = _react2.default.createClass({
-	  displayName: 'MainHeader',
-
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      { id: 'trueHeader' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'wrapper' },
-	        _react2.default.createElement(_logoHeader2.default, null),
-	        _react2.default.createElement(_navbar2.default, null)
-	      )
-	    );
-	  }
-
-	});
-
-	exports.default = MainHeader;
-
-/***/ },
-/* 252 */
-/***/ function(module, exports, __webpack_require__) {
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	//Load CSS and images
-	//js imports
-	__webpack_require__(253);
-	var background = __webpack_require__(255);
-	var logo = __webpack_require__(256);
-
-	//Cretate Class
-	var LogoHeader = _react2.default.createClass({
-	    displayName: 'LogoHeader',
-
-
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'div',
-	            { className: 'logoarea' },
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'container' },
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'logo' },
-	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: '/', id: 'logo' },
-	                        'Home'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'right_links' },
-	                    _react2.default.createElement(
-	                        'ul',
-	                        null,
-	                        _react2.default.createElement(
-	                            'li',
-	                            { className: 'link' },
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'mailto:info@moldexbrands.com' },
-	                                _react2.default.createElement('i', { className: 'fa fa-envelope' }),
-	                                'info@moldexbrands.com'
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            'li',
-	                            { className: 'social', 'data-anim-type': 'zoomIn', 'data-anim-delay': '200' },
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'https://www.facebook.com/moldexbrands' },
-	                                _react2.default.createElement('i', { className: 'fa fa-facebook' })
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            'li',
-	                            { className: 'social', 'data-anim-type': 'zoomIn', 'data-anim-delay': '300' },
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'http://www.instagram.com/moldexbrands' },
-	                                _react2.default.createElement('i', { className: 'fa fa-instagram' })
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            'li',
-	                            { className: 'social', 'data-anim-type': 'zoomIn', 'data-anim-delay': '550' },
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'http://www.pinterest.com/moldexbrands' },
-	                                _react2.default.createElement('i', { className: 'fa fa-pinterest' })
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            'li',
-	                            { className: 'social', 'data-anim-type': 'zoomIn', 'data-anim-delay': '550' },
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'http://www.twitter.com/moldexbrands' },
-	                                _react2.default.createElement('i', { className: 'fa fa-twitter' })
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            'li',
-	                            { className: 'social', 'data-anim-type': 'zoomIn', 'data-anim-delay': '550' },
-	                            _react2.default.createElement(
-	                                'a',
-	                                { href: 'https://www.youtube.com/channel/UCOhsM9FUmFDxWbgpKMr3Daw' },
-	                                _react2.default.createElement('i', { className: 'fa fa-youtube' })
-	                            )
-	                        )
-	                    )
-	                )
-	            )
-	        );
-	    }
-
-	});
-
-	exports.default = LogoHeader;
-
-/***/ },
 /* 253 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(254);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(241)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./logoHeader.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./logoHeader.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 254 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(240)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".logoarea {\r\n  float: left;\r\n  width: 100%;\r\n  height: 84px;\r\n  background: url(" + __webpack_require__(255) + ") repeat left top;\r\n}\r\n\r\n.logo {\r\n    float: left;\r\n    width: 25%;\r\n}\r\n\r\n#logo {\r\n  float: left;\r\n  display: block;\r\n  width: 100%;\r\n  min-height: 70px;\r\n  margin-top: 9px;\r\n  position: relative;\r\n  text-indent: -999em;\r\n  background: url(" + __webpack_require__(256) + ") no-repeat left bottom;\r\n}\r\n\r\n.right_links {\r\n  float: right;\r\n  margin-top: 18px;\r\n}\r\n\r\n.right_links ul {\r\n  float: right;\r\n  padding: 0px;\r\n  margin: 0px;\r\n}\r\n\r\n.right_links li {\r\n  float: left;\r\n  font-size: 13px;\r\n  padding: 0px;\r\n}\r\n\r\n.right_links li a:hover {\r\n\tcolor: #fff;\r\n}\r\n\r\n.right_links li.link {\r\n  float: left;\r\n  font-size: 13px;\r\n  margin-right: 18px;\r\n  margin-top: 1px;\r\n}\r\n\r\n.right_links li.link i {\r\n    margin-right: 3px;\r\n}\r\n\r\n.right_links li.social {\r\n  width: 27px;\r\n  height: 27px;\r\n  text-align: center;\r\n  vertical-align: middle;\r\n  line-height: 27px;\r\n  border-radius: 100%;\r\n  background-color: #454545;\r\n  cursor: pointer;\r\n  margin-left: 5px;\r\n}\r\n\r\n.right_links li.social i {\r\n\tcolor: #999;\r\n}\r\n.right_links li.social:hover {\r\n\tbackground-color: #999;\r\n}\r\n.right_links li.social:hover i {\r\n\tcolor: #fff;\r\n}\r\n\r\n.right_links li a {\r\n    color: #999;\r\n}\r\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 255 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkM2MThBNTM0RUE1QjExRTM4QjRBRjA4MDczQTI3RDZEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkM2MThBNTM1RUE1QjExRTM4QjRBRjA4MDczQTI3RDZEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QzYxOEE1MzJFQTVCMTFFMzhCNEFGMDgwNzNBMjdENkQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QzYxOEE1MzNFQTVCMTFFMzhCNEFGMDgwNzNBMjdENkQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5soMtQAAAAD0lEQVR42mJgYGA4AxBgAADRAM1baFuFAAAAAElFTkSuQmCC"
-
-/***/ },
-/* 256 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "def9a53a4f0acd1c5be8873e595d2868.png";
-
-/***/ },
-/* 257 */
-/***/ function(module, exports, __webpack_require__) {
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(172);
-
-	var _dropdownProduct = __webpack_require__(258);
-
-	var _dropdownProduct2 = _interopRequireDefault(_dropdownProduct);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; } //js imports
-
-
-	//Load CSS and images
-	__webpack_require__(262);
-	__webpack_require__(264);
-
-	//Cretate Class
-	var NavBar = _react2.default.createClass({
-	    displayName: 'NavBar',
-
-	    getInitialState: function getInitialState() {
-	        return {
-	            selected: ''
-	        };
-	    },
-	    setFilter: function setFilter(filter) {
-	        this.setState({ selected: filter });
-	    },
-	    isActive: function isActive(value) {
-	        return value === this.state.selected ? 'active' : '';
-	    },
-	    render: function render() {
-	        var _React$createElement;
-
-	        return _react2.default.createElement(
-	            'div',
-	            { className: 'menu_main' },
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'container' },
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'navbar yamm navbar-default' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'container' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'navbar-header' },
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'navbar-toggle .navbar-collapse .pull-right ', 'data-toggle': 'collapse', 'data-target': '#navbar-collapse-1' },
-	                                _react2.default.createElement(
-	                                    'span',
-	                                    null,
-	                                    'Menu'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'button',
-	                                    { type: 'button' },
-	                                    ' ',
-	                                    _react2.default.createElement('i', { className: 'fa fa-bars' })
-	                                )
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { id: 'navbar-collapse-1', className: 'navbar-collapse collapse' },
-	                            _react2.default.createElement(
-	                                'ul',
-	                                { className: 'nav navbar-nav' },
-	                                _react2.default.createElement(
-	                                    'li',
-	                                    null,
-	                                    _react2.default.createElement(
-	                                        _reactRouter.Link,
-	                                        { to: '/home', className: this.isActive('home'), onClick: this.setFilter.bind(this, 'home') },
-	                                        'Home'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    'li',
-	                                    null,
-	                                    _react2.default.createElement(
-	                                        _reactRouter.Link,
-	                                        { to: '/about', className: this.isActive('about'), onClick: this.setFilter.bind(this, 'about') },
-	                                        'About'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    'li',
-	                                    { className: 'dropdown yamm-fw' },
-	                                    _react2.default.createElement(
-	                                        'a',
-	                                        (_React$createElement = { href: '#', className: 'dropdown-toggle', 'data-toggle': 'dropdown' }, _defineProperty(_React$createElement, 'className', this.isActive('product')), _defineProperty(_React$createElement, 'onClick', this.setFilter.bind(this, 'product')), _React$createElement),
-	                                        'Products'
-	                                    ),
-	                                    _react2.default.createElement(_dropdownProduct2.default, null)
-	                                ),
-	                                _react2.default.createElement(
-	                                    'li',
-	                                    null,
-	                                    _react2.default.createElement(
-	                                        _reactRouter.Link,
-	                                        { to: '/factors', className: this.isActive('factors'), onClick: this.setFilter.bind(this, 'factors') },
-	                                        '3 Factors in Mold Fighting'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    'li',
-	                                    null,
-	                                    _react2.default.createElement(
-	                                        _reactRouter.Link,
-	                                        { to: '/mold_guide', className: this.isActive('guide'), onClick: this.setFilter.bind(this, 'guide') },
-	                                        'Mold & Mildew Guide'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    'li',
-	                                    null,
-	                                    _react2.default.createElement(
-	                                        _reactRouter.Link,
-	                                        { to: '/retail', className: this.isActive('retail'), onClick: this.setFilter.bind(this, 'retail') },
-	                                        'Find our Products'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    'li',
-	                                    null,
-	                                    _react2.default.createElement(
-	                                        _reactRouter.Link,
-	                                        { to: '/blog', className: this.isActive('blog'), onClick: this.setFilter.bind(this, 'blog') },
-	                                        'News & Blog'
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    'li',
-	                                    null,
-	                                    _react2.default.createElement(
-	                                        _reactRouter.Link,
-	                                        { to: '/contact', className: this.isActive('contact'), onClick: this.setFilter.bind(this, 'contact') },
-	                                        'Contact'
-	                                    )
-	                                )
-	                            ),
-	                            _react2.default.createElement('div', { id: 'wrap' })
-	                        )
-	                    )
-	                )
-	            )
-	        );
-	    }
-
-	});
-
-	exports.default = NavBar;
-
-	// <li className="dropdown yamm-fw"> <a onClick={this.onClickProducts}>Products</a>
-	//   { this.state.showDropdown ?  : null }
-	// </li>
-
-/***/ },
-/* 258 */
-/***/ function(module, exports, __webpack_require__) {
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	//Load CSS and images
-	__webpack_require__(259);
-
-	//Cretate Class
-	//js imports
-	var DropdownProduct = _react2.default.createClass({
-	    displayName: "DropdownProduct",
-
-	    render: function render() {
-	        return _react2.default.createElement(
-	            "ul",
-	            { className: "dropdown-menu" },
-	            _react2.default.createElement(
-	                "li",
-	                null,
-	                _react2.default.createElement(
-	                    "div",
-	                    { className: "yamm-content" },
-	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "row" },
-	                        _react2.default.createElement(
-	                            "ul",
-	                            { className: "col-sm-6 col-md-3 list-unstyled " },
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                _react2.default.createElement(
-	                                    "p",
-	                                    null,
-	                                    "Our Products"
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                _react2.default.createElement("img", { src: __webpack_require__(261), alt: "", className: "img_left4" }),
-	                                "Our method is ",
-	                                _react2.default.createElement(
-	                                    "strong",
-	                                    null,
-	                                    "Kill, Clean"
-	                                ),
-	                                " and ",
-	                                _react2.default.createElement(
-	                                    "strong",
-	                                    null,
-	                                    "Prevent"
-	                                ),
-	                                ". We call it the \"3 Factors in Mold Fighting\". Professional solutions made for you. Which one do you need?",
-	                                _react2.default.createElement(
-	                                    "a",
-	                                    { href: "how-to-get-rid-of-mold-and-mildew.html" },
-	                                    " Find out ",
-	                                    _react2.default.createElement("i", { className: "fa fa-long-arrow-right" })
-	                                )
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            "ul",
-	                            { className: "col-sm-6 col-md-3 list-unstyled " },
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                _react2.default.createElement(
-	                                    "p",
-	                                    null,
-	                                    "Mold Killers"
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                _react2.default.createElement(
-	                                    "a",
-	                                    { href: "/mold-mildew-killer.html" },
-	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
-	                                    " Moldex Mold Killer"
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                _react2.default.createElement(
-	                                    "a",
-	                                    { href: "/disinfectant-conc.html" },
-	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
-	                                    " Moldex Disinfectant Concentrate"
-	                                )
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            "ul",
-	                            { className: "col-sm-6 col-md-3 list-unstyled " },
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                _react2.default.createElement(
-	                                    "p",
-	                                    null,
-	                                    "Stain Removers"
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                " ",
-	                                _react2.default.createElement(
-	                                    "a",
-	                                    { href: "/instant-mold-mildew-stain-remover.html" },
-	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
-	                                    " Moldex Instant Stain Remover"
-	                                ),
-	                                " "
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                " ",
-	                                _react2.default.createElement(
-	                                    "a",
-	                                    { href: "/instant-house-wash.html" },
-	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
-	                                    " Moldex Instant House Wash (H/E)"
-	                                ),
-	                                " "
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                " ",
-	                                _react2.default.createElement(
-	                                    "a",
-	                                    { href: "/instant-deck-fence-wash.html" },
-	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
-	                                    " Moldex Instant Deck Wash (H/E)"
-	                                ),
-	                                " "
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                " ",
-	                                _react2.default.createElement(
-	                                    "a",
-	                                    { href: "/non-bleach-stain-remover.html" },
-	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
-	                                    " Moldex Non-Bleach Stain Remover"
-	                                ),
-	                                " "
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                " ",
-	                                _react2.default.createElement(
-	                                    "a",
-	                                    { href: "/paint-preparation.html" },
-	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
-	                                    " Moldex Paint Prep"
-	                                ),
-	                                " "
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                " ",
-	                                _react2.default.createElement(
-	                                    "a",
-	                                    { href: "/power-outdoor-cleaner.html" },
-	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
-	                                    " Moldex Power Outdoor Cleaner"
-	                                ),
-	                                " "
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                " ",
-	                                _react2.default.createElement(
-	                                    "a",
-	                                    { href: "/cleaning-mold-on-patio-furniture.html" },
-	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
-	                                    " Moldex Patio Furniture Cleaner"
-	                                ),
-	                                " "
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            "ul",
-	                            { className: "col-sm-6 col-md-3 list-unstyled " },
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                _react2.default.createElement(
-	                                    "p",
-	                                    null,
-	                                    "Prevention"
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                "li",
-	                                null,
-	                                _react2.default.createElement(
-	                                    "a",
-	                                    { href: "/sealant-mold-mildew-blocker.html" },
-	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
-	                                    " Moldex Sealant"
-	                                )
-	                            )
-	                        )
-	                    )
-	                )
-	            )
-	        );
-	    }
-
-	});
-
-	exports.default = DropdownProduct;
-
-/***/ },
-/* 259 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(260);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(241)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./dropdownProduct.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./dropdownProduct.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 260 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(240)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "/* CSS for animate options in product dropdown */\r\n\r\n.list-unstyled li:first-child {\r\n\r\n    border-bottom: 1px solid #e6e6e6;\r\n    margin-bottom: 12px;\r\n}\r\n.list-unstyled li p { font-size: 16px;\r\ncolor: #272727;\r\nfont-weight: normal;\r\n}\r\n\r\n.list-unstyled li i { color:#727272;}\r\n\r\n\r\n.list-unstyled li { padding: 5px 0;}\r\n.list-unstyled a {\r\n    color: #272727;\r\n    padding: 4px 8px;\r\n    width: 100%;\r\n\ttransition-property: margin-left, background-color;\r\n\ttransition-duration: 0.3s;\r\n\ttransition-timing-function: ease-out;\r\n}\r\n\r\n.list-unstyled a:hover {\r\n    color: #272727;\r\n    background-color: #eee;\r\n    text-decoration: none;\r\n    margin-left: 8px;\r\n\ttransition-property: margin-left, background-color;\r\n\ttransition-duration: 0.3s;\r\n\ttransition-timing-function: ease-out;\r\n\tborder-radius: 3px;\r\n}\r\n\r\n.list-unstyled a:before {\r\n    font-size: 12px;\r\n    margin-right: 5px;\r\n}\r\n\r\n.row-border + .row .caption h3 {\r\n    margin-top: 0px;\r\n}\r\n\r\n.row-border {border-bottom: 1px solid #d1d1d1;\r\n    margin-bottom: 20px;\r\n    padding-bottom: 10px;\r\n}\r\n\r\n@media (max-width:767px){\r\n  .list-unstyled li:first-child {\r\n    border-bottom: 0px;\r\n    margin-bottom: 0px;\r\n    top-bottom: 15px;\r\n  }\r\n  .list-unstyled li p {\r\n    font-size: 16px;\r\n    color: #bbb;\r\n  }\r\n  .list-unstyled li {\r\n    padding: 8px 0;\r\n  }\r\n  .list-unstyled a {\r\n    color: #BBBBBB;\r\n  }\r\n  .list-unstyled a:hover {\r\n    color: #fff;\r\n    background-color: #666;\r\n  }\r\n  .yamm .yamm-content .thumbnail {\r\n    background-color: transparent;\r\n    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075);\r\n    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075);\r\n  }\r\n  .yamm .yamm-content .caption p {\r\n      color: #ccc;\r\n  }\r\n  .yamm .yamm-content .caption h3 {\r\n      color: #ccc;\r\n  }\r\n  .yamm .yamm-content .thumbnail>img {\r\n      margin-left: 0;\r\n  }\r\n  .row-border {\r\n      border-bottom:0;\r\n  }\r\n}\r\n\r\n\r\n@media (max-width:768px){\r\n  .list-unstyled a {\r\n      color: #BBBBBB;\r\n  }\r\n  .list-unstyled li:first-child {\r\n      border-bottom: 1px solid #3b3b3b;\r\n      margin-bottom: 16px;\r\n  }\r\n  .list-unstyled li p {\r\n      color: #fff;\r\n  \tpadding-top:10px;\r\n  }\r\n}\r\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 261 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "3f6e25459da0f20aba3fc611cd20f19a.jpg";
-
-/***/ },
-/* 262 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(263);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(241)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./navbar.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./navbar.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 263 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(240)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".menu_main {\r\n    float: left;\r\n    width: 100%;\r\n    height: 61px;\r\n    background: url(" + __webpack_require__(264) + ") repeat left top;\r\n}\r\n\r\n.navbar {\r\n    margin-top: -1px;\r\n}\r\n\r\n.yamm .nav, .yamm .collapse, .yamm .dropup, .yamm .dropdown {\r\n    position: static;\r\n}\r\n\r\n.navbar-default{\r\n\tbackground:none;\r\n\tbox-shadow: none;\r\n\tborder: none;\r\n}\r\n\r\n.navbar{\r\n\tborder: none;\r\n\tmargin-top: 0!important;\r\n}\r\n\r\n.navbar-nav>li>a {\r\n  line-height: 25px;\r\n  margin-right: 1px;\r\n  padding-top: 18px;\r\n  padding-bottom: 18px;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.navbar li a.active {\r\n    color: #fff !important;\r\n    background-color: #7ab700 !important;\r\n}\r\n\r\n.dropdown a.active {\r\n  background-color: #454545 !important;\r\n}\r\n\r\n.navbar-default .navbar-nav>li>a:hover {\r\n    color: #fff;\r\n    background-color: #7ab700;\r\n}\r\n\r\n@media only screen and (max-width: 1169px) and (min-width: 1000px){\r\n  #header .container {\r\n      width: auto;\r\n      max-width: 1000px;\r\n  }\r\n}\r\n\r\n@media (max-width: 1208px){\r\n\t.navbar-nav>li>a{\r\n\t\tfont-size: 12px;\r\n\t\tpadding: 15px 10px;\r\n\t}\r\n}\r\n\r\n@media only screen and (max-width: 999px) and (min-width: 768px){\r\n  .container>.navbar-collapse li a {\r\n  \tbackground-color: #fff!important;\r\n  \tmargin-left: 1px!important;\r\n  }\r\n  .container{\r\n  \tpadding: 0;\r\n  \twidth: 800px;\r\n  }\r\n  .container>.navbar-collapse{\r\n  \tmargin-left: 0px!important;\r\n  }\r\n  .logo{\r\n  \twidth: 40%;\r\n  }\r\n  .navbar-nav>li>a{\r\n  \tfont-size: 9px;\r\n  \tpadding: 5px;\r\n  }\r\n  ul.nav>li>a.active{\r\n  \tcolor: #777!important;\r\n  }\r\n  .navbar-collapse {\r\n    padding:0!important;\r\n  }\r\n}\r\n\r\n@media only screen and (max-width: 999px) and (min-width: 99px){\r\n  li.dropdown ul.dropdown-menu li a {\r\n      color: #777!important;\r\n  }\r\n  .navbar-default{\r\n  \tz-index: 999;\r\n  }\r\n  .logo{\r\n  \twidth: 100%;\r\n  }\r\n  .right_links{\r\n  \tdisplay: none;\r\n  }\r\n}\r\n\r\n\r\n/* CSS for fadein/fadeout product dropdown */\r\n@media (min-width: 999px) {\r\n    .dropdown-submenu:hover>.dropdown-menu\r\n    {\r\n        -webkit-animation-duration: 0.5s;\r\n        -webkit-animation-name: fadeInFromNone;\r\n        -webkit-animation-fill-mode: forwards;\r\n\r\n        animation-duration: 0.5s;\r\n        animation-name: fadeInFromNone;\r\n        animation-fill-mode: forwards;\r\n\r\n        -ms-animation-duration: 0.5s;\r\n        -ms-animation-name: fadeInFromNoneIE;\r\n        -ms-animation-fill-mode: forwards;\r\n    }\r\n\r\n    .yamm ul.nav li.dropdown:hover > ul.dropdown-menu {\r\n        display: block;\r\n        animation-duration: 0.5s;\r\n        animation-name: fadeInFromNone;\r\n        animation-fill-mode: forwards;\r\n        -webkit-animation-duration: 0.5s;\r\n        -webkit-animation-name: fadeInFromNone;\r\n         -webkit-animation-fill-mode: forwards;\r\n\r\n        -ms-animation-duration: 5s;\r\n        -ms-animation-name: fadeInFromNoneIE;\r\n        -ms-animation-fill-mode: forwards;\r\n\r\n    }\r\n\r\n    @-webkit-keyframes fadeInFromNone {\r\n        0% {\r\n            opacity: 0;\r\n        }\r\n        1% {\r\n            opacity: 0;\r\n        }\r\n        100% {\r\n            opacity: 1;\r\n        }\r\n    }\r\n    @keyframes fadeInFromNoneIE {\r\n        0% {\r\n            opacity: 0;\r\n        }\r\n        1% {\r\n            opacity: 0;\r\n        }\r\n        100% {\r\n            opacity: 1;\r\n        }\r\n    }\r\n    @keyframes fadeInFromNone {\r\n        0% {\r\n            opacity: 0;\r\n        }\r\n        1% {\r\n            opacity: 0;\r\n        }\r\n        100% {\r\n            opacity: 1;\r\n        }\r\n    }\r\n\r\n    .yamm ul.nav li.dropdown:hover > a {\r\n        color: #fff;\r\n        background-color: #7ab700;\r\n    }\r\n    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {\r\n        padding: 18px 15px;\r\n    }\r\n}\r\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 264 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAUSURBVHjaYvj///9LAAAAAP//AwAJ5QPnEzzs8QAAAABJRU5ErkJggg=="
-
-/***/ },
-/* 265 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(266);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(241)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./mainHeader.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./mainHeader.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 266 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(240)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "#trueHeader{\r\n  z-index:8000;\r\n  left:0;\r\n  right:0;\r\n  background: #fff;\r\n  box-shadow:0 1px 5px rgba(0,0,0,0.3);\r\n  -khtml-box-shadow:0 1px 5px rgba(0,0,0,0.3);\r\n  -webkit-box-shadow:0 1px 5px rgba(0,0,0,0.3);\r\n  -moz-box-shadow:0 1px 5px rgba(0,0,0,0.3);\r\n  -ms-box-shadow:0 1px 5px rgba(0,0,0,0.3);\r\n  -o-box-shadow:0 1px 5px rgba(0,0,0,0.3);\r\n  transition:padding 0.35s ease;\r\n  -khtml-transition:padding 0.35s ease;\r\n  -webkit-transition:padding 0.35s ease;\r\n  -moz-transition:padding 0.35s ease;\r\n  -ms-transition:padding 0.35s ease;\r\n  -o-transition:padding 0.35s ease;\r\n  background-color:transparent;zoom:1\r\n}\r\n\r\n#header.sticky #trueHeader{\r\n  position:fixed;top:0\r\n}\r\n\r\n#header.sticky.condensed #trueHeader{\r\n  padding:0px 0\r\n}\r\n\r\n.wrapper {\r\n  margin-top: 0px;\r\n  content: \" \";\r\n  display: table;\r\n  height: 0;\r\n}\r\n\r\n@media only screen and (min-width: 768px) and (max-width: 999px){\r\n  .menu_main {\r\n  \tpadding: 8px 0px;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 480px) and (max-width: 767px){\r\n  .menu_main {\r\n  \tpadding: 0px 0px 0px 0px;\r\n  }\r\n}\r\n\r\n@media only screen and (max-width: 479px){\r\n  .menu_main {\r\n  \tpadding: 0px 0px 0px 0px;\r\n  }\r\n}\r\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	Object.defineProperty(exports, "__esModule", {
@@ -27697,7 +27219,9 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(268);
+	var _pageTitle = __webpack_require__(250);
+
+	var _pageTitle2 = _interopRequireDefault(_pageTitle);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27707,16 +27231,118 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var appFooter = function (_Component) {
-	    _inherits(appFooter, _Component);
+	var Retail = function (_Component) {
+	    _inherits(Retail, _Component);
 
-	    function appFooter() {
-	        _classCallCheck(this, appFooter);
+	    function Retail() {
+	        _classCallCheck(this, Retail);
 
-	        return _possibleConstructorReturn(this, (appFooter.__proto__ || Object.getPrototypeOf(appFooter)).apply(this, arguments));
+	        return _possibleConstructorReturn(this, (Retail.__proto__ || Object.getPrototypeOf(Retail)).apply(this, arguments));
 	    }
 
-	    _createClass(appFooter, [{
+	    _createClass(Retail, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                null,
+	                _react2.default.createElement(_pageTitle2.default, { title: "Find Our Products" })
+	            );
+	        }
+	    }]);
+
+	    return Retail;
+	}(_react.Component);
+
+	exports.default = Retail;
+
+/***/ },
+/* 254 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function($, jQuery) {Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	//Load CSS and images
+	__webpack_require__(257);
+	console.log($);
+	(function ($) {
+	    "use strict";
+
+	    $(function () {
+	        // Validation
+	        $("#sky-form").validate({
+	            // Rules for form validation
+	            rules: {
+	                name: {
+	                    required: true
+	                },
+	                email: {
+	                    required: true,
+	                    email: true
+	                },
+	                message: {
+	                    required: true,
+	                    minlength: 10
+	                }
+	            },
+
+	            // Messages for form validation
+	            messages: {
+	                name: {
+	                    required: 'Veuillez inscrire votre nom'
+	                },
+	                email: {
+	                    required: 'Veuillez inscrire une adresse courriel valable',
+	                    email: 'Veuillez inscrire une adresse courriel valable'
+	                },
+	                message: {
+	                    required: 'Veuillez inclure un message'
+	                }
+	            },
+
+	            // Ajax form submition					
+	            submitHandler: function submitHandler(form) {
+	                $(form).ajaxSubmit({
+	                    success: function success() {
+	                        $("#sky-form").addClass('submited');
+	                    }
+	                });
+	            },
+
+	            // Do not change code below
+	            errorPlacement: function errorPlacement(error, element) {
+	                error.insertAfter(element.parent());
+	            }
+	        });
+	    });
+	})(jQuery);
+
+	var Contact = function (_Component) {
+	    _inherits(Contact, _Component);
+
+	    function Contact() {
+	        _classCallCheck(this, Contact);
+
+	        return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+	    }
+
+	    _createClass(Contact, [{
 	        key: "render",
 	        value: function render() {
 	            return _react2.default.createElement(
@@ -27724,69 +27350,174 @@
 	                null,
 	                _react2.default.createElement(
 	                    "div",
-	                    { className: "footer1" },
+	                    { className: "one_full" },
+	                    _react2.default.createElement("iframe", { className: "google-map2", style: { width: 100 + '%', height: 450 + 'px' }, frameBorder: "0", scrolling: "no", marginHeight: "0", marginWidth: "0", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.8594830034!2d-90.46092968413848!3d38.53700717571039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8d1daa3e5a7a5%3A0xc130521c59ecbd26!2s866+Horan+Dr%2C+Fenton%2C+MO+63026!5e0!3m2!1sen!2sus!4v1471023997472&wmode=transparent" }),
+	                    _react2.default.createElement("br", null)
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "container" },
 	                    _react2.default.createElement(
 	                        "div",
-	                        { className: "container" },
+	                        { className: "content_fullwidth" },
 	                        _react2.default.createElement(
 	                            "div",
-	                            { className: "col-xs-3" },
+	                            { className: "two_third" },
 	                            _react2.default.createElement(
-	                                "ul",
-	                                { className: "faddress" },
+	                                "p",
+	                                null,
+	                                "Thank You for visiting Moldex Brands.We welcome your feedback, questions, and comments.Please send us a message using the feedback form below or contact us using the information provided on this web page"
+	                            ),
+	                            _react2.default.createElement("br", null),
+	                            _react2.default.createElement(
+	                                "p",
+	                                null,
+	                                "Please be patient while waiting for a response.Give us at least 24 hours.",
 	                                _react2.default.createElement(
-	                                    "li",
+	                                    "strong",
 	                                    null,
-	                                    _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/footer-logo.png", alt: "" })
-	                                ),
+	                                    "General Inquiries: 1.800.325.6180"
+	                                )
+	                            ),
+	                            _react2.default.createElement("br", null),
+	                            _react2.default.createElement("br", null),
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "cforms" },
 	                                _react2.default.createElement(
-	                                    "li",
-	                                    null,
-	                                    _react2.default.createElement("i", { className: "fa fa-map-marker fa-lg" }),
-	                                    " 866 Horan Drive",
-	                                    _react2.default.createElement("br", null),
-	                                    " Fenton, Missouri 63026"
-	                                ),
-	                                _react2.default.createElement(
-	                                    "li",
-	                                    null,
-	                                    _react2.default.createElement("i", { className: "fa fa-phone" }),
-	                                    "\xA0 Toll Free: 1.800.325.6180"
-	                                ),
-	                                _react2.default.createElement(
-	                                    "li",
-	                                    null,
-	                                    _react2.default.createElement("i", { className: "fa fa-phone" }),
-	                                    "\xA0 Phone: 1.636.349.5855"
-	                                ),
-	                                _react2.default.createElement(
-	                                    "li",
-	                                    null,
-	                                    _react2.default.createElement("i", { className: "fa fa-print" }),
-	                                    "\xA0 Fax: 1.636.349.5335"
-	                                ),
-	                                _react2.default.createElement(
-	                                    "li",
-	                                    null,
+	                                    "form",
+	                                    { action: "demo-contacts.php", method: "post", id: "sky-form", className: "sky-form", noValidate: "novalidate" },
 	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "mailto:info@moldexbrands.com" },
-	                                        _react2.default.createElement("i", { className: "fa fa-envelope" }),
-	                                        " info @moldexbrands.com"
+	                                        "header",
+	                                        null,
+	                                        "Send Us a ",
+	                                        _react2.default.createElement(
+	                                            "strong",
+	                                            null,
+	                                            "Message!"
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "fieldset",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "div",
+	                                            { className: "row" },
+	                                            _react2.default.createElement(
+	                                                "section",
+	                                                { className: "col col-6" },
+	                                                _react2.default.createElement(
+	                                                    "label",
+	                                                    { className: "label" },
+	                                                    "Name"
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    "label",
+	                                                    { className: "input" },
+	                                                    " ",
+	                                                    _react2.default.createElement("i", { className: "icon-append icon-user" }),
+	                                                    _react2.default.createElement("input", { type: "text", name: "name", id: "name" })
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                "section",
+	                                                { className: "col col-6" },
+	                                                _react2.default.createElement(
+	                                                    "label",
+	                                                    { className: "label" },
+	                                                    "E-mail"
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    "label",
+	                                                    { className: "input" },
+	                                                    " ",
+	                                                    _react2.default.createElement("i", { className: "icon-append icon-envelope-alt" }),
+	                                                    _react2.default.createElement("input", { type: "email", name: "email", id: "email" })
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            "section",
+	                                            null,
+	                                            _react2.default.createElement(
+	                                                "label",
+	                                                { className: "label" },
+	                                                "Subject"
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                "label",
+	                                                { className: "input" },
+	                                                " ",
+	                                                _react2.default.createElement("i", { className: "icon-append icon-tag" }),
+	                                                _react2.default.createElement("input", { type: "text", name: "subject", id: "subject" })
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            "section",
+	                                            null,
+	                                            _react2.default.createElement(
+	                                                "label",
+	                                                { className: "label" },
+	                                                "Message"
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                "label",
+	                                                { className: "textarea" },
+	                                                " ",
+	                                                _react2.default.createElement("i", { className: "icon-append icon-comment" }),
+	                                                _react2.default.createElement("textarea", { rows: "4", name: "message", id: "message" })
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            "section",
+	                                            null,
+	                                            _react2.default.createElement(
+	                                                "label",
+	                                                { className: "checkbox" },
+	                                                _react2.default.createElement("input", { type: "checkbox", name: "copy", id: "copy" }),
+	                                                _react2.default.createElement("i", null),
+	                                                "Send a copy to my e-mail address"
+	                                            )
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "footer",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "button",
+	                                            { type: "submit", className: "button" },
+	                                            "Send message"
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "div",
+	                                        { className: "message" },
+	                                        " ",
+	                                        _react2.default.createElement("i", { className: "icon-ok" }),
+	                                        _react2.default.createElement(
+	                                            "p",
+	                                            null,
+	                                            "Your message was successfully sent!"
+	                                        )
 	                                    )
 	                                )
 	                            )
 	                        ),
 	                        _react2.default.createElement(
 	                            "div",
-	                            { className: "col-xs-3" },
+	                            { className: "one_third last" },
 	                            _react2.default.createElement(
 	                                "div",
-	                                { className: "qlinks" },
+	                                { className: "address_info two" },
 	                                _react2.default.createElement(
 	                                    "h4",
-	                                    { className: "lmb" },
-	                                    "Useful Links"
+	                                    null,
+	                                    "Company ",
+	                                    _react2.default.createElement(
+	                                        "strong",
+	                                        null,
+	                                        "Address"
+	                                    )
 	                                ),
 	                                _react2.default.createElement(
 	                                    "ul",
@@ -27794,169 +27525,37 @@
 	                                    _react2.default.createElement(
 	                                        "li",
 	                                        null,
+	                                        " ",
+	                                        _react2.default.createElement(
+	                                            "strong",
+	                                            null,
+	                                            "Moldex Brands"
+	                                        ),
+	                                        _react2.default.createElement("br", null),
+	                                        "866 Horan Drive",
+	                                        _react2.default.createElement("br", null),
+	                                        "Fenton, MO 63026",
+	                                        _react2.default.createElement("br", null),
+	                                        "Toll Free: 1.800.325.6180",
+	                                        _react2.default.createElement("br", null),
+	                                        "Telephone: 1.636.349.5855",
+	                                        _react2.default.createElement("br", null),
+	                                        "Fax: 1.636.349.5335",
+	                                        _react2.default.createElement("br", null),
+	                                        "E-mail: ",
 	                                        _react2.default.createElement(
 	                                            "a",
-	                                            { href: "mold_guide.html" },
-	                                            _react2.default.createElement("i", { className: "fa fa-angle-right" }),
-	                                            " Mold & Mildew Guide"
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        "li",
-	                                        null,
+	                                            { href: "mailto:orders@convenienceproducts.com" },
+	                                            "orders @convenienceproducts.com"
+	                                        ),
+	                                        _react2.default.createElement("br", null),
+	                                        "Website: ",
 	                                        _react2.default.createElement(
 	                                            "a",
-	                                            { href: "https://www.moldexbrands.com/mold-mildew-killer.html" },
-	                                            _react2.default.createElement("em", { className: "fa fa-angle-right" }),
-	                                            " Mold Killer"
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        "li",
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            "a",
-	                                            { href: "products.html" },
-	                                            _react2.default.createElement("i", { className: "fa fa-angle-right" }),
-	                                            " Our Products"
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        "li",
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            "a",
-	                                            { href: "https://www.convenienceproducts.com/" },
-	                                            _react2.default.createElement("i", { className: "fa fa-angle-right" }),
-	                                            " Convenience Products"
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        "li",
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            "a",
-	                                            { href: "blog/" },
-	                                            _react2.default.createElement("i", { className: "fa fa-angle-right" }),
-	                                            " Recent Blogs or News"
-	                                        )
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        "li",
-	                                        null,
-	                                        _react2.default.createElement(
-	                                            "a",
-	                                            { href: "contact.html" },
-	                                            _react2.default.createElement("i", { className: "fa fa-angle-right" }),
-	                                            " Contact Us"
-	                                        )
-	                                    )
-	                                )
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "col-xs-6" },
-	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "siteinfo" },
-	                                _react2.default.createElement(
-	                                    "h4",
-	                                    { className: "lmb" },
-	                                    "Our Story..."
-	                                ),
-	                                _react2.default.createElement(
-	                                    "p",
-	                                    null,
-	                                    "We were tired of cleaning only to watch it grow back.It seemed to be a never-ending.Why?What makes mold grow back?Why can't you get rid of it? Once we figure it out, we wanted to share it with the world. We set out to change the way people view mold & mildew...",
-	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "about-mold-and-mildew-remover.html" },
-	                                        "Read more ",
-	                                        _react2.default.createElement("i", { className: "fa fa-long-arrow-right" })
-	                                    )
-	                                )
-	                            )
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    "div",
-	                    { className: "copyright_info four" },
-	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "container" },
-	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "one_half" },
-	                            "Copyright \xA9 2015 Moldex Brands.All rights reserved.",
-	                            _react2.default.createElement(
-	                                "a",
-	                                { href: "terms.html" },
-	                                "Terms of Use"
-	                            ),
-	                            " | ",
-	                            _react2.default.createElement(
-	                                "a",
-	                                { href: "privacy.html" },
-	                                "Privacy Policy"
-	                            ),
-	                            " | ",
-	                            _react2.default.createElement(
-	                                "a",
-	                                { href: "refund.html" },
-	                                "Refund Policy"
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "one_half last" },
-	                            _react2.default.createElement(
-	                                "ul",
-	                                { className: "footer_social_links three" },
-	                                _react2.default.createElement(
-	                                    "li",
-	                                    { className: "animate zoomIn", "data-anim-type": "zoomIn", "data-anim-delay": "200" },
-	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "https://www.facebook.com/moldexbrands" },
-	                                        _react2.default.createElement("i", { className: "fa fa-facebook" })
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    "li",
-	                                    { className: "animate zoomIn", "data-anim-type": "zoomIn", "data-anim-delay": "300" },
-	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "http://www.instagram.com/moldexbrands" },
-	                                        _react2.default.createElement("i", { className: "fa fa-instagram" })
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    "li",
-	                                    { className: "animate zoomIn", "data-anim-type": "zoomIn", "data-anim-delay": "550" },
-	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "http://www.pinterest.com/moldexbrands" },
-	                                        _react2.default.createElement("i", { className: "fa fa-pinterest" })
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    "li",
-	                                    { className: "animate zoomIn", "data-anim-type": "zoomIn", "data-anim-delay": "550" },
-	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "http://www.twitter.com/moldexbrands" },
-	                                        _react2.default.createElement("i", { className: "fa fa-twitter" })
-	                                    )
-	                                ),
-	                                _react2.default.createElement(
-	                                    "li",
-	                                    { className: "animate zoomIn", "data-anim-type": "zoomIn", "data-anim-delay": "550" },
-	                                    _react2.default.createElement(
-	                                        "a",
-	                                        { href: "https://www.youtube.com/channel/UCOhsM9FUmFDxWbgpKMr3Daw" },
-	                                        _react2.default.createElement("i", { className: "fa fa-youtube" })
+	                                            { href: "index.html" },
+	                                            "www.moldexbrands.com"
+	                                        ),
+	                                        " "
 	                                    )
 	                                )
 	                            )
@@ -27967,53 +27566,14 @@
 	        }
 	    }]);
 
-	    return appFooter;
+	    return Contact;
 	}(_react.Component);
 
-	exports.default = appFooter;
+	exports.default = Contact;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255), __webpack_require__(255)))
 
 /***/ },
-/* 268 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(269);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(241)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./stylesheet.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./stylesheet.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 269 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(240)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".footer1{\r\n    background: black;\r\n    float: left;\r\n    width: 100%;\r\n    padding: 70px 0px 40px 0px;\r\n    border-top: 5px solid #000;\r\n    background: url(https://www.moldexbrands.com/images/footer-bg.jpg) repeat left top;\r\n}\r\n\r\nbody{\r\n    font: 14px 'Open Sans', sans-serif;\r\n    font-weight: normal;\r\n    font-style: normal;\r\n    line-height: 23px;\r\n    color: #727272;\r\n}", ""]);
-
-	// exports
-
-
-/***/ },
-/* 270 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module) {var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};/*!
@@ -29661,10 +29221,10 @@
 	// (#7102#comment:10, https://github.com/jquery/jquery/pull/557)
 	// and CommonJS for browser emulators (#13566)
 	if(!noGlobal){window.jQuery=window.$=jQuery;}return jQuery;});
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(271)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(256)(module)))
 
 /***/ },
-/* 271 */
+/* 256 */
 /***/ function(module, exports) {
 
 	module.exports = function (module) {
@@ -29679,28 +29239,1151 @@
 	};
 
 /***/ },
+/* 257 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(258);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(241)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./sky-forms.css", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./sky-forms.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 258 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(240)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "/**/\n/* defaults */\n/**/\n.sky-form {\n\tmargin: 0;\n\toutline: none;\n\tfont: 14px/1.55 'Open Sans', Helvetica, Arial, sans-serif;\n\tcolor: #272727;\n}\n.sky-form header {\n\tdisplay: block;\n\tpadding: 0px 0px 9px 0px;\n\tmargin-bottom: 13px;\n\tfont-size: 22px;\n\tfont-weight: normal;\n\tcolor: #272727;\n\tborder-bottom: 1px solid #e3e3e3;\n\tfont-family: 'Raleway', sans-serif;\n}\n.sky-form header strong {\n\tfont-weight: 600;\n}\n\n.sky-form fieldset {\n\tdisplay: block;\t\n\tpadding: 25px 0px 5px;\n\tborder: none;\n\tbackground: none;\n}\n.sky-form fieldset + fieldset {\n\tborder-top: 1px solid rgba(0,0,0,.1);\n}\n.sky-form section {\n\tmargin-bottom: 20px;\n}\n.sky-form footer {\n\tdisplay: block;\n\tpadding: 15px 0px 25px;\n}\n.sky-form footer:after {\n\tcontent: '';\n\tdisplay: table;\n\tclear: both;\n}\n.sky-form a {\n\tcolor: #999;\n}\n.sky-form .label {\n\tdisplay: block;\n\tmargin-bottom: 6px;\n\tline-height: 19px;\n\tfont-weight: 400;\n}\n.sky-form .label.col {\n\tmargin: 0;\n\tpadding-top: 10px;\n}\n.sky-form .note {\n\tmargin-top: 6px;\n\tpadding: 0 1px;\n\tfont-size: 11px;\n\tline-height: 15px;\n\tcolor: #999;\n}\n.sky-form .input,\n.sky-form .select,\n.sky-form .textarea,\n.sky-form .radio,\n.sky-form .checkbox,\n.sky-form .toggle,\n.sky-form .button {\n\tposition: relative;\n\tdisplay: block;\n}\n.sky-form .input input,\n.sky-form .select select,\n.sky-form .textarea textarea {\n\tdisplay: block;\n\tbox-sizing: border-box;\n\t-moz-box-sizing: border-box;\n\twidth: 100%;\n\theight: 39px;\n\tpadding: 8px 10px;\n\toutline: none;\n\tborder-width: 1px;\n\tborder-style: solid;\n\tborder-radius: 0;\n\tbackground: #fff;\n\tfont: 15px/19px 'Open Sans', Helvetica, Arial, sans-serif;\n\tcolor: #404040;\n\tappearance: normal;\n\t-moz-appearance: none;\n\t-webkit-appearance: none;\n}\n.sky-form .progress {\n\tfloat: right;\n\tmargin-top: 10px;\n\tline-height: 39px;\n\tcolor: #232323;\n}\n\n\n/**/\n/* file inputs */\n/**/\n.sky-form .input-file .button {\n\tposition: absolute;\n\ttop: 4px;\n\tright: 4px;\n\tfloat: none;\n\theight: 31px;\n\tmargin: 0;\n\tpadding: 0 20px;\n\tfont-size: 13px;\n\tline-height: 31px;\n}\n.sky-form .input-file .button:hover {\n\tbox-shadow: none;\n}\n.sky-form .input-file .button input {\n\tposition: absolute;\n\ttop: 0;\n\tright: 0;\n\tpadding: 0;\n\tfont-size: 30px;\n\tcursor: pointer;\n\topacity: 0;\n}\n\n\n/**/\n/* selects */\n/**/\n.sky-form .select i {\n\tposition: absolute;\n\ttop: 14px;\n\tright: 14px;\n\twidth: 5px;\n\theight: 11px;\n\tbackground: #fff;\n\tbox-shadow: 0 0 0 12px #fff;\n}\n.sky-form .select i:after,\n.sky-form .select i:before {\n\tcontent: '';\n\tposition: absolute;\n\tright: 0;\n\tborder-right: 4px solid transparent;\n\tborder-left: 4px solid transparent;\n}\n.sky-form .select i:after {\n\tbottom: 0;\n\tborder-top: 4px solid #404040;\n}\n.sky-form .select i:before {\n\ttop: 0;\n\tborder-bottom: 4px solid #404040;\n}\n.sky-form .select-multiple select {\n\theight: auto;\n}\n\n\n/**/\n/* textareas */\n/**/\n.sky-form .textarea textarea {\n\theight: auto;\n\tresize: none;\n}\n.sky-form .textarea-resizable textarea {\n\tresize: vertical;\t\n}\n.sky-form .textarea-expandable textarea {\n\theight: 39px;\n}\n.sky-form .textarea-expandable textarea:focus {\n\theight: auto;\n}\n\n\n/**/\n/* radios and checkboxes */\n/**/\n.sky-form .radio,\n.sky-form .checkbox {\n\tmargin-bottom: 4px;\n\tpadding-left: 27px;\n\tfont-size: 15px;\n\tline-height: 27px;\n\tcolor: #404040;\n\tcursor: pointer;\n}\n.sky-form .radio:last-child,\n.sky-form .checkbox:last-child {\n\tmargin-bottom: 0;\n}\n.sky-form .radio input,\n.sky-form .checkbox input {\n\tposition: absolute;\n\tleft: -9999px;\n}\n.sky-form .radio i,\n.sky-form .checkbox i {\n\tposition: absolute;\n\ttop: 5px;\n\tleft: 0;\n\tdisplay: block;\n\twidth: 13px;\n\theight: 13px;\n\toutline: none;\n\tborder-width: 2px;\n\tborder-style: solid;\n\tbackground: #fff;\n}\n.sky-form .radio i {\n\tborder-radius: 50%;\n}\n.sky-form .radio input + i:after,\n.sky-form .checkbox input + i:after {\n\tposition: absolute;\n\topacity: 0;\n\ttransition: opacity 0.1s;\n\t-o-transition: opacity 0.1s;\n\t-ms-transition: opacity 0.1s;\n\t-moz-transition: opacity 0.1s;\n\t-webkit-transition: opacity 0.1s;\n}\n.sky-form .radio input + i:after {\n\tcontent: '';\n\ttop: 4px;\n\tleft: 4px;\n\twidth: 5px;\n\theight: 5px;\n\tborder-radius: 50%;\n}\n.sky-form .checkbox input + i:after {\n\tcontent: '\\F00C';\n\ttop: -1px;\n\tleft: -1px;\n\twidth: 15px;\n\theight: 15px;\n\tfont: normal 12px/16px FontAwesome;\n\ttext-align: center;\n}\n.sky-form .radio input:checked + i:after,\n.sky-form .checkbox input:checked + i:after {\n\topacity: 1;\n}\n.sky-form .inline-group {\n\tmargin: 0 -30px -4px 0;\n}\n.sky-form .inline-group:after {\n\tcontent: '';\n\tdisplay: table;\n\tclear: both;\n}\n.sky-form .inline-group .radio,\n.sky-form .inline-group .checkbox {\n\tfloat: left;\n\tmargin-right: 30px;\n}\n.sky-form .inline-group .radio:last-child,\n.sky-form .inline-group .checkbox:last-child {\n\tmargin-bottom: 4px;\n}\n\n\n/**/\n/* toggles */\n/**/\n.sky-form .toggle {\n\tmargin-bottom: 4px;\n\tpadding-right: 61px;\n\tfont-size: 15px;\n\tline-height: 27px;\n\tcolor: #404040;\n\tcursor: pointer;\n}\n.sky-form .toggle:last-child {\n\tmargin-bottom: 0;\n}\n.sky-form .toggle input {\n\tposition: absolute;\n\tleft: -9999px;\n}\n.sky-form .toggle i {\n\tcontent: '';\n\tposition: absolute;\n\ttop: 4px;\n\tright: 0;\n\tdisplay: block;\n\twidth: 49px;\n\theight: 17px;\n\tborder-width: 2px;\n\tborder-style: solid;\n\tborder-radius: 12px;\n\tbackground: #fff;\n}\n.sky-form .toggle i:after {\n\tcontent: 'OFF';\n\tposition: absolute;\n\ttop: 2px;\n\tright: 8px;\n\tleft: 8px;\n\tfont-style: normal;\n\tfont-size: 9px;\n\tline-height: 13px;\n\tfont-weight: 700;\n\ttext-align: left;\n\tcolor: #5f5f5f;\n}\n.sky-form .toggle i:before {\n\tcontent: '';\n\tposition: absolute;\n\tz-index: 1;\n\ttop: 4px;\n\tright: 4px;\n\tdisplay: block;\n\twidth: 9px;\n\theight: 9px;\n\tborder-radius: 50%;\n\topacity: 1;\n\ttransition: right 0.2s;\n\t-o-transition: right 0.2s;\n\t-ms-transition: right 0.2s;\n\t-moz-transition: right 0.2s;\n\t-webkit-transition: right 0.2s;\n}\n.sky-form .toggle input:checked + i:after {\n\tcontent: 'ON';\n\ttext-align: right;\n}\n.sky-form .toggle input:checked + i:before {\n\tright: 36px;\n}\n\n\n/**/\n/* ratings */\n/**/\n.sky-form .rating {\n\tmargin-bottom: 4px;\n\tfont-size: 15px;\n\tline-height: 27px;\n\tcolor: #404040;\n}\n.sky-form .rating:last-child {\n\tmargin-bottom: 0;\n}\n.sky-form .rating input {\n\tposition: absolute;\n\tleft: -9999px;\n}\n.sky-form .rating label {\n\tdisplay: block;\n\tfloat: right;\n\theight: 17px;\n\tmargin-top: 5px;\n\tpadding: 0 2px;\n\tfont-size: 17px;\n\tline-height: 17px;\n\tcursor: pointer;\n}\n\n\n/**/\n/* buttons */\n/**/\n.sky-form .button {\n\tfloat: left;\n\theight: 39px;\n\toverflow: hidden;\n\tmargin: 0px 0 0 0px;\n\tpadding: 0 25px;\n\toutline: none;\n\tborder: 0;\n\tfont: 300 15px/39px 'Open Sans', Helvetica, Arial, sans-serif;\n\ttext-decoration: none;\n\tcolor: #fff;\n\tcursor: pointer;\n}\n.sky-form .button-uploading {\n\tposition: relative;\n\tcolor: transparent;\n\tcursor: default;\n}\n.sky-form .button-uploading:after {\n\tcontent: 'Uploading...';\n\tposition: absolute;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100%;\n\theight: 100%;\n\tcolor: #fff;\n\t-o-animation: blink 1s linear infinite;\n\t-ms-animation: blink 1s linear infinite;\n\t-moz-animation: blink 1s linear infinite; \n\t-webkit-animation: blink 1s linear infinite;\n}\n@-o-keyframes blink\n{\n  0% {opacity: 1}\n  50% {opacity: 0.3}\n  100% {opacity: 1}\n}\n@-ms-keyframes blink\n{\n  0% {opacity: 1}\n  50% {opacity: 0.3}\n  100% {opacity: 1}\n}\n@-moz-keyframes blink\n{\n  0% {opacity: 1}\n  50% {opacity: 0.3}\n  100% {opacity: 1}\n}\n@-webkit-keyframes blink\n{\n  0% {opacity: 1}\n  50% {opacity: 0.3}\n  100% {opacity: 1}\n}\n\n\n/**/\n/* icons */\n/**/\n\n.icon-glass:before {\n  content: \"\\F000\";\n}\n.icon-music:before {\n  content: \"\\F001\";\n}\n.icon-search:before {\n  content: \"\\F002\";\n}\n.icon-envelope:before {\n  content: \"\\F003\";\n}\n.icon-heart:before {\n  content: \"\\F004\";\n}\n.icon-star:before {\n  content: \"\\F005\";\n}\n.icon-star-empty:before {\n  content: \"\\F006\";\n}\n.icon-user:before {\n  content: \"\\F007\";\n}\n.icon-film:before {\n  content: \"\\F008\";\n}\n.icon-th-large:before {\n  content: \"\\F009\";\n}\n.icon-th:before {\n  content: \"\\F00A\";\n}\n.icon-th-list:before {\n  content: \"\\F00B\";\n}\n.icon-ok:before {\n  content: \"\\F00C\";\n}\n.icon-remove:before {\n  content: \"\\F00D\";\n}\n.icon-zoom-in:before {\n  content: \"\\F00E\";\n}\n.icon-zoom-out:before {\n  content: \"\\F010\";\n}\n.icon-off:before {\n  content: \"\\F011\";\n}\n.icon-signal:before {\n  content: \"\\F012\";\n}\n.icon-cog:before {\n  content: \"\\F013\";\n}\n.icon-trash:before {\n  content: \"\\F014\";\n}\n.icon-home:before {\n  content: \"\\F015\";\n}\n.icon-file:before {\n  content: \"\\F016\";\n}\n.icon-time:before {\n  content: \"\\F017\";\n}\n.icon-road:before {\n  content: \"\\F018\";\n}\n.icon-download-alt:before {\n  content: \"\\F019\";\n}\n.icon-download:before {\n  content: \"\\F01A\";\n}\n.icon-upload:before {\n  content: \"\\F01B\";\n}\n.icon-inbox:before {\n  content: \"\\F01C\";\n}\n.icon-play-circle:before {\n  content: \"\\F01D\";\n}\n.icon-repeat:before,\n.icon-rotate-right:before {\n  content: \"\\F01E\";\n}\n.icon-refresh:before {\n  content: \"\\F021\";\n}\n.icon-list-alt:before {\n  content: \"\\F022\";\n}\n.icon-lock:before {\n  content: \"\\F023\";\n}\n.icon-flag:before {\n  content: \"\\F024\";\n}\n.icon-headphones:before {\n  content: \"\\F025\";\n}\n.icon-volume-off:before {\n  content: \"\\F026\";\n}\n.icon-volume-down:before {\n  content: \"\\F027\";\n}\n.icon-volume-up:before {\n  content: \"\\F028\";\n}\n.icon-qrcode:before {\n  content: \"\\F029\";\n}\n.icon-barcode:before {\n  content: \"\\F02A\";\n}\n.icon-tag:before {\n  content: \"\\F02B\";\n}\n.icon-tags:before {\n  content: \"\\F02C\";\n}\n.icon-book:before {\n  content: \"\\F02D\";\n}\n.icon-bookmark:before {\n  content: \"\\F02E\";\n}\n.icon-print:before {\n  content: \"\\F02F\";\n}\n.icon-camera:before {\n  content: \"\\F030\";\n}\n.icon-font:before {\n  content: \"\\F031\";\n}\n.icon-bold:before {\n  content: \"\\F032\";\n}\n.icon-italic:before {\n  content: \"\\F033\";\n}\n.icon-text-height:before {\n  content: \"\\F034\";\n}\n.icon-text-width:before {\n  content: \"\\F035\";\n}\n.icon-align-left:before {\n  content: \"\\F036\";\n}\n.icon-align-center:before {\n  content: \"\\F037\";\n}\n.icon-align-right:before {\n  content: \"\\F038\";\n}\n.icon-align-justify:before {\n  content: \"\\F039\";\n}\n.icon-list:before {\n  content: \"\\F03A\";\n}\n.icon-indent-left:before {\n  content: \"\\F03B\";\n}\n.icon-indent-right:before {\n  content: \"\\F03C\";\n}\n.icon-facetime-video:before {\n  content: \"\\F03D\";\n}\n.icon-picture:before {\n  content: \"\\F03E\";\n}\n.icon-pencil:before {\n  content: \"\\F040\";\n}\n.icon-map-marker:before {\n  content: \"\\F041\";\n}\n.icon-adjust:before {\n  content: \"\\F042\";\n}\n.icon-tint:before {\n  content: \"\\F043\";\n}\n.icon-edit:before {\n  content: \"\\F044\";\n}\n.icon-share:before {\n  content: \"\\F045\";\n}\n.icon-check:before {\n  content: \"\\F046\";\n}\n.icon-move:before {\n  content: \"\\F047\";\n}\n.icon-step-backward:before {\n  content: \"\\F048\";\n}\n.icon-fast-backward:before {\n  content: \"\\F049\";\n}\n.icon-backward:before {\n  content: \"\\F04A\";\n}\n.icon-play:before {\n  content: \"\\F04B\";\n}\n.icon-pause:before {\n  content: \"\\F04C\";\n}\n.icon-stop:before {\n  content: \"\\F04D\";\n}\n.icon-forward:before {\n  content: \"\\F04E\";\n}\n.icon-fast-forward:before {\n  content: \"\\F050\";\n}\n.icon-step-forward:before {\n  content: \"\\F051\";\n}\n.icon-eject:before {\n  content: \"\\F052\";\n}\n.icon-chevron-left:before {\n  content: \"\\F053\";\n}\n.icon-chevron-right:before {\n  content: \"\\F054\";\n}\n.icon-plus-sign:before {\n  content: \"\\F055\";\n}\n.icon-minus-sign:before {\n  content: \"\\F056\";\n}\n.icon-remove-sign:before {\n  content: \"\\F057\";\n}\n.icon-ok-sign:before {\n  content: \"\\F058\";\n}\n.icon-question-sign:before {\n  content: \"\\F059\";\n}\n.icon-info-sign:before {\n  content: \"\\F05A\";\n}\n.icon-screenshot:before {\n  content: \"\\F05B\";\n}\n.icon-remove-circle:before {\n  content: \"\\F05C\";\n}\n.icon-ok-circle:before {\n  content: \"\\F05D\";\n}\n.icon-ban-circle:before {\n  content: \"\\F05E\";\n}\n.icon-arrow-left:before {\n  content: \"\\F060\";\n}\n.icon-arrow-right:before {\n  content: \"\\F061\";\n}\n.icon-arrow-up:before {\n  content: \"\\F062\";\n}\n.icon-arrow-down:before {\n  content: \"\\F063\";\n}\n.icon-share-alt:before,\n.icon-mail-forward:before {\n  content: \"\\F064\";\n}\n.icon-resize-full:before {\n  content: \"\\F065\";\n}\n.icon-resize-small:before {\n  content: \"\\F066\";\n}\n.icon-plus:before {\n  content: \"\\F067\";\n}\n.icon-minus:before {\n  content: \"\\F068\";\n}\n.icon-asterisk:before {\n  content: \"\\F069\";\n}\n.icon-exclamation-sign:before {\n  content: \"\\F06A\";\n}\n.icon-gift:before {\n  content: \"\\F06B\";\n}\n.icon-leaf:before {\n  content: \"\\F06C\";\n}\n.icon-fire:before {\n  content: \"\\F06D\";\n}\n.icon-eye-open:before {\n  content: \"\\F06E\";\n}\n.icon-eye-close:before {\n  content: \"\\F070\";\n}\n.icon-warning-sign:before {\n  content: \"\\F071\";\n}\n.icon-plane:before {\n  content: \"\\F072\";\n}\n.icon-calendar:before {\n  content: \"\\F073\";\n}\n.icon-random:before {\n  content: \"\\F074\";\n}\n.icon-comment:before {\n  content: \"\\F075\";\n}\n.icon-magnet:before {\n  content: \"\\F076\";\n}\n.icon-chevron-up:before {\n  content: \"\\F077\";\n}\n.icon-chevron-down:before {\n  content: \"\\F078\";\n}\n.icon-retweet:before {\n  content: \"\\F079\";\n}\n.icon-shopping-cart:before {\n  content: \"\\F07A\";\n}\n.icon-folder-close:before {\n  content: \"\\F07B\";\n}\n.icon-folder-open:before {\n  content: \"\\F07C\";\n}\n.icon-resize-vertical:before {\n  content: \"\\F07D\";\n}\n.icon-resize-horizontal:before {\n  content: \"\\F07E\";\n}\n.icon-bar-chart:before {\n  content: \"\\F080\";\n}\n.icon-twitter-sign:before {\n  content: \"\\F081\";\n}\n.icon-facebook-sign:before {\n  content: \"\\F082\";\n}\n.icon-camera-retro:before {\n  content: \"\\F083\";\n}\n.icon-key:before {\n  content: \"\\F084\";\n}\n.icon-cogs:before {\n  content: \"\\F085\";\n}\n.icon-comments:before {\n  content: \"\\F086\";\n}\n.icon-thumbs-up:before {\n  content: \"\\F087\";\n}\n.icon-thumbs-down:before {\n  content: \"\\F088\";\n}\n.icon-star-half:before {\n  content: \"\\F089\";\n}\n.icon-heart-empty:before {\n  content: \"\\F08A\";\n}\n.icon-signout:before {\n  content: \"\\F08B\";\n}\n.icon-linkedin-sign:before {\n  content: \"\\F08C\";\n}\n.icon-pushpin:before {\n  content: \"\\F08D\";\n}\n.icon-external-link:before {\n  content: \"\\F08E\";\n}\n.icon-signin:before {\n  content: \"\\F090\";\n}\n.icon-trophy:before {\n  content: \"\\F091\";\n}\n.icon-github-sign:before {\n  content: \"\\F092\";\n}\n.icon-upload-alt:before {\n  content: \"\\F093\";\n}\n.icon-lemon:before {\n  content: \"\\F094\";\n}\n.icon-phone {\n\tmargin-top: 1px;\n}\n.icon-phone:before {\n  content: \"\\F095\";\n}\n.icon-check-empty:before {\n  content: \"\\F096\";\n}\n.icon-bookmark-empty:before {\n  content: \"\\F097\";\n}\n.icon-phone-sign:before {\n  content: \"\\F098\";\n}\n.icon-twitter:before {\n  content: \"\\F099\";\n}\n.icon-facebook:before {\n  content: \"\\F09A\";\n}\n.icon-github:before {\n  content: \"\\F09B\";\n}\n.icon-unlock:before {\n  content: \"\\F09C\";\n}\n.icon-credit-card:before {\n  content: \"\\F09D\";\n}\n.icon-rss:before {\n  content: \"\\F09E\";\n}\n.icon-hdd:before {\n  content: \"\\F0A0\";\n}\n.icon-bullhorn:before {\n  content: \"\\F0A1\";\n}\n.icon-bell:before {\n  content: \"\\F0A2\";\n}\n.icon-certificate:before {\n  content: \"\\F0A3\";\n}\n.icon-hand-right:before {\n  content: \"\\F0A4\";\n}\n.icon-hand-left:before {\n  content: \"\\F0A5\";\n}\n.icon-hand-up:before {\n  content: \"\\F0A6\";\n}\n.icon-hand-down:before {\n  content: \"\\F0A7\";\n}\n.icon-circle-arrow-left:before {\n  content: \"\\F0A8\";\n}\n.icon-circle-arrow-right:before {\n  content: \"\\F0A9\";\n}\n.icon-circle-arrow-up:before {\n  content: \"\\F0AA\";\n}\n.icon-circle-arrow-down:before {\n  content: \"\\F0AB\";\n}\n.icon-globe:before {\n  content: \"\\F0AC\";\n}\n.icon-wrench:before {\n  content: \"\\F0AD\";\n}\n.icon-tasks:before {\n  content: \"\\F0AE\";\n}\n.icon-filter:before {\n  content: \"\\F0B0\";\n}\n.icon-briefcase:before {\n  content: \"\\F0B1\";\n}\n.icon-fullscreen:before {\n  content: \"\\F0B2\";\n}\n.icon-group:before {\n  content: \"\\F0C0\";\n}\n.icon-link:before {\n  content: \"\\F0C1\";\n}\n.icon-cloud:before {\n  content: \"\\F0C2\";\n}\n.icon-beaker:before {\n  content: \"\\F0C3\";\n}\n.icon-cut:before {\n  content: \"\\F0C4\";\n}\n.icon-copy:before {\n  content: \"\\F0C5\";\n}\n.icon-paper-clip:before {\n  content: \"\\F0C6\";\n}\n.icon-save:before {\n  content: \"\\F0C7\";\n}\n.icon-sign-blank:before {\n  content: \"\\F0C8\";\n}\n.icon-reorder:before {\n  content: \"\\F0C9\";\n}\n.icon-list-ul:before {\n  content: \"\\F0CA\";\n}\n.icon-list-ol:before {\n  content: \"\\F0CB\";\n}\n.icon-strikethrough:before {\n  content: \"\\F0CC\";\n}\n.icon-underline:before {\n  content: \"\\F0CD\";\n}\n.icon-table:before {\n  content: \"\\F0CE\";\n}\n.icon-magic:before {\n  content: \"\\F0D0\";\n}\n.icon-truck:before {\n  content: \"\\F0D1\";\n}\n.icon-pinterest:before {\n  content: \"\\F0D2\";\n}\n.icon-pinterest-sign:before {\n  content: \"\\F0D3\";\n}\n.icon-google-plus-sign:before {\n  content: \"\\F0D4\";\n}\n.icon-google-plus:before {\n  content: \"\\F0D5\";\n}\n.icon-money:before {\n  content: \"\\F0D6\";\n}\n.icon-caret-down:before {\n  content: \"\\F0D7\";\n}\n.icon-caret-up:before {\n  content: \"\\F0D8\";\n}\n.icon-caret-left:before {\n  content: \"\\F0D9\";\n}\n.icon-caret-right:before {\n  content: \"\\F0DA\";\n}\n.icon-columns:before {\n  content: \"\\F0DB\";\n}\n.icon-sort:before {\n  content: \"\\F0DC\";\n}\n.icon-sort-down:before {\n  content: \"\\F0DD\";\n}\n.icon-sort-up:before {\n  content: \"\\F0DE\";\n}\n.icon-envelope-alt:before {\n  content: \"\\F0E0\";\n}\n.icon-linkedin:before {\n  content: \"\\F0E1\";\n}\n.icon-undo:before,\n.icon-rotate-left:before {\n  content: \"\\F0E2\";\n}\n.icon-legal:before {\n  content: \"\\F0E3\";\n}\n.icon-dashboard:before {\n  content: \"\\F0E4\";\n}\n.icon-comment-alt:before {\n  content: \"\\F0E5\";\n}\n.icon-comments-alt:before {\n  content: \"\\F0E6\";\n}\n.icon-bolt:before {\n  content: \"\\F0E7\";\n}\n.icon-sitemap:before {\n  content: \"\\F0E8\";\n}\n.icon-umbrella:before {\n  content: \"\\F0E9\";\n}\n.icon-paste:before {\n  content: \"\\F0EA\";\n}\n.icon-lightbulb:before {\n  content: \"\\F0EB\";\n}\n.icon-exchange:before {\n  content: \"\\F0EC\";\n}\n.icon-cloud-download:before {\n  content: \"\\F0ED\";\n}\n.icon-cloud-upload:before {\n  content: \"\\F0EE\";\n}\n.icon-user-md:before {\n  content: \"\\F0F0\";\n}\n.icon-stethoscope:before {\n  content: \"\\F0F1\";\n}\n.icon-suitcase:before {\n  content: \"\\F0F2\";\n}\n.icon-bell-alt:before {\n  content: \"\\F0F3\";\n}\n.icon-coffee:before {\n  content: \"\\F0F4\";\n}\n.icon-food:before {\n  content: \"\\F0F5\";\n}\n.icon-file-alt:before {\n  content: \"\\F0F6\";\n}\n.icon-building:before {\n  content: \"\\F0F7\";\n}\n.icon-hospital:before {\n  content: \"\\F0F8\";\n}\n.icon-ambulance:before {\n  content: \"\\F0F9\";\n}\n.icon-medkit:before {\n  content: \"\\F0FA\";\n}\n.icon-fighter-jet:before {\n  content: \"\\F0FB\";\n}\n.icon-beer:before {\n  content: \"\\F0FC\";\n}\n.icon-h-sign:before {\n  content: \"\\F0FD\";\n}\n.icon-plus-sign-alt:before {\n  content: \"\\F0FE\";\n}\n.icon-double-angle-left:before {\n  content: \"\\F100\";\n}\n.icon-double-angle-right:before {\n  content: \"\\F101\";\n}\n.icon-double-angle-up:before {\n  content: \"\\F102\";\n}\n.icon-double-angle-down:before {\n  content: \"\\F103\";\n}\n.icon-angle-left:before {\n  content: \"\\F104\";\n}\n.icon-angle-right:before {\n  content: \"\\F105\";\n}\n.icon-angle-up:before {\n  content: \"\\F106\";\n}\n.icon-angle-down:before {\n  content: \"\\F107\";\n}\n.icon-desktop:before {\n  content: \"\\F108\";\n}\n.icon-laptop:before {\n  content: \"\\F109\";\n}\n.icon-tablet:before {\n  content: \"\\F10A\";\n}\n.icon-mobile-phone:before {\n  content: \"\\F10B\";\n}\n.icon-circle-blank:before {\n  content: \"\\F10C\";\n}\n.icon-quote-left:before {\n  content: \"\\F10D\";\n}\n.icon-quote-right:before {\n  content: \"\\F10E\";\n}\n.icon-spinner:before {\n  content: \"\\F110\";\n}\n.icon-circle:before {\n  content: \"\\F111\";\n}\n.icon-reply:before,\n.icon-mail-reply:before {\n  content: \"\\F112\";\n}\n.icon-folder-close-alt:before {\n  content: \"\\F114\";\n}\n.icon-folder-open-alt:before {\n  content: \"\\F115\";\n}\n.icon-expand-alt:before {\n  content: \"\\F116\";\n}\n.icon-collapse-alt:before {\n  content: \"\\F117\";\n}\n.icon-smile:before {\n  content: \"\\F118\";\n}\n.icon-frown:before {\n  content: \"\\F119\";\n}\n.icon-meh:before {\n  content: \"\\F11A\";\n}\n.icon-gamepad:before {\n  content: \"\\F11B\";\n}\n.icon-keyboard:before {\n  content: \"\\F11C\";\n}\n.icon-flag-alt:before {\n  content: \"\\F11D\";\n}\n.icon-flag-checkered:before {\n  content: \"\\F11E\";\n}\n.icon-terminal:before {\n  content: \"\\F120\";\n}\n.icon-code:before {\n  content: \"\\F121\";\n}\n.icon-reply-all:before {\n  content: \"\\F122\";\n}\n.icon-mail-reply-all:before {\n  content: \"\\F122\";\n}\n.icon-star-half-full:before,\n.icon-star-half-empty:before {\n  content: \"\\F123\";\n}\n.icon-location-arrow:before {\n  content: \"\\F124\";\n}\n.icon-crop:before {\n  content: \"\\F125\";\n}\n.icon-code-fork:before {\n  content: \"\\F126\";\n}\n.icon-unlink:before {\n  content: \"\\F127\";\n}\n.icon-question:before {\n  content: \"\\F128\";\n}\n.icon-info:before {\n  content: \"\\F129\";\n}\n.icon-exclamation:before {\n  content: \"\\F12A\";\n}\n.icon-superscript:before {\n  content: \"\\F12B\";\n}\n.icon-subscript:before {\n  content: \"\\F12C\";\n}\n.icon-eraser:before {\n  content: \"\\F12D\";\n}\n.icon-puzzle-piece:before {\n  content: \"\\F12E\";\n}\n.icon-microphone:before {\n  content: \"\\F130\";\n}\n.icon-microphone-off:before {\n  content: \"\\F131\";\n}\n.icon-shield:before {\n  content: \"\\F132\";\n}\n.icon-calendar-empty:before {\n  content: \"\\F133\";\n}\n.icon-fire-extinguisher:before {\n  content: \"\\F134\";\n}\n.icon-rocket:before {\n  content: \"\\F135\";\n}\n.icon-maxcdn:before {\n  content: \"\\F136\";\n}\n.icon-chevron-sign-left:before {\n  content: \"\\F137\";\n}\n.icon-chevron-sign-right:before {\n  content: \"\\F138\";\n}\n.icon-chevron-sign-up:before {\n  content: \"\\F139\";\n}\n.icon-chevron-sign-down:before {\n  content: \"\\F13A\";\n}\n.icon-html5:before {\n  content: \"\\F13B\";\n}\n.icon-css3:before {\n  content: \"\\F13C\";\n}\n.icon-anchor:before {\n  content: \"\\F13D\";\n}\n.icon-unlock-alt:before {\n  content: \"\\F13E\";\n}\n.icon-bullseye:before {\n  content: \"\\F140\";\n}\n.icon-ellipsis-horizontal:before {\n  content: \"\\F141\";\n}\n.icon-ellipsis-vertical:before {\n  content: \"\\F142\";\n}\n.icon-rss-sign:before {\n  content: \"\\F143\";\n}\n.icon-play-sign:before {\n  content: \"\\F144\";\n}\n.icon-ticket:before {\n  content: \"\\F145\";\n}\n.icon-minus-sign-alt:before {\n  content: \"\\F146\";\n}\n.icon-check-minus:before {\n  content: \"\\F147\";\n}\n.icon-level-up:before {\n  content: \"\\F148\";\n}\n.icon-level-down:before {\n  content: \"\\F149\";\n}\n.icon-check-sign:before {\n  content: \"\\F14A\";\n}\n.icon-edit-sign:before {\n  content: \"\\F14B\";\n}\n.icon-external-link-sign:before {\n  content: \"\\F14C\";\n}\n.icon-share-sign:before {\n  content: \"\\F14D\";\n}\n.sky-form [class^=\"icon-\"],\n.ui-datepicker [class^=\"icon-\"] {\n  font-family: FontAwesome;\n  font-style: normal;\n  font-weight: normal;\n  -webkit-font-smoothing: antialiased;\n}\n.sky-form .icon-append,\n.sky-form .icon-prepend {\n\tposition: absolute;\n\ttop: 5px;\n\twidth: 29px;\n\theight: 29px;\n\tfont-size: 15px;\n\tline-height: 29px;\n\ttext-align: center;\n}\n.sky-form .icon-append {\n\tright: 5px;\n\tpadding-left: 3px;\n\tborder-left-width: 1px;\n\tborder-left-style: solid;\n}\n.sky-form .icon-prepend {\n\tleft: 5px;\n\tpadding-right: 3px;\n\tborder-right-width: 1px;\n\tborder-right-style: solid;\n}\n.sky-form .input .icon-prepend + input,\n.sky-form .textarea .icon-prepend + textarea {\n\tpadding-left: 46px;\n}\n.sky-form .input .icon-append + input,\n.sky-form .textarea .icon-append + textarea {\n\tpadding-right: 46px;\n}\n.sky-form .input .icon-prepend + .icon-append + input,\n.sky-form .textarea .icon-prepend + .icon-append + textarea {\n\tpadding-left: 46px;\n}\n\n\n/**/\n/* grid */\n/**/\n.sky-form .row {\n\tmargin: 0 -15px;\n}\n.sky-form .row:after {\n\tcontent: '';\n\tdisplay: table;\n\tclear: both;\n}\n.sky-form .col {\n\tfloat: left;\n\tmin-height: 1px;\n\tpadding-right: 15px;\n\tpadding-left: 15px;\n\tbox-sizing: border-box;\n\t-moz-box-sizing: border-box;\n}\n.sky-form .col-1 {\n\twidth: 8.33%;\n}\n.sky-form .col-2 {\n\twidth: 16.66%;\n}\n.sky-form .col-3 {\n\twidth: 25%;\n}\n.sky-form .col-4 {\n\twidth: 33.33%;\n}\n.sky-form .col-5 {\n\twidth: 41.66%;\n}\n.sky-form .col-6 {\n\twidth: 50%;\n}\n.sky-form .col-7 {\n\twidth: 58.33%;\n}\n.sky-form .col-8 {\n\twidth: 66.67%;\n}\n.sky-form .col-9 {\n\twidth: 75%;\n}\n.sky-form .col-10 {\n\twidth: 83.33%;\n}\n.sky-form .col-11 {\n\twidth: 91.66%;\n}\n@media screen and (max-width: 600px) {\n\t.sky-form .col {\n\t\tfloat: none;\n\t\twidth: 100%;\n\t}\n}\n\n\n/**/\n/* tooltips */\n/**/\n.sky-form .tooltip {\n\tposition: absolute;\n\tz-index: 1;\n\tleft: -9999px;\n\tpadding: 2px 8px 3px;\n\tfont-size: 11px;\n\tline-height: 16px;\n\tfont-weight: 400;\n\tbackground: rgba(0,0,0,0.9);\n\tcolor: #fff;\n\topacity: 0;\n\ttransition: margin 0.3s, opacity 0.3s;\n\t-o-transition: margin 0.3s, opacity 0.3s;\n\t-ms-transition: margin 0.3s, opacity 0.3s;\n\t-moz-transition: margin 0.3s, opacity 0.3s;\n\t-webkit-transition: margin 0.3s, opacity 0.3s;\n}\n.sky-form .tooltip:after {\n\tcontent: '';\n\tposition: absolute;\n}\n.sky-form .input input:focus + .tooltip,\n.sky-form .textarea textarea:focus + .tooltip {\n\topacity: 1;\t\n}\n\n.sky-form .tooltip-top-right {\n\tbottom: 100%;\n\tmargin-bottom: 15px;\n}\n.sky-form .tooltip-top-right:after {\n\ttop: 100%;\n\tright: 16px;\t\n\tborder-top: 4px solid rgba(0,0,0,0.9);\n\tborder-right: 4px solid transparent;\n\tborder-left: 4px solid transparent;\n}\n.sky-form .input input:focus + .tooltip-top-right,\n.sky-form .textarea textarea:focus + .tooltip-top-right {\n\tright: 0;\n\tleft: auto;\n\tmargin-bottom: 5px;\n}\n\n.sky-form .tooltip-top-left {\n\tbottom: 100%;\n\tmargin-bottom: 15px;\n}\n.sky-form .tooltip-top-left:after {\n\ttop: 100%;\n\tleft: 16px;\n\tborder-top: 4px solid rgba(0,0,0,0.9);\n\tborder-right: 4px solid transparent;\n\tborder-left: 4px solid transparent;\n}\n.sky-form .input input:focus + .tooltip-top-left,\n.sky-form .textarea textarea:focus + .tooltip-top-left {\n\tright: auto;\n\tleft: 0;\n\tmargin-bottom: 5px;\n}\n\n.sky-form .tooltip-right {\n\ttop: 9px;\n\twhite-space: nowrap;\n\tmargin-left: 15px;\n}\n.sky-form .tooltip-right:after {\n\ttop: 6px;\n\tright: 100%;\n\tborder-top: 4px solid transparent;\n\tborder-right: 4px solid rgba(0,0,0,0.9);\n\tborder-bottom: 4px solid transparent;\n}\n.sky-form .input input:focus + .tooltip-right,\n.sky-form .textarea textarea:focus + .tooltip-right {\n\tleft: 100%;\n\tmargin-left: 5px;\n}\n\n.sky-form .tooltip-left {\n\ttop: 9px;\n\twhite-space: nowrap;\n\tmargin-right: 15px;\n}\n.sky-form .tooltip-left:after {\n\ttop: 6px;\n\tleft: 100%;\n\tborder-top: 4px solid transparent;\n\tborder-bottom: 4px solid transparent;\n\tborder-left: 4px solid rgba(0,0,0,0.9);\n}\n.sky-form .input input:focus + .tooltip-left,\n.sky-form .textarea textarea:focus + .tooltip-left {\n\tright: 100%;\n\tleft: auto;\n\tmargin-right: 5px;\n}\n\n.sky-form .tooltip-bottom-right {\n\ttop: 100%;\n\tmargin-top: 15px;\n}\n.sky-form .tooltip-bottom-right:after {\n\tbottom: 100%;\n\tright: 16px;\t\n\tborder-right: 4px solid transparent;\n\tborder-bottom: 4px solid rgba(0,0,0,0.9);\n\tborder-left: 4px solid transparent;\n}\n.sky-form .input input:focus + .tooltip-bottom-right,\n.sky-form .textarea textarea:focus + .tooltip-bottom-right {\n\tright: 0;\n\tleft: auto;\n\tmargin-top: 5px;\n}\n\n.sky-form .tooltip-bottom-left {\n\ttop: 100%;\n\tmargin-top: 15px;\n}\n.sky-form .tooltip-bottom-left:after {\n\tbottom: 100%;\n\tleft: 16px;\n\tborder-right: 4px solid transparent;\n\tborder-bottom: 4px solid rgba(0,0,0,0.9);\n\tborder-left: 4px solid transparent;\n}\n.sky-form .input input:focus + .tooltip-bottom-left,\n.sky-form .textarea textarea:focus + .tooltip-bottom-left {\n\tright: auto;\n\tleft: 0;\n\tmargin-top: 5px;\n}\n\n\n/**/\n/* normal state */\n/**/\n.sky-form .input input,\n.sky-form .select select,\n.sky-form .textarea textarea,\n.sky-form .radio i,\n.sky-form .checkbox i,\n.sky-form .toggle i,\n.sky-form .icon-append,\n.sky-form .icon-prepend {\n\tborder-color: #d3d3d3;\n\ttransition: border-color 0.3s;\n\t-o-transition: border-color 0.3s;\n\t-ms-transition: border-color 0.3s;\n\t-moz-transition: border-color 0.3s;\n\t-webkit-transition: border-color 0.3s;\n}\n.sky-form .toggle i:before {\n\tbackground-color: #d9d9d9;\t\n}\n.sky-form .rating label {\n\tcolor: #ccc;\n\ttransition: color 0.3s;\n\t-o-transition: color 0.3s;\n\t-ms-transition: color 0.3s;\n\t-moz-transition: color 0.3s;\n\t-webkit-transition: color 0.3s;\n}\n.sky-form .button {\n\tbackground-color: #272727;\n\topacity: 0.8;\n\ttransition: opacity 0.2s;\n\t-o-transition: opacity 0.2s;\n\t-ms-transition: opacity 0.2s;\n\t-moz-transition: opacity 0.2s;\n\t-webkit-transition: opacity 0.2s;\n}\n.sky-form .button.button-secondary {\n\tbackground-color: #b3b3b3;\n\tmargin-right: 10px;\n}\n.sky-form .icon-append,\n.sky-form .icon-prepend {\n\tcolor: #ccc;\n}\n\n.sky-form .fright {\n\tfloat: right;\n}\n\n\n\n/**/\n/* hover state */\n/**/\n.sky-form .input:hover input,\n.sky-form .select:hover select,\n.sky-form .textarea:hover textarea,\n.sky-form .radio:hover i,\n.sky-form .checkbox:hover i,\n.sky-form .toggle:hover i {\n\tborder-color: #272727;\n}\n.sky-form .rating input + label:hover,\n.sky-form .rating input + label:hover ~ label {\n\tcolor: #d9d9d9;\n}\n.sky-form .button:hover {\n\topacity: 1;\n}\n\n\n/**/\n/* focus state */\n/**/\n.sky-form .input input:focus,\n.sky-form .select select:focus,\n.sky-form .textarea textarea:focus,\n.sky-form .radio input:focus + i,\n.sky-form .checkbox input:focus + i,\n.sky-form .toggle input:focus + i {\n\tborder-color: #454545;\n}\n\n\n/**/\n/* checked state */\n/**/\n.sky-form .radio input + i:after {\n\tbackground-color: #999;\t\n}\n.sky-form .checkbox input + i:after {\n\tcolor: #999;\n}\n.sky-form .radio input:checked + i,\n.sky-form .checkbox input:checked + i,\n.sky-form .toggle input:checked + i {\n\tborder-color: #999;\t\n}\n.sky-form .rating input:checked ~ label {\n\tcolor: #999;\t\n}\n\n\n/**/\n/* error state */\n/**/\n.sky-form .state-error input,\n.sky-form .state-error select,\n.sky-form .state-error textarea,\n.sky-form .radio.state-error i,\n.sky-form .checkbox.state-error i,\n.sky-form .toggle.state-error i {\n\tbackground: #fff0f0;\n}\n.sky-form .state-error select + i {\n\tbackground: #fff0f0;\n\tbox-shadow: 0 0 0 12px #fff0f0;\n}\n.sky-form .toggle.state-error input:checked + i {\n\tbackground: #fff0f0;\n}\n.sky-form .state-error + em {\n\tdisplay: block;\n\tmargin-top: 6px;\n\tpadding: 0 1px;\n\tfont-style: normal;\n\tfont-size: 11px;\n\tline-height: 15px;\n\tcolor: #ee9393;\n}\n.sky-form .rating.state-error + em {\n\tmargin-top: -4px;\n\tmargin-bottom: 4px;\n}\n\n\n/**/\n/* success state */\n/**/\n.sky-form .state-success input,\n.sky-form .state-success select,\n.sky-form .state-success textarea,\n.sky-form .radio.state-success i,\n.sky-form .checkbox.state-success i,\n.sky-form .toggle.state-success i {\n\tbackground: #f0fff0;\n}\n.sky-form .state-success select + i {\n\tbackground: #f0fff0;\n\tbox-shadow: 0 0 0 12px #f0fff0;\n}\n.sky-form .toggle.state-success input:checked + i {\n\tbackground: #f0fff0;\n}\n.sky-form .note-success {\n\tcolor: #6fb679;\n}\n\n\n/**/\n/* disabled state */\n/**/\n.sky-form .input.state-disabled input,\n.sky-form .select.state-disabled,\n.sky-form .textarea.state-disabled,\n.sky-form .radio.state-disabled,\n.sky-form .checkbox.state-disabled,\n.sky-form .toggle.state-disabled,\n.sky-form .button.state-disabled {\n\tcursor: default;\n\topacity: 0.5;\n}\n.sky-form .input.state-disabled:hover input,\n.sky-form .select.state-disabled:hover select,\n.sky-form .textarea.state-disabled:hover textarea,\n.sky-form .radio.state-disabled:hover i,\n.sky-form .checkbox.state-disabled:hover i,\n.sky-form .toggle.state-disabled:hover i {\n\tborder-color: #999999;\n}\n\n\n/**/\n/* submited state */\n/**/\n.sky-form .message {\n\tdisplay: none;\n\tcolor: #6fb679;\n}\n.sky-form .message i {\n\tdisplay: block;\n\tmargin: 0 auto 20px;\n\twidth: 81px;\n\theight: 81px;\n\tborder: 1px solid #6fb679;\n\tborder-radius: 50%;\n\tfont-size: 30px;\n\tline-height: 81px;\n}\n.sky-form.submited fieldset,\n.sky-form.submited footer {\n\tdisplay: none;\n}\n.sky-form.submited .message {\n\tdisplay: block;\n\tpadding: 25px 30px;\n\tbackground: rgba(255,255,255,.9);\n\tfont: 300 18px/27px 'Open Sans', Helvetica, Arial, sans-serif;\n\ttext-align: center;\n}\n\n\n/**/\n/* datepicker */\n/**/\n.ui-datepicker {\n\tdisplay: none;\n\tpadding: 10px 12px;\n\tbackground: rgba(255,255,255,0.9);\n\tbox-shadow: 0 0 10px rgba(0,0,0,.3);\n\tfont: 13px/1.55 'Open Sans', Helvetica, Arial, sans-serif;\n\ttext-align: center;\n\tcolor: #666;\n}\n.ui-datepicker a {\n\tcolor: #404040;\n}\n.ui-datepicker-header {\n\tposition: relative;\n\tmargin: -10px -12px 10px;\n\tpadding: 10px;\n\tborder-bottom: 1px solid rgba(0,0,0,.1);\n\tfont-size: 15px;\n\tline-height: 27px;\n}\n.ui-datepicker-prev, \n.ui-datepicker-next {\n\tposition: absolute;\n\ttop: 0;\n\tdisplay: block;\n\twidth: 47px;\n\theight: 47px;\n\tfont-size: 15px;\n\tline-height: 47px;\n\ttext-decoration: none;\n\tcursor: pointer;\n}\n.ui-datepicker-prev {\n\tleft: 0;\n}\n.ui-datepicker-next {\n\tright: 0;\n}\n.ui-datepicker-calendar {\n\tborder-collapse: collapse;\n\tfont-size: 13px;\n\tline-height: 27px;\n}\n.ui-datepicker-calendar th {\n\tcolor: #999;\n}\n.ui-datepicker-calendar a,\n.ui-datepicker-calendar span {\n\tdisplay: block;\n\twidth: 31px;\n\tmargin: auto;\n\ttext-decoration: none;\n\tcolor: #404040;\n}\n.ui-datepicker-calendar a:hover {\n\tbackground: rgba(0,0,0,.05);\t\n}\n.ui-datepicker-calendar span {\n\tcolor: #bfbfbf;\n}\n.ui-datepicker-today a {\n\tfont-weight: 700;\n}\n.ui-datepicker-calendar .ui-state-active {\n\tbackground: rgba(0,0,0,.05);\n\tcursor: default;\t\n}\n.ui-datepicker-inline {\n\tborder: 2px solid #999999;\n\tbackground: #fff;\n\tbox-shadow: none;\n}\n.ui-datepicker-inline .ui-datepicker-header {\n\tline-height: 47px;\n}\n.ui-datepicker-inline .ui-datepicker-calendar {\n\twidth: 100%;\n}\n\n\n/**/\n/* modal */\n/**/\n.sky-form-modal {\n\tposition: fixed;\n\tz-index: 9999;\n\tdisplay: none;\n\twidth: 400px;\n\tpadding: 20px 30px;\n\tbackground-color: #fff;\n\t-moz-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.9);\n\t-webkit-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.9);\n\tbox-shadow:0px 0px 10px rgba(0, 0, 0, 0.9);\n\t\n}\n.sky-form-modal-overlay {\n\tposition: fixed;\n\ttop: 0;\n\tleft: 0;\n\tdisplay: none;\n\twidth: 100%;\n\theight: 100%;\n\tbackground: rgba(0,0,0,0.7);\n}\n\n\n/**/\n/* bootstrap compatibility */\n/**/\n.sky-form *,\n.sky-form *:after,\n.sky-form *:before {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: content-box;\n\t-moz-box-sizing: content-box;\n}\n.sky-form .label {\n\tborder-radius: 0;\n\tfont-size: 100%;\n\ttext-align: left;\n\twhite-space: normal;\n\tcolor: inherit;\n}\n.sky-form .radio,\n.sky-form .checkbox {\n\tfont-weight: 400;\n}\n.sky-form .radio + .radio,\n.sky-form .checkbox + .checkbox {\n  margin-top: 0;\n}\n\n\n\n\n.login_form {\n\tmargin: 20px auto 0 auto;\n\twidth: 400px;\n\tpadding: 20px 35px 13px 35px;\n\tbackground-color: #f9f9f9;\n\tborder: 1px solid #fff;\n\t-moz-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.2);\n\t-webkit-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.2);\n\tbox-shadow:0px 0px 5px rgba(0, 0, 0, 0.2);\n}\n\n.login_form.two {\n\tmargin: 0px auto 0 auto;\n}\n\n.reg_form {\n\tmargin: 20px auto 0 auto;\n\twidth: 550px;\n\tpadding: 20px 35px 13px 35px;\n\tbackground-color: #f9f9f9;\n\tborder: 1px solid #fff;\n\t-moz-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.2);\n\t-webkit-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.2);\n\tbox-shadow:0px 0px 5px rgba(0, 0, 0, 0.2);\n}\n\n.reg_form.two {\n\tmargin: 0px auto 0 auto;\n}\n\n\n@media only screen and (min-width: 480px) and (max-width: 767px){\n\t\n\n.reg_form {\n\tmargin: 10px auto 0 auto;\n\twidth: 400px;\n\tpadding: 18px 20px 13px 20px;\n}\n\n\n\t\n}\n\n\n@media only screen and (max-width: 479px){\n\t\n.login_form {\n\tmargin: 0px auto 0 auto;\n\twidth: 250px;\n\tpadding: 13px 20px 13px 20px;\n}\n\n.reg_form {\n\tmargin: 10px auto 0 auto;\n\twidth: 280px;\n\tpadding: 8px 10px 13px 10px;\n}\n\n}\n\n\n\n\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 259 */
+/***/ function(module, exports, __webpack_require__) {
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(172);
+
+	var _logoHeader = __webpack_require__(260);
+
+	var _logoHeader2 = _interopRequireDefault(_logoHeader);
+
+	var _navbar = __webpack_require__(265);
+
+	var _navbar2 = _interopRequireDefault(_navbar);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	//Load CSS and images
+	//js imports
+	__webpack_require__(273);
+
+	//Cretate Class
+	var MainHeader = _react2.default.createClass({
+	  displayName: 'MainHeader',
+
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { id: 'trueHeader' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'wrapper' },
+	        _react2.default.createElement(_logoHeader2.default, null),
+	        _react2.default.createElement(_navbar2.default, null)
+	      )
+	    );
+	  }
+
+	});
+
+	exports.default = MainHeader;
+
+/***/ },
+/* 260 */
+/***/ function(module, exports, __webpack_require__) {
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(172);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	//Load CSS and images
+	//js imports
+	__webpack_require__(261);
+	var background = __webpack_require__(263);
+	var logo = __webpack_require__(264);
+
+	//Cretate Class
+	var LogoHeader = _react2.default.createClass({
+	    displayName: 'LogoHeader',
+
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            { className: 'logoarea' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'container' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'logo' },
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: '/', id: 'logo' },
+	                        'Home'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'right_links' },
+	                    _react2.default.createElement(
+	                        'ul',
+	                        null,
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: 'link' },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'mailto:info@moldexbrands.com' },
+	                                _react2.default.createElement('i', { className: 'fa fa-envelope' }),
+	                                'info@moldexbrands.com'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: 'social', 'data-anim-type': 'zoomIn', 'data-anim-delay': '200' },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://www.facebook.com/moldexbrands' },
+	                                _react2.default.createElement('i', { className: 'fa fa-facebook' })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: 'social', 'data-anim-type': 'zoomIn', 'data-anim-delay': '300' },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'http://www.instagram.com/moldexbrands' },
+	                                _react2.default.createElement('i', { className: 'fa fa-instagram' })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: 'social', 'data-anim-type': 'zoomIn', 'data-anim-delay': '550' },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'http://www.pinterest.com/moldexbrands' },
+	                                _react2.default.createElement('i', { className: 'fa fa-pinterest' })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: 'social', 'data-anim-type': 'zoomIn', 'data-anim-delay': '550' },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'http://www.twitter.com/moldexbrands' },
+	                                _react2.default.createElement('i', { className: 'fa fa-twitter' })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            { className: 'social', 'data-anim-type': 'zoomIn', 'data-anim-delay': '550' },
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'https://www.youtube.com/channel/UCOhsM9FUmFDxWbgpKMr3Daw' },
+	                                _react2.default.createElement('i', { className: 'fa fa-youtube' })
+	                            )
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+
+	});
+
+	exports.default = LogoHeader;
+
+/***/ },
+/* 261 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(262);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(241)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./logoHeader.css", function() {
+				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./logoHeader.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 262 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(240)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".logoarea {\r\n  float: left;\r\n  width: 100%;\r\n  height: 84px;\r\n  background: url(" + __webpack_require__(263) + ") repeat left top;\r\n}\r\n\r\n.logo {\r\n    float: left;\r\n    width: 25%;\r\n}\r\n\r\n#logo {\r\n  float: left;\r\n  display: block;\r\n  width: 100%;\r\n  min-height: 70px;\r\n  margin-top: 9px;\r\n  position: relative;\r\n  text-indent: -999em;\r\n  background: url(" + __webpack_require__(264) + ") no-repeat left bottom;\r\n}\r\n\r\n.right_links {\r\n  float: right;\r\n  margin-top: 18px;\r\n}\r\n\r\n.right_links ul {\r\n  float: right;\r\n  padding: 0px;\r\n  margin: 0px;\r\n}\r\n\r\n.right_links li {\r\n  float: left;\r\n  font-size: 13px;\r\n  padding: 0px;\r\n}\r\n\r\n.right_links li a:hover {\r\n\tcolor: #fff;\r\n}\r\n\r\n.right_links li.link {\r\n  float: left;\r\n  font-size: 13px;\r\n  margin-right: 18px;\r\n  margin-top: 1px;\r\n}\r\n\r\n.right_links li.link i {\r\n    margin-right: 3px;\r\n}\r\n\r\n.right_links li.social {\r\n  width: 27px;\r\n  height: 27px;\r\n  text-align: center;\r\n  vertical-align: middle;\r\n  line-height: 27px;\r\n  border-radius: 100%;\r\n  background-color: #454545;\r\n  cursor: pointer;\r\n  margin-left: 5px;\r\n}\r\n\r\n.right_links li.social i {\r\n\tcolor: #999;\r\n}\r\n.right_links li.social:hover {\r\n\tbackground-color: #999;\r\n}\r\n.right_links li.social:hover i {\r\n\tcolor: #fff;\r\n}\r\n\r\n.right_links li a {\r\n    color: #999;\r\n}\r\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 263 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkM2MThBNTM0RUE1QjExRTM4QjRBRjA4MDczQTI3RDZEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkM2MThBNTM1RUE1QjExRTM4QjRBRjA4MDczQTI3RDZEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QzYxOEE1MzJFQTVCMTFFMzhCNEFGMDgwNzNBMjdENkQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QzYxOEE1MzNFQTVCMTFFMzhCNEFGMDgwNzNBMjdENkQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5soMtQAAAAD0lEQVR42mJgYGA4AxBgAADRAM1baFuFAAAAAElFTkSuQmCC"
+
+/***/ },
+/* 264 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "def9a53a4f0acd1c5be8873e595d2868.png";
+
+/***/ },
+/* 265 */
+/***/ function(module, exports, __webpack_require__) {
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(172);
+
+	var _dropdownProduct = __webpack_require__(266);
+
+	var _dropdownProduct2 = _interopRequireDefault(_dropdownProduct);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; } //js imports
+
+
+	//Load CSS and images
+	__webpack_require__(270);
+	__webpack_require__(272);
+
+	//Cretate Class
+	var NavBar = _react2.default.createClass({
+	    displayName: 'NavBar',
+
+	    getInitialState: function getInitialState() {
+	        return {
+	            selected: ''
+	        };
+	    },
+	    setFilter: function setFilter(filter) {
+	        this.setState({ selected: filter });
+	    },
+	    isActive: function isActive(value) {
+	        return value === this.state.selected ? 'active' : '';
+	    },
+	    render: function render() {
+	        var _React$createElement;
+
+	        return _react2.default.createElement(
+	            'div',
+	            { className: 'menu_main' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'container' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'navbar yamm navbar-default' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'container' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'navbar-header' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'navbar-toggle .navbar-collapse .pull-right ', 'data-toggle': 'collapse', 'data-target': '#navbar-collapse-1' },
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    null,
+	                                    'Menu'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    { type: 'button' },
+	                                    ' ',
+	                                    _react2.default.createElement('i', { className: 'fa fa-bars' })
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { id: 'navbar-collapse-1', className: 'navbar-collapse collapse' },
+	                            _react2.default.createElement(
+	                                'ul',
+	                                { className: 'nav navbar-nav' },
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        _reactRouter.Link,
+	                                        { to: '/home', className: this.isActive('home'), onClick: this.setFilter.bind(this, 'home') },
+	                                        'Home'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        _reactRouter.Link,
+	                                        { to: '/about', className: this.isActive('about'), onClick: this.setFilter.bind(this, 'about') },
+	                                        'About'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    { className: 'dropdown yamm-fw' },
+	                                    _react2.default.createElement(
+	                                        'a',
+	                                        (_React$createElement = { href: '#', className: 'dropdown-toggle', 'data-toggle': 'dropdown' }, _defineProperty(_React$createElement, 'className', this.isActive('product')), _defineProperty(_React$createElement, 'onClick', this.setFilter.bind(this, 'product')), _React$createElement),
+	                                        'Products'
+	                                    ),
+	                                    _react2.default.createElement(_dropdownProduct2.default, null)
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        _reactRouter.Link,
+	                                        { to: '/factors', className: this.isActive('factors'), onClick: this.setFilter.bind(this, 'factors') },
+	                                        '3 Factors in Mold Fighting'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        _reactRouter.Link,
+	                                        { to: '/mold_guide', className: this.isActive('guide'), onClick: this.setFilter.bind(this, 'guide') },
+	                                        'Mold & Mildew Guide'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        _reactRouter.Link,
+	                                        { to: '/retail', className: this.isActive('retail'), onClick: this.setFilter.bind(this, 'retail') },
+	                                        'Find our Products'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        _reactRouter.Link,
+	                                        { to: '/blog', className: this.isActive('blog'), onClick: this.setFilter.bind(this, 'blog') },
+	                                        'News & Blog'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        _reactRouter.Link,
+	                                        { to: '/contact', className: this.isActive('contact'), onClick: this.setFilter.bind(this, 'contact') },
+	                                        'Contact'
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement('div', { id: 'wrap' })
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+
+	});
+
+	exports.default = NavBar;
+
+	// <li className="dropdown yamm-fw"> <a onClick={this.onClickProducts}>Products</a>
+	//   { this.state.showDropdown ?  : null }
+	// </li>
+
+/***/ },
+/* 266 */
+/***/ function(module, exports, __webpack_require__) {
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	//Load CSS and images
+	__webpack_require__(267);
+
+	//Cretate Class
+	//js imports
+	var DropdownProduct = _react2.default.createClass({
+	    displayName: "DropdownProduct",
+
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "ul",
+	            { className: "dropdown-menu" },
+	            _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "yamm-content" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "row" },
+	                        _react2.default.createElement(
+	                            "ul",
+	                            { className: "col-sm-6 col-md-3 list-unstyled " },
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Our Products"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement("img", { src: __webpack_require__(269), alt: "", className: "img_left4" }),
+	                                "Our method is ",
+	                                _react2.default.createElement(
+	                                    "strong",
+	                                    null,
+	                                    "Kill, Clean"
+	                                ),
+	                                " and ",
+	                                _react2.default.createElement(
+	                                    "strong",
+	                                    null,
+	                                    "Prevent"
+	                                ),
+	                                ". We call it the \"3 Factors in Mold Fighting\". Professional solutions made for you. Which one do you need?",
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "how-to-get-rid-of-mold-and-mildew.html" },
+	                                    " Find out ",
+	                                    _react2.default.createElement("i", { className: "fa fa-long-arrow-right" })
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "ul",
+	                            { className: "col-sm-6 col-md-3 list-unstyled " },
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Mold Killers"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "/mold-mildew-killer.html" },
+	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
+	                                    " Moldex Mold Killer"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "/disinfectant-conc.html" },
+	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
+	                                    " Moldex Disinfectant Concentrate"
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "ul",
+	                            { className: "col-sm-6 col-md-3 list-unstyled " },
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Stain Removers"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                " ",
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "/instant-mold-mildew-stain-remover.html" },
+	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
+	                                    " Moldex Instant Stain Remover"
+	                                ),
+	                                " "
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                " ",
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "/instant-house-wash.html" },
+	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
+	                                    " Moldex Instant House Wash (H/E)"
+	                                ),
+	                                " "
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                " ",
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "/instant-deck-fence-wash.html" },
+	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
+	                                    " Moldex Instant Deck Wash (H/E)"
+	                                ),
+	                                " "
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                " ",
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "/non-bleach-stain-remover.html" },
+	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
+	                                    " Moldex Non-Bleach Stain Remover"
+	                                ),
+	                                " "
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                " ",
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "/paint-preparation.html" },
+	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
+	                                    " Moldex Paint Prep"
+	                                ),
+	                                " "
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                " ",
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "/power-outdoor-cleaner.html" },
+	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
+	                                    " Moldex Power Outdoor Cleaner"
+	                                ),
+	                                " "
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                " ",
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "/cleaning-mold-on-patio-furniture.html" },
+	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
+	                                    " Moldex Patio Furniture Cleaner"
+	                                ),
+	                                " "
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "ul",
+	                            { className: "col-sm-6 col-md-3 list-unstyled " },
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "p",
+	                                    null,
+	                                    "Prevention"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "/sealant-mold-mildew-blocker.html" },
+	                                    _react2.default.createElement("i", { className: "fa fa-angle-right" }),
+	                                    " Moldex Sealant"
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+
+	});
+
+	exports.default = DropdownProduct;
+
+/***/ },
+/* 267 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(268);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(241)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./dropdownProduct.css", function() {
+				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./dropdownProduct.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 268 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(240)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "/* CSS for animate options in product dropdown */\r\n\r\n.list-unstyled li:first-child {\r\n\r\n    border-bottom: 1px solid #e6e6e6;\r\n    margin-bottom: 12px;\r\n}\r\n.list-unstyled li p { font-size: 16px;\r\ncolor: #272727;\r\nfont-weight: normal;\r\n}\r\n\r\n.list-unstyled li i { color:#727272;}\r\n\r\n\r\n.list-unstyled li { padding: 5px 0;}\r\n.list-unstyled a {\r\n    color: #272727;\r\n    padding: 4px 8px;\r\n    width: 100%;\r\n\ttransition-property: margin-left, background-color;\r\n\ttransition-duration: 0.3s;\r\n\ttransition-timing-function: ease-out;\r\n}\r\n\r\n.list-unstyled a:hover {\r\n    color: #272727;\r\n    background-color: #eee;\r\n    text-decoration: none;\r\n    margin-left: 8px;\r\n\ttransition-property: margin-left, background-color;\r\n\ttransition-duration: 0.3s;\r\n\ttransition-timing-function: ease-out;\r\n\tborder-radius: 3px;\r\n}\r\n\r\n.list-unstyled a:before {\r\n    font-size: 12px;\r\n    margin-right: 5px;\r\n}\r\n\r\n.row-border + .row .caption h3 {\r\n    margin-top: 0px;\r\n}\r\n\r\n.row-border {border-bottom: 1px solid #d1d1d1;\r\n    margin-bottom: 20px;\r\n    padding-bottom: 10px;\r\n}\r\n\r\n@media (max-width:767px){\r\n  .list-unstyled li:first-child {\r\n    border-bottom: 0px;\r\n    margin-bottom: 0px;\r\n    top-bottom: 15px;\r\n  }\r\n  .list-unstyled li p {\r\n    font-size: 16px;\r\n    color: #bbb;\r\n  }\r\n  .list-unstyled li {\r\n    padding: 8px 0;\r\n  }\r\n  .list-unstyled a {\r\n    color: #BBBBBB;\r\n  }\r\n  .list-unstyled a:hover {\r\n    color: #fff;\r\n    background-color: #666;\r\n  }\r\n  .yamm .yamm-content .thumbnail {\r\n    background-color: transparent;\r\n    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075);\r\n    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075);\r\n  }\r\n  .yamm .yamm-content .caption p {\r\n      color: #ccc;\r\n  }\r\n  .yamm .yamm-content .caption h3 {\r\n      color: #ccc;\r\n  }\r\n  .yamm .yamm-content .thumbnail>img {\r\n      margin-left: 0;\r\n  }\r\n  .row-border {\r\n      border-bottom:0;\r\n  }\r\n}\r\n\r\n\r\n@media (max-width:768px){\r\n  .list-unstyled a {\r\n      color: #BBBBBB;\r\n  }\r\n  .list-unstyled li:first-child {\r\n      border-bottom: 1px solid #3b3b3b;\r\n      margin-bottom: 16px;\r\n  }\r\n  .list-unstyled li p {\r\n      color: #fff;\r\n  \tpadding-top:10px;\r\n  }\r\n}\r\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 269 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "3f6e25459da0f20aba3fc611cd20f19a.jpg";
+
+/***/ },
+/* 270 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(271);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(241)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./navbar.css", function() {
+				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./navbar.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 271 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(240)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".menu_main {\r\n    float: left;\r\n    width: 100%;\r\n    height: 61px;\r\n    background: url(" + __webpack_require__(272) + ") repeat left top;\r\n}\r\n\r\n.navbar {\r\n    margin-top: -1px;\r\n}\r\n\r\n.yamm .nav, .yamm .collapse, .yamm .dropup, .yamm .dropdown {\r\n    position: static;\r\n}\r\n\r\n.navbar-default{\r\n\tbackground:none;\r\n\tbox-shadow: none;\r\n\tborder: none;\r\n}\r\n\r\n.navbar{\r\n\tborder: none;\r\n\tmargin-top: 0!important;\r\n}\r\n\r\n.navbar-nav>li>a {\r\n  line-height: 25px;\r\n  margin-right: 1px;\r\n  padding-top: 18px;\r\n  padding-bottom: 18px;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.navbar li a.active {\r\n    color: #fff !important;\r\n    background-color: #7ab700 !important;\r\n}\r\n\r\n.dropdown a.active {\r\n  background-color: #454545 !important;\r\n}\r\n\r\n.navbar-default .navbar-nav>li>a:hover {\r\n    color: #fff;\r\n    background-color: #7ab700;\r\n}\r\n\r\n@media only screen and (max-width: 1169px) and (min-width: 1000px){\r\n  #header .container {\r\n      width: auto;\r\n      max-width: 1000px;\r\n  }\r\n}\r\n\r\n@media (max-width: 1208px){\r\n\t.navbar-nav>li>a{\r\n\t\tfont-size: 12px;\r\n\t\tpadding: 15px 10px;\r\n\t}\r\n}\r\n\r\n@media only screen and (max-width: 999px) and (min-width: 768px){\r\n  .container>.navbar-collapse li a {\r\n  \tbackground-color: #fff!important;\r\n  \tmargin-left: 1px!important;\r\n  }\r\n  .container{\r\n  \tpadding: 0;\r\n  \twidth: 800px;\r\n  }\r\n  .container>.navbar-collapse{\r\n  \tmargin-left: 0px!important;\r\n  }\r\n  .logo{\r\n  \twidth: 40%;\r\n  }\r\n  .navbar-nav>li>a{\r\n  \tfont-size: 9px;\r\n  \tpadding: 5px;\r\n  }\r\n  ul.nav>li>a.active{\r\n  \tcolor: #777!important;\r\n  }\r\n  .navbar-collapse {\r\n    padding:0!important;\r\n  }\r\n}\r\n\r\n@media only screen and (max-width: 999px) and (min-width: 99px){\r\n  li.dropdown ul.dropdown-menu li a {\r\n      color: #777!important;\r\n  }\r\n  .navbar-default{\r\n  \tz-index: 999;\r\n  }\r\n  .logo{\r\n  \twidth: 100%;\r\n  }\r\n  .right_links{\r\n  \tdisplay: none;\r\n  }\r\n}\r\n\r\n\r\n/* CSS for fadein/fadeout product dropdown */\r\n@media (min-width: 999px) {\r\n    .dropdown-submenu:hover>.dropdown-menu\r\n    {\r\n        -webkit-animation-duration: 0.5s;\r\n        -webkit-animation-name: fadeInFromNone;\r\n        -webkit-animation-fill-mode: forwards;\r\n\r\n        animation-duration: 0.5s;\r\n        animation-name: fadeInFromNone;\r\n        animation-fill-mode: forwards;\r\n\r\n        -ms-animation-duration: 0.5s;\r\n        -ms-animation-name: fadeInFromNoneIE;\r\n        -ms-animation-fill-mode: forwards;\r\n    }\r\n\r\n    .yamm ul.nav li.dropdown:hover > ul.dropdown-menu {\r\n        display: block;\r\n        animation-duration: 0.5s;\r\n        animation-name: fadeInFromNone;\r\n        animation-fill-mode: forwards;\r\n        -webkit-animation-duration: 0.5s;\r\n        -webkit-animation-name: fadeInFromNone;\r\n         -webkit-animation-fill-mode: forwards;\r\n\r\n        -ms-animation-duration: 5s;\r\n        -ms-animation-name: fadeInFromNoneIE;\r\n        -ms-animation-fill-mode: forwards;\r\n\r\n    }\r\n\r\n    @-webkit-keyframes fadeInFromNone {\r\n        0% {\r\n            opacity: 0;\r\n        }\r\n        1% {\r\n            opacity: 0;\r\n        }\r\n        100% {\r\n            opacity: 1;\r\n        }\r\n    }\r\n    @keyframes fadeInFromNoneIE {\r\n        0% {\r\n            opacity: 0;\r\n        }\r\n        1% {\r\n            opacity: 0;\r\n        }\r\n        100% {\r\n            opacity: 1;\r\n        }\r\n    }\r\n    @keyframes fadeInFromNone {\r\n        0% {\r\n            opacity: 0;\r\n        }\r\n        1% {\r\n            opacity: 0;\r\n        }\r\n        100% {\r\n            opacity: 1;\r\n        }\r\n    }\r\n\r\n    .yamm ul.nav li.dropdown:hover > a {\r\n        color: #fff;\r\n        background-color: #7ab700;\r\n    }\r\n    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {\r\n        padding: 18px 15px;\r\n    }\r\n}\r\n", ""]);
+
+	// exports
+
+
+/***/ },
 /* 272 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAUSURBVHjaYvj///9LAAAAAP//AwAJ5QPnEzzs8QAAAABJRU5ErkJggg=="
+
+/***/ },
+/* 273 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(274);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(241)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./mainHeader.css", function() {
+				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./mainHeader.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 274 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(240)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "#trueHeader{\r\n  z-index:8000;\r\n  left:0;\r\n  right:0;\r\n  background: #fff;\r\n  box-shadow:0 1px 5px rgba(0,0,0,0.3);\r\n  -khtml-box-shadow:0 1px 5px rgba(0,0,0,0.3);\r\n  -webkit-box-shadow:0 1px 5px rgba(0,0,0,0.3);\r\n  -moz-box-shadow:0 1px 5px rgba(0,0,0,0.3);\r\n  -ms-box-shadow:0 1px 5px rgba(0,0,0,0.3);\r\n  -o-box-shadow:0 1px 5px rgba(0,0,0,0.3);\r\n  transition:padding 0.35s ease;\r\n  -khtml-transition:padding 0.35s ease;\r\n  -webkit-transition:padding 0.35s ease;\r\n  -moz-transition:padding 0.35s ease;\r\n  -ms-transition:padding 0.35s ease;\r\n  -o-transition:padding 0.35s ease;\r\n  background-color:transparent;zoom:1\r\n}\r\n\r\n#header.sticky #trueHeader{\r\n  position:fixed;top:0\r\n}\r\n\r\n#header.sticky.condensed #trueHeader{\r\n  padding:0px 0\r\n}\r\n\r\n.wrapper {\r\n  margin-top: 0px;\r\n  content: \" \";\r\n  display: table;\r\n  height: 0;\r\n}\r\n\r\n@media only screen and (min-width: 768px) and (max-width: 999px){\r\n  .menu_main {\r\n  \tpadding: 8px 0px;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 480px) and (max-width: 767px){\r\n  .menu_main {\r\n  \tpadding: 0px 0px 0px 0px;\r\n  }\r\n}\r\n\r\n@media only screen and (max-width: 479px){\r\n  .menu_main {\r\n  \tpadding: 0px 0px 0px 0px;\r\n  }\r\n}\r\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 275 */
+/***/ function(module, exports, __webpack_require__) {
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(276);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var appFooter = function (_Component) {
+	    _inherits(appFooter, _Component);
+
+	    function appFooter() {
+	        _classCallCheck(this, appFooter);
+
+	        return _possibleConstructorReturn(this, (appFooter.__proto__ || Object.getPrototypeOf(appFooter)).apply(this, arguments));
+	    }
+
+	    _createClass(appFooter, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                null,
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "footer1" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "container" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "col-xs-3" },
+	                            _react2.default.createElement(
+	                                "ul",
+	                                { className: "faddress" },
+	                                _react2.default.createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/footer-logo.png", alt: "" })
+	                                ),
+	                                _react2.default.createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2.default.createElement("i", { className: "fa fa-map-marker fa-lg" }),
+	                                    " 866 Horan Drive",
+	                                    _react2.default.createElement("br", null),
+	                                    " Fenton, Missouri 63026"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2.default.createElement("i", { className: "fa fa-phone" }),
+	                                    "\xA0 Toll Free: 1.800.325.6180"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2.default.createElement("i", { className: "fa fa-phone" }),
+	                                    "\xA0 Phone: 1.636.349.5855"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2.default.createElement("i", { className: "fa fa-print" }),
+	                                    "\xA0 Fax: 1.636.349.5335"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "li",
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        "a",
+	                                        { href: "mailto:info@moldexbrands.com" },
+	                                        _react2.default.createElement("i", { className: "fa fa-envelope" }),
+	                                        " info @moldexbrands.com"
+	                                    )
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "col-xs-3" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "qlinks" },
+	                                _react2.default.createElement(
+	                                    "h4",
+	                                    { className: "lmb" },
+	                                    "Useful Links"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "ul",
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "mold_guide.html" },
+	                                            _react2.default.createElement("i", { className: "fa fa-angle-right" }),
+	                                            " Mold & Mildew Guide"
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "https://www.moldexbrands.com/mold-mildew-killer.html" },
+	                                            _react2.default.createElement("em", { className: "fa fa-angle-right" }),
+	                                            " Mold Killer"
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "products.html" },
+	                                            _react2.default.createElement("i", { className: "fa fa-angle-right" }),
+	                                            " Our Products"
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "https://www.convenienceproducts.com/" },
+	                                            _react2.default.createElement("i", { className: "fa fa-angle-right" }),
+	                                            " Convenience Products"
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "blog/" },
+	                                            _react2.default.createElement("i", { className: "fa fa-angle-right" }),
+	                                            " Recent Blogs or News"
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "contact.html" },
+	                                            _react2.default.createElement("i", { className: "fa fa-angle-right" }),
+	                                            " Contact Us"
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "col-xs-6" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "siteinfo" },
+	                                _react2.default.createElement(
+	                                    "h4",
+	                                    { className: "lmb" },
+	                                    "Our Story..."
+	                                ),
+	                                _react2.default.createElement(
+	                                    "p",
+	                                    null,
+	                                    "We were tired of cleaning only to watch it grow back.It seemed to be a never-ending.Why?What makes mold grow back?Why can't you get rid of it? Once we figure it out, we wanted to share it with the world. We set out to change the way people view mold & mildew...",
+	                                    _react2.default.createElement(
+	                                        "a",
+	                                        { href: "about-mold-and-mildew-remover.html" },
+	                                        "Read more ",
+	                                        _react2.default.createElement("i", { className: "fa fa-long-arrow-right" })
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "copyright_info four" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "container" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "one_half" },
+	                            "Copyright \xA9 2015 Moldex Brands.All rights reserved.",
+	                            _react2.default.createElement(
+	                                "a",
+	                                { href: "terms.html" },
+	                                "Terms of Use"
+	                            ),
+	                            " | ",
+	                            _react2.default.createElement(
+	                                "a",
+	                                { href: "privacy.html" },
+	                                "Privacy Policy"
+	                            ),
+	                            " | ",
+	                            _react2.default.createElement(
+	                                "a",
+	                                { href: "refund.html" },
+	                                "Refund Policy"
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "one_half last" },
+	                            _react2.default.createElement(
+	                                "ul",
+	                                { className: "footer_social_links three" },
+	                                _react2.default.createElement(
+	                                    "li",
+	                                    { className: "animate zoomIn", "data-anim-type": "zoomIn", "data-anim-delay": "200" },
+	                                    _react2.default.createElement(
+	                                        "a",
+	                                        { href: "https://www.facebook.com/moldexbrands" },
+	                                        _react2.default.createElement("i", { className: "fa fa-facebook" })
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    "li",
+	                                    { className: "animate zoomIn", "data-anim-type": "zoomIn", "data-anim-delay": "300" },
+	                                    _react2.default.createElement(
+	                                        "a",
+	                                        { href: "http://www.instagram.com/moldexbrands" },
+	                                        _react2.default.createElement("i", { className: "fa fa-instagram" })
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    "li",
+	                                    { className: "animate zoomIn", "data-anim-type": "zoomIn", "data-anim-delay": "550" },
+	                                    _react2.default.createElement(
+	                                        "a",
+	                                        { href: "http://www.pinterest.com/moldexbrands" },
+	                                        _react2.default.createElement("i", { className: "fa fa-pinterest" })
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    "li",
+	                                    { className: "animate zoomIn", "data-anim-type": "zoomIn", "data-anim-delay": "550" },
+	                                    _react2.default.createElement(
+	                                        "a",
+	                                        { href: "http://www.twitter.com/moldexbrands" },
+	                                        _react2.default.createElement("i", { className: "fa fa-twitter" })
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    "li",
+	                                    { className: "animate zoomIn", "data-anim-type": "zoomIn", "data-anim-delay": "550" },
+	                                    _react2.default.createElement(
+	                                        "a",
+	                                        { href: "https://www.youtube.com/channel/UCOhsM9FUmFDxWbgpKMr3Daw" },
+	                                        _react2.default.createElement("i", { className: "fa fa-youtube" })
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return appFooter;
+	}(_react.Component);
+
+	exports.default = appFooter;
+
+/***/ },
+/* 276 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(277);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(241)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./stylesheet.css", function() {
+				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./stylesheet.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 277 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(240)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".footer1{\r\n    background: black;\r\n    float: left;\r\n    width: 100%;\r\n    padding: 70px 0px 40px 0px;\r\n    border-top: 5px solid #000;\r\n    background: url(https://www.moldexbrands.com/images/footer-bg.jpg) repeat left top;\r\n}\r\n\r\nbody{\r\n    font: 14px 'Open Sans', sans-serif;\r\n    font-weight: normal;\r\n    font-style: normal;\r\n    line-height: 23px;\r\n    color: #727272;\r\n}", ""]);
+
+	// exports
+
+
+/***/ },
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// This file is autogenerated via the `commonjs` Grunt task. You can require() this file in a CommonJS environment.
-	__webpack_require__(273);
-	__webpack_require__(274);
-	__webpack_require__(275);
-	__webpack_require__(276);
-	__webpack_require__(277);
-	__webpack_require__(278);
 	__webpack_require__(279);
 	__webpack_require__(280);
 	__webpack_require__(281);
 	__webpack_require__(282);
 	__webpack_require__(283);
 	__webpack_require__(284);
+	__webpack_require__(285);
+	__webpack_require__(286);
+	__webpack_require__(287);
+	__webpack_require__(288);
+	__webpack_require__(289);
+	__webpack_require__(290);
 
 /***/ },
-/* 273 */
-/***/ function(module, exports) {
+/* 279 */
+/***/ function(module, exports, __webpack_require__) {
 
-	/* ========================================================================
+	/* WEBPACK VAR INJECTION */(function(jQuery) {/* ========================================================================
 	 * Bootstrap: transition.js v3.3.7
 	 * http://getbootstrap.com/javascript/#transitions
 	 * ========================================================================
@@ -29761,12 +30444,13 @@
 	    };
 	  });
 	}(jQuery);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255)))
 
 /***/ },
-/* 274 */
-/***/ function(module, exports) {
+/* 280 */
+/***/ function(module, exports, __webpack_require__) {
 
-	/* ========================================================================
+	/* WEBPACK VAR INJECTION */(function(jQuery) {/* ========================================================================
 	 * Bootstrap: alert.js v3.3.7
 	 * http://getbootstrap.com/javascript/#alerts
 	 * ========================================================================
@@ -29851,12 +30535,13 @@
 
 	  $(document).on('click.bs.alert.data-api', dismiss, Alert.prototype.close);
 	}(jQuery);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255)))
 
 /***/ },
-/* 275 */
-/***/ function(module, exports) {
+/* 281 */
+/***/ function(module, exports, __webpack_require__) {
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	/* WEBPACK VAR INJECTION */(function(jQuery) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	/* ========================================================================
 	 * Bootstrap: button.js v3.3.7
@@ -29974,12 +30659,13 @@
 	    $(e.target).closest('.btn').toggleClass('focus', /^focus(in)?$/.test(e.type));
 	  });
 	}(jQuery);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255)))
 
 /***/ },
-/* 276 */
-/***/ function(module, exports) {
+/* 282 */
+/***/ function(module, exports, __webpack_require__) {
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	/* WEBPACK VAR INJECTION */(function(jQuery) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	/* ========================================================================
 	 * Bootstrap: carousel.js v3.3.7
@@ -30207,12 +30893,13 @@
 	    });
 	  });
 	}(jQuery);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255)))
 
 /***/ },
-/* 277 */
-/***/ function(module, exports) {
+/* 283 */
+/***/ function(module, exports, __webpack_require__) {
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	/* WEBPACK VAR INJECTION */(function(jQuery) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	/* ========================================================================
 	 * Bootstrap: collapse.js v3.3.7
@@ -30394,12 +31081,13 @@
 	    Plugin.call($target, option);
 	  });
 	}(jQuery);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255)))
 
 /***/ },
-/* 278 */
-/***/ function(module, exports) {
+/* 284 */
+/***/ function(module, exports, __webpack_require__) {
 
-	/* ========================================================================
+	/* WEBPACK VAR INJECTION */(function(jQuery) {/* ========================================================================
 	 * Bootstrap: dropdown.js v3.3.7
 	 * http://getbootstrap.com/javascript/#dropdowns
 	 * ========================================================================
@@ -30549,12 +31237,13 @@
 	    e.stopPropagation();
 	  }).on('click.bs.dropdown.data-api', toggle, Dropdown.prototype.toggle).on('keydown.bs.dropdown.data-api', toggle, Dropdown.prototype.keydown).on('keydown.bs.dropdown.data-api', '.dropdown-menu', Dropdown.prototype.keydown);
 	}(jQuery);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255)))
 
 /***/ },
-/* 279 */
-/***/ function(module, exports) {
+/* 285 */
+/***/ function(module, exports, __webpack_require__) {
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	/* WEBPACK VAR INJECTION */(function(jQuery) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	/* ========================================================================
 	 * Bootstrap: modal.js v3.3.7
@@ -30860,12 +31549,13 @@
 	    Plugin.call($target, option, this);
 	  });
 	}(jQuery);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255)))
 
 /***/ },
-/* 280 */
-/***/ function(module, exports) {
+/* 286 */
+/***/ function(module, exports, __webpack_require__) {
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	/* WEBPACK VAR INJECTION */(function(jQuery) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	/* ========================================================================
 	 * Bootstrap: tooltip.js v3.3.7
@@ -31355,12 +32045,13 @@
 	    return this;
 	  };
 	}(jQuery);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255)))
 
 /***/ },
-/* 281 */
-/***/ function(module, exports) {
+/* 287 */
+/***/ function(module, exports, __webpack_require__) {
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	/* WEBPACK VAR INJECTION */(function(jQuery) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	/* ========================================================================
 	 * Bootstrap: popover.js v3.3.7
@@ -31461,12 +32152,13 @@
 	    return this;
 	  };
 	}(jQuery);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255)))
 
 /***/ },
-/* 282 */
-/***/ function(module, exports) {
+/* 288 */
+/***/ function(module, exports, __webpack_require__) {
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	/* WEBPACK VAR INJECTION */(function(jQuery) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	/* ========================================================================
 	 * Bootstrap: scrollspy.js v3.3.7
@@ -31619,12 +32311,13 @@
 	    });
 	  });
 	}(jQuery);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255)))
 
 /***/ },
-/* 283 */
-/***/ function(module, exports) {
+/* 289 */
+/***/ function(module, exports, __webpack_require__) {
 
-	/* ========================================================================
+	/* WEBPACK VAR INJECTION */(function(jQuery) {/* ========================================================================
 	 * Bootstrap: tab.js v3.3.7
 	 * http://getbootstrap.com/javascript/#tabs
 	 * ========================================================================
@@ -31752,12 +32445,13 @@
 
 	  $(document).on('click.bs.tab.data-api', '[data-toggle="tab"]', clickHandler).on('click.bs.tab.data-api', '[data-toggle="pill"]', clickHandler);
 	}(jQuery);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255)))
 
 /***/ },
-/* 284 */
-/***/ function(module, exports) {
+/* 290 */
+/***/ function(module, exports, __webpack_require__) {
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	/* WEBPACK VAR INJECTION */(function(jQuery) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	/* ========================================================================
 	 * Bootstrap: affix.js v3.3.7
@@ -31911,12 +32605,13 @@
 	    });
 	  });
 	}(jQuery);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255)))
 
 /***/ },
-/* 285 */
-/***/ function(module, exports) {
+/* 291 */
+/***/ function(module, exports, __webpack_require__) {
 
-	//	Animations v1.0, Copyright 2014, Joe Mottershaw, https://github.com/joemottershaw/
+	/* WEBPACK VAR INJECTION */(function(jQuery) {//	Animations v1.0, Copyright 2014, Joe Mottershaw, https://github.com/joemottershaw/
 	//	==================================================================================
 
 	//	Visible, Sam Sehnert, samatdf, TeamDF, https://github.com/teamdf/jquery-visible/
@@ -32032,15 +32727,16 @@
 			$('.animate').fireAnimations();
 		});
 	})(jQuery);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255)))
 
 /***/ },
-/* 286 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(287);
+	var content = __webpack_require__(293);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(241)(content, {});
@@ -32060,7 +32756,7 @@
 	}
 
 /***/ },
-/* 287 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(240)();
@@ -32074,10 +32770,10 @@
 
 
 /***/ },
-/* 288 */
-/***/ function(module, exports) {
+/* 294 */
+/***/ function(module, exports, __webpack_require__) {
 
-	/*
+	/* WEBPACK VAR INJECTION */(function(jQuery) {/*
 	 * jQuery Easing v1.3 - https://gsgd.co.uk/sandbox/jquery/easing/
 	 *
 	 * Uses the built in easing capabilities added In jQuery 1.1
@@ -32253,12 +32949,13 @@
 	      return jQuery.easing.easeInBounce(e, f * 2, 0, h, g) * 0.5 + a;
 	    }return jQuery.easing.easeOutBounce(e, f * 2 - g, 0, h, g) * 0.5 + h * 0.5 + a;
 	  } });
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255)))
 
 /***/ },
-/* 289 */
-/***/ function(module, exports) {
+/* 295 */
+/***/ function(module, exports, __webpack_require__) {
 
-	/*!
+	/* WEBPACK VAR INJECTION */(function(jQuery, $) {/*!
 	 * Master Slider � Responsive Touch Swipe Slider
 	 * @author Averta (www.averta.net)
 	 * Copyright � All Rights Reserved, Averta Ltd.
@@ -32266,15 +32963,16 @@
 	 * @version 1.5.7
 	 * @date 3/31/2014
 	 */window.averta={},function(n){function o(){var t,n,i;if("result"in arguments.callee)return arguments.callee.result;t=/^(Moz|Webkit|Khtml|O|ms|Icab)(?=[A-Z])/,n=document.getElementsByTagName("script")[0];for(i in n.style){if(t.test(i))return arguments.callee.result=i.match(t)[0];}return arguments.callee.result="WebkitOpacity"in n.style?"Webkit":"KhtmlOpacity"in n.style?"Khtml":"";}function r(n){var u=document.body||document.documentElement,r=u.style,t=n,i;if(typeof r[t]=="string")return!0;for(v=["Moz","Webkit","Khtml","O","ms"],t=t.charAt(0).toUpperCase()+t.substr(1),i=0;i<v.length;i++){if(typeof r[v[i]+t]=="string")return!0;}return!1;}function s(){return r("transition");}function u(){return r("transform");}function h(){var n,t,r,i;if(!u())return!1;n=document.createElement("p"),r={WebkitTransform:"-webkit-transform",OTransform:"-o-transform",MSTransform:"-ms-transform",msTransform:"-ms-transform",MozTransform:"-moz-transform",Transform:"transform",transform:"transform"},document.body.insertBefore(n,null);for(i in r){n.style[i]!==undefined&&(n.style[i]="translate3d(1px,1px,1px)",t=window.getComputedStyle(n).getPropertyValue(r[i]));}return document.body.removeChild(n),t!=null&&t.length>0&&t!=="none";}var t,i,f,e;window.package=function(n){window[n]||(window[n]={});},t=function t(n,_t){for(var i in _t){n[i]=_t[i];}},Function.prototype.extend=function(n){typeof n.prototype.constructor=="function"?(t(this.prototype,n.prototype),this.prototype.constructor=this):(this.prototype.extend(n),this.prototype.constructor=this);},i={Moz:"-moz-",Webkit:"-webkit-",Khtml:"-khtml-",O:"-o-",ms:"-ms-",Icab:"-icab-"},n(document).ready(function(){window._jcsspfx=o(),window._csspfx=i[window._jcsspfx],window._cssanim=s(),window._css3d=h(),window._css2d=u(),window._mobile=/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),window._touch="ontouchstart"in document;}),window.parseQueryString=function(n){var t={};return n.replace(new RegExp("([^?=&]+)(=([^&]*))?","g"),function(n,i,r,u){t[i]=u;}),t;},f=50/3,window.requestAnimationFrame||(window.requestAnimationFrame=function(){return window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(n){window.setTimeout(n,f);};}()),window.getComputedStyle||(window.getComputedStyle=function(n){return this.el=n,this.getPropertyValue=function(t){var i=/(\-([a-z]){1})/g;return t=="float"&&(t="styleFloat"),i.test(t)&&(t=t.replace(i,function(){return arguments[2].toUpperCase();})),n.currentStyle[t]?n.currentStyle[t]:null;},n.currentStyle;}),Array.prototype.indexOf||(Array.prototype.indexOf=function(n){var i=this.length>>>0,t=Number(arguments[1])||0;for(t=t<0?Math.ceil(t):Math.floor(t),t<0&&(t+=i);t<i;t++){if(t in this&&this[t]===n)return t;}return-1;}),jQuery&&(n.jqLoadFix=function(){if(this.complete){var t=this;setTimeout(function(){n(t).load();},1);}},jQuery.uaMatch=jQuery.uaMatch||function(n){n=n.toLowerCase();var t=/(chrome)[ \/]([\w.]+)/.exec(n)||/(webkit)[ \/]([\w.]+)/.exec(n)||/(opera)(?:.*version|)[ \/]([\w.]+)/.exec(n)||/(msie) ([\w.]+)/.exec(n)||n.indexOf("compatible")<0&&/(mozilla)(?:.*? rv:([\w.]+)|)/.exec(n)||[];return{browser:t[1]||"",version:t[2]||"0"};},matched=jQuery.uaMatch(navigator.userAgent),browser={},matched.browser&&(browser[matched.browser]=!0,browser.version=matched.version),browser.chrome?browser.webkit=!0:browser.webkit&&(browser.safari=!0),e=!!navigator.userAgent.match(/Trident\/7\./),e&&(browser.msie="true",delete browser.mozilla),jQuery.browser=browser,n.fn.preloadImg=function(t,i){return this.each(function(){var u=n(this),f=this,r=new Image();r.onload=function(n){n==null&&(n={}),u.attr("src",t),n.width=r.width,n.height=r.height,setTimeout(function(){i.call(f,n);},50),r=null;},r.src=t;}),this;});}(jQuery),function(){"use strict";averta.EventDispatcher=function(){this.listeners={};},averta.EventDispatcher.extend=function(n){var i=new averta.EventDispatcher(),t;for(t in i){t!="constructor"&&(n[t]=averta.EventDispatcher.prototype[t]);}},averta.EventDispatcher.prototype={constructor:averta.EventDispatcher,addEventListener:function addEventListener(n,t,i){this.listeners[n]||(this.listeners[n]=[]),this.listeners[n].push({listener:t,ref:i});},removeEventListener:function removeEventListener(n,t,i){if(this.listeners[n]){for(var r=0,u=this.listeners[n].length;r<u;++r){t==this.listeners[n][r].listener&&i==this.listeners[n][r].ref&&this.listeners[n].splice(r);}this.listeners[n].length==0&&delete this.listeners[n];}},dispatchEvent:function dispatchEvent(n){if(n.target=this,this.listeners[n.type])for(var t=0,i=this.listeners[n.type].length;t<i;++t){this.listeners[n.type][t].listener.call(this.listeners[n.type][t].ref,n);}}};}(),function(n){"use strict";var t="ontouchstart"in document,r=!1,o=r?"MSPointerDown":t?"touchstart":"mousedown",u=r?"MSPointerMove":t?"touchmove":"mousemove",f=r?"MSPointerUp":t?"touchend":"mouseup",e=r?"MSPointerUp":"touchcancel",i;averta.TouchSwipe=function(n){this.$element=n,this.enabled=!0,n.bind(o,{target:this},this.__touchStart),n[0].swipe=this,this.onSwipe=null,this.swipeType="horizontal",this.lastStatus={};},i=averta.TouchSwipe.prototype,i.getDirection=function(n,t){switch(this.swipeType){case"horizontal":return n<=this.start_x?"left":"right";case"vertical":return t<=this.start_y?"up":"down";case"all":return Math.abs(n-this.start_x)>Math.abs(t-this.start_y)?n<=this.start_x?"left":"right":t<=this.start_y?"up":"down";}},i.priventDefultEvent=function(n,t){var r=Math.abs(n-this.start_x),u=Math.abs(t-this.start_y),i=r>u;return this.swipeType==="horizontal"&&i||this.swipeType==="vertical"&&!i;},i.createStatusObject=function(n){var t={},i,r;return i=this.lastStatus.distanceX||0,r=this.lastStatus.distanceY||0,t.distanceX=n.pageX-this.start_x,t.distanceY=n.pageY-this.start_y,t.moveX=t.distanceX-i,t.moveY=t.distanceY-r,t.distance=parseInt(Math.sqrt(Math.pow(t.distanceX,2)+Math.pow(t.distanceY,2))),t.duration=new Date().getTime()-this.start_time,t.direction=this.getDirection(n.pageX,n.pageY),t;},i.__reset=function(n,i){this.reset=!1,this.lastStatus={},this.start_time=new Date().getTime(),this.start_x=t?n.touches[0].pageX:i.pageX,this.start_y=t?n.touches[0].pageY:i.pageY;},i.__touchStart=function(i){var r=i.data.target,o=i,h,s;if(r.enabled){if(i=i.originalEvent,!r.onSwipe){n.error("Swipe listener is undefined");return;}r.touchStarted||(r.start_x=t?i.touches[0].pageX:o.pageX,r.start_y=t?i.touches[0].pageY:o.pageY,r.start_time=new Date().getTime(),n(document).bind(f,{target:r},r.__touchEnd).bind(u,{target:r},r.__touchMove).bind(e,{target:r},r.__touchCancel),h=t?i.touches[0]:o,s=r.createStatusObject(h),s.phase="start",r.onSwipe.call(null,s),t||o.preventDefault(),r.lastStatus=s,r.touchStarted=!0);}},i.__touchMove=function(n){var i=n.data.target,f=n,r,u;(n=n.originalEvent,i.touchStarted)&&(clearTimeout(i.timo),i.timo=setTimeout(function(){i.__reset(n,f);},60),r=t?n.touches[0]:f,u=i.createStatusObject(r),i.priventDefultEvent(r.pageX,r.pageY)&&f.preventDefault(),u.phase="move",i.lastStatus=u,i.onSwipe.call(null,u));},i.__touchEnd=function(i){var r=i.data.target,s=i,h,o;i=i.originalEvent,clearTimeout(r.timo),h=t?i.touches[0]:s,o=r.lastStatus,t||s.preventDefault(),o.phase="end",r.touchStarted=!1,r.priventEvt=null,n(document).unbind(f,r.__touchEnd).unbind(u,r.__touchMove).unbind(e,r.__touchCancel),o.speed=o.distance/o.duration,r.onSwipe.call(null,o);},i.__touchCancel=function(n){var t=n.data.target;t.__touchEnd(n);},i.enable=function(){this.enabled||(this.enabled=!0);},i.disable=function(){this.enabled&&(this.enabled=!1);};}(jQuery),function(){"use strict";var _r;averta.Ticker=function(){};var t=averta.Ticker,n=[],i=!0;t.add=function(i,r){return n.push([i,r]),n.length===1&&t.start(),n.length;},t.remove=function(t,i){for(var r=0,u=n.length;r<u;++r){n[r]&&n[r][0]===t&&n[r][1]===i&&n.splice(r,1);}},t.start=function(){i&&(i=!1,_r());},t.stop=function(){i=!0;},_r=function r(){if(!t.__stopped){for(var i=0;i<n.length;++i){n[i][0].call(n[i][1]);}requestAnimationFrame(_r);}};}(),function(){"use strict";Date.now||(Date.now=function(){return new Date().getTime();}),averta.Timer=function(n,t){this.delay=n,this.currentCount=0,this.paused=!1,this.onTimer=null,this.refrence=null,t&&this.start();},averta.Timer.prototype={constructor:averta.Timer,start:function start(){this.paused=!1,this.lastTime=Date.now(),averta.Ticker.add(this.update,this);},stop:function stop(){this.paused=!0,averta.Ticker.remove(this.update,this);},reset:function reset(){this.currentCount=0,this.paused=!0,this.lastTime=Date.now();},update:function update(){this.paused||Date.now()-this.lastTime<this.delay||(this.currentCount++,this.lastTime=Date.now(),this.onTimer&&this.onTimer.call(this.refrence,this.getTime()));},getTime:function getTime(){return this.delay*this.currentCount;}};}(),function(){"use strict";var t=null,n;window.CSSTween=function(n,i,r,u){this.$element=n,this.duration=i||1e3,this.delay=r||0,this.ease=u||"linear",t||(t=window._jcsspfx==="O"?"otransitionend":window._jcsspfx=="Webkit"?"webkitTransitionEnd":"transitionend");},n=CSSTween.prototype,n.to=function(n,t){return this.to_cb=n,this.to_cb_target=t,this;},n.from=function(n,t){return this.fr_cb=n,this.fr_cb_target=t,this;},n.onComplete=function(n,t){return this.oc_fb=n,this.oc_fb_target=t,this;},n.chain=function(n){return this.chained_tween=n,this;},n.reset=function(){clearTimeout(this.start_to),clearTimeout(this.end_to);},n.start=function(){clearTimeout(this.start_to),clearTimeout(this.end_to),this.fresh=!0,this.fr_cb&&(this.$element.css(window._jcsspfx+"TransitionDuration","0ms"),this.fr_cb.call(this.fr_cb_target));var n=this;return this.onTransComplete=function(){n.fresh&&(n.reset(),this.$element.css(window._jcsspfx+"TransitionDuration","").css(window._jcsspfx+"TransitionProperty","").css(window._jcsspfx+"TransitionTimingFunction","").css(window._jcsspfx+"TransitionDelay",""),n.fresh=!1,n.chained_tween&&n.chained_tween.start(),n.oc_fb&&n.oc_fb.call(n.oc_fb_target));},this.start_to=setTimeout(function(){n.$element.css(window._jcsspfx+"TransitionDuration",n.duration+"ms").css(window._jcsspfx+"TransitionProperty","all"),n.delay>0?n.$element.css(window._jcsspfx+"TransitionDelay",n.delay+"ms"):n.$element.css(window._jcsspfx+"TransitionDelay",""),n.ease!="linear"&&n.$element.css(window._jcsspfx+"TransitionTimingFunction",n.ease),n.to_cb&&n.to_cb.call(n.to_cb_target),n.end_to=setTimeout(function(){n.onTransComplete();},n.duration+(n.delay||0));},100),this;};}(),function(){"use strict";function t(t,i){var r,u,f;return(i.x!==undefined||i.y!==undefined)&&(n?(r=window._jcsspfx+"Transform",i.x!==undefined&&(i[r]=(i[r]||"")+" translateX("+i.x+"px)",delete i.x),i.y!==undefined&&(i[r]=(i[r]||"")+" translateY("+i.y+"px)",delete i.y)):(i.x!==undefined&&(u=t.css("right")!=="auto"?"right":"left",i[u]=i.x+"px",delete i.x),i.y!==undefined&&(f=t.css("bottom")!=="auto"?"bottom":"top",i[f]=i.y+"px",delete i.y))),i;}var n=null;window.CTween={},CTween.setPos=function(n,i){n.css(t(n,i));},CTween.animate=function(i,r,u,f){var e,o;if(n==null&&(n=window._cssanim),f=f||{},t(i,u),n){if(e=new CSSTween(i,r,f.delay,EaseDic[f.ease]),e.to(function(){i.css(u);}),f.complete)e.onComplete(f.complete,f.target);return e.start(),e.stop=e.reset,e;}return f.delay&&i.delay(f.delay),f.complete&&(o=function o(){f.complete.call(f.target);}),i.stop(!0).animate(u,r,f.ease||"linear",o),i;},CTween.fadeOut=function(n,t,i){var r={};i&&(r.complete=function(){n.remove();}),CTween.animate(n,t||1e3,{opacity:0},r);},CTween.fadeIn=function(n,t){n.css("opacity",0),CTween.animate(n,t||1e3,{opacity:1});};}(),function(){window.EaseDic={linear:"linear",ease:"ease",easeIn:"ease-in",easeOut:"ease-out",easeInOut:"ease-in-out",easeInCubic:"cubic-bezier(.55,.055,.675,.19)",easeOutCubic:"cubic-bezier(.215,.61,.355,1)",easeInOutCubic:"cubic-bezier(.645,.045,.355,1)",easeInCirc:"cubic-bezier(.6,.04,.98,.335)",easeOutCirc:"cubic-bezier(.075,.82,.165,1)",easeInOutCirc:"cubic-bezier(.785,.135,.15,.86)",easeInExpo:"cubic-bezier(.95,.05,.795,.035)",easeOutExpo:"cubic-bezier(.19,1,.22,1)",easeInOutExpo:"cubic-bezier(1,0,0,1)",easeInQuad:"cubic-bezier(.55,.085,.68,.53)",easeOutQuad:"cubic-bezier(.25,.46,.45,.94)",easeInOutQuad:"cubic-bezier(.455,.03,.515,.955)",easeInQuart:"cubic-bezier(.895,.03,.685,.22)",easeOutQuart:"cubic-bezier(.165,.84,.44,1)",easeInOutQuart:"cubic-bezier(.77,0,.175,1)",easeInQuint:"cubic-bezier(.755,.05,.855,.06)",easeOutQuint:"cubic-bezier(.23,1,.32,1)",easeInOutQuint:"cubic-bezier(.86,0,.07,1)",easeInSine:"cubic-bezier(.47,0,.745,.715)",easeOutSine:"cubic-bezier(.39,.575,.565,1)",easeInOutSine:"cubic-bezier(.445,.05,.55,.95)",easeInBack:"cubic-bezier(.6,-.28,.735,.045)",easeOutBack:"cubic-bezier(.175, .885,.32,1.275)",easeInOutBack:"cubic-bezier(.68,-.55,.265,1.55)"};}(),function(){"use strict";window.MSAligner=function(n,t,i){this.$container=t,this.$img=i,this.type=n||"stretch",this.widthOnly=!1,this.heightOnly=!1;};var n=MSAligner.prototype;n.init=function(n,t){this.baseWidth=n,this.baseHeight=t,this.imgRatio=n/t,this.imgRatio2=t/n;switch(this.type){case"tile":this.$container.css("background-image","url("+this.$img.attr("src")+")"),this.$img.remove();break;case"center":this.$container.css("background-image","url("+this.$img.attr("src")+")"),this.$container.css({backgroundPosition:"center center",backgroundRepeat:"no-repeat"}),this.$img.remove();break;case"stretch":this.$img.css({width:"100%",height:"100%"});break;case"fill":case"fit":this.needAlign=!0,this.align();}},n.align=function(){if(this.needAlign){var n=this.$container.width(),t=this.$container.height(),i=n/t;this.type=="fill"?this.imgRatio<i?(this.$img.width(n),this.$img.height(n*this.imgRatio2)):(this.$img.height(t),this.$img.width(t*this.imgRatio)):this.type=="fit"&&(this.imgRatio<i?(this.$img.height(t),this.$img.width(t*this.imgRatio)):(this.$img.width(n),this.$img.height(n*this.imgRatio2))),this.setMargin();}},n.setMargin=function(){var n=this.$container.width(),t=this.$container.height();this.$img.css("margin-top",(t-this.$img[0].offsetHeight)/2+"px"),this.$img.css("margin-left",(n-this.$img[0].offsetWidth)/2+"px");};}(),function(){"use strict";var t={bouncing:!0,snapping:!1,snapsize:null,friction:.05,outFriction:.05,outAcceleration:.09,minValidDist:.3,snappingMinSpeed:2,paging:!1,endless:!1,maxSpeed:160},i=function i(n,_i,r){if(_i===null||n===null)throw new Error("Max and Min values are required.");this.options=r||{};for(var u in t){u in this.options||(this.options[u]=t[u]);}this._max_value=_i,this._min_value=n,this.value=n,this.end_loc=n,this.current_snap=this.getSnapNum(n),this.__extrStep=0,this.__extraMove=0,this.__animID=-1;},n=i.prototype;n.changeTo=function(n,t,i,r,u){if(this.stopped=!1,this._internalStop(),n=this._checkLimits(n),i=Math.abs(i||0),this.options.snapping&&(r=r||this.getSnapNum(n),u!==!1&&this._callsnapChange(r),this.current_snap=r),t){this.animating=!0;var f=this,e=++f.__animID,c=n-f.value,l=0,a=n,o,s=1-f.options.friction,h=function h(){if(e===f.__animID){var t=n-f.value;if(Math.abs(t)>f.options.minValidDist&&f.animating)window.requestAnimationFrame(h);else{f.animating&&(f.value=n,f._callrenderer()),f.animating=!1,e!==f.__animID&&(f.__animID=-1),f._callonComplete("anim");return;}o=s+(i-20)*s*1.3/f.options.maxSpeed,f.value=a-c*Math.exp(-++l*o),f._callrenderer();}};h();return;}this.value=n,this._callrenderer();},n.drag=function(n){this.start_drag&&(this.drag_start_loc=this.value,this.start_drag=!1),this.animating=!1,this._deceleration=!1,this.value-=n,!this.options.endless&&(this.value>this._max_value||this.value<0)?this.options.bouncing?(this.__isout=!0,this.value+=n*.6):this.value=this.value>this._max_value?this._max_value:0:!this.options.endless&&this.options.bouncing&&(this.__isout=!1),this._callrenderer();},n.push=function(n){if(this.stopped=!1,this.options.snapping&&Math.abs(n)<=this.options.snappingMinSpeed){this.cancel();return;}if(this.__speed=n,this.__startSpeed=n,this.end_loc=this._calculateEnd(),this.options.snapping){var t=this.getSnapNum(this.value),i=this.getSnapNum(this.end_loc);if(this.options.paging){t=this.getSnapNum(this.drag_start_loc),this.__isout=!1,n>0?this.gotoSnap(t+1,!0,n):this.gotoSnap(t-1,!0,n);return;}if(t===i){this.cancel();return;}this._callsnapChange(i),this.current_snap=i;}this.animating=!1,this.__needsSnap=this.options.endless||this.end_loc>this._min_value&&this.end_loc<this._max_value,this.options.snapping&&this.__needsSnap&&(this.__extraMove=this._calculateExtraMove(this.end_loc)),this._startDecelaration();},n.bounce=function(n){this.animating||(this.stopped=!1,this.animating=!1,this.__speed=n,this.__startSpeed=n,this.end_loc=this._calculateEnd(),this._startDecelaration());},n.stop=function(){this.stopped=!0,this._internalStop();},n.cancel=function(){this.start_drag=!0,this.__isout?(this.__speed=.0004,this._startDecelaration()):this.options.snapping&&this.gotoSnap(this.getSnapNum(this.value),!0);},n.renderCallback=function(n,t){this.__renderHook={fun:n,ref:t};},n.snappingCallback=function(n,t){this.__snapHook={fun:n,ref:t};},n.snapCompleteCallback=function(n,t){this.__compHook={fun:n,ref:t};},n.getSnapNum=function(n){return Math.floor((n+this.options.snapsize/2)/this.options.snapsize);},n.nextSnap=function(){this._internalStop();var n=this.getSnapNum(this.value);!this.options.endless&&(n+1)*this.options.snapsize>this._max_value?(this.__speed=8,this.__needsSnap=!1,this._startDecelaration()):this.gotoSnap(n+1,!0);},n.prevSnap=function(){this._internalStop();var n=this.getSnapNum(this.value);!this.options.endless&&(n-1)*this.options.snapsize<this._min_value?(this.__speed=-8,this.__needsSnap=!1,this._startDecelaration()):this.gotoSnap(n-1,!0);},n.gotoSnap=function(n,t,i){this.changeTo(n*this.options.snapsize,t,i,n);},n.destroy=function(){this._internalStop(),this.__renderHook=null,this.__snapHook=null,this.__compHook=null;},n._internalStop=function(){this.start_drag=!0,this.animating=!1,this._deceleration=!1,this.__extrStep=0;},n._calculateExtraMove=function(n){var t=n%this.options.snapsize;return t<this.options.snapsize/2?-t:this.options.snapsize-t;},n._calculateEnd=function(n){for(var t=this.__speed,i=this.value,r=0;Math.abs(t)>this.options.minValidDist;){i+=t,t*=this.options.friction,r++;}return n?r:i;},n._checkLimits=function(n){return this.options.endless?n:n<this._min_value?this._min_value:n>this._max_value?this._max_value:n;},n._callrenderer=function(){this.__renderHook&&this.__renderHook.fun.call(this.__renderHook.ref,this,this.value);},n._callsnapChange=function(n){this.__snapHook&&n!==this.current_snap&&this.__snapHook.fun.call(this.__snapHook.ref,this,n,n-this.current_snap);},n._callonComplete=function(n){this.__compHook&&!this.stopped&&this.__compHook.fun.call(this.__compHook.ref,this,this.current_snap,n);},n._computeDeceleration=function(){var t,n;this.options.snapping&&this.__needsSnap?(t=(this.__startSpeed-this.__speed)/this.__startSpeed*this.__extraMove,this.value+=this.__speed+t-this.__extrStep,this.__extrStep=t):this.value+=this.__speed,this.__speed*=this.options.friction,this.options.endless||this.options.bouncing||(this.value<=this._min_value?(this.value=this._min_value,this.__speed=0):this.value>=this._max_value&&(this.value=this._max_value,this.__speed=0)),this._callrenderer(),!this.options.endless&&this.options.bouncing&&(n=0,this.value<this._min_value?n=this._min_value-this.value:this.value>this._max_value&&(n=this._max_value-this.value),this.__isout=Math.abs(n)>=this.options.minValidDist,this.__isout&&(this.__speed*n<=0?this.__speed+=n*this.options.outFriction:this.__speed=n*this.options.outAcceleration));},n._startDecelaration=function(){if(!this._deceleration){this._deceleration=!0;var n=this,t=function t(){n._deceleration&&(n._computeDeceleration(),Math.abs(n.__speed)>n.options.minValidDist||n.__isout?window.requestAnimationFrame(t):(n._deceleration=!1,n.__isout=!1,n.value=this.__needsSnap&&n.options.snapping&&!n.options.paging?n._checkLimits(n.end_loc+n.__extraMove):Math.round(n.value),n._callrenderer(),n._callonComplete("decel")));};t();}},window.Controller=i;}(),function(n){window.MSLayerEffects={};var i,t={opacity:0};MSLayerEffects.setup=function(){if(!i){i=!0;var r=MSLayerEffects,u=window._jcsspfx+"Transform",f=window._jcsspfx+"TransformOrigin",e=n.browser.opera;_2d=window._css2d&&window._cssanim&&!e,r.defaultValues={left:0,top:0,opacity:1,right:0,bottom:0},r.defaultValues[u]="",r.rf=1,r.presetEffParams={random:"30|300",long:300,short:30,"false":!1,"true":!0,tl:"top left",bl:"bottom left",tr:"top right",br:"bottom right",rt:"top right",lb:"bottom left",lt:"top left",rb:"bottom right",t:"top",b:"bottom",r:"right",l:"left",c:"center"},r.fade=function(){return t;},r.left=_2d?function(n,t){var i=t===!1?{}:{opacity:0};return i[u]="translateX("+-n*r.rf+"px)",i;}:function(n,t){var i=t===!1?{}:{opacity:0};return i.left=-n*r.rf+"px",i;},r.right=_2d?function(n,t){var i=t===!1?{}:{opacity:0};return i[u]="translateX("+n*r.rf+"px)",i;}:function(n,t){var i=t===!1?{}:{opacity:0};return i.left=n*r.rf+"px",i;},r.top=_2d?function(n,t){var i=t===!1?{}:{opacity:0};return i[u]="translateY("+-n*r.rf+"px)",i;}:function(n,t){var i=t===!1?{}:{opacity:0};return i.top=-n*r.rf+"px",i;},r.bottom=_2d?function(n,t){var i=t===!1?{}:{opacity:0};return i[u]="translateY("+n*r.rf+"px)",i;}:function(n,t){var i=t===!1?{}:{opacity:0};return i.top=n*r.rf+"px",i;},r.from=_2d?function(n,t,i){var f=i===!1?{}:{opacity:0};return f[u]="translateX("+n*r.rf+"px) translateY("+t*r.rf+"px)",f;}:function(n,t,i){var u=i===!1?{}:{opacity:0};return u.top=t*r.rf+"px",u.left=n*r.rf+"px",u;},r.rotate=_2d?function(n,t){var i={opacity:0};return i[u]=" rotate("+n+"deg)",t&&(i[f]=t),i;}:function(){return t;},r.rotateleft=_2d?function(n,t,i,e){var o=r.left(t,e);return o[u]+=" rotate("+n+"deg)",i&&(o[f]=i),o;}:function(n,t,i,u){return r.left(t,u);},r.rotateright=_2d?function(n,t,i,e){var o=r.right(t,e);return o[u]+=" rotate("+n+"deg)",i&&(o[f]=i),o;}:function(n,t,i,u){return r.right(t,u);},r.rotatetop=_2d?function(n,t,i,e){var o=r.top(t,e);return o[u]+=" rotate("+n+"deg)",i&&(o[f]=i),o;}:function(n,t,i,u){return r.top(t,u);},r.rotatebottom=_2d?function(n,t,i,e){var o=r.bottom(t,e);return o[u]+=" rotate("+n+"deg)",i&&(o[f]=i),o;}:function(n,t,i,u){return r.bottom(t,u);},r.rotatefrom=_2d?function(n,t,i,e,o){var s=r.from(t,i,o);return s[u]+=" rotate("+n+"deg)",e&&(s[f]=e),s;}:function(n,t,i,u,f){return r.from(t,i,f);},r.skewleft=_2d?function(n,t,i){var f=r.left(t,i);return f[u]+=" skewX("+n+"deg)",f;}:function(n,t,i){return r.left(t,i);},r.skewright=_2d?function(n,t,i){var f=r.right(t,i);return f[u]+=" skewX("+-n+"deg)",f;}:function(n,t,i){return r.right(t,i);},r.skewtop=_2d?function(n,t,i){var f=r.top(t,i);return f[u]+=" skewY("+n+"deg)",f;}:function(n,t,i){return r.top(t,i);},r.skewbottom=_2d?function(n,t,i){var f=r.bottom(t,i);return f[u]+=" skewY("+-n+"deg)",f;}:function(n,t,i){return r.bottom(t,i);},r.scale=_2d?function(n,t,i,r){var e=r===!1?{}:{opacity:0};return e[u]=" scaleX("+n+") scaleY("+t+")",i&&(e[f]=i),e;}:function(n,t,i,r){return r===!1?{}:{opacity:0};},r.scaleleft=_2d?function(n,t,i,e,o){var s=r.left(i,o);return s[u]=" scaleX("+n+") scaleY("+t+")",e&&(s[f]=e),s;}:function(n,t,i,u,f){return r.left(i,f);},r.scaleright=_2d?function(n,t,i,e,o){var s=r.right(i,o);return s[u]=" scaleX("+n+") scaleY("+t+")",e&&(s[f]=e),s;}:function(n,t,i,u,f){return r.right(i,f);},r.scaletop=_2d?function(n,t,i,e,o){var s=r.top(i,o);return s[u]=" scaleX("+n+") scaleY("+t+")",e&&(s[f]=e),s;}:function(n,t,i,u,f){return r.top(i,f);},r.scalebottom=_2d?function(n,t,i,e,o){var s=r.bottom(i,o);return s[u]=" scaleX("+n+") scaleY("+t+")",e&&(s[f]=e),s;}:function(n,t,i,u,f){return r.bottom(i,f);},r.scalefrom=_2d?function(n,t,i,e,o,s){var h=r.from(i,e,s);return h[u]+=" scaleX("+n+") scaleY("+t+")",o&&(h[f]=o),h;}:function(n,t,i,u,f,e){return r.from(i,u,e);},r.rotatescale=_2d?function(n,t,i,e,o){var s=r.scale(t,i,e,o);return s[u]+=" rotate("+n+"deg)",e&&(s[f]=e),s;}:function(n,t,i,u,f){return r.scale(t,i,u,f);},r.front=window._css3d?function(n,t){var i=t===!1?{}:{opacity:0};return i[u]="perspective(2000px) translate3d(0 , 0 ,"+n+"px ) rotate(0.001deg)",i;}:function(){return t;},r.back=window._css3d?function(n,t){var i=t===!1?{}:{opacity:0};return i[u]="perspective(2000px) translate3d(0 , 0 ,"+-n+"px ) rotate(0.001deg)",i;}:function(){return t;},r.rotatefront=window._css3d?function(n,t,i,r){var e=r===!1?{}:{opacity:0};return e[u]="perspective(2000px) translate3d(0 , 0 ,"+t+"px ) rotate("+(n||.001)+"deg)",i&&(e[f]=i),e;}:function(){return t;},r.rotateback=window._css3d?function(n,t,i,r){var e=r===!1?{}:{opacity:0};return e[u]="perspective(2000px) translate3d(0 , 0 ,"+-t+"px ) rotate("+(n||.001)+"deg)",i&&(e[f]=i),e;}:function(){return t;},r.rotate3dleft=window._css3d?function(n,t,i,e,o,s){var h=r.left(e,s);return h[u]+=(n?" rotateX("+n+"deg)":" ")+(t?" rotateY("+t+"deg)":"")+(i?" rotateZ("+i+"deg)":""),o&&(h[f]=o),h;}:function(n,t,i,u,f,e){return r.left(u,e);},r.rotate3dright=window._css3d?function(n,t,i,e,o,s){var h=r.right(e,s);return h[u]+=(n?" rotateX("+n+"deg)":" ")+(t?" rotateY("+t+"deg)":"")+(i?" rotateZ("+i+"deg)":""),o&&(h[f]=o),h;}:function(n,t,i,u,f,e){return r.right(u,e);},r.rotate3dtop=window._css3d?function(n,t,i,e,o,s){var h=r.top(e,s);return h[u]+=(n?" rotateX("+n+"deg)":" ")+(t?" rotateY("+t+"deg)":"")+(i?" rotateZ("+i+"deg)":""),o&&(h[f]=o),h;}:function(n,t,i,u,f,e){return r.top(u,e);},r.rotate3dbottom=window._css3d?function(n,t,i,e,o,s){var h=r.bottom(e,s);return h[u]+=(n?" rotateX("+n+"deg)":" ")+(t?" rotateY("+t+"deg)":"")+(i?" rotateZ("+i+"deg)":""),o&&(h[f]=o),h;}:function(n,t,i,u,f,e){return r.bottom(u,e);},r.rotate3dfront=window._css3d?function(n,t,i,e,o,s){var h=r.front(e,s);return h[u]+=(n?" rotateX("+n+"deg)":" ")+(t?" rotateY("+t+"deg)":"")+(i?" rotateZ("+i+"deg)":""),o&&(h[f]=o),h;}:function(n,t,i,u,f,e){return r.front(u,e);},r.rotate3dback=window._css3d?function(n,t,i,e,o,s){var h=r.back(e,s);return h[u]+=(n?" rotateX("+n+"deg)":" ")+(t?" rotateY("+t+"deg)":"")+(i?" rotateZ("+i+"deg)":""),o&&(h[f]=o),h;}:function(n,t,i,u,f,e){return r.back(u,e);},r.t=window._css3d?function(n,t,i,e,o,s,h,c,l,a,v,y,p,w,b){var g=n===!1?{}:{opacity:0},k="",d;return t!=="n"&&(k+="translateX("+t*r.rf+"px) "),i!=="n"&&(k+="translateY("+i*r.rf+"px) "),e!=="n"&&(k+="translateZ("+e*r.rf+"px) "),o!=="n"&&(k+="rotate("+o+"deg) "),s!=="n"&&(k+="rotateX("+s+"deg) "),h!=="n"&&(k+="rotateY("+h+"deg) "),c!=="n"&&(k+="rotateZ("+c+"deg) "),v!=="n"&&(k+="skewX("+v+"deg) "),y!=="n"&&(k+="skewY("+y+"deg) "),l!=="n"&&(k+="scaleX("+l+") "),a!=="n"&&(k+="scaleY("+a+")"),g[u]=k,d="",d+=p!=="n"?p+"% ":"50% ",d+=w!=="n"?w+"% ":"50% ",d+=b!=="n"?b+"px":"",g[f]=d,g;}:function(n,t,i,u,f){var f=n===!1?{}:{opacity:0};return t!=="n"&&(f.left+=t*r.rf+"px"),i!=="n"&&(f.top+=i*r.rf+"px"),f;};}};}(jQuery),function(n){window.MSLayerElement=function(){this.$cont=n("<div><\/div>").addClass("layer-cont"),this.start_anim={name:"fade",duration:1e3,ease:"linear",delay:0},this.end_anim={duration:1e3,ease:"linear"},this.type="text",this.swipe=!0,this.resizable=!0,this.minWidth=-1,this.__cssConfig=["margin-top","padding-top","margin-bottom","padding-left","margin-right","padding-right","margin-left","padding-bottom","left","right","top","bottom","font-size","line-height","width","height"],this.baseStyle={};};var t=MSLayerElement.prototype;t.__playAnimation=function(n,t){var i={};n.ease&&(i.ease=n.ease),this.show_tween=CTween.animate(this.$element,n.duration,t,i);},t._randomParam=function(n){var t=Number(n.slice(0,n.indexOf("|"))),i=Number(n.slice(n.indexOf("|")+1));return t+Math.random()*(i-t);},t._parseEff=function(n){var t=[],u,i,r,f;if(n.indexOf("(")!==-1)for(u=n.slice(0,n.indexOf("(")).toLowerCase(),t=n.slice(n.indexOf("(")+1,-1).replace(/\"|\'|\s/g,"").split(","),n=u,r=0,f=t.length;r<f;++r){i=t[r],i in MSLayerEffects.presetEffParams&&(i=MSLayerEffects.presetEffParams[i]),t[r]=i;}return{eff_name:n,eff_params:t};},t._parseEffParams=function(n){for(var r=[],t,i=0,u=n.length;i<u;++i){t=n[i],typeof t=="string"&&t.indexOf("|")!==-1&&(t=this._randomParam(t)),r[i]=t;}return r;},t._checkPosKey=function(n,t){return n==="left"&&!(n in this.baseStyle)&&"right"in this.baseStyle?(t.right=-parseInt(t.left)+"px",delete t.left,!0):n==="top"&&!(n in this.baseStyle)&&"bottom"in this.baseStyle?(t.bottom=-parseInt(t.top)+"px",delete t.top,!0):!1;},t.setStartAnim=function(t){n.extend(this.start_anim,t),n.extend(this.start_anim,this._parseEff(this.start_anim.name)),this.$element.css("visibility","hidden");},t.setEndAnim=function(t){n.extend(this.end_anim,t);},t.create=function(){this.$element.css("display","none"),this.$element.removeAttr("data-delay").removeAttr("data-effect").removeAttr("data-duration").removeAttr("data-type"),this.end_anim.name||(this.end_anim.name=this.start_anim.name),this.end_anim.time&&(this.autoHide=!0),n.extend(this.end_anim,this._parseEff(this.end_anim.name));},t.init=function(){var n,t,r,i;for(this.initialized=!0,this.$element.css("visibility",""),t=0,r=this.__cssConfig.length;t<r;t++){i=this.__cssConfig[t],n=this.type==="text"&&i==="width"?this.$element[0].style.width:this.$element.css(i),n!="auto"&&n!=""&&n!="normal"&&(this.baseStyle[i]=parseInt(n));}},t.locate=function(){var i=this.slide.$layers,t=parseFloat(i.css("width")),n;if(this.visible(this.minWidth<t),this.resizable){this.factor=t/this.slide.slider.options.width;for(n in this.baseStyle){this.$element.css(n,this.baseStyle[n]*this.factor+"px");}}},t.start=function(){var n,u,i,r,t;if(!this.isShowing){this.isShowing=!0,MSLayerEffects.rf=this.factor,i=MSLayerEffects[this.start_anim.eff_name].apply(null,this._parseEffParams(this.start_anim.eff_params)),r={};for(n in i){this._checkPosKey(n,i)||(MSLayerEffects.defaultValues[n]!=null&&(r[n]=MSLayerEffects.defaultValues[n]),n in this.baseStyle&&(u=this.baseStyle[n],i[n]=u+parseFloat(i[n])+"px",r[n]=u+"px"),this.$element.css(n,i[n]));}t=this,clearTimeout(this.to),this.to=setTimeout(function(){t.$element.css("display",""),t.__playAnimation(t.start_anim,r);},t.start_anim.delay||.01),this.cl_to=setTimeout(function(){t.show_cl=!0;},(this.start_anim.delay||.01)+this.start_anim.duration),this.autoHide&&(clearTimeout(this.hto),this.hto=setTimeout(function(){t.hide();},t.end_anim.time));}},t.hide=function(){this.isShowing=!1;var n=MSLayerEffects[this.end_anim.eff_name].apply(null,this._parseEffParams(this.end_anim.eff_params));for(key in n){this._checkPosKey(key,n)||(key===window._jcsspfx+"TransformOrigin"&&this.$element.css(key,n[key]),key in this.baseStyle&&(n[key]=this.baseStyle[key]+parseFloat(n[key])+"px"));}this.__playAnimation(this.end_anim,n),clearTimeout(this.to),clearTimeout(this.hto),clearTimeout(this.cl_to);},t.reset=function(){this.isShowing=!1,this.$element[0].style.display="none",this.$element.css("opacity","100"),this.$element[0].style.transitionDuration="0ms",this.show_tween&&this.show_tween.stop(!0),clearTimeout(this.to),clearTimeout(this.hto);},t.destroy=function(){this.reset(),this.$element.remove(),this.$cont.remove();},t.visible=function(n){this.isVisible!=n&&(this.isVisible=n,this.$element.css("display",n?"":"none"));};}(jQuery),function(n){window.MSImageLayerElement=function(){MSLayerElement.call(this),this.needPreload=!0,this.__cssConfig=["margin-top","padding-top","margin-bottom","padding-left","margin-right","padding-right","margin-left","padding-bottom","left","right","top","bottom","width","height"];},MSImageLayerElement.extend(MSLayerElement);var t=MSImageLayerElement.prototype,i=MSLayerElement.prototype;t.create=function(){var r,t;if(this.link&&(r=this.$element.parent(),r.append(this.link),this.link.append(this.$element),this.link.removeClass("ms-layer"),this.$element.addClass("ms-layer"),r=null),i.create.call(this),this.$element.data("src")!=undefined?(this.img_src=this.$element.data("src"),this.$element.removeAttr("data-src")):(t=this,this.$element.on("load",function(){t.slide.preloadCount--,t.slide.preloadCount===0&&t.slide.___onlayersReady();}).each(n.jqLoadFix)),n.browser.msie)this.$element.on("dragstart",function(n){n.preventDefault();});},t.loadImage=function(){var n=this;this.$element.preloadImg(this.img_src,function(){n.slide.preloadCount--,n.slide.preloadCount===0&&n.slide.___onlayersReady();});};}(jQuery),function(n){window.MSVideoLayerElement=function(){MSLayerElement.call(this);},MSVideoLayerElement.extend(MSLayerElement);var t=MSVideoLayerElement.prototype,i=MSLayerElement.prototype;t.__playVideo=function(){this.img&&CTween.fadeOut(this.img,500,!1),CTween.fadeOut(this.video_btn,500,!1),this.video_frame.attr("src","about:blank").css("display","block"),this.video_url.indexOf("?")==-1&&(this.video_url+="?"),this.video_frame.attr("src",this.video_url+"&autoplay=1");},t.reset=function(){if(i.reset.call(this),(this.needPreload||this.$element.data("btn"))&&(this.video_btn.css("opacity",1),this.video_frame.attr("src","about:blank").css("display","none")),this.needPreload){this.img.css("opacity",1);return;}this.video_frame.attr("src",this.video_url);},t.create=function(){var r,t;if((i.create.call(this),this.video_frame=this.$element.find("iframe").css({width:"100%",height:"100%"}),this.video_url=this.video_frame.attr("src"),r=this.$element.has("img").length!=0,r||this.$element.data("btn"))&&(this.video_frame.attr("src","about:blank").css("display","none"),t=this,this.video_btn=n("<div><\/div>").appendTo(this.$element).addClass("ms-video-btn").click(function(){t.__playVideo();}),r)&&(this.needPreload=!0,this.img=this.$element.find("img:first").addClass("ms-video-img"),this.img.data("src")!==undefined?(this.img_src=this.img.data("src"),this.img.removeAttr("data-src")):(t=this,this.img.attr("src",this.img_src).on("load",function(){t.slide.preloadCount--,t.slide.preloadCount==0&&t.slide.___onlayersReady();}).each(n.jqLoadFix)),n.browser.msie))this.img.on("dragstart",function(n){n.preventDefault();});},t.loadImage=function(){var n=this;this.img.preloadImg(this.img_src,function(){n.slide.preloadCount--,n.slide.preloadCount==0&&n.slide.___onlayersReady();});};}(jQuery),function(n){"use strict";window.MSHotspotLayer=function(){MSLayerElement.call(this),this.__cssConfig=["margin-top","padding-top","margin-bottom","padding-left","margin-right","padding-right","margin-left","padding-bottom","left","right","top","bottom"],this.ease="Expo";},MSHotspotLayer.extend(MSLayerElement);var t=MSHotspotLayer.prototype,i=MSLayerElement.prototype;t._showTT=function(){this.show_cl&&(this.align=this._orgAlign,this._locateTT(),this.hide_start=!1,this._tween&&this._tween.stop(!0),this.tt.css({display:"block"}),this._tween=CTween.animate(this.tt,900,this.to,{ease:"easeOut"+this.ease}));},t._hideTT=function(){if(this.show_cl){this._tween&&this._tween.stop(!0);var n=this;this._tween=CTween.animate(this.tt,900,this.from,{ease:"easeOut"+this.ease,complete:function complete(){n.tt.css("display","none");}});}},t._updateClassName=function(n){this._lastClass&&this.tt.removeClass(this._lastClass),this.tt.addClass(n),this._lastClass=n;},t._alignPolicy=function(){var i=this.tt.outerHeight(),n=Math.max(this.tt.outerWidth(),parseInt(this.tt.css("max-width"))),t=window.innerWidth,r=window.innerHeight;switch(this.align){case"top":if(this.base_t<0)return"bottom";break;case"right":if(this.base_l+n>t||this.base_t<0)return"bottom";break;case"left":if(this.base_l<0||this.base_t<0)return"bottom";}return null;},t._locateTT=function(){var e=this.$element.offset(),o=this.slide.slider.$element.offset(),t=50,r=15,i,u,n,f;this.pos_x=e.left-o.left-this.slide.slider.$element.scrollLeft(),this.pos_y=e.top-o.top-this.slide.slider.$element.scrollTop(),this.from={opacity:0},this.to={opacity:1},this._updateClassName("ms-tooltip-"+this.align),this.tt_arrow.css("margin-left",""),i=15,u=15;switch(this.align){case"top":n=Math.max(this.tt.outerWidth(),parseInt(this.tt.css("max-width"))),this.base_t=this.pos_y-this.tt.outerHeight()-u-r,this.base_l=this.pos_x-n/2,this.base_l+n>window.innerWidth&&(this.tt_arrow.css("margin-left",-i/2+this.base_l+n-window.innerWidth+"px"),this.base_l=window.innerWidth-n),this.base_l<0&&(this.base_l=0,this.tt_arrow.css("margin-left",-i/2+this.pos_x-this.tt.outerWidth()/2+"px")),window._css3d?(this.from[window._jcsspfx+"Transform"]="translateY(-"+t+"px)",this.to[window._jcsspfx+"Transform"]=""):(this.from.top=this.base_t-t+"px",this.to.top=this.base_t+"px");break;case"bottom":n=Math.max(this.tt.outerWidth(),parseInt(this.tt.css("max-width"))),this.base_t=this.pos_y+u+r,this.base_l=this.pos_x-n/2,this.base_l+n>window.innerWidth&&(this.tt_arrow.css("margin-left",-i/2+this.base_l+n-window.innerWidth+"px"),this.base_l=window.innerWidth-n),this.base_l<0&&(this.base_l=0,this.tt_arrow.css("margin-left",-i/2+this.pos_x-this.tt.outerWidth()/2+"px")),window._css3d?(this.from[window._jcsspfx+"Transform"]="translateY("+t+"px)",this.to[window._jcsspfx+"Transform"]=""):(this.from.top=this.base_t+t+"px",this.to.top=this.base_t+"px");break;case"right":this.base_l=this.pos_x+i+r,this.base_t=this.pos_y-this.tt.outerHeight()/2,window._css3d?(this.from[window._jcsspfx+"Transform"]="translateX("+t+"px)",this.to[window._jcsspfx+"Transform"]=""):(this.from.left=this.base_l+t+"px",this.to.left=this.base_l+"px");break;case"left":this.base_l=this.pos_x-i-this.tt.outerWidth()-r,this.base_t=this.pos_y-this.tt.outerHeight()/2,window._css3d?(this.from[window._jcsspfx+"Transform"]="translateX(-"+t+"px)",this.to[window._jcsspfx+"Transform"]=""):(this.from.left=this.base_l-t+"px",this.to.left=this.base_l+"px");}if(f=this._alignPolicy(),f!==null){this.align=f,this._locateTT();return;}this.tt.css("top",parseInt(this.base_t)+"px").css("left",parseInt(this.base_l)+"px"),this.tt.css(this.from);},t.start=function(){i.start.call(this),this.tt.appendTo(this.slide.slider.$element),this.tt.css("display","none");},t.reset=function(){i.reset.call(this),this.tt.detach();},t.create=function(){var r=this,t,u;i.create.call(this),this._orgAlign=this.align=this.$element.data("align")!==undefined?this.$element.data("align"):"top",this.data=this.$element.html();this.$element.html("").on("mouseenter",function(){r._showTT();}).on("mouseleave",function(){r._hideTT();});if(this.point=n('<div><div class="ms-point-center"><\/div><div class="ms-point-border"><\/div><\/div>').addClass("ms-tooltip-point").appendTo(this.$element),t=this.$element.data("link"),u=this.$element.data("target"),t)this.point.on("click",function(){window.open(t,u||"_self");});this.tt=n("<div><\/div>").addClass("ms-tooltip").css("display","hidden").css("opacity",0),this.tt_arrow=n("<div><\/div>").addClass("ms-tooltip-arrow").appendTo(this.tt),this._updateClassName("ms-tooltip-"+this.align),this.ttcont=n("<div><\/div>").addClass("ms-tooltip-cont").html(this.data).appendTo(this.tt);};}(jQuery),window.MSSliderEvent=function(n){this.type=n;},MSSliderEvent.CHANGE_START="changeStart",MSSliderEvent.CHANGE_END="changeEnd",MSSliderEvent.WATING="wating",MSSliderEvent.AUTOPLAY_CHANGE="autoplayChange",MSSliderEvent.VIDEO_PLAY="videoPlay",MSSliderEvent.VIDEO_CLOSE="videoClose",MSSliderEvent.INIT="init",MSSliderEvent.RESIZE="resize",MSSliderEvent.RESERVED_SPACE_CHANGE="rsc",function(n){"use strict";window.MSSlide=function(){this.$element=null,this.$loading=n("<div><\/div>").addClass("ms-slide-loading"),this.layers=[],this.view=null,this.index=-1,this.__width=0,this.__height=0,this.preloadCount=0,this.fillMode="fill",this.selected=!1,this.pselected=!1,this.autoAppend=!0,this.moz=n.browser.mozilla;};var t=MSSlide.prototype;t.onSwipeStart=function(){this.link&&(this.linkdis=!0),this.video&&(this.videodis=!0);},t.onSwipeCancel=function(){this.link&&(this.linkdis=!1),this.video&&(this.videodis=!1);},t.addLayer=function(t){this.hasLayers||(this.$layers=n("<div><\/div>").addClass("ms-slide-layers")),this.hasLayers=!0,this.$layers.append(t.$element),this.layers.push(t),t.slide=this,t.create(),t.needPreload&&this.preloadCount++;},t.___onlayersReady=function(){this.ready=!0,this.slider.api._startTimer(),this.selected&&(this.showLayers(),this.vinit&&(this.bgvideo.play(),this.autoPauseBgVid||(this.bgvideo.currentTime=0))),this.isSleeping||this.setup(),CTween.fadeOut(this.$loading,300,!0),(this.slider.options.preload===0||this.slider.options.preload==="all")&&this.index<this.view.slideList.length-1?this.view.slideList[this.index+1].loadImages():this.slider.options.preload==="all"&&this.index===this.view.slideList.length-1&&this.slider._removeLoading();},t.startLayers=function(){for(var n=0,t=this.layers.length;n<t;++n){this.layers[n].start();}},t.initLayers=function(n){if((!this.init||n)&&!this.slider.init_safemode){this.init=!0;for(var t=0,i=this.layers.length;t<i;++t){this.layers[t].init();}}},t.locateLayers=function(){for(var n=0,t=this.layers.length;n<t;++n){this.layers[n].locate();}},t.resetLayers=function(){this.$layers.css("display","none"),this.$layers.css("opacity",1);for(var n=0,t=this.layers.length;n<t;++n){this.layers[n].reset();}},t.hideLayers=function(){if(this.preloadCount===0)for(var n=0,t=this.layers.length;n<t;++n){this.layers[n].hide();}},t.showLayers=function(){this.hasLayers&&(this.lht&&(this.lht.reset?this.lht.reset():this.lht.stop("true")),this.resetLayers(),this.$layers.css("opacity",1).css("display",""),this.preloadCount===0&&(this.initLayers(),this.locateLayers(),this.startLayers()));},t.setBG=function(t){this.hasBG=!0;var i=this;this.$imgcont=n("<div><\/div>").addClass("ms-slide-bgcont"),this.$element.append(this.$loading).append(this.$imgcont),this.$bg_img=n(t).css("visibility","hidden"),this.$imgcont.append(this.$bg_img),this.bgAligner=new MSAligner(i.fillMode,i.$imgcont,i.$bg_img),this.bgAligner.widthOnly=this.slider.options.autoHeight,i.slider.options.autoHeight&&(i.pselected||i.selected)&&i.slider.setHeight(i.slider.options.height),this.$bg_img.data("src")!==undefined?(this.bg_src=this.$bg_img.data("src"),this.$bg_img.removeAttr("data-src")):this.$bg_img.one("load",function(n){i._onBGLoad(n);}).each(n.jqLoadFix),this.preloadCount++;},t._onBGLoad=function(t){if(this.bgNatrualWidth=t.width,this.bgNatrualHeight=t.height,this.bgLoaded=!0,n.browser.msie)this.$bg_img.on("dragstart",function(n){n.preventDefault();});this.preloadCount--,this.preloadCount===0&&this.___onlayersReady();},t.loadImages=function(){var t,n,i;if(!this.ls){for(this.ls=!0,this.hasBG&&this.bg_src&&(t=this,this.$bg_img.preloadImg(this.bg_src,function(n){t._onBGLoad(n);})),n=0,i=this.layers.length;n<i;++n){this.layers[n].needPreload&&this.layers[n].loadImage();}this.bgvideo&&this.bgvideo.load();}},t.setBGVideo=function(t){if(t[0].play){if(window._mobile){t.remove();return;}this.bgvideo=t[0];var i=this;t.addClass("ms-slide-bgvideo"),t.data("loop")!==!1&&this.bgvideo.addEventListener("ended",function(){i.bgvideo.play();}),t.data("mute")!==!1&&(this.bgvideo.muted=!0),t.data("autopause")===!0&&(this.autoPauseBgVid=!0),this.bgvideo_fillmode=t.data("fill-mode")||"fill",this.bgvideo_fillmode!=="none"&&(this.bgVideoAligner=new MSAligner(this.bgvideo_fillmode,this.$element,t),this.bgvideo.addEventListener("loadedmetadata",function(){i.vinit||(i.vinit=!0,i.video_aspect=i.bgVideoAligner.baseHeight/i.bgVideoAligner.baseWidth,i.bgVideoAligner.init(i.bgvideo.videoWidth,i.bgvideo.videoHeight),i._alignBGVideo(),CTween.fadeIn(n(i.bgvideo),200),i.selected&&i.bgvideo.play());})),t.css("opacity",0),this.$bgvideocont=n("<div><\/div>").addClass("ms-slide-bgvideocont").append(t),this.hasBG?this.$imgcont.before(this.$bgvideocont):this.$bgvideocont.appendTo(this.$element);}},t._alignBGVideo=function(){this.bgvideo_fillmode&&this.bgvideo_fillmode!=="none"&&this.bgVideoAligner.align();},t.setSize=function(n,t,i){this.__width=n,this.slider.options.autoHeight&&(this.bgLoaded?(this.ratio=this.__width/this.bgWidth,t=Math.floor(this.ratio*this.bgHeight),this.$imgcont.height(t)):(this.ratio=n/this.slider.options.width,t=this.slider.options.height*this.ratio)),this.__height=t,this.$element.width(n).height(t),this.hasBG&&this.bgLoaded&&this.bgAligner.align(),this._alignBGVideo(),i&&this.selected&&this.initLayers(i),this.selected&&this.locateLayers(),this.hasLayers&&(this.slider.options.autoHeight&&(this.$layers[0].style.height=this.getHeight()+"px"),this.slider.options.layersMode=="center"&&(this.$layers[0].style.left=Math.max(0,(this.__width-this.slider.options.width)/2)+"px"));},t.getHeight=function(){return this.bgLoaded?this.bgHeight*this.ratio:Math.max(this.$element[0].clientHeight,this.slider.options.height*this.ratio);},t.__playVideo=function(){this.vplayed||this.videodis||(this.vplayed=!0,this.slider.api.paused||(this.slider.api.pause(),this.roc=!0),this.vcbtn.css("display",""),CTween.fadeOut(this.vpbtn,500,!1),CTween.fadeIn(this.vcbtn,500),CTween.fadeIn(this.vframe,500),this.vframe.css("display","block").attr("src",this.video+"&autoplay=1"),this.view.$element.addClass("ms-def-cursor"),this.view.swipeControl.disable(),this.slider.slideController.dispatchEvent(new MSSliderEvent(MSSliderEvent.VIDEO_PLAY)));},t.__closeVideo=function(){if(this.vplayed){this.vplayed=!1,this.roc&&this.slider.api.resume();var n=this;CTween.fadeIn(this.vpbtn,500),CTween.animate(this.vcbtn,500,{opacity:0},{complete:function complete(){n.vcbtn.css("display","none");}}),CTween.animate(this.vframe,500,{opacity:0},{complete:function complete(){n.vframe.attr("src","about:blank").css("display","none");}}),this.view.swipeControl.enable(),this.view.$element.removeClass("ms-def-cursor"),this.slider.slideController.dispatchEvent(new MSSliderEvent(MSSliderEvent.VIDEO_CLOSE));}},t.create=function(){var t=this;this.hasLayers&&(this.$element.append(this.$layers),this.slider.options.layersMode=="center"&&this.$layers.css("max-width",this.slider.options.width+"px")),this.link&&this.$element.css("cursor","pointer").click(function(){t.linkdis||window.open(t.link,t.link_targ||"_self");}),this.video&&(this.video.indexOf("?")===-1&&(this.video+="?"),this.vframe=n("<iframe><\/iframe>").addClass("ms-slide-video").css({width:"100%",height:"100%",display:"none"}).attr("src","about:blank").appendTo(this.$element),this.vpbtn=n("<div><\/div>").addClass("ms-slide-vpbtn").click(function(){t.__playVideo();}).appendTo(this.$element),this.vcbtn=n("<div><\/div>").addClass("ms-slide-vcbtn").click(function(){t.__closeVideo();}).appendTo(this.$element).css("display","none"),window._touch&&this.vcbtn.removeClass("ms-slide-vcbtn").addClass("ms-slide-vcbtn-mobile").append('<div class="ms-vcbtn-txt">Close video<\/div>').appendTo(this.view.$element.parent())),!this.slider.options.autoHeight&&this.hasBG&&(this.$imgcont.css("height","100%"),(this.fillMode==="center"||this.fillMode==="stretch")&&(this.fillMode="fill")),this.sleep();},t.destroy=function(){for(var n=0,t=this.layers.length;n<t;++n){this.layers[n].$element.stop(!0).remove();}this.$element.remove(),this.$element=null;},t.setup=function(){!this.initBG&&this.bgLoaded&&(this.initBG=!0,this.$bg_img.css("visibility",""),this.bgWidth=this.bgNatrualWidth||this.$bg_img.width(),this.bgHeight=this.bgNatrualHeight||this.$bg_img.height(),CTween.fadeIn(this.$imgcont,300),this.slider.options.autoHeight&&this.$imgcont.height(this.bgHeight*this.ratio),this.bgAligner.init(this.bgWidth,this.bgHeight),this.setSize(this.__width,this.__height),this.slider.options.autoHeight&&(this.pselected||this.selected)&&this.slider.setHeight(this.getHeight()));},t.prepareToSelect=function(){this.pselected||this.selected||(this.pselected=!0,(this.link||this.video)&&(this.view.addEventListener(MSViewEvents.SWIPE_START,this.onSwipeStart,this),this.view.addEventListener(MSViewEvents.SWIPE_CANCEL,this.onSwipeCancel,this)),this.loadImages(),this.preloadCount===0&&(this.bgvideo&&this.bgvideo.play(),this.slider.options.instantStartLayers&&this.showLayers()),this.moz&&this.$element.css("margin-top",""));},t.select=function(){this.selected||(this.selected=!0,this.pselected=!1,this.$element.addClass("ms-sl-selected"),this.hasLayers&&(this.slider.options.autoHeight&&(this.$layers[0].style.height=this.getHeight()+"px"),this.slider.options.instantStartLayers||this.showLayers()),this.preloadCount===0&&this.bgvideo&&this.bgvideo.play());},t.unselect=function(){if(this.pselected=!1,this.moz&&this.$element.css("margin-top","0.1px"),(this.link||this.video)&&(this.view.removeEventListener(MSViewEvents.SWIPE_START,this.onSwipeStart,this),this.view.removeEventListener(MSViewEvents.SWIPE_CANCEL,this.onSwipeCancel,this)),this.bgvideo&&(this.bgvideo.pause(),!this.autoPauseBgVid&&this.vinit&&(this.bgvideo.currentTime=0)),this.selected){if(this.selected=!1,this.$element.removeClass("ms-sl-selected"),this.hasLayers){var n=this;n.lht=CTween.animate(this.$layers,500,{opacity:0},{complete:function complete(){n.resetLayers();}});}this.video&&this.vplayed&&(this.__closeVideo(),this.roc=!1);}},t.sleep=function(){this.isSleeping||(this.isSleeping=!0,this.autoAppend&&this.$element.detach());},t.wakeup=function(){this.isSleeping&&(this.isSleeping=!1,this.autoAppend&&this.view.$slideCont.append(this.$element),this.moz&&this.$element.css("margin-top","0.1px"),this.setup(),this.hasBG&&this.bgAligner.align());};}(jQuery),function(n){"use strict";var i={},t;window.MSSlideController=function(n){this._delayProgress=0,this._timer=new averta.Timer(100),this._timer.onTimer=this.onTimer,this._timer.refrence=this,this.currentSlide=null,this.slider=n,this.so=n.options,averta.EventDispatcher.call(this);},MSSlideController.registerView=function(n,t){if(n in i)throw new Error(n+", is already registered.");i[n]=t;},MSSlideController.SliderControlList={},MSSlideController.registerControl=function(n,t){if(n in MSSlideController.SliderControlList)throw new Error(n+", is already registered.");MSSlideController.SliderControlList[n]=t;},t=MSSlideController.prototype,t.setupView=function(){var t=this,u,r;this.resize_listener=function(){t.__resize();},u={spacing:this.so.space,mouseSwipe:this.so.mouse,loop:this.so.loop,autoHeight:this.so.autoHeight,swipe:this.so.swipe,speed:this.so.speed,dir:this.so.dir,viewNum:this.so.inView,critMargin:this.so.critMargin},this.so.viewOptions&&n.extend(u,this.so.viewOptions),this.so.autoHeight&&(this.so.heightLimit=!1),r=i[this.slider.options.view]||MSBasicView,r._3dreq&&(!window._css3d||n.browser.msie)&&(r=r._fallback||MSBasicView),this.view=new r(u),this.so.overPause&&(t=this,this.slider.$element.mouseenter(function(){t.is_over=!0,t._stopTimer();}).mouseleave(function(){t.is_over=!1,t._startTimer();}));},t.onChangeStart=function(){this.change_started=!0,this.currentSlide&&this.currentSlide.unselect(),this.currentSlide=this.view.currentSlide,this.currentSlide.prepareToSelect(),this.so.endPause&&this.currentSlide.index===this.slider.slides.length-1&&(this.pause(),this.skipTimer()),this.so.autoHeight&&this.slider.setHeight(this.currentSlide.getHeight()),this.dispatchEvent(new MSSliderEvent(MSSliderEvent.CHANGE_START));},t.onChangeEnd=function(){if(this.change_started=!1,this._startTimer(),this.currentSlide.select(),this.so.preload>1){for(var n,i=this.so.preload-1,t=1;t<=i;++t){if(n=this.view.index+t,n>=this.view.slideList.length)if(this.so.loop)n=n-this.view.slideList.length;else{t=i;continue;}this.view.slideList[n].loadImages();}for(i>this.view.slideList.length/2&&(i=Math.floor(this.view.slideList.length/2)),t=1;t<=i;++t){if(n=this.view.index-t,n<0)if(this.so.loop)n=this.view.slideList.length+n;else{t=i;continue;}this.view.slideList[n].loadImages();}}this.dispatchEvent(new MSSliderEvent(MSSliderEvent.CHANGE_END));},t.onSwipeStart=function(){this.skipTimer();},t.skipTimer=function(){this._timer.reset(),this._delayProgress=0,this.dispatchEvent(new MSSliderEvent(MSSliderEvent.WATING));},t.onTimer=function(){this._timer.getTime()>=this.view.currentSlide.delay*1e3&&(this.skipTimer(),this.view.next(),this.hideCalled=!1),this._delayProgress=this._timer.getTime()/(this.view.currentSlide.delay*10),this.so.hideLayers&&!this.hideCalled&&this.view.currentSlide.delay*1e3-this._timer.getTime()<=300&&(this.view.currentSlide.hideLayers(),this.hideCalled=!0),this.dispatchEvent(new MSSliderEvent(MSSliderEvent.WATING));},t._stopTimer=function(){this._timer&&this._timer.stop();},t._startTimer=function(){this.paused||this.is_over||!this.currentSlide||!this.currentSlide.ready||this.change_started||this._timer.start();},t.__appendSlides=function(){var t,i,n=0,r=this.view.slideList.length-1;for(n;n<r;++n){t=this.view.slideList[n],t.detached||(t.$element.detach(),t.detached=!0);}for(this.view.appendSlide(this.view.slideList[this.view.index]),r=3,n=1;n<=r;++n){if(i=this.view.index+n,i>=this.view.slideList.length)if(this.so.loop)i=i-this.view.slideList.length;else{n=r;continue;}t=this.view.slideList[i],t.detached=!1,this.view.appendSlide(t);}for(r>this.view.slideList.length/2&&(r=Math.floor(this.view.slideList.length/2)),n=1;n<=r;++n){if(i=this.view.index-n,i<0)if(this.so.loop)i=this.view.slideList.length+i;else{n=r;continue;}t=this.view.slideList[i],t.detached=!1,this.view.appendSlide(t);}},t.__resize=function(n){this.created&&(this.width=this.slider.$element[0].clientWidth||this.so.width,this.so.fullwidth||(this.width=Math.min(this.width,this.so.width)),this.so.fullheight?(this.so.heightLimit=!1,this.so.autoHeight=!1,this.height=this.slider.$element[0].clientHeight):this.height=this.width/this.slider.aspect,this.so.autoHeight?(this.currentSlide.setSize(this.width,null,n),this.view.setSize(this.width,this.currentSlide.getHeight(),n)):this.view.setSize(this.width,this.so.heightLimit?Math.min(this.height,this.so.height):this.height,n),this.slider.$controlsCont&&this.so.centerControls&&this.so.fullwidth&&this.view.$element.css("left",Math.min(0,-(this.slider.$element[0].clientWidth-this.so.width)/2)+"px"),this.dispatchEvent(new MSSliderEvent(MSSliderEvent.RESIZE)));},t.__dispatchInit=function(){this.dispatchEvent(new MSSliderEvent(MSSliderEvent.INIT));},t.setup=function(){if(this.created=!0,this.paused=!this.so.autoplay,this.view.addEventListener(MSViewEvents.CHANGE_START,this.onChangeStart,this),this.view.addEventListener(MSViewEvents.CHANGE_END,this.onChangeEnd,this),this.view.addEventListener(MSViewEvents.SWIPE_START,this.onSwipeStart,this),this.currentSlide=this.view.slides[this.so.start-1],this.__resize(),this.view.create(this.so.start-1),this.so.preload===0&&this.view.slides[0].loadImages(),this.scroller=this.view.controller,this.so.wheel){var t=this,i=new Date().getTime();this.wheellistener=function(n){var f=new Date().getTime(),r,u;if(!(f-i<350))return i=f,r=window.event||n.orginalEvent||n,u=Math.max(-1,Math.min(1,r.wheelDelta||-r.detail)),u<0?t.next():u>0&&t.previous(),!1;},n.browser.mozilla?this.slider.$element[0].addEventListener("DOMMouseScroll",this.wheellistener):this.slider.$element.bind("mousewheel",this.wheellistener);}this.slider.$element[0].clientWidth===0&&(this.slider.init_safemode=!0),this.__resize();},t.index=function(){return this.view.index;},t.count=function(){return this.view.slidesCount;},t.next=function(){this.skipTimer(),this.view.next();},t.previous=function(){this.skipTimer(),this.view.previous();},t.gotoSlide=function(n){this.skipTimer(),this.view.gotoSlide(n);},t.destroy=function(n){this.slider.destroy(n);},t._destroy=function(){this._timer.reset(),this._timer=null,n(window).unbind("resize",this.resize_listener),this.view.destroy(),this.view=null,this.so.wheel&&(n.browser.mozilla?this.slider.$element[0].removeEventListener("DOMMouseScroll",this.wheellistener):this.slider.$element.unbind("mousewheel",this.wheellistener),this.wheellistener=null),this.so=null;},t.update=function(n){this.slider.init_safemode&&n&&(this.slider.init_safemode=!1),this.__resize(n);},t.locate=function(){this.__resize();},t.resume=function(){this.paused&&(this.paused=!1,this._startTimer());},t.pause=function(){this.paused||(this.paused=!0,this._stopTimer());},t.currentTime=function(){return this._delayProgress;},averta.EventDispatcher.extend(t);}(jQuery),function(n){"use strict";var i={image:MSImageLayerElement,text:MSLayerElement,video:MSVideoLayerElement,hotspot:MSHotspotLayer},t;window.MasterSlider=function(){this.options={autoplay:!1,loop:!1,mouse:!0,swipe:!0,grabCursor:!0,space:0,fillMode:"fill",start:1,view:"basic",width:300,height:150,inView:15,critMargin:1,heightLimit:!0,smoothHeight:!0,autoHeight:!1,fullwidth:!1,fullheight:!1,autofill:!1,layersMode:"center",hideLayers:!1,endPause:!1,centerControls:!0,overPause:!0,shuffle:!1,speed:17,dir:"h",preload:0,wheel:!1,layout:"boxed",fullscreenMargin:0,instantStartLayers:!1},this.slides=[],this.$element=null,this.lastMargin=0,this.leftSpace=0,this.topSpace=0,this.rightSpace=0,this.bottomSpace=0;var t=this;this.resize_listener=function(){t._resize();},n(window).bind("resize",this.resize_listener);},MasterSlider.author="Averta Ltd. (www.averta.net)",MasterSlider.version="1.5.7",MasterSlider.releaseDate="March 2014",t=MasterSlider.prototype,t.__setupSlides=function(){var i=this,t,r=0;this.$element.children(".ms-slide").each(function(){var u=n(this),e,o,f,s,h;if(t=new MSSlide(),t.$element=u,t.slider=i,t.delay=u.data("delay")!==undefined?u.data("delay"):3,t.fillMode=u.data("fill-mode")!==undefined?u.data("fill-mode"):i.options.fillMode,t.index=r++,e=u.children("img"),e.length>0&&t.setBG(e[0]),o=u.children("video"),o.length>0&&t.setBGVideo(o),i.controls)for(f=0,s=i.controls.length;f<s;++f){i.controls[f].slideAction(t);}h=u.children("a").each(function(){var i=n(this);this.getAttribute("data-type")==="video"?(t.video=this.getAttribute("href"),i.remove()):i.hasClass("ms-layer")||(t.link=this.getAttribute("href"),t.link_targ=this.getAttribute("target"),i.remove());}),i.__createSlideLayers(t,u.find(".ms-layer")),i.slides.push(t),i.slideController.view.addSlide(t);});},t.__createSlideLayers=function(t,r){r.length!=0&&r.each(function(r,u){var f,h,e,o,s;u.nodeName==="A"?(h=n(this),f=h.find("img")):f=n(this),e=new i[f.data("type")||"text"](),e.$element=f,e.link=h,o={},s={},f.data("effect")!==undefined&&(o.name=f.data("effect")),f.data("ease")!==undefined&&(o.ease=f.data("ease")),f.data("duration")!==undefined&&(o.duration=f.data("duration")),f.data("delay")!==undefined&&(o.delay=f.data("delay")),f.data("hide-effect")&&(s.name=f.data("hide-effect")),f.data("hide-ease")&&(s.ease=f.data("hide-ease")),f.data("hide-duration")!==undefined&&(s.duration=f.data("hide-duration")),f.data("hide-time")!==undefined&&(s.time=f.data("hide-time")),f.data("resize")!==undefined&&(e.resizable=f.data("resize")),f.data("swipe")!==undefined&&(e.swipe=f.data("swipe")),f.data("widthlimit")!==undefined&&(e.minWidth=f.data("widthlimit")),e.setStartAnim(o),e.setEndAnim(s),t.addLayer(e);});},t._removeLoading=function(){n(window).unbind("resize",this.resize_listener),this.$element=n("#"+this.id).removeClass("before-init").css("visibility","visible").css("height","").css("opacity",0),CTween.fadeIn(this.$element),this.$loading.remove(),this.slideController&&this.slideController.__resize();},t._resize=function(){if(this.$loading){var n=this.$loading[0].clientWidth/this.aspect;n=this.options.heightLimit?Math.min(n,this.options.height):n,this.$loading.height(n),this.$element.height(n);}},t._shuffleSlides=function(){for(var t=this.$element.children(".ms-slide"),i,n=0,r=t.length;n<r;++n){i=Math.floor(Math.random()*(r-1)),n!=i&&(this.$element[0].insertBefore(t[n],t[i]),t=this.$element.children(".ms-slide"));}},t._setupSliderLayout=function(){this._updateSideMargins(),this.lastMargin=this.leftSpace;var t=this.options.layout;t!=="boxed"&&t!=="partialview"&&(this.options.fullwidth=!0),(t==="fullscreen"||t==="autofill")&&(this.options.fullheight=!0),t==="partialview"&&this.$element.addClass("ms-layout-partialview"),(t==="fullscreen"||t==="fullwidth")&&(n(window).bind("resize",{that:this},this._updateLayout),this._updateLayout()),n(window).bind("resize",this.slideController.resize_listener);},t._updateLayout=function(t){var i=t?t.data.that:this,f=i.options.layout,r=i.$element,u;r.width(n("body").innerWidth()-i.leftSpace-i.rightSpace),u=-r.offset().left+i.leftSpace+i.lastMargin,r.css("margin-left",u),i.lastMargin=u,f==="fullscreen"&&r.height(window.innerHeight-i.options.fullscreenMargin-i.topSpace-i.bottomSpace);},t._init=function(){var t,r,i;if(!this.preventInit){if(this.initialized=!0,this.options.preload!=="all"&&this._removeLoading(),this.options.shuffle&&this._shuffleSlides(),MSLayerEffects.setup(),this.slideController.setupView(),this.view=this.slideController.view,this.controls){for(this.$controlsCont=n("<div><\/div>").addClass("ms-container").appendTo(this.$element),this.options.centerControls&&this.$controlsCont.css("max-width",this.options.width+"px"),t=0,r=this.controls.length;t<r;++t){this.controls[t].setup();}this.$controlsCont.prepend(this.view.$element);}else this.$element.append(this.view.$element);if(this._setupSliderLayout(),this.__setupSlides(),this.slideController.setup(),this.controls)for(t=0,r=this.controls.length;t<r;++t){this.controls[t].create();}this.options.autoHeight&&this.slideController.view.$element.height(this.slideController.currentSlide.getHeight()),this.options.swipe&&!window._touch&&this.options.grabCursor&&this.options.mouse&&(i=this.view.$element,i.mousedown(function(){i.removeClass("ms-grab-cursor"),i.addClass("ms-grabbing-cursor");}).addClass("ms-grab-cursor"),n(document).mouseup(function(){i.removeClass("ms-grabbing-cursor"),i.addClass("ms-grab-cursor");})),this.slideController.__dispatchInit();}},t.setHeight=function(n){this.options.smoothHeight?(this.htween&&(this.htween.reset?this.htween.reset():this.htween.stop(!0)),this.htween=CTween.animate(this.slideController.view.$element,500,{height:n},{ease:"easeOutQuart"})):this.slideController.view.$element.height(n);},t.reserveSpace=function(n,t){var i=n+"Space",r=this[i];return this[i]+=t,this._updateSideMargins(),r;},t._updateSideMargins=function(){this.$element.css("margin",this.topSpace+"px "+this.rightSpace+"px "+this.bottomSpace+"px "+this.leftSpace+"px");},t._realignControls=function(){this.rightSpace=this.leftSpace=this.topSpace=this.bottomSpace=0,this._updateSideMargins(),this.api.dispatchEvent(new MSSliderEvent(MSSliderEvent.RESERVED_SPACE_CHANGE));},t.control=function(n,t){if(n in MSSlideController.SliderControlList){this.controls||(this.controls=[]);var i=new MSSlideController.SliderControlList[n](t);return i.slider=this,this.controls.push(i),this;}},t.setup=function(t,i){var r,u,f;if(this.id=t,this.$element=typeof t=="string"?n("#"+t):t.eq(0),this.setupMarkup=this.$element.html(),this.$element.length===0){console&&console.log("Master Slider Error: #"+t+" not found.");return;}return this.$element.addClass("master-slider").addClass("before-init"),n.browser.msie&&this.$element.addClass("ms-ie").addClass("ms-ie"+n.browser.version.slice(0,n.browser.version.indexOf("."))),r=navigator.userAgent.toLowerCase(),u=r.indexOf("android")>-1,u&&this.$element.addClass("ms-android"),f=this,n.extend(this.options,i),this.aspect=this.options.width/this.options.height,this.$loading=n("<div><\/div>").addClass("ms-loading-container").insertBefore(this.$element).append(n("<div><\/div>").addClass("ms-loading")),this.$loading.parent().css("position","relative"),this.options.autofill&&(this.options.fullwidth=!0,this.options.fullheight=!0),this.options.fullheight&&this.$element.addClass("ms-fullheight"),this._resize(),this.slideController=new MSSlideController(this),this.api=this.slideController,n(document).ready(function(){f._init();}),this;},t.destroy=function(t){var i,u,r;if(this.controls)for(i=0,u=this.controls.length;i!==u;i++){this.controls[i].destroy();}this.slideController&&this.slideController._destroy(),this.$loading&&this.$loading.remove(),t?this.$element.html(this.setupMarkup).css("visibility","hidden"):this.$element.remove(),r=this.options.layout,(r==="fullscreen"||r==="fullwidth")&&n(window).unbind("resize",this._updateLayout);};}(jQuery),window.MSViewEvents=function(n){this.type=n;},MSViewEvents.SWIPE_START="swipeStart",MSViewEvents.SWIPE_END="swipeEnd",MSViewEvents.SWIPE_MOVE="swipeMove",MSViewEvents.SWIPE_CANCEL="swipeCancel",MSViewEvents.SCROLL="scoll",MSViewEvents.CHANGE_START="slideChangeStart",MSViewEvents.CHANGE_END="slideChangeEnd",function(n){"use strict";window.MSBasicView=function(t){this.options={loop:!1,dir:"h",autoHeight:!1,spacing:5,mouseSwipe:!0,swipe:!0,speed:17,minSlideSpeed:2,viewNum:20,critMargin:1},n.extend(this.options,t),this.dir=this.options.dir,this.loop=this.options.loop,this.spacing=this.options.spacing,this.__width=0,this.__height=0,this.__cssProb=this.dir==="h"?"left":"top",this.__offset=this.dir==="h"?"offsetLeft":"offsetTop",this.__dimension=this.dir==="h"?"__width":"__height",this.__translate_end=window._css3d?" translateZ(0px)":"",this.$slideCont=n("<div><\/div>").addClass("ms-slide-container"),this.$element=n("<div><\/div>").addClass("ms-view").addClass("ms-basic-view").append(this.$slideCont),this.currentSlide=null,this.index=-1,this.slidesCount=0,this.slides=[],this.slideList=[],this.viewSlidesList=[],this.css3=window._cssanim,this.start_buffer=0,this.firstslide_snap=0,this.controller=new Controller(0,0,{snapping:!0,snapsize:100,paging:!0,snappingMinSpeed:this.options.minSlideSpeed,friction:(100-this.options.speed*.5)/100,endless:this.loop}),this.controller.renderCallback(this.dir==="h"?this._horizUpdate:this._vertiUpdate,this),this.controller.snappingCallback(this.__snapUpdate,this),this.controller.snapCompleteCallback(this.__snapCompelet,this),averta.EventDispatcher.call(this);};var t=MSBasicView.prototype;t.__snapCompelet=function(){this.__locateSlides(),this.start_buffer=0,this.dispatchEvent(new MSViewEvents(MSViewEvents.CHANGE_END));},t.__snapUpdate=function(t,i,r){var u,f;if(this.loop)u=this.index+r,this.updateLoop(u),u>=this.slidesCount&&(u=u-this.slidesCount),u<0&&(u=this.slidesCount+u),this.index=u;else{if(i<0||i>=this.slidesCount)return;this.index=i;}(this._checkCritMargins(),n.browser.mozilla&&(this.slideList[this.index].$element[0].style.marginTop="0.1px",this.currentSlide&&(this.currentSlide.$element[0].style.marginTop="")),f=this.slideList[this.index],f!==this.currentSlide)&&(this.currentSlide=f,this.dispatchEvent(new MSViewEvents(MSViewEvents.CHANGE_START)));},t._checkCritMargins=function(){if(!this.normalMode){var r=Math.floor(this.options.viewNum/2),t=this.viewSlidesList.indexOf(this.slideList[this.index]),i=this[this.__dimension]+this.spacing,n=this.options.critMargin;if(this.loop){(t<=n||t>=this.viewSlidesList.length-n)&&(i*=t-r,this.__locateSlides(!1,i+this.start_buffer),this.start_buffer+=i);return;}(t<n&&this.index>=n||t>=this.viewSlidesList.length-n&&this.index<this.slidesCount-n)&&this.__locateSlides(!1);}},t._vertiUpdate=function(n,t){if(this.__contPos=t,this.dispatchEvent(new MSViewEvents(MSViewEvents.SCROLL)),this.css3){this.$slideCont[0].style[window._jcsspfx+"Transform"]="translateY("+-t+"px)"+this.__translate_end;return;}this.$slideCont[0].style.top=-t+"px";},t._horizUpdate=function(n,t){if(this.__contPos=t,this.dispatchEvent(new MSViewEvents(MSViewEvents.SCROLL)),this.css3){this.$slideCont[0].style[window._jcsspfx+"Transform"]="translateX("+-t+"px)"+this.__translate_end;return;}this.$slideCont[0].style.left=-t+"px";},t.__updateViewList=function(){var t,n,i,r;if(this.normalMode){this.viewSlidesList=this.slides;return;}if(t=this.viewSlidesList.slice(),this.viewSlidesList=[],n=0,i=Math.floor(this.options.viewNum/2),this.loop)for(;n!==this.options.viewNum;n++){this.viewSlidesList.push(this.slides[this.currentSlideLoc-i+n]);}else{for(n=0;n!==i&&this.index-n!=-1;n++){this.viewSlidesList.unshift(this.slideList[this.index-n]);}for(n=1;n!==i&&this.index+n!==this.slidesCount;n++){this.viewSlidesList.push(this.slideList[this.index+n]);}}for(n=0,r=t.length;n!==r;n++){this.viewSlidesList.indexOf(t[n])===-1&&t[n].sleep();}t=null;},t.__locateSlides=function(n,t){var f,r,i,u;for(this.__updateViewList(),t=this.loop?t||0:this.slides.indexOf(this.viewSlidesList[0])*(this[this.__dimension]+this.spacing),f=this.viewSlidesList.length,i=0;i!==f;i++){u=t+i*(this[this.__dimension]+this.spacing),r=this.viewSlidesList[i],r.wakeup(),r.position=u,r.$element[0].style[this.__cssProb]=u+"px";}n!==!1&&this.controller.changeTo(this.slideList[this.index].position,!1,null,null,!1);},t.__createLoopList=function(){var t=[],n=0,i=this.slidesCount/2,r=this.slidesCount%2==0?i-1:Math.floor(i),u=this.slidesCount%2==0?i:Math.floor(i);for(this.currentSlideLoc=r,n=1;n<=r;++n){t.unshift(this.slideList[this.index-n<0?this.slidesCount-n+this.index:this.index-n]);}for(t.push(this.slideList[this.index]),n=1;n<=u;++n){t.push(this.slideList[this.index+n>=this.slidesCount?this.index+n-this.slidesCount:this.index+n]);}return t;},t.__getSteps=function(n,t){var i=t<n?this.slidesCount-n+t:t-n,r=Math.abs(this.slidesCount-i);return i<r?i:-r;},t.__pushEnd=function(){var n=this.slides.shift(),i=this.slides[this.slidesCount-2],t;(this.slides.push(n),this.normalMode)&&(t=i.$element[0][this.__offset]+this.spacing+this[this.__dimension],n.$element[0].style[this.__cssProb]=t+"px",n.position=t);},t.__pushStart=function(){var n=this.slides.pop(),i=this.slides[0],t;(this.slides.unshift(n),this.normalMode)&&(t=i.$element[0][this.__offset]-this.spacing-this[this.__dimension],n.$element[0].style[this.__cssProb]=t+"px",n.position=t);},t.addSlide=function(n){n.view=this,this.slides.push(n),this.slideList.push(n),this.slidesCount++;},t.appendSlide=function(n){this.$slideCont.append(n.$element);},t.updateLoop=function(n){var t,i,r;if(this.loop)for(t=this.__getSteps(this.index,n),i=0,r=Math.abs(t);i<r;++i){t<0?this.__pushStart():this.__pushEnd();}},t.gotoSlide=function(n,t){this.updateLoop(n),this.index=n;var i=this.slideList[this.index];(this._checkCritMargins(),this.controller.changeTo(i.position,!t,null,null,!1),i!==this.currentSlide)&&(this.currentSlide=i,this.dispatchEvent(new MSViewEvents(MSViewEvents.CHANGE_START)),t&&this.dispatchEvent(new MSViewEvents(MSViewEvents.CHANGE_END)));},t.next=function(){this.gotoSlide(this.index+1>=this.slidesCount?0:this.index+1);},t.previous=function(){this.gotoSlide(this.index-1<0?this.slidesCount-1:this.index-1);},t.setupSwipe=function(){this.swipeControl=new averta.TouchSwipe(this.$element),this.swipeControl.swipeType=this.dir==="h"?"horizontal":"vertical";var n=this;this.swipeControl.onSwipe=this.dir==="h"?function(t){n.horizSwipeMove(t);}:function(t){n.vertSwipeMove(t);};},t.vertSwipeMove=function(n){var t=n.phase,i;t==="start"?(this.controller.stop(),this.dispatchEvent(new MSViewEvents(MSViewEvents.SWIPE_START))):t==="move"&&(!this.loop||Math.abs(this.currentSlide.position-this.controller.value+n.moveY)<this.cont_size/2)?this.controller.drag(n.moveY):(t==="end"||t==="cancel")&&(i=n.distanceY/n.duration*50/3,Math.abs(i)>.1?(this.controller.push(-i),i>this.controller.options.snappingMinSpeed&&this.dispatchEvent(new MSViewEvents(MSViewEvents.SWIPE_END))):(this.controller.cancel(),this.dispatchEvent(new MSViewEvents(MSViewEvents.SWIPE_CANCEL))));},t.horizSwipeMove=function(n){var t=n.phase,i;t==="start"?(this.controller.stop(),this.dispatchEvent(new MSViewEvents(MSViewEvents.SWIPE_START))):t==="move"&&(!this.loop||Math.abs(this.currentSlide.position-this.controller.value+n.moveX)<this.cont_size/2)?this.controller.drag(n.moveX):(t==="end"||t==="cancel")&&(i=n.distanceX/n.duration*50/3,Math.abs(i)>.1?(this.controller.push(-i),i>this.controller.options.snappingMinSpeed&&this.dispatchEvent(new MSViewEvents(MSViewEvents.SWIPE_END))):(this.controller.cancel(),this.dispatchEvent(new MSViewEvents(MSViewEvents.SWIPE_CANCEL))));},t.setSize=function(n,t,i){if(this.lastWidth!==n||t!==this.lastHeight||i){this.$element.width(n).height(t);for(var r=0;r<this.slidesCount;++r){this.slides[r].setSize(n,t,i);}this.__width=n,this.__height=t,this.__created&&(this.__locateSlides(),this.cont_size=(this.slidesCount-1)*(this[this.__dimension]+this.spacing),this.loop||(this.controller._max_value=this.cont_size),this.controller.options.snapsize=this[this.__dimension]+this.spacing,this.controller.changeTo(this.currentSlide.position,!1,null,null,!1),this.controller.cancel(),this.lastWidth=n,this.lastHeight=t);}},t.create=function(n){this.__created=!0,this.index=Math.min(n||0,this.slidesCount-1),this.loop&&(this.slides=this.__createLoopList()),this.normalMode=this.slidesCount<=this.options.viewNum,this.__locateSlides();for(var t=0;t<this.slidesCount;++t){this.slides[t].create();}this.controller.options.snapsize=this[this.__dimension]+this.spacing,this.loop||(this.controller._max_value=(this.slidesCount-1)*(this[this.__dimension]+this.spacing)),this.gotoSlide(this.index,!0),this.options.swipe&&(window._touch||this.options.mouseSwipe)&&this.setupSwipe();},t.destroy=function(){if(this.__created){for(var n=0;n<this.slidesCount;++n){this.slides[n].destroy();}this.slides=null,this.slideList=null,this.$element.remove(),this.controller.destroy(),this.controller=null;}},averta.EventDispatcher.extend(t),MSSlideController.registerView("basic",MSBasicView);}(jQuery),function(){"use strict";window.MSWaveView=function(n){MSBasicView.call(this,n),this.$element.removeClass("ms-basic-view").addClass("ms-wave-view"),this.$slideCont.css(window._csspfx+"transform-style","preserve-3d");},MSWaveView.extend(MSBasicView),MSWaveView._3dreq=!0,MSWaveView._fallback=MSBasicView;var n=MSWaveView.prototype,t=MSBasicView.prototype;n._horizUpdate=function(n,i){var f,u,e,r;for(t._horizUpdate.call(this,n,i),f=-i,r=0;r<this.slidesCount;++r){u=this.slideList[r],e=-f-u.position,this.__updateSlidesHoriz(u,e);}},n._vertiUpdate=function(n,i){var f,u,e,r;for(t._vertiUpdate.call(this,n,i),f=-i,r=0;r<this.slidesCount;++r){u=this.slideList[r],e=-f-u.position,this.__updateSlidesVertic(u,e);}},n.__updateSlidesHoriz=function(n,t){var i=Math.abs(t*100/this.__width);n.$element.css(window._csspfx+"transform","translateZ("+-i*3+"px) rotateY(0.01deg)");},n.__updateSlidesVertic=function(n,t){this.__updateSlidesHoriz(n,t);},MSSlideController.registerView("wave",MSWaveView);}(jQuery),function(){window.MSFadeBasicView=function(n){MSWaveView.call(this,n),this.$element.removeClass("ms-wave-view").addClass("ms-fade-basic-view");},MSFadeBasicView.extend(MSWaveView);var n=MSFadeBasicView.prototype,t=MSFadeBasicView.prototype;n.__updateSlidesHoriz=function(n,t){var i=Math.abs(t*.6/this.__width);i=1-Math.min(i,.6),n.$element.css("opacity",i);},n.__updateSlidesVertic=function(n,t){this.__updateSlidesHoriz(n,t);},MSSlideController.registerView("fadeBasic",MSFadeBasicView),MSWaveView._fallback=MSFadeBasicView;}(),function(){window.MSFadeWaveView=function(n){MSWaveView.call(this,n),this.$element.removeClass("ms-wave-view").addClass("ms-fade-wave-view");},MSFadeWaveView.extend(MSWaveView),MSFadeWaveView._3dreq=!0,MSFadeWaveView._fallback=MSFadeBasicView;var n=MSFadeWaveView.prototype,t=MSWaveView.prototype;n.__updateSlidesHoriz=function(n,t){var i=Math.abs(t*100/this.__width);i=Math.min(i,100),n.$element.css("opacity",1-i/300),n.$element.css(window._csspfx+"transform","scale("+(1-i/800)+") rotateY(0.01deg) ");},n.__updateSlidesVertic=function(n,t){this.__updateSlidesHoriz(n,t);},MSSlideController.registerView("fadeWave",MSFadeWaveView);}(),function(){"use strict";window.MSFlowView=function(n){MSWaveView.call(this,n),this.$element.removeClass("ms-wave-view").addClass("ms-flow-view");},MSFlowView.extend(MSWaveView),MSFlowView._3dreq=!0,MSFlowView._fallback=MSFadeBasicView;var n=MSFlowView.prototype,t=MSWaveView.prototype;n.__updateSlidesHoriz=function(n,t){var i=Math.abs(t*100/this.__width),r=Math.min(i*.3,30)*(t<0?-1:1),u=i*1.2;n.$element[0].style[window._jcsspfx+"Transform"]="translateZ("+-u*5+"px) rotateY("+r+"deg) ";},n.__updateSlidesVertic=function(n,t){var i=Math.abs(t*100/this.__width),r=Math.min(i*.3,30)*(t<0?-1:1),u=i*1.2;n.$element[0].style[window._jcsspfx+"Transform"]="translateZ("+-u*5+"px) rotateX("+-r+"deg) ";},MSSlideController.registerView("flow",MSFlowView);}(jQuery),function(){window.MSFadeFlowView=function(n){MSWaveView.call(this,n),this.$element.removeClass("ms-wave-view").addClass("ms-fade-flow-view");},MSFadeFlowView.extend(MSWaveView),MSFadeFlowView._3dreq=!0;var n=MSFadeFlowView.prototype,t=MSWaveView.prototype;n.__calculate=function(n){var t=Math.min(Math.abs(n*100/this.__width),100),i=Math.min(t*.5,50)*(n<0?-1:1);return{value:t,rvalue:i};},n.__updateSlidesHoriz=function(n,t){var i=this.__calculate(t);n.$element.css("opacity",1-i.value/300),n.$element[0].style[window._csspfx+"transform"]="translateZ("+-i.value+"px) rotateY("+i.rvalue+"deg) ";},n.__updateSlidesVertic=function(n,t){var i=this.__calculate(t);n.$element.css("opacity",1-i.value/300),n.$element[0].style[window._csspfx+"transform"]="translateZ("+-i.value+"px) rotateX("+-i.rvalue+"deg) ";},MSSlideController.registerView("fadeFlow",MSFadeFlowView);}(),function(n){"use strict";window.MSMaskView=function(n){MSBasicView.call(this,n),this.$element.removeClass("ms-basic-view").addClass("ms-mask-view");},MSMaskView.extend(MSBasicView);var t=MSMaskView.prototype,i=MSBasicView.prototype;t.addSlide=function(t){t.view=this,t.$frame=n("<div><\/div>").addClass("ms-mask-frame").append(t.$element),t.$element[0].style.position="relative",t.autoAppend=!1,this.slides.push(t),this.slideList.push(t),this.slidesCount++;},t.setSize=function(n,t){for(var u=this.slides[0].slider,r=0;r<this.slidesCount;++r){this.slides[r].$frame[0].style.width=n+"px",u.options.autoHeight||(this.slides[r].$frame[0].style.height=t+"px");}i.setSize.call(this,n,t);},t._horizUpdate=function(n,t){i._horizUpdate.call(this,n,t);var r=0;if(this.css3){for(r=0;r<this.slidesCount;++r){this.slideList[r].$element[0].style[window._jcsspfx+"Transform"]="translateX("+(t-this.slideList[r].position)+"px)"+this.__translate_end;}return;}for(r=0;r<this.slidesCount;++r){this.slideList[r].$element[0].style.left=t-this.slideList[r].position+"px";}},t._vertiUpdate=function(n,t){i._vertiUpdate.call(this,n,t);var r=0;if(this.css3){for(r=0;r<this.slidesCount;++r){this.slideList[r].$element[0].style[window._jcsspfx+"Transform"]="translateY("+(t-this.slideList[r].position)+"px)"+this.__translate_end;}return;}for(r=0;r<this.slidesCount;++r){this.slideList[r].$element[0].style.top=t-this.slideList[r].position+"px";}},t.__pushEnd=function(){var n=this.slides.shift(),i=this.slides[this.slidesCount-2],t;(this.slides.push(n),this.normalMode)&&(t=i.$frame[0][this.__offset]+this.spacing+this[this.__dimension],n.$frame[0].style[this.__cssProb]=t+"px",n.position=t);},t.__pushStart=function(){var n=this.slides.pop(),i=this.slides[0],t;(this.slides.unshift(n),this.normalMode)&&(t=i.$frame[0][this.__offset]-this.spacing-this[this.__dimension],n.$frame[0].style[this.__cssProb]=t+"px",n.position=t);},t.__updateViewList=function(){var t,n,i,r;if(this.normalMode){this.viewSlidesList=this.slides;return;}if(t=this.viewSlidesList.slice(),this.viewSlidesList=[],n=0,i=Math.floor(this.options.viewNum/2),this.loop)for(;n!==this.options.viewNum;n++){this.viewSlidesList.push(this.slides[this.currentSlideLoc-i+n]);}else{for(n=0;n!==i&&this.index-n!=-1;n++){this.viewSlidesList.unshift(this.slideList[this.index-n]);}for(n=1;n!==i&&this.index+n!==this.slidesCount;n++){this.viewSlidesList.push(this.slideList[this.index+n]);}}for(n=0,r=t.length;n!==r;n++){this.viewSlidesList.indexOf(t[n])===-1&&(t[n].sleep(),t[n].$frame.detach());}t=null;},t.__locateSlides=function(n,t){var f,i,r,u;for(this.__updateViewList(),t=this.loop?t||0:this.slides.indexOf(this.viewSlidesList[0])*(this[this.__dimension]+this.spacing),f=this.viewSlidesList.length,r=0;r!==f;r++){u=t+r*(this[this.__dimension]+this.spacing),i=this.viewSlidesList[r],this.$slideCont.append(i.$frame),i.wakeup(!1),i.position=u,i.$frame[0].style[this.__cssProb]=u+"px";}n!==!1&&this.controller.changeTo(this.slideList[this.index].position,!1,null,null,!1);},MSSlideController.registerView("mask",MSMaskView);}(jQuery),function(){"use strict";window.MSFadeView=function(n){MSBasicView.call(this,n),this.$element.removeClass("ms-basic-view").addClass("ms-fade-view"),this.controller.renderCallback(this.__update,this);},MSFadeView.extend(MSBasicView);var n=MSFadeView.prototype,t=MSBasicView.prototype;n.__update=function(n,t){for(var f=-t,r,u,i=0;i<this.slidesCount;++i){r=this.slideList[i],u=-f-r.position,this.__updateSlides(r,u);}},n.__updateSlides=function(n,t){var i=Math.abs(t/this[this.__dimension]);1-i<=0?n.$element.fadeTo(0,0).css("visibility","hidden"):n.$element.fadeTo(0,1-i).css("visibility","");},n.__locateSlides=function(n,t){var u,r,i,f;for(this.__updateViewList(),t=this.loop?t||0:this.slides.indexOf(this.viewSlidesList[0])*(this[this.__dimension]+this.spacing),u=this.viewSlidesList.length,i=0;i!==u;i++){f=t+i*this[this.__dimension],r=this.viewSlidesList[i],r.wakeup(),r.position=f;}n!==!1&&this.controller.changeTo(this.slideList[this.index].position,!1,null,null,!1);},n.__pushEnd=function(){var n=this.slides.shift(),t=this.slides[this.slidesCount-2];this.slides.push(n),n.position=t.position+this[this.__dimension];},n.__pushStart=function(){var n=this.slides.pop(),t=this.slides[0];this.slides.unshift(n),n.position=t.position-this[this.__dimension];},n.create=function(n){t.create.call(this,n),this.spacing=0,this.controller.options.minValidDist=10;},MSSlideController.registerView("fade",MSFadeView);}(jQuery),function(){"use strict";window.MSScaleView=function(n){MSBasicView.call(this,n),this.$element.removeClass("ms-basic-view").addClass("ms-scale-view"),this.controller.renderCallback(this.__update,this);},MSScaleView.extend(MSFadeView);var n=MSScaleView.prototype,t=MSFadeView.prototype;n.__updateSlides=function(n,t){var i=Math.abs(t/this[this.__dimension]);1-i<=0?n.$element.fadeTo(0,0).css("visibility","hidden"):n.$element.fadeTo(0,1-i).css("visibility","").css(window._jcsspfx+"Transform","perspective(2000px) translateZ("+i*(t<0?-.5:.5)*300+"px)");},n.create=function(n){t.create.call(this,n),this.controller.options.minValidDist=.03;},MSSlideController.registerView("scale",MSScaleView);}(jQuery),function(){"use strict";var t=2e3,n,i;window.MSFocusView=function(n){MSWaveView.call(this,n),this.$element.removeClass("ms-wave-view").addClass("ms-focus-view"),this.options.centerSpace=this.options.centerSpace||1;},MSFocusView.extend(MSWaveView),MSFocusView._3dreq=!0,MSFocusView._fallback=MSFadeBasicView,n=MSFocusView.prototype,i=MSWaveView.prototype,n.__calcview=function(n,i){var r=i/2*n/(n+t);return r*(n+t)/t;},n.__updateSlidesHoriz=function(n,t){var i=Math.abs(t*100/this.__width);i=-Math.min(i,100)*15,n.$element.css(window._csspfx+"transform","translateZ("+i+"px) rotateY(0.01deg) translateX("+(t<0?1:-1)*-this.__calcview(i,this.__width)*this.options.centerSpace+"px)");},n.__updateSlidesVertic=function(n,t){var i=Math.abs(t*100/this.__width);i=-Math.min(i,100)*15,n.$element.css(window._csspfx+"transform","translateZ("+i+"px) rotateY(0.01deg) translateY("+(t<0?1:-1)*-this.__calcview(i,this.__width)*this.options.centerSpace+"px)");},MSSlideController.registerView("focus",MSFocusView);}(),function(){window.MSPartialWaveView=function(n){MSWaveView.call(this,n),this.$element.removeClass("ms-wave-view").addClass("ms-partial-wave-view");},MSPartialWaveView.extend(MSWaveView),MSPartialWaveView._3dreq=!0,MSPartialWaveView._fallback=MSFadeBasicView;var n=MSPartialWaveView.prototype,t=MSWaveView.prototype;n.__updateSlidesHoriz=function(n,t){var i=Math.abs(t*100/this.__width);n.$bg_img.css("opacity",(100-Math.abs(t*120/this.__width/3))/100),n.$element.css(window._csspfx+"transform","translateZ("+-i*3+"px) rotateY(0.01deg) translateX("+t*.75+"px)");},n.__updateSlidesVertic=function(n,t){var i=Math.abs(t*100/this.__width);n.$bg_img.css("opacity",(100-Math.abs(t*120/this.__width/3))/100),n.$element.css(window._csspfx+"transform","translateZ("+-i*3+"px) rotateY(0.01deg) translateY("+t*.75+"px)");},MSSlideController.registerView("partialWave",MSPartialWaveView);}(),function(n){"use strict";var i=function i(){this.options={prefix:"ms-",autohide:!0,overVideo:!0};},t=i.prototype;t.slideAction=function(){},t.setup=function(){this.cont=this.options.insertTo?n(this.options.insertTo):this.slider.$controlsCont,this.options.overVideo||this._hideOnvideoStarts(),this.options.hideUnder&&(n(window).bind("resize",{that:this},this.onResize),this.onResize());},t.onResize=function(n){var t=n&&n.data.that||this,i=window.innerWidth;i<=t.options.hideUnder&&!t.detached?(t.$element.css("display","none"),t.detached=!0,t.onDetach&&t.onDetach()):i>=t.options.hideUnder&&t.detached&&(t.detached=!1,t.$element.css("display",""),t.visible(),t.onAppend&&t.onAppend());},t.create=function(){var t=this;this.options.autohide&&!window._touch&&(this.hide(!0),this.slider.$controlsCont.mouseenter(function(){t._disableAH||t.mdown||t.visible(),t.mleave=!1;}).mouseleave(function(){t.mleave=!0,t.mdown||t.hide();}).mousedown(function(){t.mdown=!0;}),n(document).mouseup(function(){t.mdown&&t.mleave&&t.hide(),t.mdown=!1;}));},t._hideOnvideoStarts=function(){var n=this;slider.api.addEventListener(MSSliderEvent.VIDEO_PLAY,function(){n._disableAH=!0,n.hide();}),slider.api.addEventListener(MSSliderEvent.VIDEO_CLOSE,function(){n._disableAH=!1,n.visible();});},t.hide=function(n){n?this.$element.css("opacity",0):CTween.fadeOut(this.$element,400,!1),this.$element.addClass("ms-ctrl-hide");},t.visible=function(){this.detached||(CTween.fadeIn(this.$element,400),this.$element.removeClass("ms-ctrl-hide"));},t.destroy=function(){this.options.hideUnder&&n(window).unbind("resize",this.onResize);},window.BaseControl=i;}(jQuery),function(n){"use strict";var i=function i(t){BaseControl.call(this),n.extend(this.options,t);},t,r;i.extend(BaseControl),t=i.prototype,r=BaseControl.prototype,t.setup=function(){var t=this;r.setup.call(this),this.$next=n("<div><\/div>").addClass(this.options.prefix+"nav-next").appendTo(this.cont).bind("click",function(){t.slider.options.loop||t.slider.api.index()!==t.slider.api.count()-1?t.slider.api.next():t.slider.view.controller.bounce(10);}),this.$prev=n("<div><\/div>").addClass(this.options.prefix+"nav-prev").appendTo(this.cont).bind("click",function(){t.slider.options.loop||t.slider.api.index()!==0?t.slider.api.previous():t.slider.view.controller.bounce(-10);});},t.hide=function(n){if(n){this.$prev.css("opacity",0),this.$next.css("opacity",0);return;}CTween.fadeOut(this.$prev,400,!1),CTween.fadeOut(this.$next,400,!1),this.$prev.addClass("ms-ctrl-hide"),this.$next.addClass("ms-ctrl-hide");},t.visible=function(){CTween.fadeIn(this.$prev,400),CTween.fadeIn(this.$next,400),this.$prev.removeClass("ms-ctrl-hide"),this.$next.removeClass("ms-ctrl-hide");},t.destroy=function(){this.$next.remove(),this.$prev.remove();},window.MSArrows=i,MSSlideController.registerControl("arrows",i);}(jQuery),function(n){"use strict";var i=function i(t){BaseControl.call(this),this.options.dir="h",this.options.wheel=t.dir==="v",this.options.arrows=!0,this.options.speed=17,this.options.align=null,this.options.inset=!1,this.options.margin=10,this.options.space=10,this.options.width=100,this.options.height=100,this.options.type="thumbs",n.extend(this.options,t),this.thumbs=[],this.index_count=0,this.__dimen=this.options.dir==="h"?"width":"height",this.__alignsize=this.options.dir==="h"?"height":"width",this.__jdimen=this.options.dir==="h"?"outerWidth":"outerHeight",this.__pos=this.options.dir==="h"?"left":"top",this.click_enable=!0;},t,r;i.extend(BaseControl),t=i.prototype,r=BaseControl.prototype,t.setup=function(){var t,i;this.$element=n("<div><\/div>").addClass(this.options.prefix+"thumb-list"),this.options.type==="tabs"&&this.$element.addClass(this.options.prefix+"tabs"),this.$element.addClass("ms-dir-"+this.options.dir),r.setup.call(this),this.slider.$controlsCont===this.cont?this.$element.appendTo(this.slider.$element):this.$element.appendTo(this.cont),this.$thumbscont=n("<div><\/div>").addClass("ms-thumbs-cont").appendTo(this.$element),this.options.arrows&&(t=this,this.$fwd=n("<div><\/div>").addClass("ms-thumblist-fwd").appendTo(this.$element).click(function(){t.controller.push(-15);}),this.$bwd=n("<div><\/div>").addClass("ms-thumblist-bwd").appendTo(this.$element).click(function(){t.controller.push(15);})),!this.options.insetTo&&this.options.align&&(i=this.options.align,this.options.inset?this.$element.css(i,this.options.margin):(this.slider.api.addEventListener(MSSliderEvent.RESERVED_SPACE_CHANGE,this.align,this),this.align()),this.options.dir==="v"?this.$element.width(this.options.width):this.$element.height(this.options.height));},t.onAppend=function(){this.options.insetTo||!this.options.align||this.options.inset||this.slider._realignControls();},t.onDetach=function(){this.options.insetTo||!this.options.align||this.options.inset||this.slider._realignControls();},t.align=function(){if(!this.detached){var n=this.options.align,t=this.slider.reserveSpace(n,this.options[this.__alignsize]+this.options.margin*2);this.$element.css(n,-t-this.options[this.__alignsize]-this.options.margin);}},t.slideAction=function(t){var r=n(t.$element.find(".ms-thumb")),u=this,i=n("<div><\/div>").addClass("ms-thumb-frame").append(r).append(n('<div class="ms-thumb-ol"><\/div>')).bind("click",function(){u.changeSlide(i);});if(this.options.align&&i.width(this.options.width).height(this.options.height).css("margin-"+(this.options.dir==="v"?"bottom":"right"),this.options.space),i[0].index=this.index_count++,this.$thumbscont.append(i),n.browser.msie)r.on("dragstart",function(n){n.preventDefault();});this.thumbs.push(i);},t.create=function(){var t;r.create.call(this),this.__translate_end=window._css3d?" translateZ(0px)":"",this.controller=new Controller(0,0,{snappingMinSpeed:2,friction:(100-this.options.speed*.5)/100}),this.controller.renderCallback(this.options.dir==="h"?this._hMove:this._vMove,this),t=this,this.resize_listener=function(){t.__resize();},n(window).bind("resize",this.resize_listener),this.thumbSize=this.thumbs[0][this.__jdimen](!0),this.setupSwipe(),this.__resize(),t=this,this.options.wheel&&(this.wheellistener=function(n){var i=window.event||n.orginalEvent||n,r=Math.max(-1,Math.min(1,i.wheelDelta||-i.detail));return t.controller.push(-r*10),!1;},n.browser.mozilla?this.$element[0].addEventListener("DOMMouseScroll",this.wheellistener):this.$element.bind("mousewheel",this.wheellistener)),this.slider.api.addEventListener(MSSliderEvent.CHANGE_START,this.update,this),this.cindex=this.slider.api.index(),this.select(this.thumbs[this.cindex]);},t._hMove=function(n,t){if(this.__contPos=t,window._cssanim){this.$thumbscont[0].style[window._jcsspfx+"Transform"]="translateX("+-t+"px)"+this.__translate_end;return;}this.$thumbscont[0].style.left=-t+"px";},t._vMove=function(n,t){if(this.__contPos=t,window._cssanim){this.$thumbscont[0].style[window._jcsspfx+"Transform"]="translateY("+-t+"px)"+this.__translate_end;return;}this.$thumbscont[0].style.top=-t+"px";},t.setupSwipe=function(){this.swipeControl=new averta.TouchSwipe(this.$element),this.swipeControl.swipeType=this.options.dir==="h"?"horizontal":"vertical";var n=this;this.swipeControl.onSwipe=this.options.dir==="h"?function(t){n.horizSwipeMove(t);}:function(t){n.vertSwipeMove(t);};},t.vertSwipeMove=function(n){var t,i;this.dTouch||(t=n.phase,t==="start"?this.controller.stop():t==="move"?this.controller.drag(n.moveY):(t==="end"||t==="cancel")&&(i=Math.abs(n.distanceY/n.duration*50/3),i>.1?this.controller.push(-n.distanceY/n.duration*50/3):(this.click_enable=!0,this.controller.cancel())));},t.horizSwipeMove=function(n){var t,i;this.dTouch||(t=n.phase,t==="start"?(this.controller.stop(),this.click_enable=!1):t==="move"?this.controller.drag(n.moveX):(t==="end"||t==="cancel")&&(i=Math.abs(n.distanceX/n.duration*50/3),i>.1?this.controller.push(-n.distanceX/n.duration*50/3):(this.click_enable=!0,this.controller.cancel())));},t.update=function(){var n=this.slider.api.index();this.cindex!==n&&(this.cindex!=null&&this.unselect(this.thumbs[this.cindex]),this.cindex=n,this.select(this.thumbs[this.cindex]),this.dTouch||this.updateThumbscroll());},t.updateThumbscroll=function(){var n=this.thumbSize*this.cindex,t;if(this.controller.value==NaN&&(this.controller.value=0),n-this.controller.value<0){this.controller.gotoSnap(this.cindex,!0);return;}if(n+this.thumbSize-this.controller.value>this.$element[this.__dimen]()){t=this.cindex-Math.floor(this.$element[this.__dimen]()/this.thumbSize)+1,this.controller.gotoSnap(t,!0);return;}},t.changeSlide=function(n){this.click_enable&&this.cindex!==n[0].index&&this.slider.api.gotoSlide(n[0].index);},t.unselect=function(n){n.removeClass("ms-thumb-frame-selected");},t.select=function(n){n.addClass("ms-thumb-frame-selected");},t.__resize=function(){var n=this.$element[this.__dimen](),t;this.ls!==n&&(this.ls=n,this.thumbSize=this.thumbs[0][this.__jdimen](!0),t=this.slider.api.count()*this.thumbSize,this.$thumbscont[0].style[this.__dimen]=t+"px",t<=n?(this.dTouch=!0,this.controller.stop(),this.$thumbscont[0].style[this.__pos]=(n-t)*.5+"px",this.$thumbscont[0].style[window._jcsspfx+"Transform"]=""):(this.dTouch=!1,this.click_enable=!0,this.$thumbscont[0].style[this.__pos]="",this.controller._max_value=t-n,this.controller.options.snapsize=this.thumbSize,this.updateThumbscroll()));},t.destroy=function(){this.options.wheel&&(n.browser.mozilla?this.$element[0].removeEventListener("DOMMouseScroll",this.wheellistener):this.$element.unbind("mousewheel",this.wheellistener),this.wheellistener=null),n(window).unbind("resize",this.resize_listener),this.$element.remove(),this.slider.removeEventListener(MSSliderEvent.RESERVED_SPACE_CHANGE,this.align,this),r.destroy();},window.MSThumblist=i,MSSlideController.registerControl("thumblist",i);}(jQuery),function(n){"use strict";var i=function i(t){BaseControl.call(this),this.options.dir="h",this.options.inset=!0,this.options.margin=10,n.extend(this.options,t),this.bullets=[];},t,r;i.extend(BaseControl),t=i.prototype,r=BaseControl.prototype,t.setup=function(){if(r.setup.call(this),this.$element=n("<div><\/div>").addClass(this.options.prefix+"bullets").addClass("ms-dir-"+this.options.dir).appendTo(this.cont),this.$bullet_cont=n("<div><\/div>").addClass("ms-bullets-count").appendTo(this.$element),!this.options.insetTo&&this.options.align){this.$element.css({top:"auto",bottom:"auto"});var t=this.options.align;this.options.inset&&this.$element.css(t,this.options.margin);}},t.create=function(){var u,i,t;for(r.create.call(this),u=this,this.slider.api.addEventListener(MSSliderEvent.CHANGE_START,this.update,this),this.cindex=this.slider.api.index(),i=0;i<this.slider.api.count();++i){t=n("<div><\/div>").addClass("ms-bullet"),t[0].index=i;t.on("click",function(){u.changeSlide(this.index);});this.$bullet_cont.append(t),this.bullets.push(t);}this.options.dir==="h"&&this.$element.width(t.outerWidth(!0)*this.slider.api.count()),this.select(this.bullets[this.cindex]);},t.update=function(){var n=this.slider.api.index();this.cindex!==n&&(this.cindex!=null&&this.unselect(this.bullets[this.cindex]),this.cindex=n,this.select(this.bullets[this.cindex]));},t.changeSlide=function(n){this.cindex!==n&&this.slider.api.gotoSlide(n);},t.unselect=function(n){n.removeClass("ms-bullet-selected");},t.select=function(n){n.addClass("ms-bullet-selected");},t.destroy=function(){this.$element.remove();},window.MSBulltes=i,MSSlideController.registerControl("bullets",i);}(jQuery),function(n){"use strict";var i=function i(t){BaseControl.call(this),this.options.dir="h",this.options.autohide=!0,this.options.width=4,this.options.color="#3D3D3D",this.options.margin=10,n.extend(this.options,t),this.__dimen=this.options.dir==="h"?"width":"height",this.__jdimen=this.options.dir==="h"?"outerWidth":"outerHeight",this.__pos=this.options.dir==="h"?"left":"top",this.__translate_end=window._css3d?" translateZ(0px)":"",this.__translate_start=this.options.dir==="h"?" translateX(":"translateY(";},t,r;i.extend(BaseControl),t=i.prototype,r=BaseControl.prototype,t.setup=function(){if(this.$element=n("<div><\/div>").addClass(this.options.prefix+"sbar").addClass("ms-dir-"+this.options.dir),r.setup.call(this),this.slider.$controlsCont===this.cont?this.$element.appendTo(this.slider.$element):this.$element.appendTo(this.cont),this.$bar=n("<div><\/div>").addClass(this.options.prefix+"bar").appendTo(this.$element),this.slider.options.loop&&(console.log("WARNING, MSScrollbar cannot work with looped slider."),this.disable=!0,this.$element.remove()),this.options.dir==="v"?this.$bar.width(this.options.width):this.$bar.height(this.options.width),this.$bar.css("background-color",this.options.color),!this.options.insetTo&&this.options.align){this.options.dir==="v"?this.$element.css({right:"auto",left:"auto"}):this.$element.css({top:"auto",bottom:"auto"});var t=this.options.align;this.options.inset?this.$element.css(t,this.options.margin):(this.slider.api.addEventListener(MSSliderEvent.RESERVED_SPACE_CHANGE,this.align,this),this.align());}},t.onAppend=function(){this.options.insetTo||!this.options.align||this.options.inset||this.slider._realignControls();},t.onDetach=function(){this.options.insetTo||!this.options.align||this.options.inset||this.slider._realignControls();},t.align=function(){if(!this.detached){var n=this.options.align,t=this.slider.reserveSpace(n,this.options.margin*2+this.options.width);this.$element.css(n,-t-this.options.margin-this.options.width);}},t.create=function(){if(!this.disable){var n=this;this.scroller=this.slider.api.scroller,this.slider.api.view.addEventListener(MSViewEvents.SCROLL,this._update,this),this.slider.api.addEventListener(MSSliderEvent.RESIZE,this._resize,this),this._resize(),this.options.autohide&&this.$bar.css("opacity","0");}},t._resize=function(){this.vdimen=this.$element[this.__dimen](),this.bar_dimen=this.slider.api.view["__"+this.__dimen]*this.vdimen/this.scroller._max_value,this.$bar[this.__dimen](this.bar_dimen);},t._update=function(){var n=this.scroller.value*(this.vdimen-this.bar_dimen)/this.scroller._max_value,t;if(this.lvalue!==n){if(this.lvalue=n,this.options.autohide&&(clearTimeout(this.hto),this.$bar.css("opacity","1"),t=this,this.hto=setTimeout(function(){t.$bar.css("opacity","0");},150)),n<0){this.$bar[0].style[this.__dimen]=this.bar_dimen+n+"px";return;}if(n>this.vdimen-this.bar_dimen&&(this.$bar[0].style[this.__dimen]=this.vdimen-n+"px"),window._cssanim){this.$bar[0].style[window._jcsspfx+"Transform"]=this.__translate_start+n+"px)"+this.__translate_end;return;}this.$bar[0].style[this.__pos]=n+"px";}},t.destroy=function(){this.slider.api.view.removeEventListener(MSViewEvents.SCROLL,this._update,this),this.slider.api.removeEventListener(MSSliderEvent.RESIZE,this._resize,this),this.slider.removeEventListener(MSSliderEvent.RESERVED_SPACE_CHANGE,this.align,this),this.$element.remove(),r.destroy();},window.MSScrollbar=i,MSSlideController.registerControl("scrollbar",i);}(jQuery),function(n){"use strict";var i=function i(t){BaseControl.call(this),this.options.autohide=!1,this.options.width=4,this.options.color="#FFFFFF",this.options.inset=!0,n.extend(this.options,t);},t,r;i.extend(BaseControl),t=i.prototype,r=BaseControl.prototype,t.setup=function(){var i=this,t;r.setup.call(this),this.$element=n("<div><\/div>").addClass(this.options.prefix+"timerbar"),r.setup.call(this),this.slider.$controlsCont===this.cont?this.$element.appendTo(this.slider.$element):this.$element.appendTo(this.cont),this.$bar=n("<div><\/div>").addClass("ms-time-bar").appendTo(this.$element),this.options.dir==="v"?this.$bar.width(this.options.width):this.$bar.height(this.options.width),this.$bar.css("background-color",this.options.color),!this.options.insetTo&&this.options.align&&(this.$element.css({top:"auto",bottom:"auto"}),t=this.options.align,this.options.inset?this.$element.css(t,this.options.margin):(this.slider.api.addEventListener(MSSliderEvent.RESERVED_SPACE_CHANGE,this.align,this),this.align()));},t.onAppend=function(){this.options.insetTo||!this.options.align||this.options.inset||this.slider._realignControls();},t.onDetach=function(){this.options.insetTo||!this.options.align||this.options.inset||this.slider._realignControls();},t.align=function(){if(!this.detached){var n=this.options.align,t=this.slider.reserveSpace(n,this.options.margin*2+this.options.width);this.$element.css(n,-t-this.options.margin-this.options.width);}},t.create=function(){r.create.call(this),this.slider.api.addEventListener(MSSliderEvent.WATING,this._update,this),this._update();},t._update=function(){this.$bar[0].style.width=this.slider.api._delayProgress+"%";},t.destroy=function(){this.slider.api.removeEventListener(MSSliderEvent.WATING,this._update,this),this.$element.remove();},window.MSTimerbar=i,MSSlideController.registerControl("timebar",i);}(jQuery),function(n){"use strict";var i=function i(t){BaseControl.call(this),this.options.color="#A2A2A2",this.options.stroke=10,this.options.radius=4,this.options.autohide=!1,n.extend(this.options,t);},t,r;i.extend(BaseControl),t=i.prototype,r=BaseControl.prototype,t.setup=function(){var t=this;if(r.setup.call(this),this.$element=n("<div><\/div>").addClass(this.options.prefix+"ctimer").appendTo(this.cont),this.$canvas=n("<canvas><\/canvas>").addClass("ms-ctimer-canvas").appendTo(this.$element),this.$bar=n("<div><\/div>").addClass("ms-ctimer-bullet").appendTo(this.$element),!this.$canvas[0].getContext){this.destroy(),this.disable=!0;return;}this.ctx=this.$canvas[0].getContext("2d"),this.prog=0,this.__w=(this.options.radius+this.options.stroke/2)*2,this.$canvas[0].width=this.__w,this.$canvas[0].height=this.__w;},t.create=function(){if(!this.disable){r.create.call(this),this.slider.api.addEventListener(MSSliderEvent.WATING,this._update,this);var n=this;this.$element.click(function(){n.slider.api.paused?n.slider.api.resume():n.slider.api.pause();}),this._update();}},t._update=function(){var t=this;n(this).stop(!0).animate({prog:this.slider.api._delayProgress*.01},{duration:200,step:function step(){t._draw();}});},t._draw=function(){this.ctx.clearRect(0,0,this.__w,this.__w),this.ctx.beginPath(),this.ctx.arc(this.__w*.5,this.__w*.5,this.options.radius,Math.PI*1.5,Math.PI*1.5+2*Math.PI*this.prog,!1),this.ctx.strokeStyle=this.options.color,this.ctx.lineWidth=this.options.stroke,this.ctx.stroke();},t.destroy=function(){this.disable||(n(this).stop(!0),this.slider.api.removeEventListener(MSSliderEvent.WATING,this._update,this),this.$element.remove());},window.MSCircleTimer=i,MSSlideController.registerControl("circletimer",i);}(jQuery),function(n){"use strict";window.MSLightbox=function(t){BaseControl.call(this,t),this.options.autohide=!1,n.extend(this.options,t),this.data_list=[];},MSLightbox.fadeDuratation=400,MSLightbox.extend(BaseControl);var t=MSLightbox.prototype,i=BaseControl.prototype;t.setup=function(){i.setup.call(this),this.$element=n("<div><\/div>").addClass(this.options.prefix+"lightbox-btn").appendTo(this.cont);},t.slideAction=function(t){n("<div><\/div>").addClass(this.options.prefix+"lightbox-btn").appendTo(t.$element).append(n(t.$element.find(".ms-lightbox")));},t.create=function(){i.create.call(this);},MSSlideController.registerControl("lightbox",MSLightbox);}(jQuery),function(n){"use strict";window.MSSlideInfo=function(t){BaseControl.call(this,t),this.options.autohide=!1,this.options.align=null,this.options.inset=!1,this.options.margin=10,this.options.size=100,this.options.dir="h",n.extend(this.options,t),this.data_list=[];},MSSlideInfo.fadeDuratation=400,MSSlideInfo.extend(BaseControl);var t=MSSlideInfo.prototype,i=BaseControl.prototype;t.setup=function(){if(this.$element=n("<div><\/div>").addClass(this.options.prefix+"slide-info").addClass("ms-dir-"+this.options.dir),i.setup.call(this),this.slider.$controlsCont===this.cont?this.$element.appendTo(this.slider.$element):this.$element.appendTo(this.cont),!this.options.insetTo&&this.options.align){var t=this.options.align;this.options.inset?this.$element.css(t,this.options.margin):(this.slider.api.addEventListener(MSSliderEvent.RESERVED_SPACE_CHANGE,this.align,this),this.align()),this.options.dir==="v"?this.$element.width(this.options.size):this.$element.css("min-height",this.options.size);}},t.onAppend=function(){this.options.insetTo||!this.options.align||this.options.inset||this.slider._realignControls();},t.onDetach=function(){this.options.insetTo||!this.options.align||this.options.inset||this.slider._realignControls();},t.align=function(){if(!this.detached){var n=this.options.align,t=this.slider.reserveSpace(n,this.options.size+this.options.margin*2);this.$element.css(n,-t-this.options.size-this.options.margin);}},t.slideAction=function(t){var i=n(t.$element.find(".ms-info")),r=this;i.detach(),this.data_list[t.index]=i;},t.create=function(){i.create.call(this),this.slider.api.addEventListener(MSSliderEvent.CHANGE_START,this.update,this),this.cindex=this.slider.api.index(),this.switchEle(this.data_list[this.cindex]);},t.update=function(){var n=this.slider.api.index();this.switchEle(this.data_list[n]),this.cindex=n;},t.switchEle=function(n){if(this.current_ele){var t=this;this.current_ele[0].tween&&this.current_ele[0].tween.stop(!0),this.current_ele[0].tween=CTween.animate(this.current_ele,MSSlideInfo.fadeDuratation,{opacity:0},{complete:function complete(){this.detach(),this[0].tween=null;},target:this.current_ele}),clearTimeout(this.tou),this.tou=setTimeout(function(){t.__show(n);},MSSlideInfo.fadeDuratation+200);return;}this.__show(n);},t.__show=function(n){n.appendTo(this.$element).css("opacity","0"),CTween.fadeIn(n,MSSlideInfo.fadeDuratation),n[0].tween&&n[0].tween.stop(!0),this.current_ele=n;},t.destroy=function(){clearTimeout(this.tou),this.current_ele&&this.current_ele[0].tween.stop("true"),this.$element.remove(),this.slider.removeEventListener(MSSliderEvent.RESERVED_SPACE_CHANGE,this.align,this);},MSSlideController.registerControl("slideinfo",MSSlideInfo);}(jQuery),function(){window.MSGallery=function(n,t){this.id=n,this.slider=t,this.telement=$("#"+n),this.botcont=$("<div><\/div>").addClass("ms-gallery-botcont").appendTo(this.telement),this.thumbcont=$("<div><\/div>").addClass("ms-gal-thumbcont hide-thumbs").appendTo(this.botcont),this.playbtn=$("<div><\/div>").addClass("ms-gal-playbtn").appendTo(this.botcont),this.thumbtoggle=$("<div><\/div>").addClass("ms-gal-thumbtoggle").appendTo(this.botcont),t.control("thumblist",{insertTo:this.thumbcont,autohide:!1,dir:"h"}),t.control("slidenum",{insertTo:this.botcont,autohide:!1}),t.control("slideinfo",{insertTo:this.botcont,autohide:!1}),t.control("timebar",{insertTo:this.botcont,autohide:!1}),t.control("bullets",{insertTo:this.botcont,autohide:!1});};var n=MSGallery.prototype;n._init=function(){var n=this;this.slider.api.paused||this.playbtn.addClass("btn-pause"),this.playbtn.click(function(){n.slider.api.paused?(n.slider.api.resume(),n.playbtn.addClass("btn-pause")):(n.slider.api.pause(),n.playbtn.removeClass("btn-pause"));}),this.thumbtoggle.click(function(){n.vthumbs?(n.thumbtoggle.removeClass("btn-hide"),n.vthumbs=!1,n.thumbcont.addClass("hide-thumbs")):(n.thumbtoggle.addClass("btn-hide"),n.thumbcont.removeClass("hide-thumbs"),n.vthumbs=!0);});},n.setup=function(){var n=this;$(document).ready(function(){n._init();});};}();//@ sourceMappingURL=masterslider.map
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255), __webpack_require__(255)))
 
 /***/ },
-/* 290 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(291);
+	var content = __webpack_require__(297);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(241)(content, {});
@@ -32294,7 +32992,7 @@
 	}
 
 /***/ },
-/* 291 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(240)();
@@ -32302,43 +33000,43 @@
 
 
 	// module
-	exports.push([module.id, "/**\r\n *  Master Slider\r\n *\tversion 1.5\r\n * \tCore css file\r\n */\r\n\r\n.master-slider{\r\n\tposition: relative;\r\n\tvisibility: hidden;\r\n\t-moz-transform: translate3d(0 , 0 , 0);\r\n\tbackground: #fff;\r\n}\r\n\r\n.master-slider.ms-fullheight{height: 100%;}\r\n\r\n.master-slider.before-init{}\r\n\r\n.master-slider img {max-width:none;}\r\n\r\n.ms-ie img{border:none;}\r\n.ms-ie8 * {opacity:inherit;filter:inherit;}\r\n.ms-ie7   {zoom:1;}\r\n\r\n.ms-loading-container{\r\n\tposition:absolute;\r\n\twidth:100%;\r\n\ttop:0;\r\n}\r\n\r\n.ms-loading-container .ms-loading,\r\n.ms-slide .ms-slide-loading {\r\n\twidth: 36px;\r\n\theight: 36px;\r\n\tbackground: url(" + __webpack_require__(292) + ") no-repeat center white;\r\n\tborder-radius: 60px;\r\n\tbox-shadow: 0px 0px 3px rgba(0,0,0,0.2);\r\n\tposition: absolute;\r\n\tleft: 50%;\r\n\ttop: 50%;\r\n\tmargin: -18px;\r\n\topacity: 0.9;\r\n}\r\n\r\n\r\n/* grab cursor */\r\n.ms-def-cursor{cursor:auto !important;}\r\n.ms-grab-cursor{cursor: url(" + __webpack_require__(293) + "), move;}\r\n.ms-grabbing-cursor{cursor: url(" + __webpack_require__(294) + "), move;}\r\n/* .ms-ie .ms-grab-cursor{cursor: url(\"../masterslider/style/grab.cur\"), move;} */\r\n/* .ms-ie .ms-grabbing-cursor {cursor: url(\"../masterslider/style/grabbing.cur\"), move;} */\r\n\r\n.ms-view {\r\n\tmargin:0px auto;\r\n\toverflow:hidden;\r\n\tbackground:black;\r\n\tposition:relative;\r\n\t-webkit-perspective: 2000px;\r\n\t-moz-perspective: 2000px;\r\n\t-ms-perspective: 2000px;\r\n\tperspective: 2000px;\r\n}\r\n\r\n.ms-view .ms-slide-container{position:relative;}\r\n\r\n.ms-slide {\r\n\tposition:absolute;\r\n\t-webkit-transform: translateZ(0px);\r\n\t-moz-transform: translateZ(0px);\r\n\t-ms-transform: translateZ(0px);\r\n\t-o-transform: translateZ(0px);\r\n\ttransform: translateZ(0px);\r\n\r\n\t-webkit-transform-style: preserve-3d;\r\n\t-moz-transform-style: preserve-3d;\r\n\t-ms-transform-style: preserve-3d;\r\n\ttransform-style: preserve-3d;\r\n\r\n\theight:100%;\r\n}\r\n\r\n.ms-slide.selected {}\r\n\r\n.ms-slide .ms-slide-bgcont,\r\n.ms-slide .ms-slide-bgvideocont{\r\n\tposition: absolute;\r\n\toverflow:hidden;\r\n\twidth: 100%;\r\n}\r\n\r\n.ms-slide .ms-slide-bgvideocont{\r\n\tz-index: 5;\r\n\theight: 100%;\r\n}\r\n\r\n.ms-slide .ms-slide-bgvideocont,\r\n.ms-slide-bgvideocont>video{\r\n\t-webkit-transform: translateZ(0.3px);\r\n\t-moz-transform: translateZ(0.3px);\r\n\t-ms-transform: translateZ(0.3px);\r\n\t-o-transform: translateZ(0.3px);\r\n\ttransform: translateZ(0.3px);\r\n}\r\n\r\n.ms-slide .ms-slide-bgvideo{\r\n\tposition: absolute;\r\n\ttop: 0px;\r\n}\r\n\r\n\r\n.ms-container {position: relative; margin:0 auto;}\r\n.ms-slide .ms-slide-bgcont img , .ms-container{\r\n\t-webkit-user-select:none;\r\n\t-moz-user-select:none;\r\n\t-ms-user-select:none;\r\n\tuser-select:none;\r\n}\r\n\r\n.ms-slide .ms-layer{position:absolute;}\r\n\r\n.ms-slide .ms-slide-layers{\r\n\tposition: absolute;\r\n\toverflow:hidden;\r\n\twidth:100%;\r\n\theight: 100%;\r\n\tz-index: 10;\r\n\ttop:0px;\r\n}\r\n\r\n.ms-slide .ms-slide-video{\r\n\tposition:absolute;\r\n\ttop:0;\r\n\tz-index: 11;\r\n\tbackground:black;\r\n\tpadding:0;\r\n\tmargin: 0;\r\n\tborder: none;\r\n\r\n}\r\n\r\n.ms-layer.video-box{background:black;}\r\n.ms-layer.video-box iframe{\r\n\tpadding:0;\r\n\tmargin: 0;\r\n\tborder: none;\r\n\tposition: absolute;\r\n\tz-index: 10;\r\n}\r\n\r\n.ms-slide .ms-slide-vpbtn , .ms-slide .ms-video-btn{\r\n\tposition:absolute;\r\n\tcursor: pointer;\r\n\tz-index: 10;\r\n}\r\n\r\n.ms-slide .ms-slide-vcbtn{\r\n\tposition:absolute;\r\n\tcursor: pointer;\r\n\tz-index: 13;\r\n}\r\n\r\n.ms-slide-vcbtn-mobile{\r\n\tposition: relative;\r\n\tbottom: 0;\r\n\tleft:0;\r\n\twidth:100%;\r\n\theight: 28px;\r\n\tbackground-color: black;\r\n\tcolor: white;\r\n\ttext-align: center;\r\n\tcursor: pointer;\r\n\tz-index: 13;\r\n}\r\n\r\n.ms-slide-vcbtn-mobile .ms-vcbtn-txt {\r\n    text-transform: uppercase;\r\n    font-family: sans-serif;\r\n    font-size: 0.75em;\r\n    display: inline-block;\r\n    background: url(" + __webpack_require__(295) + ") no-repeat 0px 3px;\r\n    padding-left: 15px;\r\n    height: 15px;\r\n    color: #DBDBDB;\r\n    margin-top: 7px;\r\n}\r\n\r\n.ms-slide .ms-slide-vcbtn,\r\n.ms-slide .ms-slide-layers,\r\n.ms-slide .ms-slide-vpbtn,\r\n.ms-slide .ms-slide-video {\r\n\t-webkit-transform: translateZ(0.44px);\r\n\t-moz-transform: translateZ(0.44px);\r\n\t-ms-transform: translateZ(0.44px);\r\n\t-o-transform: translateZ(0.44px);\r\n\ttransform: translateZ(0.44px);\r\n}\r\n\r\n.ms-video-img{\r\n\tposition:absolute;\r\n\twidth:100%;\r\n\theight:100%;\r\n\ttop:0;\r\n\tleft:0;\r\n}\r\n\r\n.ms-mask-frame{\r\n\toverflow:hidden;\r\n\tposition:absolute;\r\n\tfloat:left;\r\n}\r\n\r\n/* controls */\r\n\r\n.ms-thumb-list{\r\n\toverflow:hidden;\r\n\tposition:absolute;\r\n}\r\n.ms-thumbs-cont{position: relative;}\r\n.ms-thumb-frame img{width:100%;\theight:auto;}\r\n.ms-thumb-frame{\r\n\tcursor:pointer;\r\n\tfloat: left;\r\n\toverflow: hidden;\r\n}\r\n\r\n.ms-bullet{cursor:pointer;float: left;}\r\n\r\n.ms-sbar .ms-bar{\r\n\tposition:relative;\r\n\t-webkit-transition: opacity 300ms;\r\n\t-moz-transition: opacity 300ms;\r\n\t-ms-transition: opacity 300ms;\r\n\t-o-transition: opacity 300ms;\r\n\ttransition: opacity 300ms;\r\n}\r\n\r\n.ms-time-bar{\r\n\t-webkit-transition: width 120ms linear;\r\n\t-moz-transition: width 120ms linear;\r\n\t-ms-transition: width 120ms linear;\r\n\t-o-transition: width 120ms linear;\r\n\ttransition: width 120ms linear;\r\n\r\n}\r\n\r\n.ms-ie7 .ms-tooltip-arrow{\r\n\theight:0px;\r\n}\r\n", ""]);
+	exports.push([module.id, "/**\r\n *  Master Slider\r\n *\tversion 1.5\r\n * \tCore css file\r\n */\r\n\r\n.master-slider{\r\n\tposition: relative;\r\n\tvisibility: hidden;\r\n\t-moz-transform: translate3d(0 , 0 , 0);\r\n\tbackground: #fff;\r\n}\r\n\r\n.master-slider.ms-fullheight{height: 100%;}\r\n\r\n.master-slider.before-init{}\r\n\r\n.master-slider img {max-width:none;}\r\n\r\n.ms-ie img{border:none;}\r\n.ms-ie8 * {opacity:inherit;filter:inherit;}\r\n.ms-ie7   {zoom:1;}\r\n\r\n.ms-loading-container{\r\n\tposition:absolute;\r\n\twidth:100%;\r\n\ttop:0;\r\n}\r\n\r\n.ms-loading-container .ms-loading,\r\n.ms-slide .ms-slide-loading {\r\n\twidth: 36px;\r\n\theight: 36px;\r\n\tbackground: url(" + __webpack_require__(298) + ") no-repeat center white;\r\n\tborder-radius: 60px;\r\n\tbox-shadow: 0px 0px 3px rgba(0,0,0,0.2);\r\n\tposition: absolute;\r\n\tleft: 50%;\r\n\ttop: 50%;\r\n\tmargin: -18px;\r\n\topacity: 0.9;\r\n}\r\n\r\n\r\n/* grab cursor */\r\n.ms-def-cursor{cursor:auto !important;}\r\n.ms-grab-cursor{cursor: url(" + __webpack_require__(299) + "), move;}\r\n.ms-grabbing-cursor{cursor: url(" + __webpack_require__(300) + "), move;}\r\n/* .ms-ie .ms-grab-cursor{cursor: url(\"../masterslider/style/grab.cur\"), move;} */\r\n/* .ms-ie .ms-grabbing-cursor {cursor: url(\"../masterslider/style/grabbing.cur\"), move;} */\r\n\r\n.ms-view {\r\n\tmargin:0px auto;\r\n\toverflow:hidden;\r\n\tbackground:black;\r\n\tposition:relative;\r\n\t-webkit-perspective: 2000px;\r\n\t-moz-perspective: 2000px;\r\n\t-ms-perspective: 2000px;\r\n\tperspective: 2000px;\r\n}\r\n\r\n.ms-view .ms-slide-container{position:relative;}\r\n\r\n.ms-slide {\r\n\tposition:absolute;\r\n\t-webkit-transform: translateZ(0px);\r\n\t-moz-transform: translateZ(0px);\r\n\t-ms-transform: translateZ(0px);\r\n\t-o-transform: translateZ(0px);\r\n\ttransform: translateZ(0px);\r\n\r\n\t-webkit-transform-style: preserve-3d;\r\n\t-moz-transform-style: preserve-3d;\r\n\t-ms-transform-style: preserve-3d;\r\n\ttransform-style: preserve-3d;\r\n\r\n\theight:100%;\r\n}\r\n\r\n.ms-slide.selected {}\r\n\r\n.ms-slide .ms-slide-bgcont,\r\n.ms-slide .ms-slide-bgvideocont{\r\n\tposition: absolute;\r\n\toverflow:hidden;\r\n\twidth: 100%;\r\n}\r\n\r\n.ms-slide .ms-slide-bgvideocont{\r\n\tz-index: 5;\r\n\theight: 100%;\r\n}\r\n\r\n.ms-slide .ms-slide-bgvideocont,\r\n.ms-slide-bgvideocont>video{\r\n\t-webkit-transform: translateZ(0.3px);\r\n\t-moz-transform: translateZ(0.3px);\r\n\t-ms-transform: translateZ(0.3px);\r\n\t-o-transform: translateZ(0.3px);\r\n\ttransform: translateZ(0.3px);\r\n}\r\n\r\n.ms-slide .ms-slide-bgvideo{\r\n\tposition: absolute;\r\n\ttop: 0px;\r\n}\r\n\r\n\r\n.ms-container {position: relative; margin:0 auto;}\r\n.ms-slide .ms-slide-bgcont img , .ms-container{\r\n\t-webkit-user-select:none;\r\n\t-moz-user-select:none;\r\n\t-ms-user-select:none;\r\n\tuser-select:none;\r\n}\r\n\r\n.ms-slide .ms-layer{position:absolute;}\r\n\r\n.ms-slide .ms-slide-layers{\r\n\tposition: absolute;\r\n\toverflow:hidden;\r\n\twidth:100%;\r\n\theight: 100%;\r\n\tz-index: 10;\r\n\ttop:0px;\r\n}\r\n\r\n.ms-slide .ms-slide-video{\r\n\tposition:absolute;\r\n\ttop:0;\r\n\tz-index: 11;\r\n\tbackground:black;\r\n\tpadding:0;\r\n\tmargin: 0;\r\n\tborder: none;\r\n\r\n}\r\n\r\n.ms-layer.video-box{background:black;}\r\n.ms-layer.video-box iframe{\r\n\tpadding:0;\r\n\tmargin: 0;\r\n\tborder: none;\r\n\tposition: absolute;\r\n\tz-index: 10;\r\n}\r\n\r\n.ms-slide .ms-slide-vpbtn , .ms-slide .ms-video-btn{\r\n\tposition:absolute;\r\n\tcursor: pointer;\r\n\tz-index: 10;\r\n}\r\n\r\n.ms-slide .ms-slide-vcbtn{\r\n\tposition:absolute;\r\n\tcursor: pointer;\r\n\tz-index: 13;\r\n}\r\n\r\n.ms-slide-vcbtn-mobile{\r\n\tposition: relative;\r\n\tbottom: 0;\r\n\tleft:0;\r\n\twidth:100%;\r\n\theight: 28px;\r\n\tbackground-color: black;\r\n\tcolor: white;\r\n\ttext-align: center;\r\n\tcursor: pointer;\r\n\tz-index: 13;\r\n}\r\n\r\n.ms-slide-vcbtn-mobile .ms-vcbtn-txt {\r\n    text-transform: uppercase;\r\n    font-family: sans-serif;\r\n    font-size: 0.75em;\r\n    display: inline-block;\r\n    background: url(" + __webpack_require__(301) + ") no-repeat 0px 3px;\r\n    padding-left: 15px;\r\n    height: 15px;\r\n    color: #DBDBDB;\r\n    margin-top: 7px;\r\n}\r\n\r\n.ms-slide .ms-slide-vcbtn,\r\n.ms-slide .ms-slide-layers,\r\n.ms-slide .ms-slide-vpbtn,\r\n.ms-slide .ms-slide-video {\r\n\t-webkit-transform: translateZ(0.44px);\r\n\t-moz-transform: translateZ(0.44px);\r\n\t-ms-transform: translateZ(0.44px);\r\n\t-o-transform: translateZ(0.44px);\r\n\ttransform: translateZ(0.44px);\r\n}\r\n\r\n.ms-video-img{\r\n\tposition:absolute;\r\n\twidth:100%;\r\n\theight:100%;\r\n\ttop:0;\r\n\tleft:0;\r\n}\r\n\r\n.ms-mask-frame{\r\n\toverflow:hidden;\r\n\tposition:absolute;\r\n\tfloat:left;\r\n}\r\n\r\n/* controls */\r\n\r\n.ms-thumb-list{\r\n\toverflow:hidden;\r\n\tposition:absolute;\r\n}\r\n.ms-thumbs-cont{position: relative;}\r\n.ms-thumb-frame img{width:100%;\theight:auto;}\r\n.ms-thumb-frame{\r\n\tcursor:pointer;\r\n\tfloat: left;\r\n\toverflow: hidden;\r\n}\r\n\r\n.ms-bullet{cursor:pointer;float: left;}\r\n\r\n.ms-sbar .ms-bar{\r\n\tposition:relative;\r\n\t-webkit-transition: opacity 300ms;\r\n\t-moz-transition: opacity 300ms;\r\n\t-ms-transition: opacity 300ms;\r\n\t-o-transition: opacity 300ms;\r\n\ttransition: opacity 300ms;\r\n}\r\n\r\n.ms-time-bar{\r\n\t-webkit-transition: width 120ms linear;\r\n\t-moz-transition: width 120ms linear;\r\n\t-ms-transition: width 120ms linear;\r\n\t-o-transition: width 120ms linear;\r\n\ttransition: width 120ms linear;\r\n\r\n}\r\n\r\n.ms-ie7 .ms-tooltip-arrow{\r\n\theight:0px;\r\n}\r\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 292 */
+/* 298 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/gif;base64,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"
 
 /***/ },
-/* 293 */
+/* 299 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,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"
 
 /***/ },
-/* 294 */
+/* 300 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,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"
 
 /***/ },
-/* 295 */
+/* 301 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAH1JREFUeNpi/P//P8ODBw9mMjAwnFVQUJjFgAaAcsZAqgOIwxjv37+vBGScAWJBIE5H1gBVuBsqF8YElLwHZLgC8XsgnglUkIZFIciQ1YwgZ2CRrADicnTb4IqxaGBAdxYTAwmACYepFeh+gCvG4plObJ4mKegYSYkUgAADAAVEV9LtIDS2AAAAAElFTkSuQmCC"
 
 /***/ },
-/* 296 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(297);
+	var content = __webpack_require__(303);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(241)(content, {});
@@ -32358,7 +33056,7 @@
 	}
 
 /***/ },
-/* 297 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(240)();
@@ -32366,31 +33064,31 @@
 
 
 	// module
-	exports.push([module.id, "/**\r\n *  Master Slider\r\n *  Default Skin\r\n */\r\n\r\n.ms-skin-default .ms-slide .ms-slide-vpbtn,\r\n.ms-skin-default .ms-video-btn{\r\n\twidth: 50px;\r\n\theight: 51px;\r\n\tbackground: url(" + __webpack_require__(298) + ") no-repeat -14px -150px;\r\n\ttop: 50%;\r\n\tleft: 50%;\r\n\tmargin: -25px 0 0 -25px;\r\n}\r\n\r\n.ms-skin-default .ms-slide .ms-slide-vcbtn {\r\n\twidth: 30px;\r\n\theight: 30px;\r\n\tbackground: url(" + __webpack_require__(298) + ") no-repeat -24px -28px;\r\n\ttop: 18px;\r\n\tright: 30px;\r\n}\r\n\r\n/* controls */\r\n\r\n.ms-skin-default .ms-nav-next,\r\n.ms-skin-default .ms-nav-prev {\r\n\twidth: 30px;\r\n\tbackground: url(" + __webpack_require__(298) + ");\r\n\tbackground-position: -89px -26px;\r\n\theight: 40px;\r\n\tcursor: pointer;\r\n\ttop: 59%;\r\n\tleft: -30px;\r\n\tmargin-top: -20px;\r\n\tposition: absolute;\r\n\tz-index: 10;\r\n}\r\n.ms-skin-default .ms-nav-next {\r\n\tright: -30px;\r\n\tleft: auto;\r\n\tbackground-position: -89px -103px;\r\n}\r\n\r\n@media only screen and (max-width: 1024px){\r\n\t\r\n.ms-skin-default .ms-nav-next,\r\n.ms-skin-default .ms-nav-prev {\r\n\twidth: 30px;\r\n\tbackground: url(" + __webpack_require__(298) + ");\r\n\tbackground-position: -89px -26px;\r\n\theight: 40px;\r\n\tcursor: pointer;\r\n\ttop: 60%;\r\n\tleft: 30px;\r\n\tmargin-top: -20px;\r\n\tposition: absolute;\r\n\tz-index: 10;\r\n}\r\n.ms-skin-default .ms-nav-next {\r\n\tright: 30px;\r\n\tleft: auto;\r\n\tbackground-position: -89px -103px;\r\n}\r\n\r\n\r\n}\r\n\r\n.ms-skin-default .ms-thumb-frame-selected {\r\n\topacity: 0.6;\r\n}\r\n\r\n.ms-skin-default .ms-thumb-list.ms-dir-h {\r\n\tbottom: -60px;\r\n\twidth: 100%;\r\n\theight: 60px;\r\n}\r\n\r\n.ms-skin-default .ms-thumb-list.ms-dir-v {\r\n\theight: 100%;\r\n\twidth: 60px;\r\n\tright: -60px;\r\n\ttop: 0;\r\n}\r\n\r\n.ms-skin-default .ms-thumb-frame {\r\n\tcursor: pointer;\r\n\tfloat: left;\r\n\twidth: 60px;\r\n\theight: 60px;\r\n\tmargin: 1px 0 0 1px;\r\n\toverflow: hidden;\r\n}\r\n\r\n.ms-skin-default .ms-bullets.ms-dir-h {\r\n\tposition: absolute;\r\n\tbottom: 20px;\r\n\tright: 50%;\r\n\twidth: 100px;\r\n}\r\n\r\n.ms-skin-default .ms-bullets.ms-dir-h .ms-bullets-count {\r\n\tposition: relative;\r\n\tright: -50%;\r\n}\r\n\r\n.ms-skin-default .ms-bullet {\r\n\twidth: 10px;\r\n\theight: 10px;\r\n\tbackground: url(" + __webpack_require__(298) + ") no-repeat;\r\n\tmargin: 4px;\r\n\tbackground-position: -34px -117px;\r\n}\r\n\r\n.ms-skin-default .ms-bullet-selected {\r\n\tbackground-position: -34px -84px;\r\n}\r\n\r\n.ms-skin-default .ms-sbar {\r\n\tposition: absolute;\r\n}\r\n\r\n.ms-skin-default .ms-sbar.ms-dir-h {\r\n\tleft: 10px;\r\n\tright: 10px;\r\n\ttop: 5px\r\n}\r\n\r\n.ms-skin-default .ms-sbar.ms-dir-v {\r\n\ttop: 10px;\r\n\tbottom: 10px;\r\n\tright: 5px\r\n}\r\n\r\n.ms-skin-default .ms-sbar .ms-bar {\r\n\theight: 4px;\r\n\tbackground: #DD00FF;\r\n\tborder-radius: 4px;\r\n}\r\n\r\n.ms-skin-default .ms-sbar.ms-dir-v .ms-bar {\r\n\twidth: 4px;\r\n}\r\n\r\n.ms-skin-default .ms-timerbar {\r\n\twidth: 100%;\r\n\tbottom: 0px;\r\n\tposition: absolute;\r\n}\r\n\r\n.ms-skin-default .ms-time-bar {\r\n\theight: 3px;\r\n\tbackground: #FFFFFF;\r\n\tborder-top: solid 1px rgba(0, 0, 0, 0.41);\r\n}\r\n\r\n.ms-skin-default .ms-ctimer {\r\n\tposition: absolute;\r\n\ttop: 30px;\r\n\tleft: 30px;\r\n\tcursor: pointer;\r\n}\r\n\r\n.ms-skin-default .ms-ctimer-bullet {}\r\n\r\n.ms-skin-default .ms-tooltip{\r\n\tposition: absolute;\r\n\tz-index: 110;\r\n\tcursor: auto;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-top .ms-tooltip-arrow,\r\n.ms-skin-default .ms-tooltip-bottom .ms-tooltip-arrow{\r\n\tborder-left: solid 10px transparent;\r\n\tborder-right: solid 10px transparent;\r\n\tposition: absolute;\r\n\tleft: 50%;\r\n\tmargin-left: -10px;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-top .ms-tooltip-arrow{\r\n\tborder-top: solid 10px;\r\n\tborder-top-color: silver;\r\n\tborder-top-color: rgba(240, 240, 240, 0.88);\r\n\tbottom: -10px;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-bottom .ms-tooltip-arrow {\r\n\tborder-bottom: solid 10px;\r\n\tborder-bottom-color: silver;\r\n\tborder-bottom-color: rgba(240, 240, 240, 0.88);\r\n\ttop: -10px;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-right .ms-tooltip-arrow,\r\n.ms-skin-default .ms-tooltip-left .ms-tooltip-arrow{\r\n\tborder-top: solid 10px transparent;\r\n\tborder-bottom: solid 10px transparent;\r\n\tposition: absolute;\r\n\ttop: 50%;\r\n\tmargin-top: -10px;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-right .ms-tooltip-arrow{\r\n\tborder-right: solid 10px;\r\n\tborder-right-color: silver;\r\n\tborder-right-color: rgba(240, 240, 240, 0.88);\r\n\tleft: -10px;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-left .ms-tooltip-arrow {\r\n\tborder-left: solid 10px;\r\n\tborder-left-color: silver;\r\n\tborder-left-color: rgba(240, 240, 240, 0.88);\r\n\tright: -10px;\r\n}\r\n\r\n@keyframes point-anim{\r\n\t0% \t\t{transform: scale(0.5); -webkit-transform: scale(0.5); -moz-transform: scale(0.5); -o-transform: scale(0.5); -ms-transform: scale(0.5);  opacity: 1; }\r\n\t100% \t{transform: scale(0.5); -webkit-transform: scale(0.5); -moz-transform: scale(1.5); -o-transform: scale(1.5); -ms-transform: scale(1.5);  opacity: 0; }\r\n}\r\n\r\n@-webkit-keyframes point-anim{\r\n\t0% \t\t{-webkit-transform: scale(0.5); opacity: 1; }\r\n\t100% \t{-webkit-transform: scale(1.5);\topacity: 0; }\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-point {cursor: pointer;}\r\n.ms-skin-default .ms-tooltip-point .ms-point-center {\r\n\twidth: 12px;\r\n\theight: 12px; \r\n\tborder-radius: 15px;\r\n\tborder: solid 2px #BBB;\r\n\tbackground: white;\r\n\tmargin: -8px 0 0 -8px;\r\n\tposition: absolute;\r\n\tz-index: 5;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-point .ms-point-border {\r\n\twidth: 22px;\r\n\theight: 22px; \r\n\tbackground: black;\r\n\tbackground:rgba(0, 0, 0, 0.36);\r\n\tmargin: -11px 0 0 -11px;\r\n\tposition: absolute;\r\n\tborder-radius: 15px;\r\n\t\r\n\tanimation: point-anim 1.5s infinite ;\r\n\t-moz-animation: point-anim 1.5s infinite;\r\n\t-webkit-animation: point-anim 1.5s infinite;\r\n\t-o-animation: point-anim 1.5s infinite;\r\n}\r\n\r\n/* In Android browser, using css animations over slider causes some crashes */\r\n.ms-android.ms-skin-default .ms-tooltip-point .ms-point-border{\r\n\tanimation:none;\r\n\t-moz-animation:none;\r\n\t-webkit-animation:none;\r\n\t-o-animation:none;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip {\r\n\tmax-width:200px;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-cont {\r\n\tpadding: 10px;\r\n\tbackground: silver;\r\n\tbackground: rgba(240, 240, 240, 0.88);\r\n\ttext-shadow: 0 1px 0px white;\r\n\tmargin-left: -1px;\r\n}\r\n\r\n/* retina */\r\n@media \r\nonly screen and (-webkit-min-device-pixel-ratio: 2),\r\nonly screen and (   min--moz-device-pixel-ratio: 2),\r\nonly screen and (     -o-min-device-pixel-ratio: 2/1),\r\nonly screen and (        min-device-pixel-ratio: 2),\r\nonly screen and (                min-resolution: 192dpi),\r\nonly screen and (                min-resolution: 2dppx) {\r\n\t\r\n\t.ms-skin-default .ms-slide .ms-slide-vpbtn,\r\n\t.ms-skin-default .ms-video-btn,\r\n\t.ms-skin-default .ms-slide .ms-slide-vcbtn,\r\n\t.ms-skin-default .ms-nav-next,\r\n\t.ms-skin-default .ms-nav-prev,\r\n\t.ms-skin-default .ms-bullet{\r\n\t\tbackground-image:url(" + __webpack_require__(299) + ");\r\n\t\tbackground-size: 152px 225px;\r\n\t}\r\n\t\r\n}", ""]);
+	exports.push([module.id, "/**\r\n *  Master Slider\r\n *  Default Skin\r\n */\r\n\r\n.ms-skin-default .ms-slide .ms-slide-vpbtn,\r\n.ms-skin-default .ms-video-btn{\r\n\twidth: 50px;\r\n\theight: 51px;\r\n\tbackground: url(" + __webpack_require__(304) + ") no-repeat -14px -150px;\r\n\ttop: 50%;\r\n\tleft: 50%;\r\n\tmargin: -25px 0 0 -25px;\r\n}\r\n\r\n.ms-skin-default .ms-slide .ms-slide-vcbtn {\r\n\twidth: 30px;\r\n\theight: 30px;\r\n\tbackground: url(" + __webpack_require__(304) + ") no-repeat -24px -28px;\r\n\ttop: 18px;\r\n\tright: 30px;\r\n}\r\n\r\n/* controls */\r\n\r\n.ms-skin-default .ms-nav-next,\r\n.ms-skin-default .ms-nav-prev {\r\n\twidth: 30px;\r\n\tbackground: url(" + __webpack_require__(304) + ");\r\n\tbackground-position: -89px -26px;\r\n\theight: 40px;\r\n\tcursor: pointer;\r\n\ttop: 59%;\r\n\tleft: -30px;\r\n\tmargin-top: -20px;\r\n\tposition: absolute;\r\n\tz-index: 10;\r\n}\r\n.ms-skin-default .ms-nav-next {\r\n\tright: -30px;\r\n\tleft: auto;\r\n\tbackground-position: -89px -103px;\r\n}\r\n\r\n@media only screen and (max-width: 1024px){\r\n\t\r\n.ms-skin-default .ms-nav-next,\r\n.ms-skin-default .ms-nav-prev {\r\n\twidth: 30px;\r\n\tbackground: url(" + __webpack_require__(304) + ");\r\n\tbackground-position: -89px -26px;\r\n\theight: 40px;\r\n\tcursor: pointer;\r\n\ttop: 60%;\r\n\tleft: 30px;\r\n\tmargin-top: -20px;\r\n\tposition: absolute;\r\n\tz-index: 10;\r\n}\r\n.ms-skin-default .ms-nav-next {\r\n\tright: 30px;\r\n\tleft: auto;\r\n\tbackground-position: -89px -103px;\r\n}\r\n\r\n\r\n}\r\n\r\n.ms-skin-default .ms-thumb-frame-selected {\r\n\topacity: 0.6;\r\n}\r\n\r\n.ms-skin-default .ms-thumb-list.ms-dir-h {\r\n\tbottom: -60px;\r\n\twidth: 100%;\r\n\theight: 60px;\r\n}\r\n\r\n.ms-skin-default .ms-thumb-list.ms-dir-v {\r\n\theight: 100%;\r\n\twidth: 60px;\r\n\tright: -60px;\r\n\ttop: 0;\r\n}\r\n\r\n.ms-skin-default .ms-thumb-frame {\r\n\tcursor: pointer;\r\n\tfloat: left;\r\n\twidth: 60px;\r\n\theight: 60px;\r\n\tmargin: 1px 0 0 1px;\r\n\toverflow: hidden;\r\n}\r\n\r\n.ms-skin-default .ms-bullets.ms-dir-h {\r\n\tposition: absolute;\r\n\tbottom: 20px;\r\n\tright: 50%;\r\n\twidth: 100px;\r\n}\r\n\r\n.ms-skin-default .ms-bullets.ms-dir-h .ms-bullets-count {\r\n\tposition: relative;\r\n\tright: -50%;\r\n}\r\n\r\n.ms-skin-default .ms-bullet {\r\n\twidth: 10px;\r\n\theight: 10px;\r\n\tbackground: url(" + __webpack_require__(304) + ") no-repeat;\r\n\tmargin: 4px;\r\n\tbackground-position: -34px -117px;\r\n}\r\n\r\n.ms-skin-default .ms-bullet-selected {\r\n\tbackground-position: -34px -84px;\r\n}\r\n\r\n.ms-skin-default .ms-sbar {\r\n\tposition: absolute;\r\n}\r\n\r\n.ms-skin-default .ms-sbar.ms-dir-h {\r\n\tleft: 10px;\r\n\tright: 10px;\r\n\ttop: 5px\r\n}\r\n\r\n.ms-skin-default .ms-sbar.ms-dir-v {\r\n\ttop: 10px;\r\n\tbottom: 10px;\r\n\tright: 5px\r\n}\r\n\r\n.ms-skin-default .ms-sbar .ms-bar {\r\n\theight: 4px;\r\n\tbackground: #DD00FF;\r\n\tborder-radius: 4px;\r\n}\r\n\r\n.ms-skin-default .ms-sbar.ms-dir-v .ms-bar {\r\n\twidth: 4px;\r\n}\r\n\r\n.ms-skin-default .ms-timerbar {\r\n\twidth: 100%;\r\n\tbottom: 0px;\r\n\tposition: absolute;\r\n}\r\n\r\n.ms-skin-default .ms-time-bar {\r\n\theight: 3px;\r\n\tbackground: #FFFFFF;\r\n\tborder-top: solid 1px rgba(0, 0, 0, 0.41);\r\n}\r\n\r\n.ms-skin-default .ms-ctimer {\r\n\tposition: absolute;\r\n\ttop: 30px;\r\n\tleft: 30px;\r\n\tcursor: pointer;\r\n}\r\n\r\n.ms-skin-default .ms-ctimer-bullet {}\r\n\r\n.ms-skin-default .ms-tooltip{\r\n\tposition: absolute;\r\n\tz-index: 110;\r\n\tcursor: auto;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-top .ms-tooltip-arrow,\r\n.ms-skin-default .ms-tooltip-bottom .ms-tooltip-arrow{\r\n\tborder-left: solid 10px transparent;\r\n\tborder-right: solid 10px transparent;\r\n\tposition: absolute;\r\n\tleft: 50%;\r\n\tmargin-left: -10px;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-top .ms-tooltip-arrow{\r\n\tborder-top: solid 10px;\r\n\tborder-top-color: silver;\r\n\tborder-top-color: rgba(240, 240, 240, 0.88);\r\n\tbottom: -10px;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-bottom .ms-tooltip-arrow {\r\n\tborder-bottom: solid 10px;\r\n\tborder-bottom-color: silver;\r\n\tborder-bottom-color: rgba(240, 240, 240, 0.88);\r\n\ttop: -10px;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-right .ms-tooltip-arrow,\r\n.ms-skin-default .ms-tooltip-left .ms-tooltip-arrow{\r\n\tborder-top: solid 10px transparent;\r\n\tborder-bottom: solid 10px transparent;\r\n\tposition: absolute;\r\n\ttop: 50%;\r\n\tmargin-top: -10px;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-right .ms-tooltip-arrow{\r\n\tborder-right: solid 10px;\r\n\tborder-right-color: silver;\r\n\tborder-right-color: rgba(240, 240, 240, 0.88);\r\n\tleft: -10px;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-left .ms-tooltip-arrow {\r\n\tborder-left: solid 10px;\r\n\tborder-left-color: silver;\r\n\tborder-left-color: rgba(240, 240, 240, 0.88);\r\n\tright: -10px;\r\n}\r\n\r\n@keyframes point-anim{\r\n\t0% \t\t{transform: scale(0.5); -webkit-transform: scale(0.5); -moz-transform: scale(0.5); -o-transform: scale(0.5); -ms-transform: scale(0.5);  opacity: 1; }\r\n\t100% \t{transform: scale(0.5); -webkit-transform: scale(0.5); -moz-transform: scale(1.5); -o-transform: scale(1.5); -ms-transform: scale(1.5);  opacity: 0; }\r\n}\r\n\r\n@-webkit-keyframes point-anim{\r\n\t0% \t\t{-webkit-transform: scale(0.5); opacity: 1; }\r\n\t100% \t{-webkit-transform: scale(1.5);\topacity: 0; }\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-point {cursor: pointer;}\r\n.ms-skin-default .ms-tooltip-point .ms-point-center {\r\n\twidth: 12px;\r\n\theight: 12px; \r\n\tborder-radius: 15px;\r\n\tborder: solid 2px #BBB;\r\n\tbackground: white;\r\n\tmargin: -8px 0 0 -8px;\r\n\tposition: absolute;\r\n\tz-index: 5;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-point .ms-point-border {\r\n\twidth: 22px;\r\n\theight: 22px; \r\n\tbackground: black;\r\n\tbackground:rgba(0, 0, 0, 0.36);\r\n\tmargin: -11px 0 0 -11px;\r\n\tposition: absolute;\r\n\tborder-radius: 15px;\r\n\t\r\n\tanimation: point-anim 1.5s infinite ;\r\n\t-moz-animation: point-anim 1.5s infinite;\r\n\t-webkit-animation: point-anim 1.5s infinite;\r\n\t-o-animation: point-anim 1.5s infinite;\r\n}\r\n\r\n/* In Android browser, using css animations over slider causes some crashes */\r\n.ms-android.ms-skin-default .ms-tooltip-point .ms-point-border{\r\n\tanimation:none;\r\n\t-moz-animation:none;\r\n\t-webkit-animation:none;\r\n\t-o-animation:none;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip {\r\n\tmax-width:200px;\r\n}\r\n\r\n.ms-skin-default .ms-tooltip-cont {\r\n\tpadding: 10px;\r\n\tbackground: silver;\r\n\tbackground: rgba(240, 240, 240, 0.88);\r\n\ttext-shadow: 0 1px 0px white;\r\n\tmargin-left: -1px;\r\n}\r\n\r\n/* retina */\r\n@media \r\nonly screen and (-webkit-min-device-pixel-ratio: 2),\r\nonly screen and (   min--moz-device-pixel-ratio: 2),\r\nonly screen and (     -o-min-device-pixel-ratio: 2/1),\r\nonly screen and (        min-device-pixel-ratio: 2),\r\nonly screen and (                min-resolution: 192dpi),\r\nonly screen and (                min-resolution: 2dppx) {\r\n\t\r\n\t.ms-skin-default .ms-slide .ms-slide-vpbtn,\r\n\t.ms-skin-default .ms-video-btn,\r\n\t.ms-skin-default .ms-slide .ms-slide-vcbtn,\r\n\t.ms-skin-default .ms-nav-next,\r\n\t.ms-skin-default .ms-nav-prev,\r\n\t.ms-skin-default .ms-bullet{\r\n\t\tbackground-image:url(" + __webpack_require__(305) + ");\r\n\t\tbackground-size: 152px 225px;\r\n\t}\r\n\t\r\n}", ""]);
 
 	// exports
 
 
 /***/ },
-/* 298 */
+/* 304 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAADhCAYAAAA073woAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAEE1JREFUeNrsnX9sU9cVx5/tJOSH4ySFVMDaNdCumyZ+ZCwBFQwhUFKSUmgJTWErDIZYy1ak/jPtV6e2mqZp0qahdiutqmpB3UohhTUthI3GMWmSTqIEkpS200SVTg00LERx7PxObO+c5KVzLcc/4h/v3ufvVzoixi/3nvfeJ+eee9+99xm8Xq8CQfGSEZcAAmAQAIMgAAYBMAiAQRAAgwAYBMAgCIBBAAwCYBAEwCAABkEADAJgEACDIAAGATAIgEEQAIMAGATAIAiAQQAMghQlBZcg/jIYDJrWr+Xq/RS9XlhsiYAIBsXgD0Hr6CgLYJwLLiK7i+w2slvI0tXvRsj6yD4ju0rWSeZJ8ibXMDw8bE0h0cfzzKmwvsazKQnjr4vBKiRbR5YbZrEOsnfJ2oKBJlITGew6ROonw+VyudZlZWWdph+N/f39D+bm5tYHg0zLa6ElYLeTbSObN8vib5LVqpEtKQDzg8us/v6w0+ncFgwyLa+FVsMUK8j2RQGXov7uPrWspGgW/eFS/z/DYrHUOhyOe/mjaH5rAVgx2dYY1c1lPKCWmXRwBYBsk2iQJRqwxWTlsb7+apmLdQ7XmUBw+UH2al1dXXayAjaH7ME41WlUy56jY7iygh3r8XgGW1tb91VUVIwkK2BWMkugL5YsWWLes2fP7eEUwsfx8QG+4rLX6gyuknDhstlsu4uLi5vpozsZAUsjWznTl0VFRXlHjhzZuX///juCFcLf83F8/AyHrFTr0gtcp8OFq6ysrIE+DimCjREmaqD1G8Gar+rq6s9SU1NPPPfcc1X08cQrr7zyn0Bw8fdPPvnkCT4+CMhcV0eSwDVAcO1R4RpUo5c3GQG7K9QBL7/8MkMVEDJfuNTjgulOWQHTG1yJBGx+OAcFgixCuFgLZIWrr69vvQpXph7gSiRgOeEe6AuZ1WptrqqqskYAV0R1iQZXTk6OruBKJGARDR8wTKtXr27Zu3dvGeVb70QAV8R1AS599CJHIzn4wIEDd1DkWnP06NF3+F/+HK+6tOYrErjq6+t3+8LllWDSW6IiWD/ZreHCdfjw4S9yrpaWlmv8mZvNMCNZv17huu++++wywZVIwLrDAcwfLt+cLALIumWAy+FwlFoslrf1DFciAeOJgssihcs/8Q8Tsk9Ev+i1tbVmgut4KLhYnZ2dv5UVrkTmYP8iG5vpS0rmb58JLl/I+Hs+jo+foSiu42PRL/q2bdtGW1tb9xMrQ6GOXbx48Y+7urpWyAjXZKhO4IRDnq9kDXQcP1vkxz9BRui/BOPFixf7rly5MhDga34WxxPvRJ9wyC1HZkNDw6aSkpJXjUZjRrDfp3NxDgwMbKGo1+wPWThz8pNlRivPsf8RWbymk7jI/qRMzeEXHTCDD2T3RgOZ6IAlcjYF3/g3lfg8jPWoZQs1VSXYPSebIBvasGFDfWNj46OUzA+HgNRiNpvPOJ1Oq0H0pUQaATadgJ+NQ7lnZUjug0BmCxOybNkg02LK9Ptkb8coknnUst5X5NSsIXO5XGtlgEyrRR+tZH8m642ijF61jFZFYqn5lD9kQ6Eg44fiDJki4EIPrZL8mQDHusipY3wT/41q4p8ZAk7X4ODgluzs7CYF6yJDgja9spvHuPKUKFd2y7guUoXMRJYVS8g0vRZcebxM46ZHGIvET58hjByCbLvb7R70hhA1qS5eHDJTc6nluRuwC404ESzKSDZAkez+QJEsGVd2Q6ETf57rNciJ//nz58NJ/M2U+Nc0Nzeb0YuEIoJs48aNDaEg4z0qOjo6HrdaraMADIopZAxXU1PTvsLCQpsi2tZWIiXDerVor79v4m+z2R7yTfwZuMbGxkeUqbUIqYESfU3PHQCID9hMkKlwVQWDC71I9CIjKeeL3qXdbi9NS0tLWbNmzTvK1IruCRHHwQCYRID5QTa9emosGFxaA4ZNgAWGbyZe1MR/2Odz0q+LhGLcN1MEXw+JYQoIgEHyC01kgsYaEcEgCIBBAAyCABgEwCAABkEADAJgEACDIAAGiSdNHxVFu7UC5rIhgkEADIIAGIQcLGbiN6bdQpah+sdTg3l7zH7cLgAWrXghw1eVLy+/ylSNgevGLUMTGY34rWyGy5cvV46MjJxzu91tN27c+PXKlSsZLosywxtzIYEl0IJUhufuY8eOPULfuX23J+ru7n6NvyP7iii+w8IzkSLY5DbeJSUl2/wja35+/hbfYyA0kbN3yIiOLQCLjyYXktrt9lrFb4eYnp6eOt9jIAA2GznJRnft2nW5ra3tqYmJiW7e0pvg+tvWrVt/ox7jwi2TS5ruTRHgWWSgYQpfALv9k3xIbIk2Dsa78/Hb1uaqCb1JwUArAIuxeLeYz3FrkINBEACDkriJRJKOCAZBAAwCYBAAgyAABqEXCflL6zcf421rECIYJGZ0Ef298IhgYjShhomJidKRkZF1BtGJQQSTDy6Hw7ExJSWl1mQy8buRt9B/vevVyWMORDCN+SK47rVYLG/Rz5nqW2tP8/u39RLJAJi2cG0iuGqJpQyfiMaQndELZABMW7je9IXLB7IsvUAGwDRQXV1dNsH1aiC49AYZANNAFRUVI5cuXfq+x+MZDNEBmIasRFbIAJg2chcVFTXZbLbdYUJ2WlbIAJg24nWfQ2VlZQ16hwyAaaPpt9YO6h0yACYfZGf6+vrWywKZUIDxNQtlSQDZQIhrlJmTk3NaFsgQwbQmbOqRkC9keyKBTAm8Ch6AhVAx2QVOhMn+QXYHIJMUMpE2K1OVT+ZQm49pa52+iDJuwhbu9VfPkScg5Jw7d+4ht9vt8oYQ520EWWkwyLAB3ZdVwRfY7/9WkH0dzaV8kQw5mOCQ1dfX75YaMjSR4jSRMzWXV69efcobhgjE/9rtdrNI91jUG7GS7LIytZ0TJ/kFIv5BxBOwaci6urpKCZz+cHKx1tbWB5Sp9wwAsEhvRLIBxnA5nc61BI4zFFzUGRhqaGioVKZ26jaJdM1SRGuuoalp1ASX1Ww2n6Efs4Mdy9uMNjY27t6wYUO9MrVZn0ekc8GcfPnhepTgsqljhhNqzgrAoMBwuVyutfxQWw9wYZgCcAEwwCUvXAAMcAEwvfOlwjWrhF6GxbkATAy4zCHgGpIRLgCmLVzrIoBrt4xwYZhCIzU3N/Pq7RMRwsXTqd2y7VmBCKaBrFbraEdHx+PEyrCe4QJg2slTWFhoa2pq2hcIMr3ANSm89leTh908FSeVLIdAeoSB8nlwPWiz2R5SpiZdcgpjkHmCAADQbjaFL2RVDFmkcMkAmAEzGBIymBoMMgYps6WlZdPY2NhEaWmpPZJmMZyVa5q+ExSAaQqYL2TTEwVHI8m5RAcMwxQCpMHK1CMft89nr14WGQMwcSDTZVOCYQoIgEFoIiFBk2xEMAgRLJIuMSINhAgGyZODyf5Xr/eojAgGIYLFG/KhoaEVaWlpvCVkodFovJv+7zayLPpsoQjpVKaezXV5PJ5/0+f2sbExe2Zm5iVFsFXMUIAWIpImLlBzMtsmkqAqmjNnzl4CqorKzZ9F09xDwJ0YHR2tJtguxqKJRJIvOWC8RGt4eHhDamrqL00mU0msTsLtdjeOj4//KiMjoyHSiXkATCc5WH9//6KJiYm309PT62MJF4vL43Kp/NNcD25rEgGmRq2dFoulnUC4P551UfkVXA/Vt8uA7qH+ATt//nwKJeR/pKbrWKiFpTEEOpvqe43r5fpxizVWtFN/ZzrWbrenU150yquhuH72I9xzwvRujefkhwvYSy+9lEo3t8YrgMiPk+wPAJNgTn44vUjOfbh5op7iD0WJ0gTZC2lpaU8E6mGiFylRDsZwUS/uOyLBxWJ/yK/vIvGXHLDOzs47srOzj4h4ouTXC59++mkBbrmkgFFwMC5cuPBwonqLs+ldLliw4A/sJ267ZIBx09Pb27uR8pxtIp8s+8d+oqmUL4IZqQn6hQwnrPqJKCYTYNeuXVtFiXSJDCfMfnZ1da3ErZcEMM5pcnNz98TKoYMHD/KwQlxPOi8v73vIxSQBrLy8PDU9PX1HrBx68cUXlU2bNik3b96M20mzv+w3bn8CFO1IPnX974nlyLuirnIuKCjwtre3x22EX/V71tcClpgXknLzWBoP8AkAZc2aNcqpU6fi8ofFfqOZFL+JNFLX/1vxcm5gYEDZsWOH8uyzz8b8MQ75/W30JiUALCUl5e54N+HPPPOM8vDDD08CFyuR318DYOIDZjCZTAsS4ejJkyd589zJpjMmJ2403grAJACMlJcoZynpV4qLi5XGxsZYAJaF2y8HYAmdNcrDFzyMwcMZUTrOe9TjkZHo42CUI01oNbwS5e8P4PbHX1FHH4/H46A8bF6iHJ43b55SU1OjrF+/Plq/B3H7xY9gvK/754lydtmyZcqFCxeihotFfvcoOt22UldN5Ojo6CeJcHT79u1KS0uLsmhRbJY9JspvABZlCzk4ONgRTwd56tbTTz+tvPHGG4rZbI5Zuarf2NtC8BzMc/369ffmz58fF+cYqOrqaqWysjLmZbPfACxBvbEoHnYbly5dmkf5TG88Hna3tbXF5UE3+XuT/faP4Hg4Ld7Dbu8HH3ww4nA4amMJ/bp16yaT+eXLl8flj4r9Zb+R5EvQi+QO2UcfffRarBx67LHHlPr6eiU/Pz9uJ/3hhx+yv1K9OVZWRb3wVoXUTEnz2czMzNWin/DQ0NB7WVlZ5fTjAJ27BwtvBR+m4JvEvf4rV678ToYTpuj1e/ZX9RsSPYJN7j9gMJg4ivX3979usVg2i3qyTqfz7zk5OTvV6OX2PydEMAEj2PRwBdnI8ePHf+bxeIR8xsd+1dTU/Jz9xPCEPMMUvt9N5mLUOzvoFVDUhPN+GTxSa8TuOvIMU/jnYiNLly59vaenp1qkPyLy5+iSJUuOsX/IveRsIqfFec3QqlWrfkr5WJ0geddZ8ucn7Jfy/5d+QjICpo4rjXV2dvaXl5f/gCA7q+XJcf2bN28+wP6wXxj3kjgH8zuOwc0oKCiYf+PGjWotci6ul+tnP/zzLuRgkm+h6QNZOtm8tra2J9xutysRYHE9VN8hrlet34g9WnWQ5M80AEvmKiws/OuRI0fKXC6XPZ7RmMvneqi+v/BHDKjqtIn0+x0eyUxRhwhutdvtOwmEf8YyanF5XC6Xr9aTMj2IHMk5IeJIsAlwkN/laJmqNlvpJ0+eLLJarVVz587dajKZciPurrrdjt7e3ream5tPVFZWXlQHUNnGI4laGMmX4FFRBL9vUHMzjjBzyNIWLlyY8fzzzy9bvnz5PXl5ed/MyMi4MzU1dYHRaMwgM/MIPNnw+Pj458PDw5/09fV93N7e/t6hQ4c6rl+/Psy9Q7Up5tVNHryrKIkBCxDRGDST+m+q+rNJhdDo9yjKo45jsY2rQPHPE9HkWQAsvop62VoU25161OhjUG0aKoOPfXHvfWwatunPeGutngGLRT/DBxwII/kQBMAgGZtIJMEQIhgEwCAABkEADAJgEACDIAAGATAIAmAQAIMAGAQBMAiAQQAMggAYBMAgAAZBAAwCYBAEwKDE6H8CDABHOiKgB8O6gwAAAABJRU5ErkJggg=="
 
 /***/ },
-/* 299 */
+/* 305 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATAAAAHCCAMAAABff2XTAAAABGdBTUEAALGPC/xhBQAAAwBQTFRF6urq7u7u5+fnampqY2NjxsbGx8fHAAAAAAAA+vr6AAAAAAAAAAAA+vr6AAAA////8fHx/f39VVVV5+fnOzs7g4ODlZWV1dXVKCgo8PDwkJCQ5eXllZWV5+fn7+/v39/fv7+/wsLC19fX5OTkvr6+5ubmubm5CwsLyMjIg4ODh4eH29vbHh4eTU1N5+fn0NDQubm5wMDA6enpQEBA6urq1tbW0tLS7Ozs4uLi7Ozs6+vrAAAA////6enpAAAAj4+P4eHh8PDw0tLS////+/v7/Pz88fHxAAAAkZGR////8vLy////////qqqq9/f3////5eXl////9PT0AAAA9/f39fX1+fn59fX15ubm7u7uTk5O9/f3////s7OzAAAA////////8vLy6enp8PDw////9fX1ioqKIyMj6urq5eXlpqam3NzcAAAAZWVlPj4+7+/v7e3t/v7+////AAAAAAAA9vb2t7e3AAAA+vr6AAAAAAAA+/v7AAAA/Pz8AAAAaWlpcnJy6enpAAAAAAAAAAAA7e3t////2NjY6Ojozc3N9PT06urq8/Pz9PT0AAAAAAAA6+vr19fXAAAAAAAACgoKZ2dnAAAAAAAAAAAAAAAA////AAAAAAAA8/PzKCgo6enpAAAA////////AAAAAAAAAAAAAAAAAAAAAAAA////AAAA8/PzVVVV6Ojo6enp////AAAAAAAA8/PzAAAA6urqAQEBAAAA8fHx////AAAA8fHxAAAA6urq8vLy6urqAAAAAAAAZGRk6+vr8fHxb29v////AAAAAAAA////8/Pz////AAAAAAAA8vLy6urqAAAAAAAAAAAA8fHxYWFh6enp6OjoXFxcAAAAAAAAUVFRAAAA////AAAAAAAAJycnAAAA19fXAAAAAAAAAAAAAAAAAAAAAAAArKysra2tDAwMPj4+l5eXFBQU0dHR39/fgICAZ2dnICAgwMDAUlJSLi4u+Pj49/f3BQUF/v7+/Pz88/Pz7u7u+vr69fX1AAAA////ShAcaQAAAOd0Uk5T/P6WNSRHSfyzsrXMzbP+lOePLdErKUESIOEroj6+5xhbaROcZ7FhGGFARI4mMsh9TWmtMMZxYKBzlfZXZfTj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"
 
 /***/ },
-/* 300 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(301);
+	var content = __webpack_require__(307);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(241)(content, {});
@@ -32410,98 +33108,6 @@
 	}
 
 /***/ },
-/* 301 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(240)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".ms-skin-default .ms-timerbar {top: 1px; bottom:auto;}\r\n.ms-skin-default .ms-time-bar {\r\n  height: 3px;\r\n  background:white;\r\n  background: rgba(255, 255, 255, 0.6);\r\n  border-top: none;\r\n}\r\n\r\n.ms-layer {\r\n  margin: 0;\r\n  padding: 0;\r\n  line-height: 100%;\r\n  letter-spacing:0;\r\n  font-family: 'Raleway', sans-serif;\r\n}\r\n\r\n.ms-layer2 {\r\n  margin: 0;\r\n  text-align: center;\r\n  padding: 0;\r\n  line-height: 100%;\r\n  letter-spacing:0;\r\n  font-family: 'Raleway', sans-serif;\r\n}\r\n\r\n.slide-1 .hps-title1 {\r\n  text-transform: uppercase;\r\n  font-size: 18px;\r\n  font-weight: 600;\r\n}\r\n\r\n.slide-1 .hps-title2 {\r\n  font-size: 28px;\r\n  font-weight: 300;\r\n  text-transform: uppercase;\r\n  color: #508295;\r\n}\r\n\r\n.slide-2 .hps-title1 {\r\n  font-weight: 300;\r\n  font-size: 45px;\r\n  text-transform: uppercase;\r\n  color: white;\r\n  background-color: #f65256;\r\n  padding: 6px 9px;\r\n}\r\n.slide-2 .hps-title2 {\r\n  font-weight: 300;\r\n  font-size: 32px;\r\n  text-transform: uppercase;\r\n  background: white;\r\n  padding: 11px 12px;\r\n}\r\n\r\n.slide-3 .hps-title1 {\r\n  font-weight: 900;\r\n  color: white;\r\n  text-transform: uppercase;\r\n  font-size: 46px;\r\n}\r\n.slide-3 .hps-title2 {\r\n  font-weight: 300;\r\n  font-size: 20px;\r\n  text-transform: uppercase;\r\n  color: white;\r\n}\r\n.slide-3 .hps-amp {\r\n  font-weight: 100;\r\n  font-size: 78px;\r\n  color: #7C96BD;\r\n}\r\n.slide-3 .hps-title3 {\r\n  color: white;\r\n  font-size: 37px;\r\n  text-transform: uppercase;\r\n  font-weight: 300;\r\n  padding: 10px 12px;\r\n  background-color: #dd0d14;\r\n}\r\n.slide-3 .hps-title4 {\r\n  color: white;\r\n  background-color: black;\r\n  font-size: 37px;\r\n  font-weight: 300;\r\n  text-transform: uppercase;\r\n  padding: 10px 14px;\r\n}\r\n\r\n.ms-tooltip{\r\n  max-width: 250px !important;\r\n}\r\n\r\n.ms-tooltip .product-tt {\r\n    font-size: 1em;\r\n    padding:5px;\r\n    color:#222;\r\n    text-shadow:none;\r\n}\r\n\r\n.ms-tooltip .product-tt h3 {\r\n  font-size: 1.4em;\r\n  color: #222;\r\n  margin: 0 0 5px 0;\r\n  font-weight: 400;\r\n}\r\n\r\n\r\n.slide-4 .hps-title1 {\r\n  font-weight: 600;\r\n  font-size: 23px;\r\n  text-transform: uppercase;\r\n  color: #222;\r\n}\r\n\r\n.slide-5 .hps-title1, .slide-5 .hps-title2 {\r\n  color: white;\r\n  text-transform: uppercase;\r\n  font-size: 2.6em;\r\n  font-weight: 300;\r\n  text-shadow: 0 1px black;\r\n}\r\n.slide-5 .hps-title3 {\r\n  background-color: #61c6d7;\r\n  text-transform: uppercase;\r\n  font-size: 1.8em;\r\n  font-weight: 400;\r\n  color: black;\r\n  text-shadow: 0 1px white;\r\n  padding: 13px;\r\n}\r\n.slide-5 .hps-text1 {\r\n  color: white;\r\n  text-shadow: 0 1px black;\r\n  width: 30%;\r\n  line-height: 19px;\r\n  font-size: 14px;\r\n}\r\n\r\n.slide-6 .hps-title1 {\r\n  color: #222;\r\n  text-transform: uppercase;\r\n  font-weight: 900;\r\n  font-size: 2.3em;\r\n  line-height: 26px;\r\n  text-shadow: 0 1px white;\r\n  background-color: white;\r\n  background-color: rgba(255, 255, 255, 0.9);\r\n  padding: 17px 23px;\r\n}\r\n.slide-6 .hps-title1 > .sub-title {\r\n  font-weight: 300;\r\n  font-size: 0.7em;\r\n}\r\n.slide-6 .hps-title2 {\r\n  color: white;\r\n  text-shadow: 0 1px black;\r\n  background-color: #222;\r\n  font-weight: 400;\r\n  font-size: 1em;\r\n  padding: 10px 25px;\r\n}\r\n.slide-6 .hps-title3 {\r\n  text-transform: uppercase;\r\n  color: white;\r\n  font-weight: 400;\r\n  text-shadow: 0 1px black;\r\n  font-size: 1.2em;\r\n  padding: 18px 25px;\r\n  background-color: #df192a;\r\n}\r\n.slide-6 .hps-title3-vimeo {\r\n  background-color: #1bb6ec;\r\n  padding: 17px 25px;\r\n}\r\n\r\n.slide-7 .hps-title1 {\r\n  color: white;\r\n  font-weight: 100;\r\n  text-transform: uppercase;\r\n  font-size: 60px;\r\n  text-shadow: 0 1px black;\r\n}\r\n.slide-7 .hps-title2 {\r\n  text-transform: uppercase;\r\n  color: #f74e50;\r\n  text-shadow: 0 1px black;\r\n  font-size: 21px;\r\n  letter-spacing: 0.76em;\r\n  font-weight: 900;\r\n}\r\n.slide-7 .hps-title3 {\r\n  color: white;\r\n  text-transform: uppercase;\r\n  text-shadow: 0 1px black;\r\n  background-color: #222;\r\n  background-color: rgba(0, 0, 0, 0.7);\r\n  padding: 14px 81px;\r\n  font-size: 14px;\r\n  font-weight: 400;\r\n}\r\n\r\n.slide-video{\r\n\tcolor:#222;\r\n\tfont-family: 'Raleway', sans-serif;\r\n}\r\n\r\n.slide-video .hps-vicapton-box {\r\n    width: 49%;\r\n\theight: 75px;\r\n    background: rgba(0, 0, 0, 0.6);\r\n}\r\n\r\n.slide-video .hps-hd {\r\n    font-weight: 900;\r\n    font-size: 130px;\r\n}\r\n\r\n.slide-video .hps-videotitle {\r\n    font-size: 50px;\r\n\tcolor: #fff;\r\n\tfont-weight: bold;\r\n\ttext-transform: uppercase;\r\n}\r\n\r\n.slide-video .hps-videotext {\r\n    width: 62%;\r\n\tpadding: 20px;\r\n\tcolor: #fff;\r\n\tfont-size: 25px;\r\n\ttext-transform: uppercase;\r\n\tbackground: rgba(0, 0, 0, 0.6);\r\n}\r\n\r\n/*----------------------------------------*/\r\n\r\n.hrow{\r\n  position: relative;\r\n  min-height: 253px;\r\n}\r\n\r\n.hrow.row-title {\r\n    height: 195px;\r\n    min-height:0;\r\n    background-color: #eee;\r\n    text-align: center;\r\n}\r\n.row-arrow {\r\n    position: absolute;\r\n    height: 10px;\r\n    border-left: solid 18px rgba(0, 0, 0, 0);\r\n    border-right: solid 18px rgba(0, 0, 0, 0);\r\n    border-top: solid 20px #EEE;\r\n    top: 0;\r\n    left: 50%;\r\n    margin-left: -18px;\r\n}\r\n.row-title h2 {\r\n    margin-top: 84px;\r\n    padding: 0 15px 25px;  font-weight: 400;  letter-spacing: 0.1em;  color: #4F2840;\r\n    display: inline-block;\r\n    text-shadow: 0 1px 0px #FFF;\r\n    font-size: 1.15em;  text-transform: uppercase;\r\n    background: url(\"https://www.masterslider.com/wp-content/uploads/home-title-arrow.gif\") no-repeat center 32px;\r\n}\r\n\r\n.hrow.white-hrow {\r\n    background: #Fbfbfb;\r\n}\r\n\r\n.hrow.gray-hrow {\r\n    background: #eee;\r\n}\r\n\r\n.hrow.gray-hrow .row-content {\r\ntext-shadow: 0 1px 0 #FFF;\r\n}\r\n\r\n.hrow .row-content {\r\n    padding: 70px 60px 0 550px;\r\n}\r\n\r\n.hrow .feature-img {\r\n    position: absolute;\r\n    bottom: 0;\r\n    margin:0;\r\n}\r\n\r\n.hrow .row-content>p {\r\n  margin:0px;\r\n  padding-bottom: 20px;\r\n}\r\n\r\n.hrow .row-content>h3 {\r\n    text-transform: uppercase;\r\n    font-weight: 800;\r\n    letter-spacing: 0;\r\n    font-size: 2.3em;\r\n    color: #333;\r\n}\r\n\r\n.hrow.gray-hrow .row-content {\r\n    padding: 70px 550px 0 80px;\r\n}\r\n\r\n.hrow.gray-hrow .feature-img {\r\n  right:0;\r\n}\r\n\r\n.hrow.fe-transitions .row-content {\r\n    padding-left: 585px;\r\n}\r\n\r\n\r\n.stext1 {\r\n\twidth: 100%;\r\n\tfont-size: 50px;\r\n\tline-height: 58px;\r\n\tcolor: #272727;\r\n\tfont-weight: normal;\r\n\ttext-align: center;\r\n}\r\n.stext1 strong {\r\n\tfont-weight: bold;\r\n\tcolor: #7ab700;\r\n}\r\n.stext1 em {\r\n\tcolor: #fff;\r\n\tfont-weight: 600;\r\n\tpadding: 0 8px;\r\n\tfont-style: normal;\r\n\tbackground-color: #7ab700;\r\n}\r\n\r\n.stext2 {\r\n\twidth: 100%;\r\n\ttext-align: center;\r\n\tfont-size: 18px;\r\n\tcolor: #272727;\r\n\tfont-weight: normal;\r\n}\r\n\r\n.stext3 {\r\n\tfont-size: 30px;\r\n\tcolor: #fff;\r\n\tfont-weight: normal;\r\n\tpadding: 10px 18px;\r\n\tbackground-color: #727272;\r\n}\r\n\r\n\r\n.stext4 {\r\n\tfont-size: 50px;\r\n\tline-height: 58px;\r\n\tcolor: #272727;\r\n\tfont-weight: normal;\r\n}\r\n.stext4 strong {\r\n\tfont-weight: bold;\r\n}\r\n.stext4 em {\r\n\tfont-style: normal;\r\n\tcolor: #7ab700;\r\n}\r\n\r\n.stext5 {\r\n\tfont-size: 18px;\r\n\tcolor: #272727;\r\n\tfont-weight: normal;\r\n}\r\n\r\n.stext6 {\r\n\tfont-size: 50px;\r\n\tline-height: 58px;\r\n\tcolor: #fff;\r\n\tfont-weight: normal;\r\n}\r\n.stext6 strong {\r\n\tfont-weight: bold;\r\n}\r\n.stext6 em {\r\n\tfont-style: normal;\r\n\tcolor: #7ab700;\r\n}\r\n\r\n.stext7 {\r\n\tfont-size: 18px;\r\n\tcolor: #fff;\r\n\tfont-weight: normal;\r\n}\r\n\r\n.stext9 {\r\n\ttext-align: center;\r\n\tfont-size: 27px;\r\n\tcolor: #7ab700;\r\n\tline-height: 35px;\r\n\tfont-weight: normal;\r\n}\r\n.stext9 i {\r\n\tfont-size: 40px;\r\n}\r\n\r\n\r\n.sbutton1 {\r\n\tfont-size: 16px;\r\n\tcolor: #fff;\r\n\tfont-weight: normal;\r\n\tbackground-color: #272727;\r\n\tpadding: 18px 30px;\r\n\tborder-radius: 4px;\r\n\t-webkit-transition:width .3s, height .3s, background-color .3s, -webkit-transform .3s;\r\n    transition:width .3s, height .3s, background-color .3s, transform .3s;\r\n}\r\n.sbutton1:hover {\r\n\tcolor: #fff;\r\n\tbackground-color: #7ab700;\r\n}\r\n\r\n.sbutton5 {\r\n\tfont-size: 16px;\r\n\tcolor: #fff;\r\n\tfont-weight: normal;\r\n\tbackground-color: #7ab700;\r\n\tpadding: 18px 30px;\r\n\tborder-radius: 4px;\r\n\t-webkit-transition:width .3s, height .3s, background-color .3s, -webkit-transform .3s;\r\n    transition:width .3s, height .3s, background-color .3s, transform .3s;\r\n}\r\n.sbutton5:hover {\r\n\tcolor: #fff;\r\n\tbackground-color: #272727;\r\n}\r\n\r\n.sbutton4 {\r\n\tfont-size: 16px;\r\n\tcolor: #fff;\r\n\tfont-weight: normal;\r\n\tbackground-color: #999;\r\n\tpadding: 18px 30px;\r\n\tborder-radius: 4px;\r\n\t-webkit-transition:width .3s, height .3s, background-color .3s, -webkit-transform .3s;\r\n    transition:width .3s, height .3s, background-color .3s, transform .3s;\r\n}\r\n.sbutton4:hover {\r\n\tcolor: #fff;\r\n\tbackground-color: #7ab700;\r\n}\r\n\r\n\r\n.scircle1 {\r\n\twidth: 122px;\r\n\theight: 122px;\r\n}\r\n.scircle1 div {\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tborder: 2px solid #fff;\r\n\tborder-radius: 100%;\r\n\t-ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)\";\r\n\t-moz-opacity: 0.5;\r\n\t-khtml-opacity: 0.5;\r\n\topacity: 0.5;\r\n\tpadding: 2px;\r\n}\r\n.scircle1 div span {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tmargin: 0 auto;\r\n\ttext-align: center;\r\n\tbackground-color: #fff;\r\n\tborder-radius: 100%;\r\n\t-ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)\";\r\n\t-moz-opacity: 0.5;\r\n\t-khtml-opacity: 0.5;\r\n\topacity: 0.5;\r\n}\r\n.scircle1 i {\r\n\tfont-size: 40px;\r\n}\r\n.sbox1 div {\r\n\twidth: 170px;\r\n\theight: 170px;\r\n\ttext-align: center;\r\n/*\tbackground: url(../../images/sliders/master/slide20/site-img13.png) no-repeat left top; */\r\n\tborder-bottom: 2px solid #727272;\r\n}\r\n.sbox1 div i {\r\n\tfont-size: 40px;\r\n\tcolor: #7ab700;\r\n\tmargin-bottom: 18px;\r\n\tmargin-top: 38px;\r\n}\r\n\r\n\r\n\r\n\r\n.section-videobg .big_text1 {\r\n\tcolor: #fff;\r\n\tfont-size: 40px;\r\n\tfont-weight: bold;\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\ttext-align: center;\r\n}\r\n.section-videobg .small_text1 {\r\n\tcolor: #fff;\r\n\tfont-size: 27px;\r\n\tfont-weight: normal;\r\n\twidth: 100%;\r\n\tdisplay: block;\r\n\ttext-align: center;\r\n\tline-height: 35px;\r\n}\r\n\r\n\r\n@media only screen and (max-width: 1199px){\r\n  .row-content {\r\n   \t  padding-top: 50px !important;\r\n  }\r\n\r\n  .hrow .row-content>h3 {\r\n   \t font-size: 1.5em;\r\n   \t}\r\n}\r\n\r\n\r\n@media only screen and (max-width: 990px){\r\n  .hrow.fe-transitions .row-content,\r\n  .hrow.fe-flickr .row-content {\r\n    \t\tpadding-top: 40px !important;\r\n  }\r\n}\r\n\r\n@media only screen and (max-width: 960px){\r\n\r\n\r\n  .hrow{\r\n    min-height: 197px !important;\r\n  }\r\n\r\n  .hrow.row-title {\r\n      height: 120px  !important;\r\n      min-height: 0px !important;\r\n  }\r\n\r\n  .row-title h2 {\r\n      margin-top: 40px;\r\n  }\r\n\r\n  .hrow .feature-img {\r\n    width:40%;\r\n  }\r\n  .hrow.gray-hrow .row-content {\r\n   \t  padding-right: 45%;\r\n   \t  padding-left: 50px;\r\n  }\r\n  .hrow.white-hrow .row-content {\r\n   \t  padding-left: 45%;\r\n   \t  padding-right: 50px;\r\n  }\r\n\r\n}\r\n\r\n@media only screen and (max-width: 650px){\r\n\r\n\r\n  .hrow .feature-img {\r\n    width:90%;\r\n    position:relative;\r\n    float:none !important;\r\n    display: block;\r\n  }\r\n\r\n  .hrow .row-content {\r\n    padding-right: 30px !important;\r\n   \t  padding-left: 30px !important;\r\n   \t  text-align:center;\r\n  }\r\n\r\n  .hrow.gray-hrow .feature-img {\r\n    margin-left:10%;\r\n  }\r\n  .hrow.white-hrow .feature-img {\r\n    margin-right:10%;\r\n  }\r\n\r\n\r\n}\r\n\r\n\r\n@media only screen and (min-width: 1000px) and (max-width: 1169px){\r\n\r\n.sbutton1 , .sbutton5, .sbutton4 {\r\n\tfont-size: 14px;\r\n\tpadding: 8px 20px;\r\n}\r\n\r\n.slide-video .hps-videotext {\r\n\tpadding-bottom: 0px;\r\n}\r\n\r\n.sbutton4 {\r\n\tfont-size: 14px;\r\n\tpadding: 10px 20px;\r\n}\r\n\r\n.scircle1 {\r\n\twidth: 90px;\r\n\theight: 122px;\r\n}\r\n\r\n.scircle1 i {\r\n\tfont-size: 30px;\r\n}\r\n\r\n.scircle1 h6 {\r\n\tfont-size: 13px;\r\n}\r\n\r\n.sbox1 div {\r\n\twidth: 120px;\r\n\theight: 120px;\r\n}\r\n.sbox1 div i {\r\n\tfont-size: 25px;\r\n\tmargin-bottom: 12px;\r\n\tmargin-top: 28px;\r\n}\r\n.sbox1 h5 {\r\n\tfont-size: 14px;\r\n\tline-height: 20px;\r\n}\r\n\r\n.stext9 i {\r\n\tfont-size: 30px;\r\n}\r\n\r\n}\r\n\r\n@media only screen and (min-width: 768px) and (max-width: 999px){\r\n\r\n.sbutton1, .sbutton5, .sbutton4 {\r\n\tfont-size: 12px;\r\n\tpadding: 10px 10px;\r\n}\r\n\r\n.sbutton4 {\r\n\tfont-size: 12px;\r\n\tpadding: 10px 10px;\r\n}\r\n\r\n\r\n.slide-video .hps-videotext {\r\n\tpadding-bottom: 0px;\r\n}\r\n\r\n.scircle1 {\r\n\twidth: 70px;\r\n\theight: 122px;\r\n}\r\n\r\n.scircle1 i {\r\n\tfont-size: 22px;\r\n}\r\n\r\n.scircle1 h6 {\r\n\tfont-size: 10px;\r\n}\r\n\r\n.sbox1 div {\r\n\twidth: 100px;\r\n\theight: 100px;\r\n}\r\n.sbox1 div i {\r\n\tfont-size: 20px;\r\n\tmargin-bottom: 10px;\r\n\tmargin-top: 20px;\r\n}\r\n.sbox1 h5 {\r\n\tfont-size: 12px;\r\n\tline-height: 16px;\r\n}\r\n\r\n.stext3 {\r\n\tfont-size: 30px;\r\n\tpadding: 12px 18px 0px 18px;\r\n}\r\n\r\n.stext9 i {\r\n\tfont-size: 30px;\r\n}\r\n\r\n}\r\n\r\n\r\n@media only screen and (min-width: 480px) and (max-width: 767px){\r\n\r\n.sbutton1, .sbutton5, .sbutton4{\r\n\tfont-size: 10px;\r\n\tpadding: 5px 10px;\r\n}\r\n\r\n.sbutton4 {\r\n\tfont-size: 10px;\r\n\tpadding: 5px 10px;\r\n}\r\n\r\n.slide-video .hps-videotext {\r\n\tpadding-bottom: 0px;\r\n\theight: 70px;\r\n}\r\n\r\n.scircle1 {\r\n\twidth: 45px;\r\n\theight: 122px;\r\n}\r\n\r\n.scircle1 i {\r\n\tfont-size: 18px;\r\n}\r\n\r\n.scircle1 h6 {\r\n\tfont-size: 5px;\r\n}\r\n\r\n.sbox1 div {\r\n\twidth: 61px;\r\n\theight: 61px;\r\n}\r\n.sbox1 div i {\r\n\tfont-size: 14px;\r\n\tmargin-bottom: 5px;\r\n\tmargin-top: 10px;\r\n}\r\n.sbox1 h5 {\r\n\tfont-size: 10px;\r\n\tline-height: 12px;\r\n}\r\n\r\n.stext3 {\r\n\tbackground: none;\r\n}\r\n\r\n.stext9 i {\r\n\tfont-size: 20px;\r\n}\r\n\r\n}\r\n\r\n@media only screen and (max-width: 479px){\r\n\r\n.sbutton1, .sbutton5, .sbutton4 {\r\n\tfont-size: 7px;\r\n\tpadding: 3px 5px;\r\n}\r\n\r\n.sbutton4 {\r\n\tfont-size: 7px;\r\n\tpadding: 3px 5px;\r\n}\r\n\r\n.slide-video .hps-videotext {\r\n\tpadding-bottom: 0px;\r\n\theight: 70px;\r\n}\r\n\r\n.scircle1 {\r\n\twidth: 30px;\r\n\theight: 122px;\r\n}\r\n\r\n.scircle1 i {\r\n\tfont-size: 12px;\r\n}\r\n\r\n.scircle1 h6 {\r\n\tfont-size: 4px;\r\n}\r\n\r\n\r\n.sbox1 div {\r\n\twidth: 40px;\r\n\theight: 40px;\r\n}\r\n.sbox1 div i {\r\n\tfont-size: 10px;\r\n\tmargin-bottom: 3px;\r\n\tmargin-top: 8px;\r\n}\r\n.sbox1 h5 {\r\n\tfont-size: 7px;\r\n\tline-height: 5px;\r\n}\r\n\r\n.stext3 {\r\n\tbackground: none;\r\n}\r\n\r\n.stext9 i {\r\n\tfont-size: 12px;\r\n}\r\n\r\n}\r\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 302 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(303);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(241)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./ms-staff-style.css", function() {
-				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./ms-staff-style.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 303 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(240)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".master-slider{\r\n\t-moz-transform:translate3d(0,0,1px);\r\n\tbackground-color: transparent;\r\n}\r\n.ms-staff-carousel{\r\n\tmax-width:950px;\r\n\toverflow: hidden;\r\n\tmargin: 0px auto;\r\n\tposition: relative;\r\n}\r\n\r\n.ms-staff-carousel .ms-view{\r\n\toverflow:visible;\r\n\tbackground-color: transparent;\r\n}\r\n\r\n.ms-staff-carousel .ms-nav-prev,\r\n.ms-staff-carousel .ms-nav-next {\r\n    background: url(" + __webpack_require__(304) + ") white no-repeat -7px -57px;\r\n    width: 35px;\r\n    height: 40px;\r\n    left: -35px;\r\n    margin-top: -17px;\r\n    box-shadow: 0px 1px 0px 0px rgb(190, 190, 190);\r\n    position: absolute;\r\n    top:50%;\r\n    cursor: pointer;\r\n}\r\n\r\n.ms-staff-carousel .ms-nav-next {\r\n\tbackground-position: -16px -7px;\r\n\tright:-35px;\r\n\tleft:auto;\r\n}\r\n\r\n.ms-staff-carousel .ms-staff-info{\r\n\tfont-family: 'Lato', sans-serif;\r\n\ttext-align: center;\r\n\tmargin:0 auto;\r\n\tmax-width: 600px;\r\n\tmargin-top:30px;\r\n\tmin-height:170px;\r\n\tcolor:#fff;\r\n}\r\n\t.ms-staff-carousel .ms-staff-info h3{\r\n\t\tfont-weight: 300;\r\n\t\tfont-size: 22pt;\r\n\t\tmargin:0px;\r\n\t}\r\n\t\r\n\t.ms-staff-carousel .ms-staff-info h4{\r\n\t\tfont-weight: 600;\r\n\t\tcolor:#fff;\r\n\t\tfont-size: 15pt;\r\n\t\tmargin:3px;\r\n\t}\r\n\t\r\n\t.ms-staff-carousel .ms-staff-info .email a{text-decoration: none; color:#3f95ab;}\r\n\t.ms-staff-carousel .ms-staff-info.email,.ms-staff-info p {\r\n\t    margin: 4px;\r\n\t     font-size: 11pt;\r\n\t}\r\n\t\r\n\t.ms-staff-carousel .ms-staff-info .ms-socials {\r\n\t    list-style: none;\r\n\t    display: inline-block;\r\n\t    padding: 0;\r\n\t    margin: 15px 0 0 0;\r\n\t    text-shadow: none;\r\n\t    zoom: 1;\r\n        *display: inline;\r\n\t}\r\n\t\r\n\t.ms-staff-carousel .ms-staff-info .ms-socials li{\r\n\t\t  float: left;\r\n\t}\r\n\t.ms-staff-carousel .ms-staff-info .ms-socials li a {\r\n\t    text-indent: 9999px;\r\n\t    width: 35px;\r\n\t    height: 35px;\r\n\t    background: url(" + __webpack_require__(305) + ");\r\n\t    margin: 0 2px;\r\n\t    display: block;\r\n\t}\r\n\t\r\n\t.ms-staff-carousel .ms-staff-info .ms-socials .ms-ico-tw a{background-position: 115px 0px;}\r\n\t.ms-staff-carousel .ms-staff-info .ms-socials .ms-ico-gp a{background-position: 75px 0px;}\r\n\t.ms-staff-carousel .ms-staff-info .ms-socials .ms-ico-yt a{background-position: 35px 0px;}\r\n\r\n.ms-staff-carousel.ms-round .ms-slide-bgcont {\r\n\tborder-radius: 5000px;\r\n\tborder: solid 8px #fff;\r\n\tmargin: 0 -8px;\r\n}\r\n\r\n.ms-staff-carousel.ms-round .ms-nav-prev,\r\n.ms-staff-carousel.ms-round .ms-nav-next {\r\n    background-color:transparent;\r\n    box-shadow : none;\r\n    left:-45px;\r\n }\r\n \r\n.ms-staff-carousel.ms-round .ms-nav-next {\r\n    left:auto;\r\n    right:-45px\r\n}\r\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 304 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAABpCAYAAAB8g6C4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAlBJREFUeNrsm81LlFEYxe+IH39HDISLNtKqRZSmNKL0QSCCLSQEFykuBIUWrlLQEJTIsKJQBokIwhALMUvUhQyotMgCR/w3/JzOw30WQ7Qxp9GD58Bv6TC/9773vvf6nknkcrnAnJJAHglIQAISkIAEJCABCUjg9FJ60g9IJpP/9HfZbFYjUGiBt+Ams8AzkAaNrAJL4A54De7STOI/sgIawAwoA+/YBCwZkAKfQbnfVlQClnVQ5xI2Em/YBCzfwQ0w7yMxziZg2QQ1eRJP2QQsv8A1sOASw2wClm2X+AoqwADjZs7+CXsEEoy70QtgEbwA/WwCF8E3MAqG2CZxpa9AdtWfsy2jl8Ac6AOv2B5kVeAT6AGTbFuJy2AWdPkZgepMfMWv/MNifPlCj8BV8AE8AB8ZzwN21e/7DjQwCjSfxqE+odesEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgATOoYAqZ8eMNbrSZ2oEjhHrEU2Ae4xzwJpcVrm5HeILbyqBphDf0NsIrLCtQi0hVmyswZVhW0ZbwZMQm1trbM+B9hArNbUhNrfO7nPgL+kAvaA6xLJTYBLoBp0hlpu2KZ7EeXkE2sB1sMO4F7LPOgyxlcWzF8rLY7AfYrmpplijUOg5MAh2XcJWoC02AcsI2MuT+MkmYBnz2+mLP8h+sAlYXvrtZBL1YINNwGJ1s4MQu3Op/7GlKMZ5YMrnhDW5boFVxgPNe58T9sMI+3XHMuOJbNol2lkFLLNOwaLGlgQkIAEJSEACEpCABCRwfgV+CzAAQRNtBuAWzj8AAAAASUVORK5CYII="
-
-/***/ },
-/* 305 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/png;base64,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"
-
-/***/ },
-/* 306 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(307);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(241)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./reset.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./reset.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
 /* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -32510,7 +33116,7 @@
 
 
 	// module
-	exports.push([module.id, "/* https://meyerweb.com/eric/tools/css/reset/ */\r\n/* v1.0 | 20080212 */\r\nhtml, body, div, span, applet, object, iframe,\r\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\na, abbr, acronym, address, big, cite, code,\r\ndel, dfn, em, font, img, ins, kbd, q, s, samp,\r\nsmall, strike, strong, sub, sup, tt, var,\r\nb, u, i, center,\r\ndl, dt, dd, ol, ul, li,\r\nfieldset, form, label, legend,\r\ntable, caption, tbody, tfoot, thead, tr, th, td {\r\nmargin: 0;\r\npadding: 0;\r\nborder: 0;\r\noutline: 0;\r\nfont-size: 100%;\r\nvertical-align: baseline;\r\nbackground: transparent;\r\n}\r\n\r\n/* body */\r\nbody {\r\n\tpadding: 0px;\r\n\tmargin: 0px;\r\n\tbackground: #fff;\r\n}\r\n\r\nbody, input, textarea {\r\n\tfont: 14px 'Open Sans', sans-serif;\r\n\tfont-weight: normal;\r\n\tfont-style: normal;\r\n\tline-height: 23px;\r\n\tcolor: #727272;\r\n}\r\n\r\n/* Headings */\r\nh1, \r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n\tfont-family: 'Roboto', sans-serif;\r\n\tfont-weight: normal;\r\n\tcolor: #272727;\r\n}\r\nh1 a, \r\nh2 a, \r\nh3 a, \r\nh4 a, \r\nh5 a, \r\nh6 a { \r\n\tcolor: inherit;\r\n}\r\nh1 { \r\n\tfont-size: 40px; \r\n\tline-height: 40px;\r\n\tmargin-bottom: 20px;\r\n\tfont-style: normal;\r\n\tfont-weight: 300;\r\n}\r\nh1 b {\r\n\tdisplay: block;\r\n\tfont-size: 18px; \r\n\tline-height: 23px;\r\n\tfont-weight: 200;\r\n\tmargin-top: 13px;\r\n\tcolor: #727272;\r\n}\r\nh1.white {\r\n\tcolor: #fff;\r\n}\r\nh1.whitecaps {\r\n\tcolor: #fff;\r\n\ttext-transform: uppercase;\r\n}\r\nh1.whitecaps strong {\r\n\tfont-weight: 500;\r\n}\r\nh2 { \r\n\tfont-size: 35px; \r\n\tline-height: 35px;\r\n\tmargin-bottom: 20px;\r\n\tfont-style: normal;\r\n\tfont-weight: 300;\r\n}\r\nh2.white {\r\n\tcolor: #fff;\r\n}\r\n\r\nh2.green {\r\n\tcolor: #7ab700;\r\n}\r\nh2.whitecaps {\r\n\tcolor: #fff;\r\n\ttext-transform: uppercase;\r\n\tpadding-bottom: 20px;\r\n\ttext-decoration-color: #999;\r\n\t-moz-text-decoration-color: #999; /* Code for Firefox */\r\n}\r\nh2.white b {\r\n\tcolor: #999;\r\n}\r\nh2 i {\r\n\tcolor: #7ab700;\r\n\tfont-style: normal;\r\n}\r\nh2 b {\r\n\tdisplay: block;\r\n\tfont-size: 18px; \r\n\tline-height: 23px;\r\n\tfont-weight: 200;\r\n\tmargin-top: 13px;\r\n\tcolor: #727272;\r\n}\r\nh2.caps {\r\n\ttext-transform: uppercase;\r\n\tpadding-bottom: 12px;\r\n}\r\nh2.caps b {\r\n\ttext-transform: none;\r\n}\r\nh2.caps strong {\r\n\tfont-weight: 500;\r\n}\r\nh2.untext { \r\n\ttext-transform: uppercase;\r\n\tpadding-bottom: 20px;\r\n\ttext-decoration-color: #e3e3e3;\r\n\t-moz-text-decoration-color: #e3e3e3; /* Code for Firefox */\r\n}\r\nh3 { \r\n\tfont-size: 27px; \r\n\tline-height: 30px;\r\n\tmargin-bottom: 18px;\r\n\tfont-style: normal;\r\n}\r\nh3 strong {\r\n\tfont-weight: 600;\r\n}\r\nh3.colored {\r\n\tcolor: #7ab700;\r\n\tfont-weight: 300;\r\n}\r\nh3.title {\r\n\tmargin-bottom: 5px;\r\n}\r\n\r\nh4 { \r\n\tfont-size: 22px; \r\n\tline-height: 25px;\r\n\tmargin-bottom: 18px;\r\n\tfont-style: normal;\r\n}\r\nh4.caps {\r\n\ttext-transform: uppercase;\r\n}\r\nh4.white {\r\n\tcolor: #fff;\r\n}\r\nh4 b {\r\n\tcolor: #999;\r\n\tfont-size: 14px;\r\n\tdisplay: block;\r\n\tfont-weight: normal;\r\n}\r\nh4 i {\r\n\tfont-weight: 300;\r\n\tfont-style: normal;\r\n}\r\nh5 { \r\n\tfont-size: 18px; \r\n\tline-height: 23px;\r\n\tmargin-bottom: 16px;\r\n\tfont-style: normal;\r\n}\r\nh5 b {\r\n\tcolor: #727272;\r\n\tfont-size: 13px;\r\n\tfont-weight: normal;\r\n\tdisplay: block;\r\n}\r\nh5 i {\r\n\tcolor: #727272;\r\n\tfont-size: 14px;\r\n\tfont-weight: normal;\r\n\tfont-style: normal;\r\n}\r\nh5.caps {\r\n\ttext-transform: uppercase;\r\n}\r\nh5.grayc {\r\n\tcolor: #999;\r\n}\r\nh5.siteccaps {\r\n\tcolor: #7ab700;\r\n\ttext-transform: uppercase;\r\n}\r\nh5.sitec {\r\n\tcolor: #7ab700;\r\n}\r\nh5.white {\r\n\tcolor: #fff;\r\n}\r\nh5.green {\r\n\tcolor: #7ab700;\r\n}\r\nh6 { \r\n\tfont-size: 16px; \r\n\tline-height: 21px;\r\n\tmargin-bottom: 14px;\r\n\tfont-style: normal;\r\n}\r\nh6.grayc {\r\n\tcolor: #999;\r\n}\r\n\r\nh7 { \r\n\tfont-size: 22px; \r\n\tline-height: 25px;\r\n\tmargin-bottom: 18px;\r\n\tfont-style: normal;\r\n\tcolor: #fff;\r\n}\r\n\r\nh8 { \r\n\tfont-size: 16px; \r\n\tline-height: 18px;\r\n\tmargin-bottom: 10px;\r\n\tfont-style: normal;\r\n}\r\n\r\n/* Text elements */\r\np {\r\n\tfont: 14px 'Open Sans', sans-serif;\r\n\tfont-weight: normal;\r\n\tline-height: 23px;\r\n}\r\n\r\nul, ol {\r\n\tmargin: 0 0 20px 0;\r\n\tlist-style-position: inside;\r\n}\r\nul {\r\n\tlist-style: none;\r\n}\r\nul li {\r\n\tlist-style: none;\r\n}\r\nol {\r\n\tlist-style-type: decimal;\r\n}\r\nol ol {\r\n\tlist-style: upper-alpha;\r\n}\r\nol ol ol {\r\n\tlist-style: lower-roman;\r\n}\r\nol ol ol ol {\r\n\tlist-style: lower-alpha;\r\n}\r\nul ul, ol ol, ul ol, ol ul {\r\n\tmargin-bottom: 0;\r\n}\r\nstrong {\r\n\tfont-weight: bold;\r\n}\r\ncite, em, i {\r\n\tfont-style: italic;\r\n}\r\nblockquote {\r\n\tmargin: 20px 0 20px 36px;\r\n\tfont-size: 14px;\r\n\tline-height: 23px;\r\n\tborder-left: 5px solid #7ab700;\r\n\tpadding: 5px 20px 5px 20px;\r\n\tfont-family: 'Open Sans' !important;\r\n\tfont-weight: normal;\r\n}\r\n\r\npre {\r\n\tbackground: #f4f4f4;\r\n\tfont-size: 13px;\r\n\tfont: 13px 'Open Sans', sans-serif;\r\n\tline-height: 1.5;\r\n\tmargin-bottom: 40px;\r\n\toverflow: auto;\r\n\tpadding: 0.75em 20px;\r\n}\r\ncode, kbd {\r\n\tfont-size: 13px;\r\n\tfont: 13px 'Open Sans', sans-serif;\r\n}\r\nabbr, acronym, dfn {\r\n\tborder-bottom: 1px dotted #666;\r\n\tcursor: help;\r\n}\r\naddress {\r\n\tdisplay: block;\r\n\tmargin: 0 0 40px;\r\n}\r\nins {\r\n\tbackground: #fff9c0;\r\n\ttext-decoration: none;\r\n}\r\nsup,\r\nsub {\r\n\tfont-size: 10px;\r\n\theight: 0;\r\n\tline-height: 1;\r\n\tposition: relative;\r\n\tvertical-align: baseline;\r\n}\r\nsup {\r\n\tbottom: 1ex;\r\n}\r\nsub {\r\n\ttop: .5ex;\r\n}\r\n\r\n.dropcap {\r\n\tdisplay:block;\r\n\tfloat:left;\r\n\tfont-size:45px;\r\n\tpadding:0;\r\n\tmargin: 0;\r\n\tmargin:15px 8px 0 0;\r\n\ttext-transform: uppercase;\r\n}\r\n\r\n\r\n/* Links */\r\na {\r\n\tcolor: #7ab700;\r\n\ttext-decoration: none;\r\n}\r\na:hover {\r\n\ttext-decoration: none;\r\n\tcolor: #272727;\r\n}\r\n\r\na.ltwo {\r\n\tcolor: #272727;\r\n\ttext-decoration: none;\r\n}\r\na.ltwo:hover {\r\n\ttext-decoration: none;\r\n\tcolor: #7ab700;\r\n}\r\n\r\na.lthree {\r\n\tcolor: #454545;\r\n\ttext-decoration: none;\r\n}\r\na.lthree:hover {\r\n\ttext-decoration: none;\r\n\tcolor: #7ab700;\r\n}\r\n\r\n\r\nblockquote, q {\r\nquotes: none;\r\n}\r\nblockquote:before, blockquote:after,\r\nq:before, q:after {\r\ncontent: '';\r\ncontent: none;\r\n}\r\n/* remember to define focus styles! */\r\n:focus {\r\noutline: 0;\r\n}\r\n/* remember to highlight inserts somehow! */\r\nins {\r\ntext-decoration: none;\r\n}\r\ndel {\r\ntext-decoration: line-through;\r\n}\r\n\r\n/* Clear Fix Styles */\r\n\r\n.clearfix:after {\r\nvisibility: hidden;\r\ndisplay: block;\r\nfont-size: 0;\r\ncontent: \" \";\r\nclear: both;\r\nheight: 0;\r\n}\r\n.clearfix { display: inline-block; }\r\n/* start commented backslash hack \\*/\r\n* html .clearfix { height: 1%; }\r\n.clearfix { display: block; }\r\n/* close commented backslash hack */\r\n{\r\n\theight:1%;\r\n}\r\n\r\n.clearfix\r\n{\r\n\tdisplay:block;\r\n}\r\n\r\n\r\n/* less width */\r\n.less1 {\r\n\twidth: 75%;\r\n\tmargin: 0 auto;\r\n}\r\n.less2 {\r\n\twidth: 50%;\r\n\tmargin: 0 auto;\r\n}\r\n\r\n/* text color white */\r\n.white {\r\n\tcolor: #fff;\r\n}\r\n\r\n\r\n/* margin bitween sections */\r\n.margin_top1 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 10px;\r\n}\r\n.margin_top2 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 20px;\r\n}\r\n.margin_top3 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 30px;\r\n}\r\n.margin_top4 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 40px;\r\n}\r\n.margin_top5 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 50px;\r\n}\r\n.margin_top6 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 60px;\r\n}\r\n.margin_top7 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 70px;\r\n}\r\n.margin_top8 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 80px;\r\n}\r\n.margin_top9 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 90px;\r\n}\r\n.margin_top10 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 100px;\r\n}\r\n\r\n/* image alignments */\r\n.img_left {\r\n\tfloat: left;\r\n}\r\n.img_left1 {\r\n\tfloat: left;\r\n\tmargin-bottom: 20px;\r\n}\r\n.img_left2 {\r\n\tfloat: left;\r\n\tmargin-right: 30px;\r\n}\r\n.img_left3 {\r\n\tfloat: left;\r\n\tmargin-right: 20px;\r\n}\r\n.img_left4 {\r\n\tfloat: left;\r\n\tmargin-top: 10px;\r\n\tmargin-bottom: 20px;\r\n}\r\n.img_left10 {\r\n\tfloat: left;\r\n\twidth: 32%;\r\n\tmargin-bottom: 30px;\r\n}\r\n.img_left11 {\r\n\tfloat: left;\r\n\tmargin-right: 25px;\r\n\tmargin-bottom: 20px;\r\n}\r\n\r\n\r\n.img_right {\r\n\tfloat: right;\r\n}\r\n\r\n.img_size1 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n}\r\n\r\n.img_size2 {\r\n\tmargin: 0 auto;\r\n}\r\n\r\n/* divider lines */\r\n.divider_line1 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tborder-bottom: 1px solid #eee;\r\n}\r\n.divider_line11 {\r\n\twidth: 75%;\r\n\tmargin: 0 auto;\r\n\tpadding-top: 40px;\r\n\tmargin-bottom: 40px;\r\n\tborder-bottom: 1px solid #e3e3e3;\r\n}\r\n.divider_line3 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tpadding-top: 40px;\r\n\tmargin-bottom: 40px;\r\n\tborder-bottom: 1px solid #333;\r\n}\r\n.divider_line4 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tborder-bottom: 1px solid #eee;\r\n}\r\n.divider_line5 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tpadding-top: 59px;\r\n\tborder-bottom: 1px solid #eee;\r\n}\r\n.divider_line6 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-bottom: 70px;\r\n\tborder-bottom: 1px solid #eee;\r\n}\r\n.divider_line_half {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n}\r\n\r\n.divider_line_small {\r\n\twidth: 20%;\r\n\tmargin: 0 auto;\r\n\theight: 25px;\r\n\tborder-top: 1px solid #fff;\r\n\t-ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)\";\r\n\t-moz-opacity: 0.5;\r\n\t-khtml-opacity: 0.5;\r\n\topacity: 0.5;\r\n}\r\n\r\n.divider_line7 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tpadding-top: 30px;\r\n\tborder-bottom: 1px solid #eee;\r\n}\r\n\r\n/* divider lines dashed */\r\n.divider_dashed1 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 45px 0px;\r\n\tborder-top: 1px dashed #3b3b3b;\r\n}\r\n.divider_dashed2 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 59px 0px;\r\n\tborder-top: 1px dotted #d7d7d7;\r\n}\r\n.divider_dashed3 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 30px 0px 59px 0px;\r\n\tborder-top: 1px dotted #d7d7d7;\r\n}\r\n.divider_dashed4 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 40px 0px 59px 0px;\r\n\tborder-top: 1px dotted #d7d7d7;\r\n}\r\n.divider_dashed5 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 0px 0px 59px 0px;\r\n\tborder-top: 1px dotted #d7d7d7;\r\n}\r\n.divider_dashed6 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 50px 0px 59px 0px;\r\n\tborder-top: 1px dotted #d7d7d7;\r\n}\r\n.divider_dashed7 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 50px 0px 0px 0px;\r\n\tborder-top: 1px dotted #d7d7d7;\r\n}\r\n.divider_dashed8 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 53px 0px 45px 0px;\r\n\tborder-top: 1px dotted #d7d7d7;\r\n}\r\n.divider_dashed9 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 40px 0px 48px 0px;\r\n\tborder-top: 1px dotted #d7d7d7;\r\n}\r\n\r\n/* responsive image */\r\n.rimg {\r\n\twidth: 100%;\r\n}\r\n", ""]);
+	exports.push([module.id, ".ms-skin-default .ms-timerbar {top: 1px; bottom:auto;}\r\n.ms-skin-default .ms-time-bar {\r\n  height: 3px;\r\n  background:white;\r\n  background: rgba(255, 255, 255, 0.6);\r\n  border-top: none;\r\n}\r\n\r\n.ms-layer {\r\n  margin: 0;\r\n  padding: 0;\r\n  line-height: 100%;\r\n  letter-spacing:0;\r\n  font-family: 'Raleway', sans-serif;\r\n}\r\n\r\n.ms-layer2 {\r\n  margin: 0;\r\n  text-align: center;\r\n  padding: 0;\r\n  line-height: 100%;\r\n  letter-spacing:0;\r\n  font-family: 'Raleway', sans-serif;\r\n}\r\n\r\n.slide-1 .hps-title1 {\r\n  text-transform: uppercase;\r\n  font-size: 18px;\r\n  font-weight: 600;\r\n}\r\n\r\n.slide-1 .hps-title2 {\r\n  font-size: 28px;\r\n  font-weight: 300;\r\n  text-transform: uppercase;\r\n  color: #508295;\r\n}\r\n\r\n.slide-2 .hps-title1 {\r\n  font-weight: 300;\r\n  font-size: 45px;\r\n  text-transform: uppercase;\r\n  color: white;\r\n  background-color: #f65256;\r\n  padding: 6px 9px;\r\n}\r\n.slide-2 .hps-title2 {\r\n  font-weight: 300;\r\n  font-size: 32px;\r\n  text-transform: uppercase;\r\n  background: white;\r\n  padding: 11px 12px;\r\n}\r\n\r\n.slide-3 .hps-title1 {\r\n  font-weight: 900;\r\n  color: white;\r\n  text-transform: uppercase;\r\n  font-size: 46px;\r\n}\r\n.slide-3 .hps-title2 {\r\n  font-weight: 300;\r\n  font-size: 20px;\r\n  text-transform: uppercase;\r\n  color: white;\r\n}\r\n.slide-3 .hps-amp {\r\n  font-weight: 100;\r\n  font-size: 78px;\r\n  color: #7C96BD;\r\n}\r\n.slide-3 .hps-title3 {\r\n  color: white;\r\n  font-size: 37px;\r\n  text-transform: uppercase;\r\n  font-weight: 300;\r\n  padding: 10px 12px;\r\n  background-color: #dd0d14;\r\n}\r\n.slide-3 .hps-title4 {\r\n  color: white;\r\n  background-color: black;\r\n  font-size: 37px;\r\n  font-weight: 300;\r\n  text-transform: uppercase;\r\n  padding: 10px 14px;\r\n}\r\n\r\n.ms-tooltip{\r\n  max-width: 250px !important;\r\n}\r\n\r\n.ms-tooltip .product-tt {\r\n    font-size: 1em;\r\n    padding:5px;\r\n    color:#222;\r\n    text-shadow:none;\r\n}\r\n\r\n.ms-tooltip .product-tt h3 {\r\n  font-size: 1.4em;\r\n  color: #222;\r\n  margin: 0 0 5px 0;\r\n  font-weight: 400;\r\n}\r\n\r\n\r\n.slide-4 .hps-title1 {\r\n  font-weight: 600;\r\n  font-size: 23px;\r\n  text-transform: uppercase;\r\n  color: #222;\r\n}\r\n\r\n.slide-5 .hps-title1, .slide-5 .hps-title2 {\r\n  color: white;\r\n  text-transform: uppercase;\r\n  font-size: 2.6em;\r\n  font-weight: 300;\r\n  text-shadow: 0 1px black;\r\n}\r\n.slide-5 .hps-title3 {\r\n  background-color: #61c6d7;\r\n  text-transform: uppercase;\r\n  font-size: 1.8em;\r\n  font-weight: 400;\r\n  color: black;\r\n  text-shadow: 0 1px white;\r\n  padding: 13px;\r\n}\r\n.slide-5 .hps-text1 {\r\n  color: white;\r\n  text-shadow: 0 1px black;\r\n  width: 30%;\r\n  line-height: 19px;\r\n  font-size: 14px;\r\n}\r\n\r\n.slide-6 .hps-title1 {\r\n  color: #222;\r\n  text-transform: uppercase;\r\n  font-weight: 900;\r\n  font-size: 2.3em;\r\n  line-height: 26px;\r\n  text-shadow: 0 1px white;\r\n  background-color: white;\r\n  background-color: rgba(255, 255, 255, 0.9);\r\n  padding: 17px 23px;\r\n}\r\n.slide-6 .hps-title1 > .sub-title {\r\n  font-weight: 300;\r\n  font-size: 0.7em;\r\n}\r\n.slide-6 .hps-title2 {\r\n  color: white;\r\n  text-shadow: 0 1px black;\r\n  background-color: #222;\r\n  font-weight: 400;\r\n  font-size: 1em;\r\n  padding: 10px 25px;\r\n}\r\n.slide-6 .hps-title3 {\r\n  text-transform: uppercase;\r\n  color: white;\r\n  font-weight: 400;\r\n  text-shadow: 0 1px black;\r\n  font-size: 1.2em;\r\n  padding: 18px 25px;\r\n  background-color: #df192a;\r\n}\r\n.slide-6 .hps-title3-vimeo {\r\n  background-color: #1bb6ec;\r\n  padding: 17px 25px;\r\n}\r\n\r\n.slide-7 .hps-title1 {\r\n  color: white;\r\n  font-weight: 100;\r\n  text-transform: uppercase;\r\n  font-size: 60px;\r\n  text-shadow: 0 1px black;\r\n}\r\n.slide-7 .hps-title2 {\r\n  text-transform: uppercase;\r\n  color: #f74e50;\r\n  text-shadow: 0 1px black;\r\n  font-size: 21px;\r\n  letter-spacing: 0.76em;\r\n  font-weight: 900;\r\n}\r\n.slide-7 .hps-title3 {\r\n  color: white;\r\n  text-transform: uppercase;\r\n  text-shadow: 0 1px black;\r\n  background-color: #222;\r\n  background-color: rgba(0, 0, 0, 0.7);\r\n  padding: 14px 81px;\r\n  font-size: 14px;\r\n  font-weight: 400;\r\n}\r\n\r\n.slide-video{\r\n\tcolor:#222;\r\n\tfont-family: 'Raleway', sans-serif;\r\n}\r\n\r\n.slide-video .hps-vicapton-box {\r\n    width: 49%;\r\n\theight: 75px;\r\n    background: rgba(0, 0, 0, 0.6);\r\n}\r\n\r\n.slide-video .hps-hd {\r\n    font-weight: 900;\r\n    font-size: 130px;\r\n}\r\n\r\n.slide-video .hps-videotitle {\r\n    font-size: 50px;\r\n\tcolor: #fff;\r\n\tfont-weight: bold;\r\n\ttext-transform: uppercase;\r\n}\r\n\r\n.slide-video .hps-videotext {\r\n    width: 62%;\r\n\tpadding: 20px;\r\n\tcolor: #fff;\r\n\tfont-size: 25px;\r\n\ttext-transform: uppercase;\r\n\tbackground: rgba(0, 0, 0, 0.6);\r\n}\r\n\r\n/*----------------------------------------*/\r\n\r\n.hrow{\r\n  position: relative;\r\n  min-height: 253px;\r\n}\r\n\r\n.hrow.row-title {\r\n    height: 195px;\r\n    min-height:0;\r\n    background-color: #eee;\r\n    text-align: center;\r\n}\r\n.row-arrow {\r\n    position: absolute;\r\n    height: 10px;\r\n    border-left: solid 18px rgba(0, 0, 0, 0);\r\n    border-right: solid 18px rgba(0, 0, 0, 0);\r\n    border-top: solid 20px #EEE;\r\n    top: 0;\r\n    left: 50%;\r\n    margin-left: -18px;\r\n}\r\n.row-title h2 {\r\n    margin-top: 84px;\r\n    padding: 0 15px 25px;  font-weight: 400;  letter-spacing: 0.1em;  color: #4F2840;\r\n    display: inline-block;\r\n    text-shadow: 0 1px 0px #FFF;\r\n    font-size: 1.15em;  text-transform: uppercase;\r\n    background: url(\"https://www.masterslider.com/wp-content/uploads/home-title-arrow.gif\") no-repeat center 32px;\r\n}\r\n\r\n.hrow.white-hrow {\r\n    background: #Fbfbfb;\r\n}\r\n\r\n.hrow.gray-hrow {\r\n    background: #eee;\r\n}\r\n\r\n.hrow.gray-hrow .row-content {\r\ntext-shadow: 0 1px 0 #FFF;\r\n}\r\n\r\n.hrow .row-content {\r\n    padding: 70px 60px 0 550px;\r\n}\r\n\r\n.hrow .feature-img {\r\n    position: absolute;\r\n    bottom: 0;\r\n    margin:0;\r\n}\r\n\r\n.hrow .row-content>p {\r\n  margin:0px;\r\n  padding-bottom: 20px;\r\n}\r\n\r\n.hrow .row-content>h3 {\r\n    text-transform: uppercase;\r\n    font-weight: 800;\r\n    letter-spacing: 0;\r\n    font-size: 2.3em;\r\n    color: #333;\r\n}\r\n\r\n.hrow.gray-hrow .row-content {\r\n    padding: 70px 550px 0 80px;\r\n}\r\n\r\n.hrow.gray-hrow .feature-img {\r\n  right:0;\r\n}\r\n\r\n.hrow.fe-transitions .row-content {\r\n    padding-left: 585px;\r\n}\r\n\r\n\r\n.stext1 {\r\n\twidth: 100%;\r\n\tfont-size: 50px;\r\n\tline-height: 58px;\r\n\tcolor: #272727;\r\n\tfont-weight: normal;\r\n\ttext-align: center;\r\n}\r\n.stext1 strong {\r\n\tfont-weight: bold;\r\n\tcolor: #7ab700;\r\n}\r\n.stext1 em {\r\n\tcolor: #fff;\r\n\tfont-weight: 600;\r\n\tpadding: 0 8px;\r\n\tfont-style: normal;\r\n\tbackground-color: #7ab700;\r\n}\r\n\r\n.stext2 {\r\n\twidth: 100%;\r\n\ttext-align: center;\r\n\tfont-size: 18px;\r\n\tcolor: #272727;\r\n\tfont-weight: normal;\r\n}\r\n\r\n.stext3 {\r\n\tfont-size: 30px;\r\n\tcolor: #fff;\r\n\tfont-weight: normal;\r\n\tpadding: 10px 18px;\r\n\tbackground-color: #727272;\r\n}\r\n\r\n\r\n.stext4 {\r\n\tfont-size: 50px;\r\n\tline-height: 58px;\r\n\tcolor: #272727;\r\n\tfont-weight: normal;\r\n}\r\n.stext4 strong {\r\n\tfont-weight: bold;\r\n}\r\n.stext4 em {\r\n\tfont-style: normal;\r\n\tcolor: #7ab700;\r\n}\r\n\r\n.stext5 {\r\n\tfont-size: 18px;\r\n\tcolor: #272727;\r\n\tfont-weight: normal;\r\n}\r\n\r\n.stext6 {\r\n\tfont-size: 50px;\r\n\tline-height: 58px;\r\n\tcolor: #fff;\r\n\tfont-weight: normal;\r\n}\r\n.stext6 strong {\r\n\tfont-weight: bold;\r\n}\r\n.stext6 em {\r\n\tfont-style: normal;\r\n\tcolor: #7ab700;\r\n}\r\n\r\n.stext7 {\r\n\tfont-size: 18px;\r\n\tcolor: #fff;\r\n\tfont-weight: normal;\r\n}\r\n\r\n.stext9 {\r\n\ttext-align: center;\r\n\tfont-size: 27px;\r\n\tcolor: #7ab700;\r\n\tline-height: 35px;\r\n\tfont-weight: normal;\r\n}\r\n.stext9 i {\r\n\tfont-size: 40px;\r\n}\r\n\r\n\r\n.sbutton1 {\r\n\tfont-size: 16px;\r\n\tcolor: #fff;\r\n\tfont-weight: normal;\r\n\tbackground-color: #272727;\r\n\tpadding: 18px 30px;\r\n\tborder-radius: 4px;\r\n\t-webkit-transition:width .3s, height .3s, background-color .3s, -webkit-transform .3s;\r\n    transition:width .3s, height .3s, background-color .3s, transform .3s;\r\n}\r\n.sbutton1:hover {\r\n\tcolor: #fff;\r\n\tbackground-color: #7ab700;\r\n}\r\n\r\n.sbutton5 {\r\n\tfont-size: 16px;\r\n\tcolor: #fff;\r\n\tfont-weight: normal;\r\n\tbackground-color: #7ab700;\r\n\tpadding: 18px 30px;\r\n\tborder-radius: 4px;\r\n\t-webkit-transition:width .3s, height .3s, background-color .3s, -webkit-transform .3s;\r\n    transition:width .3s, height .3s, background-color .3s, transform .3s;\r\n}\r\n.sbutton5:hover {\r\n\tcolor: #fff;\r\n\tbackground-color: #272727;\r\n}\r\n\r\n.sbutton4 {\r\n\tfont-size: 16px;\r\n\tcolor: #fff;\r\n\tfont-weight: normal;\r\n\tbackground-color: #999;\r\n\tpadding: 18px 30px;\r\n\tborder-radius: 4px;\r\n\t-webkit-transition:width .3s, height .3s, background-color .3s, -webkit-transform .3s;\r\n    transition:width .3s, height .3s, background-color .3s, transform .3s;\r\n}\r\n.sbutton4:hover {\r\n\tcolor: #fff;\r\n\tbackground-color: #7ab700;\r\n}\r\n\r\n\r\n.scircle1 {\r\n\twidth: 122px;\r\n\theight: 122px;\r\n}\r\n.scircle1 div {\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tborder: 2px solid #fff;\r\n\tborder-radius: 100%;\r\n\t-ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)\";\r\n\t-moz-opacity: 0.5;\r\n\t-khtml-opacity: 0.5;\r\n\topacity: 0.5;\r\n\tpadding: 2px;\r\n}\r\n.scircle1 div span {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\theight: 100%;\r\n\tmargin: 0 auto;\r\n\ttext-align: center;\r\n\tbackground-color: #fff;\r\n\tborder-radius: 100%;\r\n\t-ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)\";\r\n\t-moz-opacity: 0.5;\r\n\t-khtml-opacity: 0.5;\r\n\topacity: 0.5;\r\n}\r\n.scircle1 i {\r\n\tfont-size: 40px;\r\n}\r\n.sbox1 div {\r\n\twidth: 170px;\r\n\theight: 170px;\r\n\ttext-align: center;\r\n/*\tbackground: url(../../images/sliders/master/slide20/site-img13.png) no-repeat left top; */\r\n\tborder-bottom: 2px solid #727272;\r\n}\r\n.sbox1 div i {\r\n\tfont-size: 40px;\r\n\tcolor: #7ab700;\r\n\tmargin-bottom: 18px;\r\n\tmargin-top: 38px;\r\n}\r\n\r\n\r\n\r\n\r\n.section-videobg .big_text1 {\r\n\tcolor: #fff;\r\n\tfont-size: 40px;\r\n\tfont-weight: bold;\r\n\tdisplay: block;\r\n\twidth: 100%;\r\n\ttext-align: center;\r\n}\r\n.section-videobg .small_text1 {\r\n\tcolor: #fff;\r\n\tfont-size: 27px;\r\n\tfont-weight: normal;\r\n\twidth: 100%;\r\n\tdisplay: block;\r\n\ttext-align: center;\r\n\tline-height: 35px;\r\n}\r\n\r\n\r\n@media only screen and (max-width: 1199px){\r\n  .row-content {\r\n   \t  padding-top: 50px !important;\r\n  }\r\n\r\n  .hrow .row-content>h3 {\r\n   \t font-size: 1.5em;\r\n   \t}\r\n}\r\n\r\n\r\n@media only screen and (max-width: 990px){\r\n  .hrow.fe-transitions .row-content,\r\n  .hrow.fe-flickr .row-content {\r\n    \t\tpadding-top: 40px !important;\r\n  }\r\n}\r\n\r\n@media only screen and (max-width: 960px){\r\n\r\n\r\n  .hrow{\r\n    min-height: 197px !important;\r\n  }\r\n\r\n  .hrow.row-title {\r\n      height: 120px  !important;\r\n      min-height: 0px !important;\r\n  }\r\n\r\n  .row-title h2 {\r\n      margin-top: 40px;\r\n  }\r\n\r\n  .hrow .feature-img {\r\n    width:40%;\r\n  }\r\n  .hrow.gray-hrow .row-content {\r\n   \t  padding-right: 45%;\r\n   \t  padding-left: 50px;\r\n  }\r\n  .hrow.white-hrow .row-content {\r\n   \t  padding-left: 45%;\r\n   \t  padding-right: 50px;\r\n  }\r\n\r\n}\r\n\r\n@media only screen and (max-width: 650px){\r\n\r\n\r\n  .hrow .feature-img {\r\n    width:90%;\r\n    position:relative;\r\n    float:none !important;\r\n    display: block;\r\n  }\r\n\r\n  .hrow .row-content {\r\n    padding-right: 30px !important;\r\n   \t  padding-left: 30px !important;\r\n   \t  text-align:center;\r\n  }\r\n\r\n  .hrow.gray-hrow .feature-img {\r\n    margin-left:10%;\r\n  }\r\n  .hrow.white-hrow .feature-img {\r\n    margin-right:10%;\r\n  }\r\n\r\n\r\n}\r\n\r\n\r\n@media only screen and (min-width: 1000px) and (max-width: 1169px){\r\n\r\n.sbutton1 , .sbutton5, .sbutton4 {\r\n\tfont-size: 14px;\r\n\tpadding: 8px 20px;\r\n}\r\n\r\n.slide-video .hps-videotext {\r\n\tpadding-bottom: 0px;\r\n}\r\n\r\n.sbutton4 {\r\n\tfont-size: 14px;\r\n\tpadding: 10px 20px;\r\n}\r\n\r\n.scircle1 {\r\n\twidth: 90px;\r\n\theight: 122px;\r\n}\r\n\r\n.scircle1 i {\r\n\tfont-size: 30px;\r\n}\r\n\r\n.scircle1 h6 {\r\n\tfont-size: 13px;\r\n}\r\n\r\n.sbox1 div {\r\n\twidth: 120px;\r\n\theight: 120px;\r\n}\r\n.sbox1 div i {\r\n\tfont-size: 25px;\r\n\tmargin-bottom: 12px;\r\n\tmargin-top: 28px;\r\n}\r\n.sbox1 h5 {\r\n\tfont-size: 14px;\r\n\tline-height: 20px;\r\n}\r\n\r\n.stext9 i {\r\n\tfont-size: 30px;\r\n}\r\n\r\n}\r\n\r\n@media only screen and (min-width: 768px) and (max-width: 999px){\r\n\r\n.sbutton1, .sbutton5, .sbutton4 {\r\n\tfont-size: 12px;\r\n\tpadding: 10px 10px;\r\n}\r\n\r\n.sbutton4 {\r\n\tfont-size: 12px;\r\n\tpadding: 10px 10px;\r\n}\r\n\r\n\r\n.slide-video .hps-videotext {\r\n\tpadding-bottom: 0px;\r\n}\r\n\r\n.scircle1 {\r\n\twidth: 70px;\r\n\theight: 122px;\r\n}\r\n\r\n.scircle1 i {\r\n\tfont-size: 22px;\r\n}\r\n\r\n.scircle1 h6 {\r\n\tfont-size: 10px;\r\n}\r\n\r\n.sbox1 div {\r\n\twidth: 100px;\r\n\theight: 100px;\r\n}\r\n.sbox1 div i {\r\n\tfont-size: 20px;\r\n\tmargin-bottom: 10px;\r\n\tmargin-top: 20px;\r\n}\r\n.sbox1 h5 {\r\n\tfont-size: 12px;\r\n\tline-height: 16px;\r\n}\r\n\r\n.stext3 {\r\n\tfont-size: 30px;\r\n\tpadding: 12px 18px 0px 18px;\r\n}\r\n\r\n.stext9 i {\r\n\tfont-size: 30px;\r\n}\r\n\r\n}\r\n\r\n\r\n@media only screen and (min-width: 480px) and (max-width: 767px){\r\n\r\n.sbutton1, .sbutton5, .sbutton4{\r\n\tfont-size: 10px;\r\n\tpadding: 5px 10px;\r\n}\r\n\r\n.sbutton4 {\r\n\tfont-size: 10px;\r\n\tpadding: 5px 10px;\r\n}\r\n\r\n.slide-video .hps-videotext {\r\n\tpadding-bottom: 0px;\r\n\theight: 70px;\r\n}\r\n\r\n.scircle1 {\r\n\twidth: 45px;\r\n\theight: 122px;\r\n}\r\n\r\n.scircle1 i {\r\n\tfont-size: 18px;\r\n}\r\n\r\n.scircle1 h6 {\r\n\tfont-size: 5px;\r\n}\r\n\r\n.sbox1 div {\r\n\twidth: 61px;\r\n\theight: 61px;\r\n}\r\n.sbox1 div i {\r\n\tfont-size: 14px;\r\n\tmargin-bottom: 5px;\r\n\tmargin-top: 10px;\r\n}\r\n.sbox1 h5 {\r\n\tfont-size: 10px;\r\n\tline-height: 12px;\r\n}\r\n\r\n.stext3 {\r\n\tbackground: none;\r\n}\r\n\r\n.stext9 i {\r\n\tfont-size: 20px;\r\n}\r\n\r\n}\r\n\r\n@media only screen and (max-width: 479px){\r\n\r\n.sbutton1, .sbutton5, .sbutton4 {\r\n\tfont-size: 7px;\r\n\tpadding: 3px 5px;\r\n}\r\n\r\n.sbutton4 {\r\n\tfont-size: 7px;\r\n\tpadding: 3px 5px;\r\n}\r\n\r\n.slide-video .hps-videotext {\r\n\tpadding-bottom: 0px;\r\n\theight: 70px;\r\n}\r\n\r\n.scircle1 {\r\n\twidth: 30px;\r\n\theight: 122px;\r\n}\r\n\r\n.scircle1 i {\r\n\tfont-size: 12px;\r\n}\r\n\r\n.scircle1 h6 {\r\n\tfont-size: 4px;\r\n}\r\n\r\n\r\n.sbox1 div {\r\n\twidth: 40px;\r\n\theight: 40px;\r\n}\r\n.sbox1 div i {\r\n\tfont-size: 10px;\r\n\tmargin-bottom: 3px;\r\n\tmargin-top: 8px;\r\n}\r\n.sbox1 h5 {\r\n\tfont-size: 7px;\r\n\tline-height: 5px;\r\n}\r\n\r\n.stext3 {\r\n\tbackground: none;\r\n}\r\n\r\n.stext9 i {\r\n\tfont-size: 12px;\r\n}\r\n\r\n}\r\n", ""]);
 
 	// exports
 
@@ -32531,8 +33137,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./yamm.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./yamm.css");
+			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./ms-staff-style.css", function() {
+				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./ms-staff-style.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -32550,7 +33156,1054 @@
 
 
 	// module
+	exports.push([module.id, ".master-slider{\r\n\t-moz-transform:translate3d(0,0,1px);\r\n\tbackground-color: transparent;\r\n}\r\n.ms-staff-carousel{\r\n\tmax-width:950px;\r\n\toverflow: hidden;\r\n\tmargin: 0px auto;\r\n\tposition: relative;\r\n}\r\n\r\n.ms-staff-carousel .ms-view{\r\n\toverflow:visible;\r\n\tbackground-color: transparent;\r\n}\r\n\r\n.ms-staff-carousel .ms-nav-prev,\r\n.ms-staff-carousel .ms-nav-next {\r\n    background: url(" + __webpack_require__(310) + ") white no-repeat -7px -57px;\r\n    width: 35px;\r\n    height: 40px;\r\n    left: -35px;\r\n    margin-top: -17px;\r\n    box-shadow: 0px 1px 0px 0px rgb(190, 190, 190);\r\n    position: absolute;\r\n    top:50%;\r\n    cursor: pointer;\r\n}\r\n\r\n.ms-staff-carousel .ms-nav-next {\r\n\tbackground-position: -16px -7px;\r\n\tright:-35px;\r\n\tleft:auto;\r\n}\r\n\r\n.ms-staff-carousel .ms-staff-info{\r\n\tfont-family: 'Lato', sans-serif;\r\n\ttext-align: center;\r\n\tmargin:0 auto;\r\n\tmax-width: 600px;\r\n\tmargin-top:30px;\r\n\tmin-height:170px;\r\n\tcolor:#fff;\r\n}\r\n\t.ms-staff-carousel .ms-staff-info h3{\r\n\t\tfont-weight: 300;\r\n\t\tfont-size: 22pt;\r\n\t\tmargin:0px;\r\n\t}\r\n\t\r\n\t.ms-staff-carousel .ms-staff-info h4{\r\n\t\tfont-weight: 600;\r\n\t\tcolor:#fff;\r\n\t\tfont-size: 15pt;\r\n\t\tmargin:3px;\r\n\t}\r\n\t\r\n\t.ms-staff-carousel .ms-staff-info .email a{text-decoration: none; color:#3f95ab;}\r\n\t.ms-staff-carousel .ms-staff-info.email,.ms-staff-info p {\r\n\t    margin: 4px;\r\n\t     font-size: 11pt;\r\n\t}\r\n\t\r\n\t.ms-staff-carousel .ms-staff-info .ms-socials {\r\n\t    list-style: none;\r\n\t    display: inline-block;\r\n\t    padding: 0;\r\n\t    margin: 15px 0 0 0;\r\n\t    text-shadow: none;\r\n\t    zoom: 1;\r\n        *display: inline;\r\n\t}\r\n\t\r\n\t.ms-staff-carousel .ms-staff-info .ms-socials li{\r\n\t\t  float: left;\r\n\t}\r\n\t.ms-staff-carousel .ms-staff-info .ms-socials li a {\r\n\t    text-indent: 9999px;\r\n\t    width: 35px;\r\n\t    height: 35px;\r\n\t    background: url(" + __webpack_require__(311) + ");\r\n\t    margin: 0 2px;\r\n\t    display: block;\r\n\t}\r\n\t\r\n\t.ms-staff-carousel .ms-staff-info .ms-socials .ms-ico-tw a{background-position: 115px 0px;}\r\n\t.ms-staff-carousel .ms-staff-info .ms-socials .ms-ico-gp a{background-position: 75px 0px;}\r\n\t.ms-staff-carousel .ms-staff-info .ms-socials .ms-ico-yt a{background-position: 35px 0px;}\r\n\r\n.ms-staff-carousel.ms-round .ms-slide-bgcont {\r\n\tborder-radius: 5000px;\r\n\tborder: solid 8px #fff;\r\n\tmargin: 0 -8px;\r\n}\r\n\r\n.ms-staff-carousel.ms-round .ms-nav-prev,\r\n.ms-staff-carousel.ms-round .ms-nav-next {\r\n    background-color:transparent;\r\n    box-shadow : none;\r\n    left:-45px;\r\n }\r\n \r\n.ms-staff-carousel.ms-round .ms-nav-next {\r\n    left:auto;\r\n    right:-45px\r\n}\r\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 310 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAABpCAYAAAB8g6C4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAlBJREFUeNrsm81LlFEYxe+IH39HDISLNtKqRZSmNKL0QSCCLSQEFykuBIUWrlLQEJTIsKJQBokIwhALMUvUhQyotMgCR/w3/JzOw30WQ7Qxp9GD58Bv6TC/9773vvf6nknkcrnAnJJAHglIQAISkIAEJCABCUjg9FJ60g9IJpP/9HfZbFYjUGiBt+Ams8AzkAaNrAJL4A54De7STOI/sgIawAwoA+/YBCwZkAKfQbnfVlQClnVQ5xI2Em/YBCzfwQ0w7yMxziZg2QQ1eRJP2QQsv8A1sOASw2wClm2X+AoqwADjZs7+CXsEEoy70QtgEbwA/WwCF8E3MAqG2CZxpa9AdtWfsy2jl8Ac6AOv2B5kVeAT6AGTbFuJy2AWdPkZgepMfMWv/MNifPlCj8BV8AE8AB8ZzwN21e/7DjQwCjSfxqE+odesEpCABCQgAQlIQAISkIAEJCABCUhAAhKQgATOoYAqZ8eMNbrSZ2oEjhHrEU2Ae4xzwJpcVrm5HeILbyqBphDf0NsIrLCtQi0hVmyswZVhW0ZbwZMQm1trbM+B9hArNbUhNrfO7nPgL+kAvaA6xLJTYBLoBp0hlpu2KZ7EeXkE2sB1sMO4F7LPOgyxlcWzF8rLY7AfYrmpplijUOg5MAh2XcJWoC02AcsI2MuT+MkmYBnz2+mLP8h+sAlYXvrtZBL1YINNwGJ1s4MQu3Op/7GlKMZ5YMrnhDW5boFVxgPNe58T9sMI+3XHMuOJbNol2lkFLLNOwaLGlgQkIAEJSEACEpCABCRwfgV+CzAAQRNtBuAWzj8AAAAASUVORK5CYII="
+
+/***/ },
+/* 311 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,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"
+
+/***/ },
+/* 312 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(jQuery) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	/*
+	* jQuery Form Plugin; v20130711
+	* http://jquery.malsup.com/form/
+	* Copyright (c) 2013 M. Alsup; Dual licensed: MIT/GPL
+	* https://github.com/malsup/form#copyright-and-license
+	*/
+	(function ($) {
+	  "use strict";
+
+	  (function (e) {
+	    "use strict";
+	    function t(t) {
+	      var r = t.data;t.isDefaultPrevented() || (t.preventDefault(), e(this).ajaxSubmit(r));
+	    }function r(t) {
+	      var r = t.target,
+	          a = e(r);if (!a.is("[type=submit],[type=image]")) {
+	        var n = a.closest("[type=submit]");if (0 === n.length) return;r = n[0];
+	      }var i = this;if (i.clk = r, "image" == r.type) if (void 0 !== t.offsetX) i.clk_x = t.offsetX, i.clk_y = t.offsetY;else if ("function" == typeof e.fn.offset) {
+	        var o = a.offset();i.clk_x = t.pageX - o.left, i.clk_y = t.pageY - o.top;
+	      } else i.clk_x = t.pageX - r.offsetLeft, i.clk_y = t.pageY - r.offsetTop;setTimeout(function () {
+	        i.clk = i.clk_x = i.clk_y = null;
+	      }, 100);
+	    }function a() {
+	      if (e.fn.ajaxSubmit.debug) {
+	        var t = "[jquery.form] " + Array.prototype.join.call(arguments, "");window.console && window.console.log ? window.console.log(t) : window.opera && window.opera.postError && window.opera.postError(t);
+	      }
+	    }var n = {};n.fileapi = void 0 !== e("<input type='file'/>").get(0).files, n.formdata = void 0 !== window.FormData;var i = !!e.fn.prop;e.fn.attr2 = function () {
+	      if (!i) return this.attr.apply(this, arguments);var e = this.prop.apply(this, arguments);return e && e.jquery || "string" == typeof e ? e : this.attr.apply(this, arguments);
+	    }, e.fn.ajaxSubmit = function (t) {
+	      function r(r) {
+	        var a,
+	            n,
+	            i = e.param(r, t.traditional).split("&"),
+	            o = i.length,
+	            s = [];for (a = 0; o > a; a++) {
+	          i[a] = i[a].replace(/\+/g, " "), n = i[a].split("="), s.push([decodeURIComponent(n[0]), decodeURIComponent(n[1])]);
+	        }return s;
+	      }function o(a) {
+	        for (var n = new FormData(), i = 0; a.length > i; i++) {
+	          n.append(a[i].name, a[i].value);
+	        }if (t.extraData) {
+	          var o = r(t.extraData);for (i = 0; o.length > i; i++) {
+	            o[i] && n.append(o[i][0], o[i][1]);
+	          }
+	        }t.data = null;var s = e.extend(!0, {}, e.ajaxSettings, t, { contentType: !1, processData: !1, cache: !1, type: u || "POST" });t.uploadProgress && (s.xhr = function () {
+	          var r = e.ajaxSettings.xhr();return r.upload && r.upload.addEventListener("progress", function (e) {
+	            var r = 0,
+	                a = e.loaded || e.position,
+	                n = e.total;e.lengthComputable && (r = Math.ceil(100 * (a / n))), t.uploadProgress(e, a, n, r);
+	          }, !1), r;
+	        }), s.data = null;var l = s.beforeSend;return s.beforeSend = function (e, t) {
+	          t.data = n, l && l.call(this, e, t);
+	        }, e.ajax(s);
+	      }function s(r) {
+	        function n(e) {
+	          var t = null;try {
+	            e.contentWindow && (t = e.contentWindow.document);
+	          } catch (r) {
+	            a("cannot get iframe.contentWindow document: " + r);
+	          }if (t) return t;try {
+	            t = e.contentDocument ? e.contentDocument : e.document;
+	          } catch (r) {
+	            a("cannot get iframe.contentDocument: " + r), t = e.document;
+	          }return t;
+	        }function o() {
+	          function t() {
+	            try {
+	              var e = n(g).readyState;a("state = " + e), e && "uninitialized" == e.toLowerCase() && setTimeout(t, 50);
+	            } catch (r) {
+	              a("Server abort: ", r, " (", r.name, ")"), s(D), j && clearTimeout(j), j = void 0;
+	            }
+	          }var r = f.attr2("target"),
+	              i = f.attr2("action");w.setAttribute("target", d), u || w.setAttribute("method", "POST"), i != m.url && w.setAttribute("action", m.url), m.skipEncodingOverride || u && !/post/i.test(u) || f.attr({ encoding: "multipart/form-data", enctype: "multipart/form-data" }), m.timeout && (j = setTimeout(function () {
+	            T = !0, s(k);
+	          }, m.timeout));var o = [];try {
+	            if (m.extraData) for (var l in m.extraData) {
+	              m.extraData.hasOwnProperty(l) && (e.isPlainObject(m.extraData[l]) && m.extraData[l].hasOwnProperty("name") && m.extraData[l].hasOwnProperty("value") ? o.push(e('<input type="hidden" name="' + m.extraData[l].name + '">').val(m.extraData[l].value).appendTo(w)[0]) : o.push(e('<input type="hidden" name="' + l + '">').val(m.extraData[l]).appendTo(w)[0]));
+	            }m.iframeTarget || (v.appendTo("body"), g.attachEvent ? g.attachEvent("onload", s) : g.addEventListener("load", s, !1)), setTimeout(t, 15);try {
+	              w.submit();
+	            } catch (c) {
+	              var p = document.createElement("form").submit;p.apply(w);
+	            }
+	          } finally {
+	            w.setAttribute("action", i), r ? w.setAttribute("target", r) : f.removeAttr("target"), e(o).remove();
+	          }
+	        }function s(t) {
+	          if (!x.aborted && !F) {
+	            if (M = n(g), M || (a("cannot access response document"), t = D), t === k && x) return x.abort("timeout"), S.reject(x, "timeout"), void 0;if (t == D && x) return x.abort("server abort"), S.reject(x, "error", "server abort"), void 0;if (M && M.location.href != m.iframeSrc || T) {
+	              g.detachEvent ? g.detachEvent("onload", s) : g.removeEventListener("load", s, !1);var r,
+	                  i = "success";try {
+	                if (T) throw "timeout";var o = "xml" == m.dataType || M.XMLDocument || e.isXMLDoc(M);if (a("isXml=" + o), !o && window.opera && (null === M.body || !M.body.innerHTML) && --O) return a("requeing onLoad callback, DOM not available"), setTimeout(s, 250), void 0;var u = M.body ? M.body : M.documentElement;x.responseText = u ? u.innerHTML : null, x.responseXML = M.XMLDocument ? M.XMLDocument : M, o && (m.dataType = "xml"), x.getResponseHeader = function (e) {
+	                  var t = { "content-type": m.dataType };return t[e];
+	                }, u && (x.status = Number(u.getAttribute("status")) || x.status, x.statusText = u.getAttribute("statusText") || x.statusText);var l = (m.dataType || "").toLowerCase(),
+	                    c = /(json|script|text)/.test(l);if (c || m.textarea) {
+	                  var f = M.getElementsByTagName("textarea")[0];if (f) x.responseText = f.value, x.status = Number(f.getAttribute("status")) || x.status, x.statusText = f.getAttribute("statusText") || x.statusText;else if (c) {
+	                    var d = M.getElementsByTagName("pre")[0],
+	                        h = M.getElementsByTagName("body")[0];d ? x.responseText = d.textContent ? d.textContent : d.innerText : h && (x.responseText = h.textContent ? h.textContent : h.innerText);
+	                  }
+	                } else "xml" == l && !x.responseXML && x.responseText && (x.responseXML = X(x.responseText));try {
+	                  L = _(x, l, m);
+	                } catch (b) {
+	                  i = "parsererror", x.error = r = b || i;
+	                }
+	              } catch (b) {
+	                a("error caught: ", b), i = "error", x.error = r = b || i;
+	              }x.aborted && (a("upload aborted"), i = null), x.status && (i = x.status >= 200 && 300 > x.status || 304 === x.status ? "success" : "error"), "success" === i ? (m.success && m.success.call(m.context, L, "success", x), S.resolve(x.responseText, "success", x), p && e.event.trigger("ajaxSuccess", [x, m])) : i && (void 0 === r && (r = x.statusText), m.error && m.error.call(m.context, x, i, r), S.reject(x, "error", r), p && e.event.trigger("ajaxError", [x, m, r])), p && e.event.trigger("ajaxComplete", [x, m]), p && ! --e.active && e.event.trigger("ajaxStop"), m.complete && m.complete.call(m.context, x, i), F = !0, m.timeout && clearTimeout(j), setTimeout(function () {
+	                m.iframeTarget || v.remove(), x.responseXML = null;
+	              }, 100);
+	            }
+	          }
+	        }var l,
+	            c,
+	            m,
+	            p,
+	            d,
+	            v,
+	            g,
+	            x,
+	            b,
+	            y,
+	            T,
+	            j,
+	            w = f[0],
+	            S = e.Deferred();if (r) for (c = 0; h.length > c; c++) {
+	          l = e(h[c]), i ? l.prop("disabled", !1) : l.removeAttr("disabled");
+	        }if (m = e.extend(!0, {}, e.ajaxSettings, t), m.context = m.context || m, d = "jqFormIO" + new Date().getTime(), m.iframeTarget ? (v = e(m.iframeTarget), y = v.attr2("name"), y ? d = y : v.attr2("name", d)) : (v = e('<iframe name="' + d + '" src="' + m.iframeSrc + '" />'), v.css({ position: "absolute", top: "-1000px", left: "-1000px" })), g = v[0], x = { aborted: 0, responseText: null, responseXML: null, status: 0, statusText: "n/a", getAllResponseHeaders: function getAllResponseHeaders() {}, getResponseHeader: function getResponseHeader() {}, setRequestHeader: function setRequestHeader() {}, abort: function abort(t) {
+	            var r = "timeout" === t ? "timeout" : "aborted";a("aborting upload... " + r), this.aborted = 1;try {
+	              g.contentWindow.document.execCommand && g.contentWindow.document.execCommand("Stop");
+	            } catch (n) {}v.attr("src", m.iframeSrc), x.error = r, m.error && m.error.call(m.context, x, r, t), p && e.event.trigger("ajaxError", [x, m, r]), m.complete && m.complete.call(m.context, x, r);
+	          } }, p = m.global, p && 0 === e.active++ && e.event.trigger("ajaxStart"), p && e.event.trigger("ajaxSend", [x, m]), m.beforeSend && m.beforeSend.call(m.context, x, m) === !1) return m.global && e.active--, S.reject(), S;if (x.aborted) return S.reject(), S;b = w.clk, b && (y = b.name, y && !b.disabled && (m.extraData = m.extraData || {}, m.extraData[y] = b.value, "image" == b.type && (m.extraData[y + ".x"] = w.clk_x, m.extraData[y + ".y"] = w.clk_y)));var k = 1,
+	            D = 2,
+	            A = e("meta[name=csrf-token]").attr("content"),
+	            E = e("meta[name=csrf-param]").attr("content");E && A && (m.extraData = m.extraData || {}, m.extraData[E] = A), m.forceSync ? o() : setTimeout(o, 10);var L,
+	            M,
+	            F,
+	            O = 50,
+	            X = e.parseXML || function (e, t) {
+	          return window.ActiveXObject ? (t = new ActiveXObject("Microsoft.XMLDOM"), t.async = "false", t.loadXML(e)) : t = new DOMParser().parseFromString(e, "text/xml"), t && t.documentElement && "parsererror" != t.documentElement.nodeName ? t : null;
+	        },
+	            C = e.parseJSON || function (e) {
+	          return window.eval("(" + e + ")");
+	        },
+	            _ = function _(t, r, a) {
+	          var n = t.getResponseHeader("content-type") || "",
+	              i = "xml" === r || !r && n.indexOf("xml") >= 0,
+	              o = i ? t.responseXML : t.responseText;return i && "parsererror" === o.documentElement.nodeName && e.error && e.error("parsererror"), a && a.dataFilter && (o = a.dataFilter(o, r)), "string" == typeof o && ("json" === r || !r && n.indexOf("json") >= 0 ? o = C(o) : ("script" === r || !r && n.indexOf("javascript") >= 0) && e.globalEval(o)), o;
+	        };return S;
+	      }if (!this.length) return a("ajaxSubmit: skipping submit process - no element selected"), this;var u,
+	          l,
+	          c,
+	          f = this;"function" == typeof t ? t = { success: t } : void 0 === t && (t = {}), u = t.type || this.attr2("method"), l = t.url || this.attr2("action"), c = "string" == typeof l ? e.trim(l) : "", c = c || window.location.href || "", c && (c = (c.match(/^([^#]+)/) || [])[1]), t = e.extend(!0, { url: c, success: e.ajaxSettings.success, type: u || "GET", iframeSrc: /^https/i.test(window.location.href || "") ? "javascript:false" : "about:blank" }, t);var m = {};if (this.trigger("form-pre-serialize", [this, t, m]), m.veto) return a("ajaxSubmit: submit vetoed via form-pre-serialize trigger"), this;if (t.beforeSerialize && t.beforeSerialize(this, t) === !1) return a("ajaxSubmit: submit aborted via beforeSerialize callback"), this;var p = t.traditional;void 0 === p && (p = e.ajaxSettings.traditional);var d,
+	          h = [],
+	          v = this.formToArray(t.semantic, h);if (t.data && (t.extraData = t.data, d = e.param(t.data, p)), t.beforeSubmit && t.beforeSubmit(v, this, t) === !1) return a("ajaxSubmit: submit aborted via beforeSubmit callback"), this;if (this.trigger("form-submit-validate", [v, this, t, m]), m.veto) return a("ajaxSubmit: submit vetoed via form-submit-validate trigger"), this;var g = e.param(v, p);d && (g = g ? g + "&" + d : d), "GET" == t.type.toUpperCase() ? (t.url += (t.url.indexOf("?") >= 0 ? "&" : "?") + g, t.data = null) : t.data = g;var x = [];if (t.resetForm && x.push(function () {
+	        f.resetForm();
+	      }), t.clearForm && x.push(function () {
+	        f.clearForm(t.includeHidden);
+	      }), !t.dataType && t.target) {
+	        var b = t.success || function () {};x.push(function (r) {
+	          var a = t.replaceTarget ? "replaceWith" : "html";e(t.target)[a](r).each(b, arguments);
+	        });
+	      } else t.success && x.push(t.success);if (t.success = function (e, r, a) {
+	        for (var n = t.context || this, i = 0, o = x.length; o > i; i++) {
+	          x[i].apply(n, [e, r, a || f, f]);
+	        }
+	      }, t.error) {
+	        var y = t.error;t.error = function (e, r, a) {
+	          var n = t.context || this;y.apply(n, [e, r, a, f]);
+	        };
+	      }if (t.complete) {
+	        var T = t.complete;t.complete = function (e, r) {
+	          var a = t.context || this;T.apply(a, [e, r, f]);
+	        };
+	      }var j = e('input[type=file]:enabled[value!=""]', this),
+	          w = j.length > 0,
+	          S = "multipart/form-data",
+	          k = f.attr("enctype") == S || f.attr("encoding") == S,
+	          D = n.fileapi && n.formdata;a("fileAPI :" + D);var A,
+	          E = (w || k) && !D;t.iframe !== !1 && (t.iframe || E) ? t.closeKeepAlive ? e.get(t.closeKeepAlive, function () {
+	        A = s(v);
+	      }) : A = s(v) : A = (w || k) && D ? o(v) : e.ajax(t), f.removeData("jqxhr").data("jqxhr", A);for (var L = 0; h.length > L; L++) {
+	        h[L] = null;
+	      }return this.trigger("form-submit-notify", [this, t]), this;
+	    }, e.fn.ajaxForm = function (n) {
+	      if (n = n || {}, n.delegation = n.delegation && e.isFunction(e.fn.on), !n.delegation && 0 === this.length) {
+	        var i = { s: this.selector, c: this.context };return !e.isReady && i.s ? (a("DOM not ready, queuing ajaxForm"), e(function () {
+	          e(i.s, i.c).ajaxForm(n);
+	        }), this) : (a("terminating; zero elements found by selector" + (e.isReady ? "" : " (DOM not ready)")), this);
+	      }return n.delegation ? (e(document).off("submit.form-plugin", this.selector, t).off("click.form-plugin", this.selector, r).on("submit.form-plugin", this.selector, n, t).on("click.form-plugin", this.selector, n, r), this) : this.ajaxFormUnbind().bind("submit.form-plugin", n, t).bind("click.form-plugin", n, r);
+	    }, e.fn.ajaxFormUnbind = function () {
+	      return this.unbind("submit.form-plugin click.form-plugin");
+	    }, e.fn.formToArray = function (t, r) {
+	      var a = [];if (0 === this.length) return a;var i = this[0],
+	          o = t ? i.getElementsByTagName("*") : i.elements;if (!o) return a;var s, u, l, c, f, m, p;for (s = 0, m = o.length; m > s; s++) {
+	        if (f = o[s], l = f.name, l && !f.disabled) if (t && i.clk && "image" == f.type) i.clk == f && (a.push({ name: l, value: e(f).val(), type: f.type }), a.push({ name: l + ".x", value: i.clk_x }, { name: l + ".y", value: i.clk_y }));else if (c = e.fieldValue(f, !0), c && c.constructor == Array) for (r && r.push(f), u = 0, p = c.length; p > u; u++) {
+	          a.push({ name: l, value: c[u] });
+	        } else if (n.fileapi && "file" == f.type) {
+	          r && r.push(f);var d = f.files;if (d.length) for (u = 0; d.length > u; u++) {
+	            a.push({ name: l, value: d[u], type: f.type });
+	          } else a.push({ name: l, value: "", type: f.type });
+	        } else null !== c && c !== void 0 && (r && r.push(f), a.push({ name: l, value: c, type: f.type, required: f.required }));
+	      }if (!t && i.clk) {
+	        var h = e(i.clk),
+	            v = h[0];l = v.name, l && !v.disabled && "image" == v.type && (a.push({ name: l, value: h.val() }), a.push({ name: l + ".x", value: i.clk_x }, { name: l + ".y", value: i.clk_y }));
+	      }return a;
+	    }, e.fn.formSerialize = function (t) {
+	      return e.param(this.formToArray(t));
+	    }, e.fn.fieldSerialize = function (t) {
+	      var r = [];return this.each(function () {
+	        var a = this.name;if (a) {
+	          var n = e.fieldValue(this, t);if (n && n.constructor == Array) for (var i = 0, o = n.length; o > i; i++) {
+	            r.push({ name: a, value: n[i] });
+	          } else null !== n && n !== void 0 && r.push({ name: this.name, value: n });
+	        }
+	      }), e.param(r);
+	    }, e.fn.fieldValue = function (t) {
+	      for (var r = [], a = 0, n = this.length; n > a; a++) {
+	        var i = this[a],
+	            o = e.fieldValue(i, t);null === o || void 0 === o || o.constructor == Array && !o.length || (o.constructor == Array ? e.merge(r, o) : r.push(o));
+	      }return r;
+	    }, e.fieldValue = function (t, r) {
+	      var a = t.name,
+	          n = t.type,
+	          i = t.tagName.toLowerCase();if (void 0 === r && (r = !0), r && (!a || t.disabled || "reset" == n || "button" == n || ("checkbox" == n || "radio" == n) && !t.checked || ("submit" == n || "image" == n) && t.form && t.form.clk != t || "select" == i && -1 == t.selectedIndex)) return null;if ("select" == i) {
+	        var o = t.selectedIndex;if (0 > o) return null;for (var s = [], u = t.options, l = "select-one" == n, c = l ? o + 1 : u.length, f = l ? o : 0; c > f; f++) {
+	          var m = u[f];if (m.selected) {
+	            var p = m.value;if (p || (p = m.attributes && m.attributes.value && !m.attributes.value.specified ? m.text : m.value), l) return p;s.push(p);
+	          }
+	        }return s;
+	      }return e(t).val();
+	    }, e.fn.clearForm = function (t) {
+	      return this.each(function () {
+	        e("input,select,textarea", this).clearFields(t);
+	      });
+	    }, e.fn.clearFields = e.fn.clearInputs = function (t) {
+	      var r = /^(?:color|date|datetime|email|month|number|password|range|search|tel|text|time|url|week)$/i;return this.each(function () {
+	        var a = this.type,
+	            n = this.tagName.toLowerCase();r.test(a) || "textarea" == n ? this.value = "" : "checkbox" == a || "radio" == a ? this.checked = !1 : "select" == n ? this.selectedIndex = -1 : "file" == a ? /MSIE/.test(navigator.userAgent) ? e(this).replaceWith(e(this).clone(!0)) : e(this).val("") : t && (t === !0 && /hidden/.test(a) || "string" == typeof t && e(this).is(t)) && (this.value = "");
+	      });
+	    }, e.fn.resetForm = function () {
+	      return this.each(function () {
+	        ("function" == typeof this.reset || "object" == _typeof(this.reset) && !this.reset.nodeType) && this.reset();
+	      });
+	    }, e.fn.enable = function (e) {
+	      return void 0 === e && (e = !0), this.each(function () {
+	        this.disabled = !e;
+	      });
+	    }, e.fn.selected = function (t) {
+	      return void 0 === t && (t = !0), this.each(function () {
+	        var r = this.type;if ("checkbox" == r || "radio" == r) this.checked = t;else if ("option" == this.tagName.toLowerCase()) {
+	          var a = e(this).parent("select");t && a[0] && "select-one" == a[0].type && a.find("option").selected(!1), this.selected = t;
+	        }
+	      });
+	    }, e.fn.ajaxSubmit.debug = !1;
+	  })(jQuery);
+	})(jQuery);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255)))
+
+/***/ },
+/* 313 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(jQuery) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	/*! jQuery Validation Plugin - v1.11.0 - 2/4/2013
+	 https://github.com/jzaefferer/jquery-validation
+	 Copyright (c) 2013 Jörn Zaefferer; Licensed MIT */
+	(function ($) {
+	  "use strict";
+
+	  (function ($) {
+	    $.extend($.fn, { validate: function validate(options) {
+	        if (!this.length) {
+	          if (options && options.debug && window.console) {
+	            console.warn("Nothing selected, can't validate, returning nothing.");
+	          }return;
+	        }var validator = $.data(this[0], "validator");if (validator) {
+	          return validator;
+	        }this.attr("novalidate", "novalidate");validator = new $.validator(options, this[0]);$.data(this[0], "validator", validator);if (validator.settings.onsubmit) {
+	          this.validateDelegate(":submit", "click", function (event) {
+	            if (validator.settings.submitHandler) {
+	              validator.submitButton = event.target;
+	            }if ($(event.target).hasClass("cancel")) {
+	              validator.cancelSubmit = true;
+	            }
+	          });this.submit(function (event) {
+	            if (validator.settings.debug) {
+	              event.preventDefault();
+	            }function handle() {
+	              var hidden;if (validator.settings.submitHandler) {
+	                if (validator.submitButton) {
+	                  hidden = $("<input type='hidden'/>").attr("name", validator.submitButton.name).val(validator.submitButton.value).appendTo(validator.currentForm);
+	                }validator.settings.submitHandler.call(validator, validator.currentForm, event);if (validator.submitButton) {
+	                  hidden.remove();
+	                }return false;
+	              }return true;
+	            }if (validator.cancelSubmit) {
+	              validator.cancelSubmit = false;return handle();
+	            }if (validator.form()) {
+	              if (validator.pendingRequest) {
+	                validator.formSubmitted = true;return false;
+	              }return handle();
+	            } else {
+	              validator.focusInvalid();return false;
+	            }
+	          });
+	        }return validator;
+	      }, valid: function valid() {
+	        if ($(this[0]).is("form")) {
+	          return this.validate().form();
+	        } else {
+	          var valid = true;var validator = $(this[0].form).validate();this.each(function () {
+	            valid &= validator.element(this);
+	          });return valid;
+	        }
+	      }, removeAttrs: function removeAttrs(attributes) {
+	        var result = {},
+	            $element = this;$.each(attributes.split(/\s/), function (index, value) {
+	          result[value] = $element.attr(value);$element.removeAttr(value);
+	        });return result;
+	      }, rules: function rules(command, argument) {
+	        var element = this[0];if (command) {
+	          var settings = $.data(element.form, "validator").settings;var staticRules = settings.rules;var existingRules = $.validator.staticRules(element);switch (command) {case "add":
+	              $.extend(existingRules, $.validator.normalizeRule(argument));staticRules[element.name] = existingRules;if (argument.messages) {
+	                settings.messages[element.name] = $.extend(settings.messages[element.name], argument.messages);
+	              }break;case "remove":
+	              if (!argument) {
+	                delete staticRules[element.name];return existingRules;
+	              }var filtered = {};$.each(argument.split(/\s/), function (index, method) {
+	                filtered[method] = existingRules[method];delete existingRules[method];
+	              });return filtered;}
+	        }var data = $.validator.normalizeRules($.extend({}, $.validator.classRules(element), $.validator.attributeRules(element), $.validator.dataRules(element), $.validator.staticRules(element)), element);if (data.required) {
+	          var param = data.required;delete data.required;data = $.extend({ required: param }, data);
+	        }return data;
+	      } });$.extend($.expr[":"], { blank: function blank(a) {
+	        return !$.trim("" + a.value);
+	      }, filled: function filled(a) {
+	        return !!$.trim("" + a.value);
+	      }, unchecked: function unchecked(a) {
+	        return !a.checked;
+	      } });$.validator = function (options, form) {
+	      this.settings = $.extend(true, {}, $.validator.defaults, options);this.currentForm = form;this.init();
+	    };$.validator.format = function (source, params) {
+	      if (arguments.length === 1) {
+	        return function () {
+	          var args = $.makeArray(arguments);args.unshift(source);return $.validator.format.apply(this, args);
+	        };
+	      }if (arguments.length > 2 && params.constructor !== Array) {
+	        params = $.makeArray(arguments).slice(1);
+	      }if (params.constructor !== Array) {
+	        params = [params];
+	      }$.each(params, function (i, n) {
+	        source = source.replace(new RegExp("\\{" + i + "\\}", "g"), function () {
+	          return n;
+	        });
+	      });return source;
+	    };$.extend($.validator, { defaults: { messages: {}, groups: {}, rules: {}, errorClass: "invalid", validClass: "valid", errorElement: "em", focusInvalid: true, errorContainer: $([]), errorLabelContainer: $([]), onsubmit: true, ignore: ":hidden", ignoreTitle: false, onfocusin: function onfocusin(element, event) {
+	          this.lastActive = element;if (this.settings.focusCleanup && !this.blockFocusCleanup) {
+	            if (this.settings.unhighlight) {
+	              this.settings.unhighlight.call(this, element, this.settings.errorClass, this.settings.validClass);
+	            }this.addWrapper(this.errorsFor(element)).hide();
+	          }
+	        }, onfocusout: function onfocusout(element, event) {
+	          if (!this.checkable(element) && (element.name in this.submitted || !this.optional(element))) {
+	            this.element(element);
+	          }
+	        }, onkeyup: function onkeyup(element, event) {
+	          if (event.which === 9 && this.elementValue(element) === "") {
+	            return;
+	          } else if (element.name in this.submitted || element === this.lastElement) {
+	            this.element(element);
+	          }
+	        }, onclick: function onclick(element, event) {
+	          if (element.name in this.submitted) {
+	            this.element(element);
+	          } else if (element.parentNode.name in this.submitted) {
+	            this.element(element.parentNode);
+	          }
+	        }, highlight: function highlight(element, errorClass, validClass) {
+	          if (element.type === "radio") {
+	            this.findByName(element.name).addClass(errorClass).removeClass(validClass).parent().addClass('state-error').removeClass('state-success');
+	          } else {
+	            $(element).addClass(errorClass).removeClass(validClass).parent().addClass('state-error').removeClass('state-success');
+	          }
+	        }, unhighlight: function unhighlight(element, errorClass, validClass) {
+	          if (element.type === "radio") {
+	            this.findByName(element.name).removeClass(errorClass).addClass(validClass).parent().addClass('state-success').removeClass('state-error');
+	          } else {
+	            $(element).removeClass(errorClass).addClass(validClass).parent().addClass('state-success').removeClass('state-error');
+	          }
+	        } }, setDefaults: function setDefaults(settings) {
+	        $.extend($.validator.defaults, settings);
+	      }, messages: { required: "This field is required", remote: "Please fix this field", email: "Please enter a valid email address", url: "Please enter a valid URL", date: "Please enter a valid date", dateISO: "Please enter a valid date (ISO)", number: "Please enter a valid number", digits: "Please enter only digits", creditcard: "Please enter a valid credit card number", equalTo: "Please enter the same value again", maxlength: $.validator.format("Please enter no more than {0} characters"), minlength: $.validator.format("Please enter at least {0} characters"), rangelength: $.validator.format("Please enter a value between {0} and {1} characters long"), range: $.validator.format("Please enter a value between {0} and {1}"), max: $.validator.format("Please enter a value less than or equal to {0}"), min: $.validator.format("Please enter a value greater than or equal to {0}") }, autoCreateRanges: false, prototype: { init: function init() {
+	          this.labelContainer = $(this.settings.errorLabelContainer);this.errorContext = this.labelContainer.length && this.labelContainer || $(this.currentForm);this.containers = $(this.settings.errorContainer).add(this.settings.errorLabelContainer);this.submitted = {};this.valueCache = {};this.pendingRequest = 0;this.pending = {};this.invalid = {};this.reset();var groups = this.groups = {};$.each(this.settings.groups, function (key, value) {
+	            if (typeof value === "string") {
+	              value = value.split(/\s/);
+	            }$.each(value, function (index, name) {
+	              groups[name] = key;
+	            });
+	          });var rules = this.settings.rules;$.each(rules, function (key, value) {
+	            rules[key] = $.validator.normalizeRule(value);
+	          });function delegate(event) {
+	            var validator = $.data(this[0].form, "validator"),
+	                eventType = "on" + event.type.replace(/^validate/, "");if (validator.settings[eventType]) {
+	              validator.settings[eventType].call(validator, this[0], event);
+	            }
+	          }$(this.currentForm).validateDelegate(":text, [type='password'], [type='file'], select, textarea, " + "[type='number'], [type='search'] ,[type='tel'], [type='url'], " + "[type='email'], [type='datetime'], [type='date'], [type='month'], " + "[type='week'], [type='time'], [type='datetime-local'], " + "[type='range'], [type='color'] ", "focusin focusout keyup", delegate).validateDelegate("[type='radio'], [type='checkbox'], select, option", "click", delegate);if (this.settings.invalidHandler) {
+	            $(this.currentForm).bind("invalid-form.validate", this.settings.invalidHandler);
+	          }
+	        }, form: function form() {
+	          this.checkForm();$.extend(this.submitted, this.errorMap);this.invalid = $.extend({}, this.errorMap);if (!this.valid()) {
+	            $(this.currentForm).triggerHandler("invalid-form", [this]);
+	          }this.showErrors();return this.valid();
+	        }, checkForm: function checkForm() {
+	          this.prepareForm();for (var i = 0, elements = this.currentElements = this.elements(); elements[i]; i++) {
+	            this.check(elements[i]);
+	          }return this.valid();
+	        }, element: function element(_element) {
+	          _element = this.validationTargetFor(this.clean(_element));this.lastElement = _element;this.prepareElement(_element);this.currentElements = $(_element);var result = this.check(_element) !== false;if (result) {
+	            delete this.invalid[_element.name];
+	          } else {
+	            this.invalid[_element.name] = true;
+	          }if (!this.numberOfInvalids()) {
+	            this.toHide = this.toHide.add(this.containers);
+	          }this.showErrors();return result;
+	        }, showErrors: function showErrors(errors) {
+	          if (errors) {
+	            $.extend(this.errorMap, errors);this.errorList = [];for (var name in errors) {
+	              this.errorList.push({ message: errors[name], element: this.findByName(name)[0] });
+	            }this.successList = $.grep(this.successList, function (element) {
+	              return !(element.name in errors);
+	            });
+	          }if (this.settings.showErrors) {
+	            this.settings.showErrors.call(this, this.errorMap, this.errorList);
+	          } else {
+	            this.defaultShowErrors();
+	          }
+	        }, resetForm: function resetForm() {
+	          if ($.fn.resetForm) {
+	            $(this.currentForm).resetForm();
+	          }this.submitted = {};this.lastElement = null;this.prepareForm();this.hideErrors();this.elements().removeClass(this.settings.errorClass).removeData("previousValue");
+	        }, numberOfInvalids: function numberOfInvalids() {
+	          return this.objectLength(this.invalid);
+	        }, objectLength: function objectLength(obj) {
+	          var count = 0;for (var i in obj) {
+	            count++;
+	          }return count;
+	        }, hideErrors: function hideErrors() {
+	          this.addWrapper(this.toHide).hide();
+	        }, valid: function valid() {
+	          return this.size() === 0;
+	        }, size: function size() {
+	          return this.errorList.length;
+	        }, focusInvalid: function focusInvalid() {
+	          if (this.settings.focusInvalid) {
+	            try {
+	              $(this.findLastActive() || this.errorList.length && this.errorList[0].element || []).filter(":visible").focus().trigger("focusin");
+	            } catch (e) {}
+	          }
+	        }, findLastActive: function findLastActive() {
+	          var lastActive = this.lastActive;return lastActive && $.grep(this.errorList, function (n) {
+	            return n.element.name === lastActive.name;
+	          }).length === 1 && lastActive;
+	        }, elements: function elements() {
+	          var validator = this,
+	              rulesCache = {};return $(this.currentForm).find("input, select, textarea").not(":submit, :reset, :image, [disabled]").not(this.settings.ignore).filter(function () {
+	            if (!this.name && validator.settings.debug && window.console) {
+	              console.error("%o has no name assigned", this);
+	            }if (this.name in rulesCache || !validator.objectLength($(this).rules())) {
+	              return false;
+	            }rulesCache[this.name] = true;return true;
+	          });
+	        }, clean: function clean(selector) {
+	          return $(selector)[0];
+	        }, errors: function errors() {
+	          var errorClass = this.settings.errorClass.replace(" ", ".");return $(this.settings.errorElement + "." + errorClass, this.errorContext);
+	        }, reset: function reset() {
+	          this.successList = [];this.errorList = [];this.errorMap = {};this.toShow = $([]);this.toHide = $([]);this.currentElements = $([]);
+	        }, prepareForm: function prepareForm() {
+	          this.reset();this.toHide = this.errors().add(this.containers);
+	        }, prepareElement: function prepareElement(element) {
+	          this.reset();this.toHide = this.errorsFor(element);
+	        }, elementValue: function elementValue(element) {
+	          var type = $(element).attr("type"),
+	              val = $(element).val();if (type === "radio" || type === "checkbox") {
+	            return $("input[name='" + $(element).attr("name") + "']:checked").val();
+	          }if (typeof val === "string") {
+	            return val.replace(/\r/g, "");
+	          }return val;
+	        }, check: function check(element) {
+	          element = this.validationTargetFor(this.clean(element));var rules = $(element).rules();var dependencyMismatch = false;var val = this.elementValue(element);var result;for (var method in rules) {
+	            var rule = { method: method, parameters: rules[method] };try {
+	              result = $.validator.methods[method].call(this, val, element, rule.parameters);if (result === "dependency-mismatch") {
+	                dependencyMismatch = true;continue;
+	              }dependencyMismatch = false;if (result === "pending") {
+	                this.toHide = this.toHide.not(this.errorsFor(element));return;
+	              }if (!result) {
+	                this.formatAndAdd(element, rule);return false;
+	              }
+	            } catch (e) {
+	              if (this.settings.debug && window.console) {
+	                console.log("Exception occured when checking element " + element.id + ", check the '" + rule.method + "' method.", e);
+	              }throw e;
+	            }
+	          }if (dependencyMismatch) {
+	            return;
+	          }if (this.objectLength(rules)) {
+	            this.successList.push(element);
+	          }return true;
+	        }, customDataMessage: function customDataMessage(element, method) {
+	          return $(element).data("msg-" + method.toLowerCase()) || element.attributes && $(element).attr("data-msg-" + method.toLowerCase());
+	        }, customMessage: function customMessage(name, method) {
+	          var m = this.settings.messages[name];return m && (m.constructor === String ? m : m[method]);
+	        }, findDefined: function findDefined() {
+	          for (var i = 0; i < arguments.length; i++) {
+	            if (arguments[i] !== undefined) {
+	              return arguments[i];
+	            }
+	          }return undefined;
+	        }, defaultMessage: function defaultMessage(element, method) {
+	          return this.findDefined(this.customMessage(element.name, method), this.customDataMessage(element, method), !this.settings.ignoreTitle && element.title || undefined, $.validator.messages[method], "<strong>Warning: No message defined for " + element.name + "</strong>");
+	        }, formatAndAdd: function formatAndAdd(element, rule) {
+	          var message = this.defaultMessage(element, rule.method),
+	              theregex = /\$?\{(\d+)\}/g;if (typeof message === "function") {
+	            message = message.call(this, rule.parameters, element);
+	          } else if (theregex.test(message)) {
+	            message = $.validator.format(message.replace(theregex, "{$1}"), rule.parameters);
+	          }this.errorList.push({ message: message, element: element });this.errorMap[element.name] = message;this.submitted[element.name] = message;
+	        }, addWrapper: function addWrapper(toToggle) {
+	          if (this.settings.wrapper) {
+	            toToggle = toToggle.add(toToggle.parent(this.settings.wrapper));
+	          }return toToggle;
+	        }, defaultShowErrors: function defaultShowErrors() {
+	          var i, elements;for (i = 0; this.errorList[i]; i++) {
+	            var error = this.errorList[i];if (this.settings.highlight) {
+	              this.settings.highlight.call(this, error.element, this.settings.errorClass, this.settings.validClass);
+	            }this.showLabel(error.element, error.message);
+	          }if (this.errorList.length) {
+	            this.toShow = this.toShow.add(this.containers);
+	          }if (this.settings.success) {
+	            for (i = 0; this.successList[i]; i++) {
+	              this.showLabel(this.successList[i]);
+	            }
+	          }if (this.settings.unhighlight) {
+	            for (i = 0, elements = this.validElements(); elements[i]; i++) {
+	              this.settings.unhighlight.call(this, elements[i], this.settings.errorClass, this.settings.validClass);
+	            }
+	          }this.toHide = this.toHide.not(this.toShow);this.hideErrors();this.addWrapper(this.toShow).show();
+	        }, validElements: function validElements() {
+	          return this.currentElements.not(this.invalidElements());
+	        }, invalidElements: function invalidElements() {
+	          return $(this.errorList).map(function () {
+	            return this.element;
+	          });
+	        }, showLabel: function showLabel(element, message) {
+	          var label = this.errorsFor(element);if (label.length) {
+	            label.removeClass(this.settings.validClass).addClass(this.settings.errorClass);label.html(message);
+	          } else {
+	            label = $("<" + this.settings.errorElement + ">").attr("for", this.idOrName(element)).addClass(this.settings.errorClass).html(message || "");if (this.settings.wrapper) {
+	              label = label.hide().show().wrap("<" + this.settings.wrapper + "/>").parent();
+	            }if (!this.labelContainer.append(label).length) {
+	              if (this.settings.errorPlacement) {
+	                this.settings.errorPlacement(label, $(element));
+	              } else {
+	                label.insertAfter(element);
+	              }
+	            }
+	          }if (!message && this.settings.success) {
+	            label.text("");if (typeof this.settings.success === "string") {
+	              label.addClass(this.settings.success);
+	            } else {
+	              this.settings.success(label, element);
+	            }
+	          }this.toShow = this.toShow.add(label);
+	        }, errorsFor: function errorsFor(element) {
+	          var name = this.idOrName(element);return this.errors().filter(function () {
+	            return $(this).attr("for") === name;
+	          });
+	        }, idOrName: function idOrName(element) {
+	          return this.groups[element.name] || (this.checkable(element) ? element.name : element.id || element.name);
+	        }, validationTargetFor: function validationTargetFor(element) {
+	          if (this.checkable(element)) {
+	            element = this.findByName(element.name).not(this.settings.ignore)[0];
+	          }return element;
+	        }, checkable: function checkable(element) {
+	          return (/radio|checkbox/i.test(element.type)
+	          );
+	        }, findByName: function findByName(name) {
+	          return $(this.currentForm).find("[name='" + name + "']");
+	        }, getLength: function getLength(value, element) {
+	          switch (element.nodeName.toLowerCase()) {case "select":
+	              return $("option:selected", element).length;case "input":
+	              if (this.checkable(element)) {
+	                return this.findByName(element.name).filter(":checked").length;
+	              }}return value.length;
+	        }, depend: function depend(param, element) {
+	          return this.dependTypes[typeof param === "undefined" ? "undefined" : _typeof(param)] ? this.dependTypes[typeof param === "undefined" ? "undefined" : _typeof(param)](param, element) : true;
+	        }, dependTypes: { "boolean": function boolean(param, element) {
+	            return param;
+	          }, "string": function string(param, element) {
+	            return !!$(param, element.form).length;
+	          }, "function": function _function(param, element) {
+	            return param(element);
+	          } }, optional: function optional(element) {
+	          var val = this.elementValue(element);return !$.validator.methods.required.call(this, val, element) && "dependency-mismatch";
+	        }, startRequest: function startRequest(element) {
+	          if (!this.pending[element.name]) {
+	            this.pendingRequest++;this.pending[element.name] = true;
+	          }
+	        }, stopRequest: function stopRequest(element, valid) {
+	          this.pendingRequest--;if (this.pendingRequest < 0) {
+	            this.pendingRequest = 0;
+	          }delete this.pending[element.name];if (valid && this.pendingRequest === 0 && this.formSubmitted && this.form()) {
+	            $(this.currentForm).submit();this.formSubmitted = false;
+	          } else if (!valid && this.pendingRequest === 0 && this.formSubmitted) {
+	            $(this.currentForm).triggerHandler("invalid-form", [this]);this.formSubmitted = false;
+	          }
+	        }, previousValue: function previousValue(element) {
+	          return $.data(element, "previousValue") || $.data(element, "previousValue", { old: null, valid: true, message: this.defaultMessage(element, "remote") });
+	        } }, classRuleSettings: { required: { required: true }, email: { email: true }, url: { url: true }, date: { date: true }, dateISO: { dateISO: true }, number: { number: true }, digits: { digits: true }, creditcard: { creditcard: true } }, addClassRules: function addClassRules(className, rules) {
+	        if (className.constructor === String) {
+	          this.classRuleSettings[className] = rules;
+	        } else {
+	          $.extend(this.classRuleSettings, className);
+	        }
+	      }, classRules: function classRules(element) {
+	        var rules = {};var classes = $(element).attr("class");if (classes) {
+	          $.each(classes.split(" "), function () {
+	            if (this in $.validator.classRuleSettings) {
+	              $.extend(rules, $.validator.classRuleSettings[this]);
+	            }
+	          });
+	        }return rules;
+	      }, attributeRules: function attributeRules(element) {
+	        var rules = {};var $element = $(element);for (var method in $.validator.methods) {
+	          var value;if (method === "required") {
+	            value = $element.get(0).getAttribute(method);if (value === "") {
+	              value = true;
+	            }value = !!value;
+	          } else {
+	            value = $element.attr(method);
+	          }if (value) {
+	            rules[method] = value;
+	          } else if ($element[0].getAttribute("type") === method) {
+	            rules[method] = true;
+	          }
+	        }if (rules.maxlength && /-1|2147483647|524288/.test(rules.maxlength)) {
+	          delete rules.maxlength;
+	        }return rules;
+	      }, dataRules: function dataRules(element) {
+	        var method,
+	            value,
+	            rules = {},
+	            $element = $(element);for (method in $.validator.methods) {
+	          value = $element.data("rule-" + method.toLowerCase());if (value !== undefined) {
+	            rules[method] = value;
+	          }
+	        }return rules;
+	      }, staticRules: function staticRules(element) {
+	        var rules = {};var validator = $.data(element.form, "validator");if (validator.settings.rules) {
+	          rules = $.validator.normalizeRule(validator.settings.rules[element.name]) || {};
+	        }return rules;
+	      }, normalizeRules: function normalizeRules(rules, element) {
+	        $.each(rules, function (prop, val) {
+	          if (val === false) {
+	            delete rules[prop];return;
+	          }if (val.param || val.depends) {
+	            var keepRule = true;switch (_typeof(val.depends)) {case "string":
+	                keepRule = !!$(val.depends, element.form).length;break;case "function":
+	                keepRule = val.depends.call(element, element);break;}if (keepRule) {
+	              rules[prop] = val.param !== undefined ? val.param : true;
+	            } else {
+	              delete rules[prop];
+	            }
+	          }
+	        });$.each(rules, function (rule, parameter) {
+	          rules[rule] = $.isFunction(parameter) ? parameter(element) : parameter;
+	        });$.each(['minlength', 'maxlength'], function () {
+	          if (rules[this]) {
+	            rules[this] = Number(rules[this]);
+	          }
+	        });$.each(['rangelength'], function () {
+	          var parts;if (rules[this]) {
+	            if ($.isArray(rules[this])) {
+	              rules[this] = [Number(rules[this][0]), Number(rules[this][1])];
+	            } else if (typeof rules[this] === "string") {
+	              parts = rules[this].split(/[\s,]+/);rules[this] = [Number(parts[0]), Number(parts[1])];
+	            }
+	          }
+	        });if ($.validator.autoCreateRanges) {
+	          if (rules.min && rules.max) {
+	            rules.range = [rules.min, rules.max];delete rules.min;delete rules.max;
+	          }if (rules.minlength && rules.maxlength) {
+	            rules.rangelength = [rules.minlength, rules.maxlength];delete rules.minlength;delete rules.maxlength;
+	          }
+	        }return rules;
+	      }, normalizeRule: function normalizeRule(data) {
+	        if (typeof data === "string") {
+	          var transformed = {};$.each(data.split(/\s/), function () {
+	            transformed[this] = true;
+	          });data = transformed;
+	        }return data;
+	      }, addMethod: function addMethod(name, method, message) {
+	        $.validator.methods[name] = method;$.validator.messages[name] = message !== undefined ? message : $.validator.messages[name];if (method.length < 3) {
+	          $.validator.addClassRules(name, $.validator.normalizeRule(name));
+	        }
+	      }, methods: { required: function required(value, element, param) {
+	          if (!this.depend(param, element)) {
+	            return "dependency-mismatch";
+	          }if (element.nodeName.toLowerCase() === "select") {
+	            var val = $(element).val();return val && val.length > 0;
+	          }if (this.checkable(element)) {
+	            return this.getLength(value, element) > 0;
+	          }return $.trim(value).length > 0;
+	        }, remote: function remote(value, element, param) {
+	          if (this.optional(element)) {
+	            return "dependency-mismatch";
+	          }var previous = this.previousValue(element);if (!this.settings.messages[element.name]) {
+	            this.settings.messages[element.name] = {};
+	          }previous.originalMessage = this.settings.messages[element.name].remote;this.settings.messages[element.name].remote = previous.message;param = typeof param === "string" && { url: param } || param;if (previous.old === value) {
+	            return previous.valid;
+	          }previous.old = value;var validator = this;this.startRequest(element);var data = {};data[element.name] = value;$.ajax($.extend(true, { url: param, mode: "abort", port: "validate" + element.name, dataType: "json", data: data, success: function success(response) {
+	              validator.settings.messages[element.name].remote = previous.originalMessage;var valid = response === true || response === "true";if (valid) {
+	                var submitted = validator.formSubmitted;validator.prepareElement(element);validator.formSubmitted = submitted;validator.successList.push(element);delete validator.invalid[element.name];validator.showErrors();
+	              } else {
+	                var errors = {};var message = response || validator.defaultMessage(element, "remote");errors[element.name] = previous.message = $.isFunction(message) ? message(value) : message;validator.invalid[element.name] = true;validator.showErrors(errors);
+	              }previous.valid = valid;validator.stopRequest(element, valid);
+	            } }, param));return "pending";
+	        }, minlength: function minlength(value, element, param) {
+	          var length = $.isArray(value) ? value.length : this.getLength($.trim(value), element);return this.optional(element) || length >= param;
+	        }, maxlength: function maxlength(value, element, param) {
+	          var length = $.isArray(value) ? value.length : this.getLength($.trim(value), element);return this.optional(element) || length <= param;
+	        }, rangelength: function rangelength(value, element, param) {
+	          var length = $.isArray(value) ? value.length : this.getLength($.trim(value), element);return this.optional(element) || length >= param[0] && length <= param[1];
+	        }, min: function min(value, element, param) {
+	          return this.optional(element) || value >= param;
+	        }, max: function max(value, element, param) {
+	          return this.optional(element) || value <= param;
+	        }, range: function range(value, element, param) {
+	          return this.optional(element) || value >= param[0] && value <= param[1];
+	        }, email: function email(value, element) {
+	          return this.optional(element) || /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i.test(value);
+	        }, url: function url(value, element) {
+	          return this.optional(element) || /^(https?|s?ftp):\/\/(((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:)*@)?(((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?)(:\d*)?)(\/((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)?)?(\?((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)*)?(#((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/i.test(value);
+	        }, date: function date(value, element) {
+	          return this.optional(element) || !/Invalid|NaN/.test(new Date(value).toString());
+	        }, dateISO: function dateISO(value, element) {
+	          return this.optional(element) || /^\d{4}[\/\-]\d{1,2}[\/\-]\d{1,2}$/.test(value);
+	        }, number: function number(value, element) {
+	          return this.optional(element) || /^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$/.test(value);
+	        }, digits: function digits(value, element) {
+	          return this.optional(element) || /^\d+$/.test(value);
+	        }, creditcard: function creditcard(value, element) {
+	          if (this.optional(element)) {
+	            return "dependency-mismatch";
+	          }if (/[^0-9 \-]+/.test(value)) {
+	            return false;
+	          }var nCheck = 0,
+	              nDigit = 0,
+	              bEven = false;value = value.replace(/\D/g, "");for (var n = value.length - 1; n >= 0; n--) {
+	            var cDigit = value.charAt(n);nDigit = parseInt(cDigit, 10);if (bEven) {
+	              if ((nDigit *= 2) > 9) {
+	                nDigit -= 9;
+	              }
+	            }nCheck += nDigit;bEven = !bEven;
+	          }return nCheck % 10 === 0;
+	        }, equalTo: function equalTo(value, element, param) {
+	          var target = $(param);if (this.settings.onfocusout) {
+	            target.unbind(".validate-equalTo").bind("blur.validate-equalTo", function () {
+	              $(element).valid();
+	            });
+	          }return value === target.val();
+	        } } });$.format = $.validator.format;
+	  })(jQuery);(function ($) {
+	    var pendingRequests = {};if ($.ajaxPrefilter) {
+	      $.ajaxPrefilter(function (settings, _, xhr) {
+	        var port = settings.port;if (settings.mode === "abort") {
+	          if (pendingRequests[port]) {
+	            pendingRequests[port].abort();
+	          }pendingRequests[port] = xhr;
+	        }
+	      });
+	    } else {
+	      var ajax = $.ajax;$.ajax = function (settings) {
+	        var mode = ("mode" in settings ? settings : $.ajaxSettings).mode,
+	            port = ("port" in settings ? settings : $.ajaxSettings).port;if (mode === "abort") {
+	          if (pendingRequests[port]) {
+	            pendingRequests[port].abort();
+	          }return pendingRequests[port] = ajax.apply(this, arguments);
+	        }return ajax.apply(this, arguments);
+	      };
+	    }
+	  })(jQuery);(function ($) {
+	    $.extend($.fn, { validateDelegate: function validateDelegate(delegate, type, handler) {
+	        return this.bind(type, function (event) {
+	          var target = $(event.target);if (target.is(delegate)) {
+	            return handler.apply(target, arguments);
+	          }
+	        });
+	      } });
+	  })(jQuery);
+	})(jQuery);
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(255)))
+
+/***/ },
+/* 314 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(315);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(241)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./reset.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./reset.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 315 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(240)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "/* https://meyerweb.com/eric/tools/css/reset/ */\r\n/* v1.0 | 20080212 */\r\nhtml, body, div, span, applet, object, iframe,\r\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\r\na, abbr, acronym, address, big, cite, code,\r\ndel, dfn, em, font, img, ins, kbd, q, s, samp,\r\nsmall, strike, strong, sub, sup, tt, var,\r\nb, u, i, center,\r\ndl, dt, dd, ol, ul, li,\r\nfieldset, form, label, legend,\r\ntable, caption, tbody, tfoot, thead, tr, th, td {\r\nmargin: 0;\r\npadding: 0;\r\nborder: 0;\r\noutline: 0;\r\nfont-size: 100%;\r\nvertical-align: baseline;\r\nbackground: transparent;\r\n}\r\n\r\n/* body */\r\nbody {\r\n\tpadding: 0px;\r\n\tmargin: 0px;\r\n\tbackground: #fff;\r\n}\r\n\r\nbody, input, textarea {\r\n\tfont: 14px 'Open Sans', sans-serif;\r\n\tfont-weight: normal;\r\n\tfont-style: normal;\r\n\tline-height: 23px;\r\n\tcolor: #727272;\r\n}\r\n\r\n/* Headings */\r\nh1, \r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n\tfont-family: 'Roboto', sans-serif;\r\n\tfont-weight: normal;\r\n\tcolor: #272727;\r\n}\r\nh1 a, \r\nh2 a, \r\nh3 a, \r\nh4 a, \r\nh5 a, \r\nh6 a { \r\n\tcolor: inherit;\r\n}\r\nh1 { \r\n\tfont-size: 40px; \r\n\tline-height: 40px;\r\n\tmargin-bottom: 20px;\r\n\tfont-style: normal;\r\n\tfont-weight: 300;\r\n}\r\nh1 b {\r\n\tdisplay: block;\r\n\tfont-size: 18px; \r\n\tline-height: 23px;\r\n\tfont-weight: 200;\r\n\tmargin-top: 13px;\r\n\tcolor: #727272;\r\n}\r\nh1.white {\r\n\tcolor: #fff;\r\n}\r\nh1.whitecaps {\r\n\tcolor: #fff;\r\n\ttext-transform: uppercase;\r\n}\r\nh1.whitecaps strong {\r\n\tfont-weight: 500;\r\n}\r\nh2 { \r\n\tfont-size: 35px; \r\n\tline-height: 35px;\r\n\tmargin-bottom: 20px;\r\n\tfont-style: normal;\r\n\tfont-weight: 300;\r\n}\r\nh2.white {\r\n\tcolor: #fff;\r\n}\r\n\r\nh2.green {\r\n\tcolor: #7ab700;\r\n}\r\nh2.whitecaps {\r\n\tcolor: #fff;\r\n\ttext-transform: uppercase;\r\n\tpadding-bottom: 20px;\r\n\ttext-decoration-color: #999;\r\n\t-moz-text-decoration-color: #999; /* Code for Firefox */\r\n}\r\nh2.white b {\r\n\tcolor: #999;\r\n}\r\nh2 i {\r\n\tcolor: #7ab700;\r\n\tfont-style: normal;\r\n}\r\nh2 b {\r\n\tdisplay: block;\r\n\tfont-size: 18px; \r\n\tline-height: 23px;\r\n\tfont-weight: 200;\r\n\tmargin-top: 13px;\r\n\tcolor: #727272;\r\n}\r\nh2.caps {\r\n\ttext-transform: uppercase;\r\n\tpadding-bottom: 12px;\r\n}\r\nh2.caps b {\r\n\ttext-transform: none;\r\n}\r\nh2.caps strong {\r\n\tfont-weight: 500;\r\n}\r\nh2.untext { \r\n\ttext-transform: uppercase;\r\n\tpadding-bottom: 20px;\r\n\ttext-decoration-color: #e3e3e3;\r\n\t-moz-text-decoration-color: #e3e3e3; /* Code for Firefox */\r\n}\r\nh3 { \r\n\tfont-size: 27px; \r\n\tline-height: 30px;\r\n\tmargin-bottom: 18px;\r\n\tfont-style: normal;\r\n}\r\nh3 strong {\r\n\tfont-weight: 600;\r\n}\r\nh3.colored {\r\n\tcolor: #7ab700;\r\n\tfont-weight: 300;\r\n}\r\nh3.title {\r\n\tmargin-bottom: 5px;\r\n}\r\n\r\nh4 { \r\n\tfont-size: 22px; \r\n\tline-height: 25px;\r\n\tmargin-bottom: 18px;\r\n\tfont-style: normal;\r\n}\r\nh4.caps {\r\n\ttext-transform: uppercase;\r\n}\r\nh4.white {\r\n\tcolor: #fff;\r\n}\r\nh4 b {\r\n\tcolor: #999;\r\n\tfont-size: 14px;\r\n\tdisplay: block;\r\n\tfont-weight: normal;\r\n}\r\nh4 i {\r\n\tfont-weight: 300;\r\n\tfont-style: normal;\r\n}\r\nh5 { \r\n\tfont-size: 18px; \r\n\tline-height: 23px;\r\n\tmargin-bottom: 16px;\r\n\tfont-style: normal;\r\n}\r\nh5 b {\r\n\tcolor: #727272;\r\n\tfont-size: 13px;\r\n\tfont-weight: normal;\r\n\tdisplay: block;\r\n}\r\nh5 i {\r\n\tcolor: #727272;\r\n\tfont-size: 14px;\r\n\tfont-weight: normal;\r\n\tfont-style: normal;\r\n}\r\nh5.caps {\r\n\ttext-transform: uppercase;\r\n}\r\nh5.grayc {\r\n\tcolor: #999;\r\n}\r\nh5.siteccaps {\r\n\tcolor: #7ab700;\r\n\ttext-transform: uppercase;\r\n}\r\nh5.sitec {\r\n\tcolor: #7ab700;\r\n}\r\nh5.white {\r\n\tcolor: #fff;\r\n}\r\nh5.green {\r\n\tcolor: #7ab700;\r\n}\r\nh6 { \r\n\tfont-size: 16px; \r\n\tline-height: 21px;\r\n\tmargin-bottom: 14px;\r\n\tfont-style: normal;\r\n}\r\nh6.grayc {\r\n\tcolor: #999;\r\n}\r\n\r\nh7 { \r\n\tfont-size: 22px; \r\n\tline-height: 25px;\r\n\tmargin-bottom: 18px;\r\n\tfont-style: normal;\r\n\tcolor: #fff;\r\n}\r\n\r\nh8 { \r\n\tfont-size: 16px; \r\n\tline-height: 18px;\r\n\tmargin-bottom: 10px;\r\n\tfont-style: normal;\r\n}\r\n\r\n/* Text elements */\r\np {\r\n\tfont: 14px 'Open Sans', sans-serif;\r\n\tfont-weight: normal;\r\n\tline-height: 23px;\r\n}\r\n\r\nul, ol {\r\n\tmargin: 0 0 20px 0;\r\n\tlist-style-position: inside;\r\n}\r\nul {\r\n\tlist-style: none;\r\n}\r\nul li {\r\n\tlist-style: none;\r\n}\r\nol {\r\n\tlist-style-type: decimal;\r\n}\r\nol ol {\r\n\tlist-style: upper-alpha;\r\n}\r\nol ol ol {\r\n\tlist-style: lower-roman;\r\n}\r\nol ol ol ol {\r\n\tlist-style: lower-alpha;\r\n}\r\nul ul, ol ol, ul ol, ol ul {\r\n\tmargin-bottom: 0;\r\n}\r\nstrong {\r\n\tfont-weight: bold;\r\n}\r\ncite, em, i {\r\n\tfont-style: italic;\r\n}\r\nblockquote {\r\n\tmargin: 20px 0 20px 36px;\r\n\tfont-size: 14px;\r\n\tline-height: 23px;\r\n\tborder-left: 5px solid #7ab700;\r\n\tpadding: 5px 20px 5px 20px;\r\n\tfont-family: 'Open Sans' !important;\r\n\tfont-weight: normal;\r\n}\r\n\r\npre {\r\n\tbackground: #f4f4f4;\r\n\tfont-size: 13px;\r\n\tfont: 13px 'Open Sans', sans-serif;\r\n\tline-height: 1.5;\r\n\tmargin-bottom: 40px;\r\n\toverflow: auto;\r\n\tpadding: 0.75em 20px;\r\n}\r\ncode, kbd {\r\n\tfont-size: 13px;\r\n\tfont: 13px 'Open Sans', sans-serif;\r\n}\r\nabbr, acronym, dfn {\r\n\tborder-bottom: 1px dotted #666;\r\n\tcursor: help;\r\n}\r\naddress {\r\n\tdisplay: block;\r\n\tmargin: 0 0 40px;\r\n}\r\nins {\r\n\tbackground: #fff9c0;\r\n\ttext-decoration: none;\r\n}\r\nsup,\r\nsub {\r\n\tfont-size: 10px;\r\n\theight: 0;\r\n\tline-height: 1;\r\n\tposition: relative;\r\n\tvertical-align: baseline;\r\n}\r\nsup {\r\n\tbottom: 1ex;\r\n}\r\nsub {\r\n\ttop: .5ex;\r\n}\r\n\r\n.dropcap {\r\n\tdisplay:block;\r\n\tfloat:left;\r\n\tfont-size:45px;\r\n\tpadding:0;\r\n\tmargin: 0;\r\n\tmargin:15px 8px 0 0;\r\n\ttext-transform: uppercase;\r\n}\r\n\r\n\r\n/* Links */\r\na {\r\n\tcolor: #7ab700;\r\n\ttext-decoration: none;\r\n}\r\na:hover {\r\n\ttext-decoration: none;\r\n\tcolor: #272727;\r\n}\r\n\r\na.ltwo {\r\n\tcolor: #272727;\r\n\ttext-decoration: none;\r\n}\r\na.ltwo:hover {\r\n\ttext-decoration: none;\r\n\tcolor: #7ab700;\r\n}\r\n\r\na.lthree {\r\n\tcolor: #454545;\r\n\ttext-decoration: none;\r\n}\r\na.lthree:hover {\r\n\ttext-decoration: none;\r\n\tcolor: #7ab700;\r\n}\r\n\r\n\r\nblockquote, q {\r\nquotes: none;\r\n}\r\nblockquote:before, blockquote:after,\r\nq:before, q:after {\r\ncontent: '';\r\ncontent: none;\r\n}\r\n/* remember to define focus styles! */\r\n:focus {\r\noutline: 0;\r\n}\r\n/* remember to highlight inserts somehow! */\r\nins {\r\ntext-decoration: none;\r\n}\r\ndel {\r\ntext-decoration: line-through;\r\n}\r\n\r\n/* Clear Fix Styles */\r\n\r\n.clearfix:after {\r\nvisibility: hidden;\r\ndisplay: block;\r\nfont-size: 0;\r\ncontent: \" \";\r\nclear: both;\r\nheight: 0;\r\n}\r\n.clearfix { display: inline-block; }\r\n/* start commented backslash hack \\*/\r\n* html .clearfix { height: 1%; }\r\n.clearfix { display: block; }\r\n/* close commented backslash hack */\r\n{\r\n\theight:1%;\r\n}\r\n\r\n.clearfix\r\n{\r\n\tdisplay:block;\r\n}\r\n\r\n\r\n/* less width */\r\n.less1 {\r\n\twidth: 75%;\r\n\tmargin: 0 auto;\r\n}\r\n.less2 {\r\n\twidth: 50%;\r\n\tmargin: 0 auto;\r\n}\r\n\r\n/* text color white */\r\n.white {\r\n\tcolor: #fff;\r\n}\r\n\r\n\r\n/* margin bitween sections */\r\n.margin_top1 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 10px;\r\n}\r\n.margin_top2 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 20px;\r\n}\r\n.margin_top3 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 30px;\r\n}\r\n.margin_top4 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 40px;\r\n}\r\n.margin_top5 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 50px;\r\n}\r\n.margin_top6 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 60px;\r\n}\r\n.margin_top7 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 70px;\r\n}\r\n.margin_top8 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 80px;\r\n}\r\n.margin_top9 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 90px;\r\n}\r\n.margin_top10 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-top: 100px;\r\n}\r\n\r\n/* image alignments */\r\n.img_left {\r\n\tfloat: left;\r\n}\r\n.img_left1 {\r\n\tfloat: left;\r\n\tmargin-bottom: 20px;\r\n}\r\n.img_left2 {\r\n\tfloat: left;\r\n\tmargin-right: 30px;\r\n}\r\n.img_left3 {\r\n\tfloat: left;\r\n\tmargin-right: 20px;\r\n}\r\n.img_left4 {\r\n\tfloat: left;\r\n\tmargin-top: 10px;\r\n\tmargin-bottom: 20px;\r\n}\r\n.img_left10 {\r\n\tfloat: left;\r\n\twidth: 32%;\r\n\tmargin-bottom: 30px;\r\n}\r\n.img_left11 {\r\n\tfloat: left;\r\n\tmargin-right: 25px;\r\n\tmargin-bottom: 20px;\r\n}\r\n\r\n\r\n.img_right {\r\n\tfloat: right;\r\n}\r\n\r\n.img_size1 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n}\r\n\r\n.img_size2 {\r\n\tmargin: 0 auto;\r\n}\r\n\r\n/* divider lines */\r\n.divider_line1 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tborder-bottom: 1px solid #eee;\r\n}\r\n.divider_line11 {\r\n\twidth: 75%;\r\n\tmargin: 0 auto;\r\n\tpadding-top: 40px;\r\n\tmargin-bottom: 40px;\r\n\tborder-bottom: 1px solid #e3e3e3;\r\n}\r\n.divider_line3 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tpadding-top: 40px;\r\n\tmargin-bottom: 40px;\r\n\tborder-bottom: 1px solid #333;\r\n}\r\n.divider_line4 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tborder-bottom: 1px solid #eee;\r\n}\r\n.divider_line5 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tpadding-top: 59px;\r\n\tborder-bottom: 1px solid #eee;\r\n}\r\n.divider_line6 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin-bottom: 70px;\r\n\tborder-bottom: 1px solid #eee;\r\n}\r\n.divider_line_half {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n}\r\n\r\n.divider_line_small {\r\n\twidth: 20%;\r\n\tmargin: 0 auto;\r\n\theight: 25px;\r\n\tborder-top: 1px solid #fff;\r\n\t-ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)\";\r\n\t-moz-opacity: 0.5;\r\n\t-khtml-opacity: 0.5;\r\n\topacity: 0.5;\r\n}\r\n\r\n.divider_line7 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tpadding-top: 30px;\r\n\tborder-bottom: 1px solid #eee;\r\n}\r\n\r\n/* divider lines dashed */\r\n.divider_dashed1 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 45px 0px;\r\n\tborder-top: 1px dashed #3b3b3b;\r\n}\r\n.divider_dashed2 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 59px 0px;\r\n\tborder-top: 1px dotted #d7d7d7;\r\n}\r\n.divider_dashed3 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 30px 0px 59px 0px;\r\n\tborder-top: 1px dotted #d7d7d7;\r\n}\r\n.divider_dashed4 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 40px 0px 59px 0px;\r\n\tborder-top: 1px dotted #d7d7d7;\r\n}\r\n.divider_dashed5 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 0px 0px 59px 0px;\r\n\tborder-top: 1px dotted #d7d7d7;\r\n}\r\n.divider_dashed6 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 50px 0px 59px 0px;\r\n\tborder-top: 1px dotted #d7d7d7;\r\n}\r\n.divider_dashed7 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 50px 0px 0px 0px;\r\n\tborder-top: 1px dotted #d7d7d7;\r\n}\r\n.divider_dashed8 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 53px 0px 45px 0px;\r\n\tborder-top: 1px dotted #d7d7d7;\r\n}\r\n.divider_dashed9 {\r\n\tfloat: left;\r\n\twidth: 100%;\r\n\tmargin: 40px 0px 48px 0px;\r\n\tborder-top: 1px dotted #d7d7d7;\r\n}\r\n\r\n/* responsive image */\r\n.rimg {\r\n\twidth: 100%;\r\n}\r\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 316 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(317);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(241)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./yamm.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./yamm.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 317 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(240)();
+	// imports
+
+
+	// module
 	exports.push([module.id, "/*!\r\n * Yamm!3 - Yet another megamenu for Bootstrap 3\r\n * http://geedmo.github.com/yamm3\r\n * \r\n * @geedmo - Licensed under the MIT license\r\n */\r\n.yamm .nav,\r\n.yamm .collapse,\r\n.yamm .dropup,\r\n.yamm .dropdown {\r\n  position: static;\r\n}\r\n.yamm .container {\r\n  position: relative;\r\n}\r\n.yamm .dropdown-menu {\r\n  left: auto;\r\n}\r\n.yamm .yamm-content {\r\n  padding: 20px 30px;\r\n}\r\n.yamm .dropdown.yamm-fw .dropdown-menu {\r\n  left: 0;\r\n  right: 0;\r\n}\r\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 318 */
+/***/ function(module, exports, __webpack_require__) {
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //js imports
+
+
+	//Load CSS and images
+	__webpack_require__(319);
+
+	var MoldInfo = function (_React$Component) {
+	  _inherits(MoldInfo, _React$Component);
+
+	  function MoldInfo() {
+	    _classCallCheck(this, MoldInfo);
+
+	    return _possibleConstructorReturn(this, (MoldInfo.__proto__ || Object.getPrototypeOf(MoldInfo)).call(this));
+	  }
+
+	  _createClass(MoldInfo, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "div",
+	          { className: "one_half" },
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Mold Killer vs.",
+	            _react2.default.createElement("br", null),
+	            "Mold Stain Remover"
+	          ),
+	          _react2.default.createElement(
+	            "h6",
+	            { className: "grayc" },
+	            "People ask us all the time... \"What is the difference between a ",
+	            _react2.default.createElement(
+	              "em",
+	              null,
+	              "Mold Killer"
+	            ),
+	            "and ",
+	            _react2.default.createElement(
+	              "em",
+	              null,
+	              "Mold Stain Remover?"
+	            ),
+	            " We aim to answer."
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "The goal of the clean-up process is to eliminate the mold and fungal growth and restore the surface to its original beauty. Killing the mold & mildew growth with an EPA registered biocide is preferred. Biocides can be good cleaners, but are not the best stain removers. In contrast, stain removers lack the ability to effectively kill the living organisms that cause mold & mildew. A combination of a biocide mold cleaner and a non-biocide mold remover is best."
+	          ),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement("br", null),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://moldexbrands.com/blog/", className: "readmore_but9" },
+	            "Learn More."
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "one_half last" },
+	          _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/killer_vs_stain_remover.png", alt: "", className: "img_right" })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return MoldInfo;
+	}(_react2.default.Component);
+
+	;
+
+	MoldInfo.propTypes = {
+	  initialValue: _react2.default.PropTypes.string
+	};
+	MoldInfo.defaultProps = {
+	  initialValue: ''
+	};
+
+	exports.default = MoldInfo;
+
+/***/ },
+/* 319 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(320);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(241)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./moldInfo.css", function() {
+				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./moldInfo.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 320 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(240)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".one_half{\r\n\tposition: relative;\r\n\tmargin-right: 4%;\r\n\tfloat: left;\r\n\twidth: 48%;\r\n}\r\n\r\n.last {\r\n\tmargin-right: 0 !important;\r\n\tclear: right;\r\n}\r\n\r\n.grayc {\r\n  color: #999;\r\n}\r\n\r\n\r\n.readmore_but9 {\r\n\tcolor: #fff;\r\n\tpadding: 16px 40px;\r\n\tborder-radius: 4px;\r\n\tbackground-color: #7ab700;\r\n\t-webkit-transition: background-color .3s, -webkit-transform .3s;\r\n    transition: background-color .3s, transform .3s;\r\n}\r\n.readmore_but9:hover {\r\n\tcolor: #fff;\r\n\tbackground-color: #272727;\r\n}\r\n", ""]);
 
 	// exports
 

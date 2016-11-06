@@ -20,6 +20,9 @@ require("./js/masterslider/style.css");
 require("./js/masterslider/style/ms-staff-style.css");
 
 
+require("./js/form/jquery.form.min.js")
+require("./js/form/jquery.validate.min.js")
+
 //IMPORT GENERAL CSS
 require("./styles/reset.css");
 require("./styles/yamm.css");

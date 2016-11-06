@@ -12,7 +12,13 @@ module.exports = Object.keys(languages).map(function (language) {
 
     return {
         name: language,
-        entry: "./app/app.js",
+        entry:{ 
+            app:"./app/app.js",
+            vendor: ["jquery", "./app/js/animations/js/animations.min.js","./app/js/animations/js/smoothscroll.js",
+            "./app/js/form/jquery.form.min.js", "./app/js/form/jquery.validate.min.js",
+            ],
+            }
+            ,
          output: {
             path: path.join(__dirname, "public"),
             filename: language + ".output.js",
@@ -28,7 +34,9 @@ module.exports = Object.keys(languages).map(function (language) {
              new webpack.ProvidePlugin({
                 $: "jquery",
                 jQuery: "jquery"
-            })
+            }),
+            new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"vendor.bundle.js")
+  
         ],
 
         watch: true,

@@ -19,7 +19,15 @@ require("./js/masterslider/skins/default/style.css");
 require("./js/masterslider/style.css");
 require("./js/masterslider/style/ms-staff-style.css");
 
+//IMPORT FOR JCAROUSEL
+require("./js/carousel/jquery.jcarousel.min.js");
+require("./js/carousel/jquery.flexslider.js");
+require("./js/carousel/custom.js");
+require("./js/carousel/flexslider.css");
+require("./js/carousel/skin.css");
 
+
+//IMPORT FOR FORM
 require("./js/form/jquery.form.min.js")
 require("./js/form/jquery.validate.min.js")
 

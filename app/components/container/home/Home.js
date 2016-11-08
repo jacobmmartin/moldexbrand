@@ -8,6 +8,7 @@ import FactorList from '../../../components/presentation/factorList/factorList';
 import Carousel from '../../../components/presentation/carousel/carousel';
 import MoldInfo from '../../../components/presentation/moldInfo/moldInfo';
 import FeaturedProducts from '../../../components/presentation/featuredProducts/featuredProducts';
+import CarouselRetailers from '../../../components/presentation/carouselRetailers/carouselRetailers';
 
 
 const Home = () =>{
@@ -51,6 +52,11 @@ const Home = () =>{
             <div className="feature_section81">
               <div className="container">
                 <FeaturedProducts />
+              </div>
+            </div>
+            <div className="clients margin_top3">
+              <div className="container">
+                <CarouselRetailers />
               </div>
             </div>
           </div>

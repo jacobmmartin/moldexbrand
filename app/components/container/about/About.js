@@ -1,5 +1,8 @@
 import React from 'react';
-import PageTitle from "../presentation/pageTitle/pageTitle"
+import PageTitle from "../../presentation/pageTitle/pageTitle"
+
+require("./about.css");
+
 
 const About = () =>{
     return(
@@ -14,7 +17,7 @@ const About = () =>{
                 <br/>
             </div>
             <div className="col-md-6"><img src="https://www.moldexbrands.com/images/moldex_about.jpg" alt="" className="img_size1"/></div>
-            
+
             <div className="clearfix"></div>
             <div className="one_full">
                 <p>After three years of successful R&amp;D came the <a href="https://www.envirocarecorp.com">EnviroCare Corporation</a>. Initially, the company targeted professional builders of new construction who needed anti-mold coatings for treating lumber and other materials likely to fall prey to toxic mold. After successfully launching a product line for new buildings, the question was asked, “What about existing buildings that have mold problems or are in need of mold remediation?” The answer was a second product called Moldex<span className="sup">®</span>. Moldex<span className="sup">®</span> was created for professionals and certified applicators for use in commercial and residential structures. Moldex<span className="sup">®</span> cleans, kills and disinfects to get rid of mold &amp; mildew before surfaces are coated with a mold-proof barrier.
@@ -23,15 +26,18 @@ const About = () =>{
                     <br/>
                 </p>
             </div>
-           
+
             <div className="clearfix"></div>
-           
+
             <div className="clearfix divider_dashed6"></div>
-            <div className="big_text1 center">Using the <i><a href="how-to-get-rid-of-mold-and-mildew.html">3 Factors in Mold Fighting</a></i> approach, the Moldex<span className="sup">®</span> Brand is empowering consumers and encouraging people to solve mold problems the right way. Don’t be fooled by “all-in-one” products and find out why millions of homeowners, DIY'ers, and professional mold &amp; mildew remediators trust the Moldex<span className="sup">®</span> Brand.
-                <div className="col-md-4 center-block">
-                <a href="products.html" role="button" className="btn btn-success">View All Our Products</a></div>
-                </div>
+            <div className="big_text1 center">
+                Using the <i><a href="how-to-get-rid-of-mold-and-mildew.html">3 Factors in Mold Fighting</a></i> approach, the Moldex<span className="sup">®</span> Brand is empowering consumers and encouraging people to solve mold problems the right way. Don’t be fooled by “all-in-one” products and find out why millions of homeowners, DIY'ers, and professional mold &amp; mildew remediators trust the Moldex<span className="sup">®</span> Brand.
+                <br/ >
+                <br />
+                <a href="products.html" role="button" className="readmore_but3">View All Our Products</a>
+            </div>
         </div>
+        <div className="clearfix margin_top7"></div>
         </div>
     )
 }

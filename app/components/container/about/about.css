@@ -1,0 +1,37 @@
+.center {
+    text-align: center;
+}
+
+.sup {
+    font-size: 70%;
+    vertical-align: super;
+}
+
+.big_text1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    color: #454545;
+}
+
+.big_text1 i {
+    color: #7ab700;
+    font-style: normal;
+}
+
+.readmore_but3 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 14px 35px;
+    border-radius: 4px;
+    background-color: #7ab700;
+    -webkit-transition: background-color .3s, -webkit-transform .3s;
+    transition: background-color .3s, transform .3s;
+}
+
+.readmore_but3:hover {
+    color: #fff;
+    background-color: #272727;
+}

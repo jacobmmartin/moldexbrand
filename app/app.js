@@ -39,7 +39,7 @@ require("./styles/yamm.css");
 
 //IMPORT custom components
 import Home from './components/container/home/Home';
-import About from './components/container/About';
+import About from './components/container/about/About';
 import MoldGuide from './components/container/moldGuide/MoldGuide';
 import Product from './components/container/Product';
 import Contact from './components/container/contact/Contact';

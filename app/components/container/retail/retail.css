@@ -1,0 +1,77 @@
+.page_title2 {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 40px 0px 28px 0px;
+}
+
+.page_title2 .container {
+    background: url('/images/h-line3.png') no-repeat left bottom;
+}
+
+.page_title2 .title {
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin: 0px;
+}
+
+.page_title2 .title h1 {
+    margin: 0px;
+    font-weight: 300;
+    color: #7ab700;
+    text-transform: none;
+    font-size: 35px;
+}
+
+.content_fullwidth {
+    float: left;
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+}
+
+.sup {
+    font-size: 70%;
+    vertical-align: super;
+}
+
+
+.divider_dashed6 {
+    float: left;
+    width: 100%;
+    margin: 50px 0px 59px 0px;
+    border-top: 1px dotted #d7d7d7;
+}
+
+.big_text1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    color: #454545;
+}
+
+.margin_top2 {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.margin_top3 {
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.margin_top7 {
+    float: left;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.one_fourth {
+    width: 21%;
+    position: relative;
+    margin-right: 4%;
+    float: left;
+}

@@ -26,10 +26,12 @@ require("./js/carousel/custom.js");
 require("./js/carousel/flexslider.css");
 require("./js/carousel/skin.css");
 
-
 //IMPORT FOR FORM
 require("./js/form/jquery.form.min.js")
 require("./js/form/jquery.validate.min.js")
+
+//IMPORT FOR MAINMENU
+require("./js/mainmenu/stickytwo.css")
 
 //IMPORT GENERAL CSS
 require("./styles/reset.css");
@@ -40,9 +42,9 @@ import Home from './components/container/home/Home';
 import About from './components/container/About';
 import MoldGuide from './components/container/moldGuide/MoldGuide';
 import Product from './components/container/Product';
-import Retail from './components/container/retail/Retail';
 import Contact from './components/container/contact/Contact';
 import Factors from './components/container/factors/Factors';
+import Retail from './components/container/retail/Retail';
 
 
 import MainHeader from './components/presentation/mainHeader/mainHeader';
@@ -73,9 +75,9 @@ ReactDOM.render((
          <Route path = "about" component = {About} />
          <Route path = "product" component = {Product} />
          <Route path = "mold_guide" component = {MoldGuide} />
-         <Route path = "retail" component = {Retail} />
          <Route path = "contact" component = {Contact} />
          <Route path = "factors" component = {Factors} />
+         <Route path = "retail" component = {Retail} />
       </Route>
    </Router>
 

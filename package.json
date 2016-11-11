@@ -15,7 +15,7 @@
     "font-awesome": "^4.6.3",
     "history": "^4.3.0",
     "i": "^0.3.5",
-    "jquery": "2.2.0",
+    "jquery": "^2.2.4",
     "jquery-validation": "^1.15.1",
     "react": "^15.3.2",
     "react-router": "^2.8.1",

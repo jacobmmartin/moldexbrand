@@ -1,0 +1,116 @@
+.footer1{
+    background: black;
+    float: left;
+    width: 100%;
+    padding: 70px 0px 40px 0px;
+    border-top: 5px solid #000;
+    background: url(https://www.moldexbrands.com/images/footer-bg.jpg) repeat left top;
+}
+
+.footer1 h4.lmb {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.one_half, .one_third, .one_fourth, .two_third, .three_fourth, .one_fifth {
+  position: relative;
+  margin-right: 4%;
+  float: left;
+}
+
+.one_half {
+  width: 48%;
+}
+
+ul.faddress {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.faddress li {
+    padding: 3px 0px;
+    margin: 0px;
+}
+
+.faddress li a {
+    color: #727272;
+}
+
+.faddress li a:hover {
+    color: #fff;
+}
+
+.qlinks {
+    float: left;
+    width: 100%;
+}
+
+.qlinks ul {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.qlinks li {
+    padding: 4px 0px;
+    margin: 0px;
+}
+
+.qlinks li a {
+    color: #727272;
+}
+
+.qlinks li a:hover {
+    color: #fff;
+}
+
+.copyright_info {
+  float: left;
+  padding: 25px 0px 18px 0px;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  color: #999;
+  font-size: 12px;
+  color: #999;
+  font-style: normal;
+  font-weight: normal;
+  background: #303030;
+}
+
+.copyright_info a {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+  text-align: right;
+}
+
+.copyright_info.four {
+  background: #fff;
+}
+
+ul.footer_social_links {
+  float: right;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.footer_social_links li {
+  float: left;
+  padding: 0px;
+  margin: 0px 0px 0px 5px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  border-radius: 24px;
+  line-height: 22px;
+  vertical-align: middle;
+  background-color: #d3d3d3;
+  color: #999;
+}
+
+.footer_social_links.three li i {
+    color: #fff;
+}

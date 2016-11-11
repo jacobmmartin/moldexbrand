@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import "./stylesheet.css"
+import "./appFooter.css"
 
 class appFooter extends Component {
     render() {
@@ -34,7 +34,7 @@ class appFooter extends Component {
                         <div className="col-xs-6">
                             <div className="siteinfo">
                                 <h4 className="lmb">Our Story...</h4>
-                                <p>We were tired of cleaning only to watch it grow back.It seemed to be a never-ending.Why?What makes mold grow back?Why can't you get rid of it? Once we figure it out, we wanted to share it with the world. We set out to change the way people view mold &amp; mildew...
+                                <p>We were tired of cleaning only to watch it grow back.It seemed to be a never-ending.Why?What makes mold grow back?Why cant you get rid of it? Once we figure it out, we wanted to share it with the world. We set out to change the way people view mold &amp; mildew...
                                     <a href="about-mold-and-mildew-remover.html">Read more <i className="fa fa-long-arrow-right"></i></a>
                                 </p></div>
                         </div>
@@ -62,5 +62,3 @@ class appFooter extends Component {
 }
 
 export default appFooter;
-
-

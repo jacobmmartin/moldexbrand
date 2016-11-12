@@ -20,7 +20,7 @@ class Product extends Component {
                         <div className="one_half"><img src={this.state.product.images.full} alt="" className="img_size1"/></div>
 
                         <div className="one_half last">
-
+                            __( {this.state.product.headline} )
                             <h3 className="title" dangerouslySetInnerHTML={{ __html: this.state.product.name }}></h3>
                             <h5 className="green" dangerouslySetInnerHTML={{ __html: this.state.product.headline }}></h5>
 
@@ -114,7 +114,7 @@ class Product extends Component {
                             <ul className="list_4">
                                 {
                                     this.state.product.features.map( (feature) => {
-                                        return <li><i className="fa fa-arrow-circle-o-right"></i> {feature}</li>
+                                        return <li key={feature}><i className="fa fa-arrow-circle-o-right"></i> {feature}</li>
                                     })
                                 }
                             </ul>

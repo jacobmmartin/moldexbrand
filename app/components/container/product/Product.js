@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 let Products = require("../../../products/products.json")
-
+__("07d74ef5")
 class Product extends Component {
 
     constructor(props) {
@@ -18,11 +18,10 @@ class Product extends Component {
                     <div className="container">
                         <br/>
                         <div className="one_half"><img src={this.state.product.images.full} alt="" className="img_size1"/></div>
-
                         <div className="one_half last">
-                            __( {this.state.product.headline} )
+                            
                             <h3 className="title" dangerouslySetInnerHTML={{ __html: this.state.product.name }}></h3>
-                            <h5 className="green" dangerouslySetInnerHTML={{ __html: this.state.product.headline }}></h5>
+                            <h5 className="green" dangerouslySetInnerHTML={{ __html: __("c18349f0")}}></h5>
 
                             <p dangerouslySetInnerHTML={{ __html: this.state.product.desc }}></p>
                             <br/>

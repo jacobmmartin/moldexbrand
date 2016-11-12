@@ -47,6 +47,7 @@ module.exports = Object.keys(languages).map(function (language) {
 
         module: {
             loaders: [
+                { test: /\.json$/, loader: "json-loader" },
                 {
                     test: /\.css$/,
                     loader: "style-loader!css-loader"

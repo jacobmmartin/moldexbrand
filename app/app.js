@@ -41,10 +41,11 @@ require("./styles/yamm.css");
 import Home from './components/container/home/Home';
 import About from './components/container/about/About';
 import MoldGuide from './components/container/moldGuide/MoldGuide';
-import Product from './components/container/Product';
+import Products from './components/container/Products';
 import Contact from './components/container/contact/Contact';
 import Factors from './components/container/factors/Factors';
 import Retail from './components/container/retail/Retail';
+import Product from './components/container/product/Product';
 
 
 import MainHeader from './components/presentation/mainHeader/mainHeader';
@@ -73,7 +74,8 @@ ReactDOM.render((
          <IndexRoute component = {Home} />
          <Route path = "home" component = {Home} />
          <Route path = "about" component = {About} />
-         <Route path = "product" component = {Product} />
+         <Route path = "product/:id" component = {Product} />
+         <Route path = "products" component = {Products} />
          <Route path = "mold_guide" component = {MoldGuide} />
          <Route path = "contact" component = {Contact} />
          <Route path = "factors" component = {Factors} />

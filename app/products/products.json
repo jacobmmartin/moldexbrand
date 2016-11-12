@@ -1,9 +1,9 @@
 {
-    "abc123": {
-        "name": "Disinfectant Concentrate",
+    "mold-mildew-killer": {
+        "name": "Moldex<span className=\"sup\">®</span> Mold &amp; Mildew Killer",
         "headline": "Cleans, Disinfects, and Deodorizes Surfaces by Killing Odor-Causing Microorganisms and Prevents the Growth of Mold and Mildew.",
         "images": {
-            "full": "./images/mold_disinfectant.jpg",
+            "full": "./images/mold_killer.jpg",
             "thumb": ""
         },
         "desc": "Moldex<span class=\"sup\">®</span> Disinfectant Concentrate is a one-step germicidal, disinfectant cleaner and odor neutralizer designed for general cleaning, disinfecting, deodorizing, and controlling mold and mildew on hard, non-porous inanimate surfaces in the house and around businesses. Quickly removes dirt, grime, mold, mildew, food residue, blood and other organic matter commonly found in hospitals. It also eliminates odors leaving surfaces smelling clean and fresh. Use where odors are a problem. It cleans, disinfects, and deodorizes surfaces by killing odor-causing microorganisms and prevents the growth of mold and mildew.",

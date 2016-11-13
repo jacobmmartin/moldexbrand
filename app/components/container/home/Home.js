@@ -10,6 +10,7 @@ import MoldInfo from '../../../components/presentation/moldInfo/moldInfo';
 import FeaturedProducts from '../../../components/presentation/featuredProducts/featuredProducts';
 import CarouselRetailers from '../../../components/presentation/carouselRetailers/carouselRetailers';
 
+//dangerouslySetInnerHTML={{ __html: this.state.product.headline}} 009cb700
 
 const Home = () =>{
     return(
@@ -19,17 +20,14 @@ const Home = () =>{
           </div>
           <div className="fusection5">
             <div className="container">
-              <h2>
-                  3 Factors in <strong>MOLD FIGHTING</strong>
-                  <b>Products we offer. Solutions made easy. Which one is for you? Find out.</b>
+              <h2 dangerouslySetInnerHTML={{ __html: __("feaa6635")}}>
               </h2>
-              <FactorList />
+              <FactorList />dh
             </div>
           </div>
           <div className="green_section">
             <div className="container">
-                <h2 className="white">
-                  Our <strong>PRODUCTS</strong>
+                <h2 className="white" dangerouslySetInnerHTML={{ __html: __("009cb700")}}>         
                 </h2>
                 <Carousel />
             </div>
@@ -41,10 +39,10 @@ const Home = () =>{
           </div>
           <div className="fusection9">
             <div className="container">
-              <h1 className="animate white" data-anim-type="fadeInDown" data-anim-delay="200">BEYOND THE BOTTLE</h1>
-              <h4 className="animate white" data-anim-type="fadeInDown" data-anim-delay="250"><i>What do I need to know about mold? We answer some of your questions.</i></h4>
+              <h1 className="animate white" data-anim-type="fadeInDown" data-anim-delay="200" dangerouslySetInnerHTML={{ __html: __('65141b94')}} ></h1>
+              <h4 className="animate white" data-anim-type="fadeInDown" data-anim-delay="250" dangerouslySetInnerHTML={{ __html: __('c238f387')}}></h4>
               <br/>
-              <a href="mold_guide.html" className="readmore_but9 animate" data-anim-type="zoomIn" data-anim-delay="750">Learn More</a>
+              <a href="mold_guide.html" className="readmore_but9 animate" data-anim-type="zoomIn" data-anim-delay="750" dangerouslySetInnerHTML={{ __html: __('0c359e2d')}}></a>
             </div>
           </div>
           <div className="clearfix margin_top3"></div>

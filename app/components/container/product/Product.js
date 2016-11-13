@@ -106,8 +106,8 @@ class Product extends Component {
                                 this.state.product.similar.map((product) => {
                                     return <div key={this.state.product.name + product.name}  className="one_fourth animate fadeInUp" data-anim-type="fadeInUp">
                                         <div className="box">
-                                            <a href={product.link}><img src={product.img} alt="" className="rimg"/></a>
-                                            <h5><a href={product.link} > {product.name} </a></h5>
+                                            <a href={"#" +product.link}><img src={product.img} alt="" className="rimg"/></a>
+                                            <h5><a href={"#" + product.link} > {product.name} </a></h5>
                                             <h6>{product.type}</h6>
                                             <p>{product.description}</p>
                                             <br/>

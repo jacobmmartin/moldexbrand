@@ -161,45 +161,64 @@
         ]
     },
     "instant-mold-mildew-stain-remover": {
-        "name": "",
-        "headline": "",
+        "name": "Moldex<span class=\"sup\">®</span> <strong>Instant</strong>Mold &amp; Mildew Stain Remover",
+        "headline": "Removes Mold, Mildew, Algae Stains. No Scrubbing. Instant Results.",
         "images": {
-            "factor": "",
-            "full": "",
+            "factor": "./images/factor_2.png",
+            "full": "./images/instant_stain_remover.jpg",
             "thumb": ""
         },
-        "desc": "",
-        "application": "",
-        "features": [],
-        "buy": "",
+        "desc": "Moldex<span class=\"sup\">®</span> Instant Mold &amp; Mildew Stain Remover is an aggressive cleaner that erases stains before your eyes. It delivers industrial strength cleaning action without scrubbing. Formulated with new Advanced Bleach Gel which is designed penetrate deep and eliminate mold &amp; mildew stains. Our <em><strong>Active Cling™ Technology</strong></em> allows powerful cleaning agents to remain (or hold) onto vertical surfaces longer to achieve the highest effective contact time. Just spray on and watch stains completely disappear.</",
+        "application": "<strong>Applications:</strong> Glazed ceramic tile, grout, tubs, fiberglass, shower doors, vinyl shower curtains, sinks, toilets, walls, doors, counters, glass, plastic, no-wax floors, windowsills, vinyl siding, wood, concrete, rubber, around the pool, and almost any hard non-porous surface.<br><br>",
+        "features": [
+            "Removes Mold & Mildew Stains Instantly",
+            "3X more Powerful",
+            "No Scrubbing - Instant Results",
+            "Erases Stains Before Your Eyes",
+            "Contains Advanced Bleach Gel",
+            "No Phosphates",
+            "Indoor & Outdoor Formula"
+        ],
+        "buy": "http://www.homedepot.com/p/Moldex-32-oz-Instant-Mold-and-Mildew-Stain-Remover-7010/205973334",
         "tabs": {
-            "instructions": "",
+            "instructions": "DIRECTIONS FOR USE:</strong><br>1. Turn sprayer nozzle to “spray” or “on” position.<br>2. Spray 6-8 inches from surface until thoroughly covered. <br>Allow stain to disappear, then rinse well.<br>Heavy buildup may require longer contact time or two cleanings.<br>3. Rinse immediately after use on rubber, vinyl or items such as shower curtains.<br><strong>Note:</strong> Do not use on fabrics.  Avoid prolonged contact with metal and old porcelain.",
             "sds": {
-                "name": "",
-                "url": "",
-                "title": ""
+                "name": "Instant Stain Remover SDS",
+                "url": "https://www.moldexbrands.com/downloads/Moldex_Instant_Stain_Remover_SDS.pdf",
+                "title": "Stain Remover MSDS"
             },
-            "faq": "",
+            "faq": "<h6>Does this product have bleach in it?</h6><p><strong>Yes.  </strong>It was formulated with Advanced Bleach Gel which helps controls overspray. Bleach is known to damage sensitive surfaces so we developed this technology to help you protect the areas surrounding the mold stains.</p><br><h6>Can this product be used outdoors?</h6><p><strong>Yes. </strong>This formula is safe to use indoors and outdoors. It can be used on almost any (colorsafe) hard non-porous surface.</p><br><h6>Is this product safe for use on fabrics or metal?</h6><p><strong>No.</strong> Like most bleach-based products, we recommend keeping this product away from fabrics, glass, metals and old porcelain.</p><br><h6>Does this product kill mold &amp; mildew?</h6><p><strong>No.</strong> This product is one of the strongest mold &amp; mildew stain removers available on the market. It is 3x stronger than the leading bleach stain remover. However, we recommend using our Mold Killer to stop the growth of mold &amp; mildew. <a href=\"../mold-mildew-killer.html\" title=\"Mold Killer\" target=\"_self\">Moldex<span class=\"sup\">®</span> Mold Killer</a> is an EPA Registered product designed to kill and inhibit the growth of mold &amp; mildew. </p>",
             "labels": [
                 {
-                    "name": "",
-                    "image": ""
+                    "name": "32oz Trigger Bottle (Front & Back) Labels",
+                    "image": "./downloads/32oz_Instant_Stain_Remover.pdf"
                 }
             ],
             "sizes": [
                 {
-                    "name": "",
-                    "image": ""
+                    "name": "32oz Trigger Sprayer",
+                    "image": "./images/stain_remover_800_600.jpg"
+                },
+                {
+                    "name": "22oz Trigger Sprayer",
+                    "image": "./images/22_stain_remover_800_600.jpg"
                 }
             ]
         },
         "similar": [
             {
-                "link": "",
-                "img": "",
-                "name": "",
-                "type": "",
-                "description": ""
+                "link": "/product/instant-house-wash.html",
+                "img": "./images/house_wash_bottom_sm.png",
+                "name": "Instant House Wash",
+                "type": "House End Sprayer",
+                "description": "Removes tough stains from, mildew, mold, algae, fungus and moss and restores the original look to wood, vinyl, brick and stone siding"
+            },
+            {
+                "link": "/products/instant-deck-fence-wash.html",
+                "img": "./images/deck_wash_bottom_sm.png",
+                "name": "Instant Deck Wash",
+                "type": "House End Sprayer",
+                "description": "Cleans & Brightens Decks & Fences and makes weathered old decks or fences look like new."
             }
         ]
     },

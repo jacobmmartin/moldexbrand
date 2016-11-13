@@ -282,45 +282,60 @@
         ]
     },
     "instant-deck-fence-wash": {
-        "name": "",
-        "headline": "",
+        "name": "Moldex<span class=\"sup\">®</span> <strong>Instant</strong>Deck Wash",
+        "headline": "Cleans & Brightens Decks & Fences.",
         "images": {
-            "factor": "",
-            "full": "",
+            "factor": "./images/factor_2.png",
+            "full": "./images/deck_wash.jpg",
             "thumb": ""
         },
-        "desc": "",
-        "application": "",
-        "features": [],
-        "buy": "",
+        "desc": "Cleans &amp; Brightens Decks &amp; Fences and makes your weathered old deck or fence look like new.  Moldex<span class=\"sup\">®</span> Instant Deck Wash removes tough stains from: mildew, mold, algae, fungus and moss.  Formulated with <strong><em>Advanced Bleach Gel </em></strong>for removing deep mold, mildew, moss and algae stains. Ammonia-Free detergents for dirt, grime, food, and other organic stains. This product is the ultimate outdoor cleaner for all wood, or composite surfaces outside the house. Contains <strong><em>Active Cling™ Technology.</em></strong>",
+        "application": "<strong>Applications:</strong> Wood, Composite, Vinyl, PVC,  Brick, Stone, Stucco, Fiberglass, Metal, Veneer, Cement, and Shingle Decks, Fences and Retaining Walls. Works Great on Window &amp; Door Trim, Walkways,  Patios and More!<br><br>",
+        "features": [
+            "Removes Mold, Mildew, Algae, Food, Grease, Bird Droppings and More!",
+            "Contains new Active Cling™ Technology",
+            "No Scrubbing - Instant Results",
+            "Great on Wood or Composite Materials",
+            "Contains Advanced Bleach Gel",
+            "No Phosphates",
+            "Up to 800 sq .ft."
+        ],
+        "buy": "http://www.homedepot.com/p/Moldex-56-oz-Instant-Deck-and-Fence-Wash-7040/205973339",
         "tabs": {
-            "instructions": "",
+            "instructions": "<strong>DIRECTIONS FOR USE:</strong><br>1. Spray surrounding plants with water.<br>2. Shake well before using.<br>3. Attach hose to nozzle with valve in OFF position. Turn on water.<br>4. With valve in “CLEAN” position, apply cleaner to surface liberally and evenly.  Allow to work up to 5-10<br>minutes.  Do not allow to dry on surface.<br>5. Rub with bristled brush (if necessary).<br>6. Rinse off treated surface with valve in “RINSE” position.<br>7.   If staining persists, a second application may be required.<br>8. Move to a new area and repeat.<br>9. To stop spraying, turn knob to OFF position.<br>10. Spray surrounding plants with water after use.</p>",
             "sds": {
-                "name": "",
-                "url": "",
-                "title": ""
+                "name": "Deck Wash SDS",
+                "url": "./downloads/Moldex_Instant_Deck_Wash_SDS.pdf",
+                "title": "Deck Wash SDS"
             },
-            "faq": "",
+            "faq": "<h6>Does this product have bleach in it?</h6><p><strong>Yes.  </strong>It was formulated with Advanced Bleach Gel which helps controls overspray. Bleach is known to damage sensitive surfaces so we developed this technology to help you protect the areas surrounding the mold stains.</p><br><h6>Can this product be used outdoors?</h6><p><strong>Yes. </strong>This formula is safe to use indoors and outdoors. It can be used on almost any (colorsafe) hard non-porous surface.</p><br><h6>Is this product safe for use on fabrics or metal?</h6><p><strong>No.</strong> Like most bleach-based products, we recommend keeping this product away from fabrics, glass, metals and old porcelain.</p><br><h6>Does this product kill mold &amp; mildew?</h6><p><strong>No.</strong> This product is one of the strongest mold &amp; mildew stain removers available on the market. It is 3x stronger than the leading bleach stain remover. However, we recommend using our Mold Killer to stop the growth of mold & mildew. <a href=\"../mold-mildew-killer.html\" title=\"Mold Killer\" target=\"_self\">Moldex<span class=\"sup\">®</span> Mold Killer</a> is an EPA Registered product designed to kill and inhibit the growth of mold &amp; mildew. </p>",
             "labels": [
                 {
-                    "name": "",
-                    "image": ""
+                    "name": "64oz Hose End Bottle (Front & Back) Labels",
+                    "image": "./downloads/64oz_Deck_Wash.pdf"
                 }
             ],
             "sizes": [
                 {
-                    "name": "",
-                    "image": ""
+                    "name": "64oz Hose End Sprayer",
+                    "image": "./images/64oz_deck_wash_800_600.jpg"
                 }
             ]
         },
         "similar": [
             {
-                "link": "",
-                "img": "",
-                "name": "",
-                "type": "",
-                "description": ""
+                "link": "/product/instant-house-wash.html",
+                "img": "./images/house_wash_bottom_sm.png",
+                "name": "Instant House Wash",
+                "type": "House End Sprayer",
+                "description": "Removes tough stains from, mildew, mold, algae, fungus and moss and restores the original look to wood, vinyl, brick and stone siding"
+            },
+            {
+                "link": "/products/instant-deck-fence-wash.html",
+                "img": "./images/deck_wash_bottom_sm.png",
+                "name": "Instant Deck Wash",
+                "type": "House End Sprayer",
+                "description": "Cleans & Brightens Decks & Fences and makes weathered old decks or fences look like new."
             }
         ]
     },

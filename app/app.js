@@ -55,8 +55,7 @@ import Product from './components/container/product/Product';
 
 import MainHeader from './components/presentation/mainHeader/mainHeader';
 import AppFooter from './components/presentation/appFooter/appFooter';
-console.log(__("c18349f0"));
-console.log(__("Missing Text"));
+
 
 // console.log(__(aa33343c))
 class App extends React.Component {

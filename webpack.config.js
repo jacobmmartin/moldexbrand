@@ -6,11 +6,8 @@ var webpack = require("webpack")
 
 var languages = {
     "en": require("./en.json"),
-    "de": require("./de.json")
 };
 module.exports = Object.keys(languages).map(function (language) {
-    process.env.lang = language;
-    console.log(process.env)
     return {
         name: language,
         entry: {
@@ -28,18 +25,18 @@ module.exports = Object.keys(languages).map(function (language) {
         plugins: [
             new I18nPlugin(
                 languages[language]
-            ),
+            ), 
+            new webpack.DefinePlugin({
+                'process.env': {
+                    'NODE_ENV': JSON.stringify('production')
+                }
+            }),
             new CopyWebpackPlugin([
                 { from: 'images/**/*', to: '' }
             ]),
             new webpack.ProvidePlugin({
                 $: "jquery",
                 jQuery: "jquery"
-            }),
-            new webpack.DefinePlugin({
-                "process.env": {
-                    lang: language
-                }
             }),
             new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"vendor.bundle.js")
 

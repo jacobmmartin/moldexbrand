@@ -26,7 +26,7 @@
             "sds": [
                 {
                     "name": "Mold Killer SDS",
-                    "url": "https://www.moldexbrands.com/downloads/Moldex_Mold_Killer_SDS.pdf",
+                    "url": "./downloads/Moldex_Mold_Killer_SDS.pdf",
                     "title": "Stain Remover MSDS"
                 }
             ],
@@ -34,19 +34,19 @@
             "labels": [
                 {
                     "name": "32oz Trigger Bottle (Front & Back) Labels",
-                    "image": "https://www.moldexbrands.com/downloads/32oz_Moldex_Mold_Killer.pdf"
+                    "image": "./downloads/32oz_Moldex_Mold_Killer.pdf"
                 },
                 {
                     "name": "22oz Trigger Bottle (Front & Back) Labels",
-                    "image": "https://www.moldexbrands.com/downloads/22oz_Moldex_Mold_Killer.pdf"
+                    "image": "./downloads/22oz_Moldex_Mold_Killer.pdf"
                 },
                 {
                     "name": "1 Gallon Bottle Label",
-                    "image": "https://www.moldexbrands.com/downloads/1Gal_Moldex_Mold_Killer.pdf"
+                    "image": "./1Gal_Moldex_Mold_Killer.pdf"
                 },
                 {
                     "name": "5 Gallon Bottle Label",
-                    "image": "https://www.moldexbrands.com/downloads/5Gal_Moldex_Mold_Killer.pdf"
+                    "image": "./5Gal_Moldex_Mold_Killer.pdf"
                 }
             ],
             "sizes": [
@@ -105,7 +105,7 @@
             "sds": [
                 {
                     "name": "Disinfectant Concentrate SDS",
-                    "url": "https://www.moldexbrands.com/downloads/Moldex_Disinfectant_Concentrate_SDS.pdf",
+                    "url": "./downloads/Moldex_Disinfectant_Concentrate_SDS.pdf",
                     "title": "Stain Remover SDS"
                 }
             ],
@@ -113,19 +113,19 @@
             "labels": [
                 {
                     "name": "32oz Trigger Bottle (Front & Back) Labels",
-                    "image": "https://www.moldexbrands.com/downloads/32oz_Moldex_Mold_Killer.pdf"
+                    "image": "./downloads/32oz_Moldex_Mold_Killer.pdf"
                 },
                 {
                     "name": "22oz Trigger Bottle (Front & Back) Labels",
-                    "image": "https://www.moldexbrands.com/downloads/22oz_Moldex_Mold_Killer.pdf"
+                    "image": "./downloads/22oz_Moldex_Mold_Killer.pdf"
                 },
                 {
                     "name": "1 Gallon Bottle Label",
-                    "image": "https://www.moldexbrands.com/downloads/1Gal_Moldex_Mold_Killer.pdf"
+                    "image": "./downloads/1Gal_Moldex_Mold_Killer.pdf"
                 },
                 {
                     "name": "5 Gallon Bottle Label",
-                    "image": "https://www.moldexbrands.com/downloads/5Gal_Moldex_Mold_Killer.pdf"
+                    "image": "./downloads/5Gal_Moldex_Mold_Killer.pdf"
                 }
             ],
             "sizes": [
@@ -189,7 +189,7 @@
             "sds": [
                 {
                     "name": "Instant Stain Remover SDS",
-                    "url": "https://www.moldexbrands.com/downloads/Moldex_Instant_Stain_Remover_SDS.pdf",
+                    "url": "./downloads/Moldex_Instant_Stain_Remover_SDS.pdf",
                     "title": "Stain Remover MSDS"
                 }
             ],
@@ -254,7 +254,7 @@
             "sds": [
                 {
                     "name": "House Wash SDS",
-                    "url": "https://www.moldexbrands.com/downloads/Moldex_Instant%20House_Wash_SDS.pdf",
+                    "url": "./downloads/Moldex_Instant%20House_Wash_SDS.pdf",
                     "title": "House Wash MSDS"
                 }
             ],

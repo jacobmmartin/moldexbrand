@@ -1,0 +1,45 @@
+{
+    "mold-mildew-killer": {
+        "name": "",
+        "headline": "",
+        "images": {
+            "factor": "",
+            "full": "",
+            "thumb": ""
+        },
+        "desc": "",
+        "application": "",
+        "features": [],
+        "buy": "",
+        "tabs": {
+            "instructions": "",
+            "sds": {
+                "name":"",
+                "url":"",
+                "title":""
+            },
+            "faq": "",
+             "labels": [
+                 {
+                    "name": "",
+                    "image": ""
+                }     
+            ],
+            "sizes": [
+                {
+                    "name": "",
+                    "image": ""
+                }
+            ]
+        },
+        "similar": [
+            {
+                "link": "",
+                "img": "",
+                "name": "",
+                "type": "",
+                "description": ""
+            }
+        ]
+    }
+}

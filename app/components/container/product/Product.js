@@ -12,7 +12,7 @@ class Product extends Component {
         };
     }
     componentWillReceiveProps(nexProps) {
-      this.setState({product: Products[nexProps.params.id]});
+        this.setState({ product: Products[nexProps.params.id] });
     }
     render() {
         return (
@@ -24,7 +24,7 @@ class Product extends Component {
                         <div className="one_half last">
 
                             <h3 className="title" dangerouslySetInnerHTML={{ __html: this.state.product.name }}></h3>
-                            <h5 className="green" dangerouslySetInnerHTML={{ __html: this.state.product.headline}}></h5>
+                            <h5 className="green" dangerouslySetInnerHTML={{ __html: this.state.product.headline }}></h5>
 
                             <p dangerouslySetInnerHTML={{ __html: this.state.product.desc }}></p>
                             <br/>
@@ -40,7 +40,7 @@ class Product extends Component {
                             <div className="clearfix"></div>
                             <div className="content_fullwidth3">
                                 <ul className="list_empty">
-                                    <li><a href="http://www.homedepot.com/p/Moldex-32-oz-Disinfectant-Cleaner-5010/205176689" target="new" className="but_shopping_cart"><i className="fa fa-shopping-cart fa-lg"></i> Buy Online</a></li>
+                                    <li><a href={this.state.product.buy} target="new" className="but_shopping_cart"><i className="fa fa-shopping-cart fa-lg"></i> Buy Online</a></li>
                                 </ul>
                             </div>
 
@@ -58,19 +58,27 @@ class Product extends Component {
                             <div className="tabs-content3 two">
                                 <div id="example-3-tab-1" className="tabs-panel3" dangerouslySetInnerHTML={{ __html: this.state.product.tabs.instructions }}>
                                 </div>
-                                <div id="example-3-tab-2" className="tabs-panel3" style={{ display: 'none' }} dangerouslySetInnerHTML={{ __html: this.state.product.tabs.sds }}>
+                                <div id="example-3-tab-2" className="tabs-panel3" style={{ display: 'none' }}>
+                                    <p>Safety Data Sheet: </p>
+                                    <a href={this.state.product.tabs.sds.url} title={this.state.product.tabs.sds.title} target="new">{this.state.product.tabs.sds.name}</a>
                                 </div>
                                 <div id="example-3-tab-3" className="tabs-panel3" style={{ display: 'none' }} dangerouslySetInnerHTML={{ __html: this.state.product.tabs.faq }}>
                                 </div>
-                                <div id="example-3-tab-4" className="tabs-panel3" style={{ display: 'none' }} dangerouslySetInnerHTML={{ __html: this.state.product.tabs.labels }}>
+                                <div id="example-3-tab-4" className="tabs-panel3" style={{ display: 'none' }}>
+                                    <p>Product Labels: </p>
+                                    {
+                                        this.state.product.tabs.labels.map((label) => {
+                                            return <p key={label.name}><a href={label.image} target="new" className="cbp-lightbox">{label.name}</a></p>
+                                        })
+                                    }
                                 </div>
                                 <div id="example-3-tab-5" className="tabs-panel3" style={{ display: 'none' }} >
-                                <p>This product is available in:</p>
+                                    <p>This product is available in: </p>
                                     {
-                                  this.state.product.tabs.sizes.map( (size) => {
-                                      return <p key={size.name}><a href={"images/" + size.image } target="new" className="cbp-lightbox">{size.name}</a></p>
-                                  })
-                                }
+                                        this.state.product.tabs.sizes.map((size) => {
+                                            return <p key={size.name}><a href={"images/" + size.image } target="new" className="cbp-lightbox">{size.name}</a></p>
+                                        })
+                                    }
                                 </div>
                             </div>
 
@@ -80,9 +88,9 @@ class Product extends Component {
                             <h3>Features / <strong>Benefits</strong></h3>
                             <ul className="list_4">
                                 {
-                                  this.state.product.features.map( (feature) => {
-                                      return <li key={feature}><i className="fa fa-arrow-circle-o-right"></i> {feature}</li>
-                                  })
+                                    this.state.product.features.map((feature) => {
+                                        return <li key={feature}><i className="fa fa-arrow-circle-o-right"></i> {feature}</li>
+                                    })
                                 }
                             </ul>
                         </div>
@@ -95,17 +103,17 @@ class Product extends Component {
                             <h3><strong>Similar</strong> Products</h3>
                             <br/>
                             {
-                              this.state.product.similar.map( (product) => {
-                                  return <div key={product}  className="one_fourth animate fadeInUp" data-anim-type="fadeInUp">
-                                            <div className="box">
-                                                <a href={product.link}><img src={product.img} alt="" className="rimg"/></a>
-                                                <h5><a href={product.link} > {product.name} </a></h5>
-                                                <h6>{product.type}</h6>
-                                                <p>{product.description}</p>
-                                                <br/>
-                                            </div>
+                                this.state.product.similar.map((product) => {
+                                    return <div key={product}  className="one_fourth animate fadeInUp" data-anim-type="fadeInUp">
+                                        <div className="box">
+                                            <a href={product.link}><img src={product.img} alt="" className="rimg"/></a>
+                                            <h5><a href={product.link} > {product.name} </a></h5>
+                                            <h6>{product.type}</h6>
+                                            <p>{product.description}</p>
+                                            <br/>
                                         </div>
-                              })
+                                    </div>
+                                })
                             }
                         </div>
                     </div>

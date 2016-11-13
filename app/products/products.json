@@ -20,12 +20,33 @@
             "Non-Scratch Formula",
             "Hospital Grade Disinfectant"
         ],
-        "buy": "http://www.homedepot.com/p/Moldex-64-oz-Disinfectant-Concentrate-Cleaner-5510/205176710",
+        "buy": "",
         "tabs": {
             "instructions": "<p><strong>GENERAL CLEANING / DEODORIZING DIRECTIONS: </strong></p><p>Spray soiled area then wipe clean.Repeat for heavily soiled areas.</p><p><strong>DISINFECTION DIRECTIONS: </strong></p><p>Preclean prior to disinfection.Spray 6 - 8 inches from surface, until surfaces are thoroughly wet.Do not breathe spray.Treated surfaces must remain wet for 1 minute for disinfection against bacteria.Follow virucidal or Fungicidal directions when using as a virucidal or fungicidal agent.Wipe dry with a clean cloth, sponge, mop or allow to air dry.Food contact surfaces must be rinsed with potable water after disinfection.Do not use on utensils, glassware and dishes.</p><p><strong>VIRUCIDAL DIRECTIONS: </strong></p><p>Follow disinfection directions for application instructions.Treated surfaces must remain wet for 10 minutes for Herpes Simplex Type 2 and 60 seconds[1 minute]for Influenza A / Hong Kong.</p><p><strong>MOLD AND MILDEW CONTROL DIRECTIONS: </strong></p><p>Moldex<span className=\"sup\">®</span> Mold Killer effectively inhibits the growth of mold and mildew and the odors caused by them when applied to hard, nonporous surfaces.Follow disinfection instructions.Allow to air dry on surface.Repeat when mildew growth returns.</p><p><strong>FUNGICIDAL DIRECTIONS: </strong></p><p>Moldex<span className=\"sup\">®</span> Mold Killer is an effective fungicide against Trichophyton mentagrophytes (the Athlete’s Foot Fungus) (A Cause of Ringworm) in areas such as locker rooms, dressing rooms, shower and bath areas, exercise facilities, health clubs and spas.Follow disinfection directions for application instructions.Treated surfaces must remain wet for 10 minutes.<br/>  <strong>Note: </strong> Refer to product label for additional directions for use, a full list of pathogens, and safety information.</p>",
-            "sds": "<p>Safety Data Sheet: </p><p><a href=\"downloads/Moldex_Mold_Killer_SDS.pdf\" title=\"Stain Remover MSDS\" target=\"new\">Mold Killer SDS</a></p>",
+            "sds": {
+                "name":"Mold Killer SDS",
+                "url":"https://www.moldexbrands.com/downloads/Moldex_Mold_Killer_SDS.pdf",
+                "title":"Stain Remover MSDS"
+            },
             "faq": "<h6>Does this product kill mold &amp; mildew?</h6><p><strong>Yes.</strong> Moldex<span className=\"sup\">®</span> Mold Killer is effective against a broad spectrum of bacteria, is virucidal*, fungicidal, and inhibits the growth of mildew and their odors when used as directed.</p><br/><h6>Does this product have bleach in it?</h6><p><strong>No.</strong>Moldex<span className=\"sup\">®</span> Mold Killer is an EPA registered quaternary ammonium solution.Quaternary ammonium chlorides, or “quats, ” are noncorrosive, making them gentler on  equipment and surfaces.Bleach (active ingredient Sodium Hypochloride) is very effective in removing the discoloration caused by mold, but may leave the microflora that enables the mold to grow.</p><br/><h6>Does Moldex<span className=\"sup\">®</span> Mold Killer remove mold stains?</h6>  <p><strong>Yes &amp; No.</strong>Mold &amp; Mildew, if left untreated, can result in deeply embedded ugly black mold stains.In some cases, it will remove the stain.In other cases, a more aggressive stain remover will be required.Moldex<span className=\"sup\">®</span> Mold Killer is a great cleaner that delivers non-acid cleaning performance.It removes   dirt, grease, grime, food stains, soap scum, fingerprints, crayon / pencil marks and heel marks, but it does NOT contain bleach or whitening agents.If difficult mold stains are present, we recommend using one of our stain removers.Non-Bleach - <a href=\"deep_stain_remover.html\">Non-Bleach Stain Remover</a> or Bleach-based - <a href=\"../instant-mold-mildew-stain-remover.html\">Instant Mold &amp; Mildew Stain Remover</a>.</p><br/><h6>What surfaces can I use this product on?Can it be used outdoors?</h6><p>This formula was approved by the EPA for use on a variety of surfaces.For a complete list of EPA approved surfaces, you can view them <a href=\"downloads/approved_surfaces.pdf\">here</a>.</p><br/>",
-            "labels": "<p>Product Labels: </p><p><a href=\"downloads/32oz_Moldex_Mold_Killer.pdf\" title=\"32oz Moldex Mold Killer\" target=\"new\">32oz Trigger Bottle (Front &amp; Back) Labels</a></p><p><a href=\"downloads/22oz_Moldex_Mold_Killer.pdf\" title=\"22oz Moldex Mold Killer\" target=\"new\">22oz Trigger Bottle (Front &amp; Back) Labels</a></p><p><a href=\"downloads/1Gal_Moldex_Mold_Killer.pdf\" title=\"1 gallon Moldex Mold Killer\" target=\"new\">1 Gallon Bottle Label</a></p><p><a href=\"downloads/5Gal_Moldex_Mold_Killer.pdf\" title=\"5 gallon Moldex Mold Killer\" target=\"new\">5 Gallon Bottle  Label</a></p>",
+            "labels": [
+                 {
+                    "name": "32oz Trigger Bottle (Front & Back) Labels",
+                    "image": "https://www.moldexbrands.com/downloads/32oz_Moldex_Mold_Killer.pdf"
+                },
+                {
+                    "name": "22oz Trigger Bottle (Front & Back) Labels",
+                    "image": "https://www.moldexbrands.com/downloads/22oz_Moldex_Mold_Killer.pdf"
+                },
+                {
+                    "name": "1 Gallon Bottle Label",
+                    "image": "https://www.moldexbrands.com/downloads/1Gal_Moldex_Mold_Killer.pdf"
+                },
+                {
+                    "name": "5 Gallon Bottle Label",
+                    "image": "https://www.moldexbrands.com/downloads/5Gal_Moldex_Mold_Killer.pdf"
+                }
+            ],
             "sizes": [
                 {
                     "name": "32oz Trigger Sprayer",

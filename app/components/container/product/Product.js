@@ -64,7 +64,13 @@ class Product extends Component {
                                 </div>
                                 <div id="example-3-tab-4" className="tabs-panel3" style={{ display: 'none' }} dangerouslySetInnerHTML={{ __html: this.state.product.tabs.labels }}>
                                 </div>
-                                <div id="example-3-tab-5" className="tabs-panel3" style={{ display: 'none' }} dangerouslySetInnerHTML={{ __html: this.state.product.tabs.sizes }}>
+                                <div id="example-3-tab-5" className="tabs-panel3" style={{ display: 'none' }} >
+                                <p>This product is available in:</p>
+                                    {
+                                  this.state.product.tabs.sizes.map( (size) => {
+                                      return <p key={size.name}><a href={"images/" + size.image } target="new" className="cbp-lightbox">{size.name}</a></p>
+                                  })
+                                }
                                 </div>
                             </div>
 
@@ -90,8 +96,8 @@ class Product extends Component {
                             <br/>
                             {
                               this.state.product.similar.map( (product) => {
-                                  return <div className="one_fourth animate fadeInUp" data-anim-type="fadeInUp">
-                                            <div key={product} className="box">
+                                  return <div key={product}  className="one_fourth animate fadeInUp" data-anim-type="fadeInUp">
+                                            <div className="box">
                                                 <a href={product.link}><img src={product.img} alt="" className="rimg"/></a>
                                                 <h5><a href={product.link} > {product.name} </a></h5>
                                                 <h6>{product.type}</h6>

@@ -611,35 +611,43 @@
         ]
     },
     "sealant-mold-mildew-blocker": {
-        "name": "",
-        "headline": "",
+        "name": "Moldex<span class=\"sup\">®</span> Sealant",
+        "headline": "A Clear Water-Based Film. Resists Mold & Mildew Stains.",
         "images": {
-            "factor": "",
-            "full": "",
+            "factor": "./images/factor_3.png",
+            "full": "./images/sealant.jpg",
             "thumb": ""
         },
-        "desc": "",
-        "application": "",
-        "features": [],
-        "buy": "",
+        "desc": "Moldex<span class=\"sup\">®</span> Sealant is a simple to use, spray applied invisible film that protects against the harmful effects of moisture damage. Apply this mold treatment immediately after cleaning to establish a barrier between the surface and the bacteria, mold &amp; mildew. When applied properly, this water-based product provides long-lasting resistance to stains and discoloration. Perfect for both indoor and outdoor applications. It is easy to apply mold prevention that dries clear and fast.",
+        "application": "<strong>Applications:</strong> Awnings, Shower Curtains, Walls, Tile, Grout, Plastic, Previously painted surfaces, Basements, Window frames, Sealed Wood, Tarps, Tents, Shingles, Roofs, Siding, Asphalt, Concrete, Foundations, Brick, Masonry, Walkways and Retaining Walls.<br><br>",
+        "features": [
+            "Creates a Barrier for Long-Lasting Protection",
+            "Non-Toxic, Biodegrable Waterbased Formula",
+            "Indoor/Outdoor",
+            "Will Not Harm Surfaces",
+            "Sprays on, Dries Clear",
+            "Safe for Fabrics & Almost any surface",
+            "Works like car-wax to protect the surface from the elements"
+        ],
+        "buy": "http://www.homedepot.com/p/Moldex-32-oz-Protectant-5210/100642758",
         "tabs": {
-            "instructions": "",
-            "sds": {
-                "name": "",
-                "url": "",
-                "title": ""
-            },
-            "faq": "",
+            "instructions": " <p><strong>DIRECTIONS FOR USE:</strong><br>1. Surface area should be clean and free of Mold before applying this product. <br>2. Test a small inconspicuous area and let dry.  Check for unwanted visual change.<br>3. Spray surface liberally and evenly.  For smooth surfaces, wipe with cloth damped with Moldex Sealant.<br>4. Remove over spray before it dries with water dampened cloth.<br>5. Allow to dry (30 minutes - 1 hour).<br>6. Re-apply as needed.  *Effective life depends on abrasion and exposures.</p>",
+            "sds": [{
+                "name": "Sealant SDS",
+                "url": "./downloads/Moldex_Sealant_SDS.pdf",
+                "title": "Sealant SDS"
+            }],
+            "faq": "<h6>Does this product have bleach in it?</h6><p><strong>Yes.  </strong>It was formulated with Advanced Bleach Gel which helps controls overspray. Bleach is known to damage sensitive surfaces so we developed this technology to help you protect the areas surrounding the mold stains.</p><br><h6>Can this product be used outdoors?</h6><p><strong>Yes. </strong>This formula is safe to use indoors and outdoors. It can be used on almost any (colorsafe) hard non-porous surface.</p><br><h6>Is this product safe for use on fabrics or metal?</h6><p><strong>No.</strong> Like most bleach-based products, we recommend keeping this product away from fabrics, glass, metals and old porcelain.</p><br><h6>Does this product kill mold &amp; mildew?</h6><p><strong>No.</strong> This product is one of the strongest mold &amp; mildew stain removers available on the market. It is 3x stronger than the leading bleach stain remover. However, we recommend using our Mold Killer to stop the growth of mold &amp; mildew. <a href=\"../mold-mildew-killer.html\" title=\"Mold Killer\" target=\"_self\">Moldex<span class=\"sup\">®</span> Mold Killer</a> is an EPA Registered product designed to kill and inhibit the growth of mold &amp; mildew. </p>",
             "labels": [
                 {
-                    "name": "",
-                    "image": ""
+                    "name": "32oz Trigger Bottle (Front & Back) Label",
+                    "image": "./downloads/32oz_Sealant.pdf"
                 }
             ],
             "sizes": [
                 {
-                    "name": "",
-                    "image": ""
+                    "name": "32oz Trigger Bottle",
+                    "image": "./images/32oz_sealant_800_600.jpg"
                 }
             ]
         },

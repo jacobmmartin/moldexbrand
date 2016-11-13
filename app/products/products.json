@@ -513,11 +513,13 @@
         "buy": "http://www.homedepot.com/p/Moldex-1-gal-Power-Cleaner-4040/205185032",
         "tabs": {
             "instructions": "<p>When mixed (1:10) with water, one bottle of concentrate makes 11 GALLONS of premix, and cleans up to 2000 sq. ft. (less on rougher surfaces), and can be applied by pressure washer, pump-up sprayer, brush or roller. Contains anti-corrosive agents to safeguard pressure washer parts (bleach can erode O-rings).</p><p><strong>DIRECTIONS FOR USE: <br>(MANUAL USE DIRECTIONS)</strong><br>1. Mix at 1:10 parts concentrate with water.<br>2. Fill spray bottles, buckets, or pump sprayers and spray to wet the area to be cleaned. Work in manageable sections if cleaning a large area.<br>3. Wait several minutes to allow cleaner to work before wiping, scrubbing or mopping the surface clean.<br>4. Rinse with clean water, allow surfaces to dry before resuming use or traffic.</p><p><strong>(PRESSURE WASHER APPLICATION)</strong><br>1. Rinse surrounding plants with water, before and after application.<br>2. Wet surface to be cleaned, prior to applying the product.<br>3. Place detergent application siphon tube and screen filter directly into container. Open meter valve (if applicable) <br>for maximum product flow. For reservoir machines, pour product (full strength) into pressure washer.<br>4. Spray at low pressure onto a wet surface.<br>5. On vertical surfaces, always spray from the top down.<br>6. Allow product to remain on the surface for 3 to 5 minutes to penetrate. Do not allow product to dry on surface.<br>7. Remove siphon tube from solution and rinse surface with high pressure water spray thoroughly.<br>8. Flush siphon tube with clean water prior to storage. </p>",
-            "sds": [{
-                "name": "Power Outdoor Cleaner SDS",
-                "url": "./downloads/Moldex_Power_SDS.pdf",
-                "title": "Power Outdoor Cleaner SDS"
-            }],
+            "sds": [
+                {
+                    "name": "Power Outdoor Cleaner SDS",
+                    "url": "./downloads/Moldex_Power_SDS.pdf",
+                    "title": "Power Outdoor Cleaner SDS"
+                }
+            ],
             "faq": "<h6>Does this product have bleach in it?</h6><p><strong>Yes.  </strong>It was formulated with Advanced Bleach Gel which helps controls overspray. Bleach is known to damage sensitive surfaces so we developed this technology to help you protect the areas surrounding the mold stains.</p><br><h6>Can this product be used outdoors?</h6><p><strong>Yes. </strong>This formula is safe to use indoors and outdoors. It can be used on almost any (colorsafe) hard non-porous surface.</p><br><h6>Is this product safe for use on fabrics or metal?</h6><p><strong>No.</strong> Like most bleach-based products, we recommend keeping this product away from fabrics, glass, metals and old porcelain.</p><br><h6>Does this product kill mold &amp; mildew?</h6><p><strong>No.</strong> This product is one of the strongest mold &amp; mildew stain removers available on the market. It is 3x stronger than the leading bleach stain remover. However, we recommend using our Mold Killer to stop the growth of mold &amp mildew. <a href=\"../mold-mildew-killer.html\" title=\"Mold Killer\" target=\"_self\">Moldex<span class=\"sup\">®</span> Mold Killer</a> is an EPA Registered product designed to kill and inhibit the growth of mold &amp; mildew. </p>",
             "labels": [
                 {
@@ -550,45 +552,61 @@
         ]
     },
     "cleaning-mold-on-patio-furniture": {
-        "name": "",
-        "headline": "",
+        "name": "Moldex<span class=\"sup\">®</span> Patio Furniture Cleaner",
+        "headline": "Removes Mold & Mildew Stains, Dirt, Grime and Provides Residual Protection.",
         "images": {
-            "factor": "",
-            "full": "",
+            "factor": "./images/factor_2.png",
+            "full": "./images/patio_cleaner.jpg",
             "thumb": ""
         },
-        "desc": "",
-        "application": "",
-        "features": [],
-        "buy": "",
+        "desc": "Moldex<span class=\"sup\">®</span> Patio Furniture Cleaner is a premium cleaner specifically formulated to clean all outdoor patio furniture surfaces, fabrics, and upholstery while rinsing residue free. It is safe on all water-safe materials, is non-toxic, non-hazardous, contains no bleach and has no odor.<p>&nbsp;</p><p>This unique two-in-one formula cleans patio furniture and provides a residual stain fighting technology on the surface that lasts for months. Whitens stains with gentle foaming action, without abrasives, and will not harm your plants or landscaping while cleaning mold. </p>",
+        "application": "<strong>Applications:</strong> Plastic, Vinyl, Resin, Wicker, Metal, Wood, Canvas, Rattan, Aluminium, Stone, Glass, Fiberglass, Acrylic, PVC, Chrome, Previously painted surfaces, Umbrellas, Awnings, Seat Cushions, Pillows, Slings, Batting, Fabrics and Accessories.<br><br>",
+        "features": [
+            "Unique 2-in-1 formula that cleans and provides a stain fighting barrier (up to 3 months)",
+            "Removes Mold & Mildew Stains, Algae, Dirt and More!",
+            "No Bleach / Safe on Fabric",
+            "Safe for on Vinyl, Wood, Canvas, Metal, Glass, Seat Cushions, Wood, Composite Materials",
+            "Gentle on Sensitive Surfaces",
+            "Non-Toxic & No Fumes"
+        ],
+        "buy": "http://www.homedepot.com/p/Moldex-22-oz-Patio-Furniture-Cleaner-4030/205185025",
         "tabs": {
-            "instructions": "",
-            "sds": {
-                "name": "",
-                "url": "",
-                "title": ""
-            },
-            "faq": "",
+            "instructions": "<p><strong>DIRECTIONS FOR USE:</strong><br>Spray on surface, allow to dwell 3-5 minutes. Rinse with clean water. Wipe dry.  Porous Surfaces: On extremely soiled or mildewed stained surfaces, it may be necessary to scrub with a bristle brush, a second application may be needed for desired results.</p>",
+            "sds": [
+                {
+                    "name": "Patio Furniture Cleaner SDS",
+                    "url": "./downloads/Moldex_Patio_Furniture_Cleaner_SDS.pdf",
+                    "title": "Patio Furniture Cleaner SDS"
+                }
+            ],
+            "faq": "<h6>Does this product have bleach in it?</h6><p><strong>Yes.  </strong>It was formulated with Advanced Bleach Gel which helps controls overspray. Bleach is known to damage sensitive surfaces so we developed this technology to help you protect the areas surrounding the mold stains.</p><br><h6>Can this product be used outdoors?</h6><p><strong>Yes. </strong>This formula is safe to use indoors and outdoors. It can be used on almost any (colorsafe) hard non-porous surface.</p><br><h6>Is this product safe for use on fabrics or metal?</h6><p><strong>No.</strong> Like most bleach-based products, we recommend keeping this product away from fabrics, glass, metals and old porcelain.</p><br><h6>Does this product kill mold &amp; mildew?</h6><p><strong>No.</strong> This product is one of the strongest mold &amp; mildew stain removers available on the market. It is 3x stronger than the leading bleach stain remover. However, we recommend using our Mold Killer to stop the growth of mold &amp mildew. <a href=\"../mold-mildew-killer.html\" title=\"Mold Killer\" target=\"_self\">Moldex<span class=\"sup\">®</span> Mold Killer</a> is an EPA Registered product designed to kill and inhibit the growth of mold &amp; mildew. </p>",
             "labels": [
                 {
-                    "name": "",
-                    "image": ""
+                    "name": "22oz Trigger Bottle (Front & Back) Label",
+                    "image": "./downloads/22oz_Patio_Furniture_Cleaner.pdf"
                 }
             ],
             "sizes": [
                 {
-                    "name": "",
-                    "image": ""
+                    "name": "22oz Trigger Bottle",
+                    "image": "./images/22oz_patio_cleaner_800_600.jpg"
                 }
             ]
         },
         "similar": [
             {
-                "link": "",
-                "img": "",
-                "name": "",
-                "type": "",
-                "description": ""
+                "link": "/product/instant-house-wash.html",
+                "img": "./images/house_wash_bottom_sm.png",
+                "name": "Instant House Wash",
+                "type": "House End Sprayer",
+                "description": "Removes tough stains from, mildew, mold, algae, fungus and moss and restores the original look to wood, vinyl, brick and stone siding"
+            },
+            {
+                "link": "/products/instant-deck-fence-wash.html",
+                "img": "./images/deck_wash_bottom_sm.png",
+                "name": "Instant Deck Wash",
+                "type": "House End Sprayer",
+                "description": "Cleans & Brightens Decks & Fences and makes weathered old decks or fences look like new."
             }
         ]
     },
@@ -627,11 +645,18 @@
         },
         "similar": [
             {
-                "link": "",
-                "img": "",
-                "name": "",
-                "type": "",
-                "description": ""
+                "link": "/product/instant-house-wash.html",
+                "img": "./images/house_wash_bottom_sm.png",
+                "name": "Instant House Wash",
+                "type": "House End Sprayer",
+                "description": "Removes tough stains from, mildew, mold, algae, fungus and moss and restores the original look to wood, vinyl, brick and stone siding"
+            },
+            {
+                "link": "/products/instant-deck-fence-wash.html",
+                "img": "./images/deck_wash_bottom_sm.png",
+                "name": "Instant Deck Wash",
+                "type": "House End Sprayer",
+                "description": "Cleans & Brightens Decks & Fences and makes weathered old decks or fences look like new."
             }
         ]
     }

@@ -27,11 +27,17 @@ require("./js/carousel/flexslider.css");
 require("./js/carousel/skin.css");
 
 //IMPORT FOR FORM
-require("./js/form/jquery.form.min.js")
-require("./js/form/jquery.validate.min.js")
+require("./js/form/jquery.form.min.js");
+require("./js/form/jquery.validate.min.js");
 
 //IMPORT FOR MAINMENU
-require("./js/mainmenu/stickytwo.css")
+require("./js/mainmenu/stickytwo.css");
+
+//IMPORT FOR TABS
+require("./js/tabs/assets/js/responsive-tabs.min.js");
+require("./js/tabs/assets/css/responsive-tabs.css");
+require("./js/tabs/assets/css/responsive-tabs2.css");
+require("./js/tabs/assets/css/responsive-tabs3.css");
 
 //IMPORT GENERAL CSS
 require("./styles/reset.css");
@@ -41,7 +47,6 @@ require("./styles/yamm.css");
 import Home from './components/container/home/Home';
 import About from './components/container/about/About';
 import MoldGuide from './components/container/moldGuide/MoldGuide';
-import Products from './components/container/Products';
 import Contact from './components/container/contact/Contact';
 import Factors from './components/container/factors/Factors';
 import Retail from './components/container/retail/Retail';
@@ -77,7 +82,6 @@ ReactDOM.render((
          <Route path = "home" component = {Home} />
          <Route path = "about" component = {About} />
          <Route path = "product/:id" component = {Product} />
-         <Route path = "products" component = {Products} />
          <Route path = "mold_guide" component = {MoldGuide} />
          <Route path = "contact" component = {Contact} />
          <Route path = "factors" component = {Factors} />

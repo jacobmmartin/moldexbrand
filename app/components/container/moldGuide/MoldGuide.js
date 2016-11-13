@@ -3,8 +3,6 @@ import PageTitle from "../../presentation/pageTitle/pageTitle";
 
 require("./moldGuide.css");
 
-
-
 const MoldGuide = () =>{
     return(
             <div>

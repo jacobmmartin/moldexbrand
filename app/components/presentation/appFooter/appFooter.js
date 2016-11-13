@@ -24,26 +24,26 @@ class appFooter extends Component {
                                 <ul>
                                     <li><a href="mold_guide.html" dangerouslySetInnerHTML={{ __html: __('146b4a94') }}></a></li>
                                     <li><a href="https://www.moldexbrands.com/mold-mildew-killer.html" dangerouslySetInnerHTML={{ __html: __('9ddffdb1') }}></a></li>
-                                    <li><a href="products.html"><i className="fa fa-angle-right"></i> Our Products</a></li>
-                                    <li><a href="https://www.convenienceproducts.com/"><i className="fa fa-angle-right"></i> Convenience Products</a></li>
-                                    <li><a href="blog/"><i className="fa fa-angle-right"></i> Recent Blogs or News</a></li>
-                                    <li><a href="contact.html"><i className="fa fa-angle-right"></i> Contact Us</a></li>
+                                    <li><a href="products.html" dangerouslySetInnerHTML={{ __html: __('68bebeef')}}></a></li> 
+                                    <li><a href="https://www.convenienceproducts.com/" dangerouslySetInnerHTML={{ __html: __("6ec34033")}}></a></li> 
+                                    <li><a href="blog/" dangerouslySetInnerHTML={{ __html: __('5d93d5f7')}}></a></li> 
+                                    <li><a href="contact.html" dangerouslySetInnerHTML={{ __html: __('17ed278a')}}></a></li> 
                                 </ul>
                             </div>
                         </div>
                         <div className="col-xs-6">
                             <div className="siteinfo">
-                                <h4 className="lmb">Our Story...</h4>
+                                <h4 className="lmb">{__('39a1fddd')}</h4> 
                                 <p dangerouslySetInnerHTML={{ __html: __('04620d77') }}>
                                 </p>
-                            giut</div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="copyright_info four">
                     <div className="container">
                         <div className="one_half">
-                            Copyright © 2015 Moldex Brands.All rights reserved.<a href="terms.html">Terms of Use</a> | <a href="privacy.html">Privacy Policy</a> | <a href="refund.html">Refund Policy</a>
+                            Copyright © 2015 Moldex Brands.All rights reserved.<a href="terms.html"> {__('985a4b72')} </a> | <a href="privacy.html"> {__('fa2ead69')} </a> | <a href="refund.html">{__('b3966088') }</a>
                         </div>
                         <div className="one_half last">
                             <ul className="footer_social_links three">

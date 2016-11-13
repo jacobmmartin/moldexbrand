@@ -68,7 +68,7 @@ a.but_shopping_cart:hover {
     text-align: center;
     font-size: 14px;
     color: #999;
-    background: #272727 no-repeat center bottom;
+    background: #272727 url(../../../../images/h-line1.png)  no-repeat center bottom;
 }
 .page_title h1 {
     color: #7ab700;

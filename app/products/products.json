@@ -23,11 +23,13 @@
         "buy": "http://www.homedepot.com/p/Moldex-32-oz-Disinfectant-Cleaner-5010/205176689",
         "tabs": {
             "instructions": "<p><strong>GENERAL CLEANING / DEODORIZING DIRECTIONS: </strong></p><p>Spray soiled area then wipe clean.Repeat for heavily soiled areas.</p><p><strong>DISINFECTION DIRECTIONS: </strong></p><p>Preclean prior to disinfection.Spray 6 - 8 inches from surface, until surfaces are thoroughly wet.Do not breathe spray.Treated surfaces must remain wet for 1 minute for disinfection against bacteria.Follow virucidal or Fungicidal directions when using as a virucidal or fungicidal agent.Wipe dry with a clean cloth, sponge, mop or allow to air dry.Food contact surfaces must be rinsed with potable water after disinfection.Do not use on utensils, glassware and dishes.</p><p><strong>VIRUCIDAL DIRECTIONS: </strong></p><p>Follow disinfection directions for application instructions.Treated surfaces must remain wet for 10 minutes for Herpes Simplex Type 2 and 60 seconds[1 minute]for Influenza A / Hong Kong.</p><p><strong>MOLD AND MILDEW CONTROL DIRECTIONS: </strong></p><p>Moldex<span className=\"sup\">®</span> Mold Killer effectively inhibits the growth of mold and mildew and the odors caused by them when applied to hard, nonporous surfaces.Follow disinfection instructions.Allow to air dry on surface.Repeat when mildew growth returns.</p><p><strong>FUNGICIDAL DIRECTIONS: </strong></p><p>Moldex<span className=\"sup\">®</span> Mold Killer is an effective fungicide against Trichophyton mentagrophytes (the Athlete’s Foot Fungus) (A Cause of Ringworm) in areas such as locker rooms, dressing rooms, shower and bath areas, exercise facilities, health clubs and spas.Follow disinfection directions for application instructions.Treated surfaces must remain wet for 10 minutes.<br/>  <strong>Note: </strong> Refer to product label for additional directions for use, a full list of pathogens, and safety information.</p>",
-            "sds": {
-                "name": "Mold Killer SDS",
-                "url": "https://www.moldexbrands.com/downloads/Moldex_Mold_Killer_SDS.pdf",
-                "title": "Stain Remover MSDS"
-            },
+            "sds": [
+                {
+                    "name": "Mold Killer SDS",
+                    "url": "https://www.moldexbrands.com/downloads/Moldex_Mold_Killer_SDS.pdf",
+                    "title": "Stain Remover MSDS"
+                }
+            ],
             "faq": "<h6>Does this product kill mold &amp; mildew?</h6><p><strong>Yes.</strong> Moldex<span className=\"sup\">®</span> Mold Killer is effective against a broad spectrum of bacteria, is virucidal*, fungicidal, and inhibits the growth of mildew and their odors when used as directed.</p><br/><h6>Does this product have bleach in it?</h6><p><strong>No.</strong>Moldex<span className=\"sup\">®</span> Mold Killer is an EPA registered quaternary ammonium solution.Quaternary ammonium chlorides, or “quats, ” are noncorrosive, making them gentler on  equipment and surfaces.Bleach (active ingredient Sodium Hypochloride) is very effective in removing the discoloration caused by mold, but may leave the microflora that enables the mold to grow.</p><br/><h6>Does Moldex<span className=\"sup\">®</span> Mold Killer remove mold stains?</h6>  <p><strong>Yes &amp; No.</strong>Mold &amp; Mildew, if left untreated, can result in deeply embedded ugly black mold stains.In some cases, it will remove the stain.In other cases, a more aggressive stain remover will be required.Moldex<span className=\"sup\">®</span> Mold Killer is a great cleaner that delivers non-acid cleaning performance.It removes   dirt, grease, grime, food stains, soap scum, fingerprints, crayon / pencil marks and heel marks, but it does NOT contain bleach or whitening agents.If difficult mold stains are present, we recommend using one of our stain removers.Non-Bleach - <a href=\"deep_stain_remover.html\">Non-Bleach Stain Remover</a> or Bleach-based - <a href=\"../instant-mold-mildew-stain-remover.html\">Instant Mold &amp; Mildew Stain Remover</a>.</p><br/><h6>What surfaces can I use this product on?Can it be used outdoors?</h6><p>This formula was approved by the EPA for use on a variety of surfaces.For a complete list of EPA approved surfaces, you can view them <a href=\"downloads/approved_surfaces.pdf\">here</a>.</p><br/>",
             "labels": [
                 {
@@ -491,45 +493,59 @@
         ]
     },
     "power-outdoor-cleaner": {
-        "name": "",
-        "headline": "",
+        "name": "Moldex<span class=\"sup\">®</span> Power Outdoor Cleaner",
+        "headline": "Multi-Purpose Outdoor Cleaner <strong>and/or</strong> Power Washer Concentrate",
         "images": {
-            "factor": "",
-            "full": "",
+            "factor": "./images/factor_2.png",
+            "full": "./images/power.jpg",
             "thumb": ""
         },
-        "desc": "",
-        "application": "",
-        "features": [],
-        "buy": "",
+        "desc": "Moldex<span class=\"sup\">®</span> Power! Multi-Purpose Outdoor Cleaner is a commercial strength multi-surface cleaner designed to clean dirt, grime and remove mold, mildew, algae stains from almost any surface. It was specifically formulated to get rid of mold on vinyl &amp; aluminum siding as well as wood, brick and concrete surfaces. It is useful on an array of surfaces and contains no bleach, ammonia or poisonous acids so it can be used safely around plants and shrubs.",
+        "application": "<br><strong>Applications:</strong> Recommended for all exterior siding (wood, vinyl, aluminum), roofing of all types (asphalt shingles, fiberglass, shingles, cedar tile), gutters, stucco, brick and cement block, masonry, concrete, driveways, walkways and walls, porch, screens, pool areas, engines and equipment, RV’s, patio furniture, and boats.<br><br>",
+        "features": [
+            "Great for Removing Mold, Mildew & Algae Stains",
+            "Multi-Surface Commercial Strength Cleaner",
+            "Makes up to 11 (Ready to Use) Gallons of Solution",
+            "Perfect for use in Power Washer Machines",
+            "Safe Around Plants and Shrubs",
+            "No Bleach, Ammonia or Acids"
+        ],
+        "buy": "http://www.homedepot.com/p/Moldex-1-gal-Power-Cleaner-4040/205185032",
         "tabs": {
-            "instructions": "",
-            "sds": {
-                "name": "",
-                "url": "",
-                "title": ""
-            },
-            "faq": "",
+            "instructions": "<p>When mixed (1:10) with water, one bottle of concentrate makes 11 GALLONS of premix, and cleans up to 2000 sq. ft. (less on rougher surfaces), and can be applied by pressure washer, pump-up sprayer, brush or roller. Contains anti-corrosive agents to safeguard pressure washer parts (bleach can erode O-rings).</p><p><strong>DIRECTIONS FOR USE: <br>(MANUAL USE DIRECTIONS)</strong><br>1. Mix at 1:10 parts concentrate with water.<br>2. Fill spray bottles, buckets, or pump sprayers and spray to wet the area to be cleaned. Work in manageable sections if cleaning a large area.<br>3. Wait several minutes to allow cleaner to work before wiping, scrubbing or mopping the surface clean.<br>4. Rinse with clean water, allow surfaces to dry before resuming use or traffic.</p><p><strong>(PRESSURE WASHER APPLICATION)</strong><br>1. Rinse surrounding plants with water, before and after application.<br>2. Wet surface to be cleaned, prior to applying the product.<br>3. Place detergent application siphon tube and screen filter directly into container. Open meter valve (if applicable) <br>for maximum product flow. For reservoir machines, pour product (full strength) into pressure washer.<br>4. Spray at low pressure onto a wet surface.<br>5. On vertical surfaces, always spray from the top down.<br>6. Allow product to remain on the surface for 3 to 5 minutes to penetrate. Do not allow product to dry on surface.<br>7. Remove siphon tube from solution and rinse surface with high pressure water spray thoroughly.<br>8. Flush siphon tube with clean water prior to storage. </p>",
+            "sds": [{
+                "name": "Power Outdoor Cleaner SDS",
+                "url": "./downloads/Moldex_Power_SDS.pdf",
+                "title": "Power Outdoor Cleaner SDS"
+            }],
+            "faq": "<h6>Does this product have bleach in it?</h6><p><strong>Yes.  </strong>It was formulated with Advanced Bleach Gel which helps controls overspray. Bleach is known to damage sensitive surfaces so we developed this technology to help you protect the areas surrounding the mold stains.</p><br><h6>Can this product be used outdoors?</h6><p><strong>Yes. </strong>This formula is safe to use indoors and outdoors. It can be used on almost any (colorsafe) hard non-porous surface.</p><br><h6>Is this product safe for use on fabrics or metal?</h6><p><strong>No.</strong> Like most bleach-based products, we recommend keeping this product away from fabrics, glass, metals and old porcelain.</p><br><h6>Does this product kill mold &amp; mildew?</h6><p><strong>No.</strong> This product is one of the strongest mold &amp; mildew stain removers available on the market. It is 3x stronger than the leading bleach stain remover. However, we recommend using our Mold Killer to stop the growth of mold &amp mildew. <a href=\"../mold-mildew-killer.html\" title=\"Mold Killer\" target=\"_self\">Moldex<span class=\"sup\">®</span> Mold Killer</a> is an EPA Registered product designed to kill and inhibit the growth of mold &amp; mildew. </p>",
             "labels": [
                 {
-                    "name": "",
-                    "image": ""
+                    "name": "1 Gallon Concentrate Label",
+                    "image": "./downloads/1Gal_Power.pdf"
                 }
             ],
             "sizes": [
                 {
-                    "name": "",
-                    "image": ""
+                    "name": "1 Gallon (Concentrate)",
+                    "image": "./1Gal_power_800_600.jpg"
                 }
             ]
         },
         "similar": [
             {
-                "link": "",
-                "img": "",
-                "name": "",
-                "type": "",
-                "description": ""
+                "link": "/product/instant-house-wash.html",
+                "img": "./images/house_wash_bottom_sm.png",
+                "name": "Instant House Wash",
+                "type": "House End Sprayer",
+                "description": "Removes tough stains from, mildew, mold, algae, fungus and moss and restores the original look to wood, vinyl, brick and stone siding"
+            },
+            {
+                "link": "/products/instant-deck-fence-wash.html",
+                "img": "./images/deck_wash_bottom_sm.png",
+                "name": "Instant Deck Wash",
+                "type": "House End Sprayer",
+                "description": "Cleans & Brightens Decks & Fences and makes weathered old decks or fences look like new."
             }
         ]
     },

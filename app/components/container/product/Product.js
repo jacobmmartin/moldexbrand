@@ -68,7 +68,7 @@ class Product extends Component {
                                     <p>Product Labels: </p>
                                     {
                                         this.state.product.tabs.labels.map((label) => {
-                                            return <p key={label.name}><a href={label.image} target="new" className="cbp-lightbox">{label.name}</a></p>
+                                            return <p key={this.state.product.name + label.name}><a href={label.image} target="new" className="cbp-lightbox">{label.name}</a></p>
                                         })
                                     }
                                 </div>
@@ -76,7 +76,7 @@ class Product extends Component {
                                     <p>This product is available in: </p>
                                     {
                                         this.state.product.tabs.sizes.map((size) => {
-                                            return <p key={size.name}><a href={"images/" + size.image } target="new" className="cbp-lightbox">{size.name}</a></p>
+                                            return <p key={this.state.product.name + size.name}><a href={"images/" + size.image } target="new" className="cbp-lightbox">{size.name}</a></p>
                                         })
                                     }
                                 </div>
@@ -89,7 +89,7 @@ class Product extends Component {
                             <ul className="list_4">
                                 {
                                     this.state.product.features.map((feature) => {
-                                        return <li key={feature}><i className="fa fa-arrow-circle-o-right"></i> {feature}</li>
+                                        return <li key={this.state.product.name + feature}><i className="fa fa-arrow-circle-o-right"></i> {feature}</li>
                                     })
                                 }
                             </ul>
@@ -104,7 +104,7 @@ class Product extends Component {
                             <br/>
                             {
                                 this.state.product.similar.map((product) => {
-                                    return <div key={product}  className="one_fourth animate fadeInUp" data-anim-type="fadeInUp">
+                                    return <div key={this.state.product.name + product.name}  className="one_fourth animate fadeInUp" data-anim-type="fadeInUp">
                                         <div className="box">
                                             <a href={product.link}><img src={product.img} alt="" className="rimg"/></a>
                                             <h5><a href={product.link} > {product.name} </a></h5>

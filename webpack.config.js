@@ -9,17 +9,18 @@ var languages = {
     "de": require("./de.json")
 };
 module.exports = Object.keys(languages).map(function (language) {
-
+    process.env.lang = language;
+    console.log(process.env)
     return {
         name: language,
-        entry:{ 
-            app:"./app/app.js",
-            vendor: ["jquery", "./app/js/animations/js/animations.min.js","smoothscroll-for-websites",
-             "jquery-validation",
+        entry: {
+            app: "./app/app.js",
+            vendor: ["jquery", "./app/js/animations/js/animations.min.js", "smoothscroll-for-websites",
+                "jquery-validation",
             ],
-            }
-            ,
-         output: {
+        }
+        ,
+        output: {
             path: path.join(__dirname, "public"),
             filename: language + ".output.js",
         },
@@ -29,14 +30,19 @@ module.exports = Object.keys(languages).map(function (language) {
                 languages[language]
             ),
             new CopyWebpackPlugin([
-               {from: 'images/**/*', to: ''}
+                { from: 'images/**/*', to: '' }
             ]),
-             new webpack.ProvidePlugin({
+            new webpack.ProvidePlugin({
                 $: "jquery",
                 jQuery: "jquery"
             }),
+            new webpack.DefinePlugin({
+                "process.env": {
+                    lang: language
+                }
+            }),
             new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"vendor.bundle.js")
-  
+
         ],
 
         watch: true,

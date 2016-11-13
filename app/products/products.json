@@ -144,7 +144,7 @@
             ]
         },
         "similar": [
-              {
+            {
                 "link": "/product/instant-house-wash",
                 "img": "./images/similar/house_wash_bottom_sm.png",
                 "name": "Instant House Wash",
@@ -223,45 +223,61 @@
         ]
     },
     "instant-house-wash": {
-        "name": "",
-        "headline": "",
+        "name": "Moldex<span class=\"sup\">®</span> <strong>Instant</strong> House Wash",
+        "headline": "Removes Mold, Mildew, and Algae Stains.<br>No Ladder, No Problem. No Scrubbing. Spray on, Wash off.</h5>",
         "images": {
-            "factor": "",
-            "full": "",
+            "factor": "./images/factor_2.png",
+            "full": "./images/house_wash.jpg",
             "thumb": ""
         },
-        "desc": "",
-        "application": "",
-        "features": [],
-        "buy": "",
+        "desc": "Moldex<span class=\"sup\">®</span> Instant House Wash removes tough stains from, mildew, mold, algae, fungus and moss and restores the original look to wood, vinyl, brick and stone siding.  Formulated with a new <strong><em>Advanced Bleach Ge</em></strong><em><strong>l </strong></em>formula, it removes unwanted stains deep below the surface.  Our <strong><em>Active Cling™ Technology</em></strong> allows powerful cleaning agents to remain (or hold) onto the vertical surface longer to achieve the highest effective contact time. ",
+        "application": "<strong>Applications:</strong> Vinyl, PVC, Wood, Brick, Stone, Stucco, Fiberglass, Metal, Veneer, Cement, and Shingle Siding. Works Great on Composite Material, Asphalt, Window &amp; Door Trim, Walkways, Patios, Driveways, Retaining Walls, and More!<br><br>",
+        "features": [
+            "Removes Mold, Mildew & Algae Stains Instantly",
+            " Contains new Active Cling™ Technology",
+            "No Scrubbing - Instant Results",
+            "Cleans wood, Vinyl and Brick Siding",
+            "Contains Advanced Bleach Gel",
+            "No Phosphates",
+            "Up to 4,000 sq .ft.",
+            "Reaches 2nd Stor"
+        ],
+        "buy": "http://www.homedepot.com/p/Moldex-56-oz-Instant-House-Wash-7030/205973335",
         "tabs": {
-            "instructions": "",
+            "instructions": "<strong>DIRECTIONS FOR USE:</strong><br>1. Spray surrounding plants with water.<br>2. Shake well before using.<br>3. Attach hose to nozzle with valve in OFF position. Turn on water.<br>4. With valve in “CLEAN” position, apply cleaner to surface liberally and evenly.  Allow to work up to 5-10<br>minutes.  Do not allow to dry on surface.<br>5. Rub with bristled brush (if necessary).<br>6. Rinse off treated surface with valve in “RINSE” position.<br>7.   If staining persists, a second application may be required.<br>8. Move to a new area and repeat.<br>9. To stop spraying, turn knob to OFF position.<br>10. Spray surrounding plants with water after use.",
             "sds": {
-                "name": "",
-                "url": "",
-                "title": ""
+                "name": "House Wash SDS",
+                "url": "https://www.moldexbrands.com/downloads/Moldex_Instant%20House_Wash_SDS.pdf",
+                "title": "House Wash MSDS"
             },
-            "faq": "",
+            "faq": "<h6>Does this product have bleach in it?</h6><p><strong>Yes.  </strong>It was formulated with Advanced Bleach Gel which helps controls overspray. Bleach is known to damage sensitive surfaces so we developed this technology to help you protect the areas surrounding the mold stains.</p><br><h6>Can this product be used outdoors?</h6><p><strong>Yes. </strong>This formula is safe to use indoors and outdoors. It can be used on almost any (colorsafe) hard non-porous surface.</p><br><h6>Is this product safe for use on fabrics or metal?</h6><p><strong>No.</strong> Like most bleach-based products, we recommend keeping this product away from fabrics, glass, metals and old porcelain.</p><br><h6>Does this product kill mold &amp; mildew?</h6> <p><strong>No.</strong> This product is one of the strongest mold &amp; mildew stain removers available on the market. It is 3x stronger than the leading bleach stain remover. However, we recommend using our Mold Killer to stop the growth of mold &amp; mildew. <a href=\"../mold-mildew-killer.html\" title=\"Mold Killer\" target=\"_self\">Moldex<span class=\"sup\">®</span> Mold Killer</a> is an EPA Registered product designed to kill and inhibit the growth of mold &amp; mildew. </p>",
             "labels": [
                 {
-                    "name": "",
-                    "image": ""
+                    "name": "64oz Hose End Bottle (Front & Back) Labels",
+                    "image": "./downloads/64oz_House_Wash.pdf"
                 }
             ],
             "sizes": [
                 {
-                    "name": "",
-                    "image": ""
+                    "name": "64oz Hose End Sprayer",
+                    "image": "./images/64oz_house_wash_800_600.jpg"
                 }
             ]
         },
         "similar": [
             {
-                "link": "",
-                "img": "",
-                "name": "",
-                "type": "",
-                "description": ""
+                "link": "/product/instant-house-wash.html",
+                "img": "./images/house_wash_bottom_sm.png",
+                "name": "Instant House Wash",
+                "type": "House End Sprayer",
+                "description": "Removes tough stains from, mildew, mold, algae, fungus and moss and restores the original look to wood, vinyl, brick and stone siding"
+            },
+            {
+                "link": "/products/instant-deck-fence-wash.html",
+                "img": "./images/deck_wash_bottom_sm.png",
+                "name": "Instant Deck Wash",
+                "type": "House End Sprayer",
+                "description": "Cleans & Brightens Decks & Fences and makes weathered old decks or fences look like new."
             }
         ]
     },

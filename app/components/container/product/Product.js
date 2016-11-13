@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+
 let Products = require("../../../products/products.json")
 
 require("./product.css");
@@ -16,6 +17,12 @@ class Product extends Component {
     }
     render() {
         return (
+            <div>
+             <div className="page_title">
+                <div className="container">
+                    <h1 dangerouslySetInnerHTML={{ __html: this.state.product.name }}></h1>
+                </div>
+            </div>
             <div className="product_comp">
                 <div className="content_fullwidth">
                     <div className="container">
@@ -119,6 +126,7 @@ class Product extends Component {
                     </div>
 
                 </div>
+            </div>
             </div>
         );
     }

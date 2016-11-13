@@ -100,11 +100,11 @@
         "buy": "http://www.homedepot.com/p/Moldex-64-oz-Disinfectant-Concentrate-Cleaner-5510/205176710",
         "tabs": {
             "instructions": "<p><strong>DIRECTIONS FOR USE</strong> </p><p><strong>DISINFECTION</strong> - To disinfect inanimate, hard non-porous surfaces add 2 ounces of this product per gallon of water (or equivalent dilution). Apply solution with a mop, cloth, sponge, hand pump trigger sprayer or low pressure coarse sprayer so as to wet all surfaces thoroughly. Allow to remain wet for 10 minutes, then remove excess liquid. For sprayer applications, spray 6-8 inches from surface, rub with brush, sponge or cloth. Do not breathe spray mist. For heavily soiled areas, a pre-cleaning step is required. Prepare a fresh solution for each use.</p><p><strong>BACTERICIDAL ACTIVITY </strong>- At the 2 ounce per gallon (or equivalent dilution) dilution this product demonstrates effective disinfectant activity against the organisms: Pseudomonas aeruginosa PRD-10, Salmonella (choleraesuis) enterica, Staphylococcus aureus, Escherichia coli, Escherichia coli O111:H8, Fusobacterium necrophorum, Vancomycin resistant Enterococcus faecalis (VRE), Methicillin resistant Staphylococcus aureus (MRSA), and Vancomycin intermediate resistant Staphylococcus aureus (VISA).               </p><p><strong>FUNGICIDAL ACTIVITY</strong> - At the 2 ounce per gallon (or equivalent dilution) dilution, this product is fungicidal against the pathogenic fungi, Trichophyton mentagrophytes (Athlete’s Foot Fungus) and Candida albicans. Apply solution with a cloth, sponge or hand pump trigger sprayer to hard, non-porous surfaces found in bathrooms, shower stalls, locker rooms, exercise facilities or other clean, hard non-porous surfaces commonly contacted by bare feet. Allow the surface to remain wet for 10 minutes, then remove excess liquid. Diluted product should be applied daily or more frequently with heavy facility use. </p><p><strong>GENERAL CLEANING</strong> - Apply this product to soiled area with a mop, cloth, sponge, hand pump trigger sprayer or low pressure coarse sprayer. This product can be diluted at 2 ounces per gallon (or equivalent dilution) or applied at full strength. Thoroughly wet soiled surface and scrub as necessary.<br><strong>DEODORIZATION </strong>- To deodorize, apply this product as indicated under the heading DISINFECTION.<br><strong>MILDEWSTAT</strong> - To control mold and mildew (Aspergillus niger) and the odors they cause on pre-cleaned, hard, non-porous inanimate surfaces add 2 ounces of this product per gallon of water (or equivalent dilution). Apply solution with a cloth, mop, sponge or hand pump trigger sprayer making sure to wet all surfaces completely. Let air dry. Prepare a fresh solution for each use. Repeat application at weekly intervals or when mildew growth appears.<br><strong>Note:</strong> Refer to product label for additional directions for use, a full list of pathogens, and safety information.</p>",
-            "sds": {
+            "sds": [{
                 "name": "Disinfectant Concentrate SDS",
                 "url": "https://www.moldexbrands.com/downloads/Moldex_Disinfectant_Concentrate_SDS.pdf",
                 "title": "Stain Remover SDS"
-            },
+            }],
             "faq": "<h6>Does this product kill mold &amp; mildew?</h6><p><strong>Yes.</strong> Moldex<span class=\"sup\">®</span> Mold Killer is effective against a broad spectrum of bacteria, is virucidal*, fungicidal, and inhibits the growth of mildew and their odors when used as directed.</p><br><h6>Does this product have bleach in it?</h6><p><strong>No.  </strong>Moldex<span class=\"sup\">®</span> Mold Killer is an EPA registered quaternary ammonium solution.  Quaternary ammonium chlorides, or “quats,” are noncorrosive, making them gentler on  equipment and surfaces.  Bleach (active ingredient Sodium Hypochloride) is very effective in removing the discoloration caused by mold, but may leave the microflora that enables the mold to grow.</p><br><h6>Does Moldex<span class=\"sup\">®</span> Mold Killer remove mold stains? </h6><p><strong>Yes &amp; No. </strong>Mold &amp; Mildew, if left untreated, can result in deeply embedded ugly black mold stains.  In some cases, it will remove the stain. In other cases, a more aggressive stain remover will be required. Moldex<span class=\"sup\">®</span> Mold Killer is a great cleaner that delivers non-acid cleaning performance.  It removes   dirt, grease, grime, food stains, soap scum, fingerprints,  crayon / pencil marks and heel marks, but it does NOT contain bleach or whitening agents. If difficult mold stains are present, we recommend using one of our stain removers. Non-Bleach - <a href=\"deep_stain_remover.html\">Non-Bleach Stain Remover</a> or Bleach-based - <a href=\"../instant-mold-mildew-stain-remover.html\">Instant Mold &amp; Mildew Stain Remover</a>.</p><br><h6>What surfaces can I use this product on? Can it be used outdoors?</h6><p>This formula was approved by the EPA for use on a variety of surfaces.  For a complete list of EPA approved surfaces, you can view them <a href=\"downloads/approved_surfaces.pdf\">here</a>.</p><br>",
             "labels": [
                 {
@@ -182,11 +182,11 @@
         "buy": "http://www.homedepot.com/p/Moldex-32-oz-Instant-Mold-and-Mildew-Stain-Remover-7010/205973334",
         "tabs": {
             "instructions": "DIRECTIONS FOR USE:</strong><br>1. Turn sprayer nozzle to “spray” or “on” position.<br>2. Spray 6-8 inches from surface until thoroughly covered. <br>Allow stain to disappear, then rinse well.<br>Heavy buildup may require longer contact time or two cleanings.<br>3. Rinse immediately after use on rubber, vinyl or items such as shower curtains.<br><strong>Note:</strong> Do not use on fabrics.  Avoid prolonged contact with metal and old porcelain.",
-            "sds": {
+            "sds": [{
                 "name": "Instant Stain Remover SDS",
                 "url": "https://www.moldexbrands.com/downloads/Moldex_Instant_Stain_Remover_SDS.pdf",
                 "title": "Stain Remover MSDS"
-            },
+            }],
             "faq": "<h6>Does this product have bleach in it?</h6><p><strong>Yes.  </strong>It was formulated with Advanced Bleach Gel which helps controls overspray. Bleach is known to damage sensitive surfaces so we developed this technology to help you protect the areas surrounding the mold stains.</p><br><h6>Can this product be used outdoors?</h6><p><strong>Yes. </strong>This formula is safe to use indoors and outdoors. It can be used on almost any (colorsafe) hard non-porous surface.</p><br><h6>Is this product safe for use on fabrics or metal?</h6><p><strong>No.</strong> Like most bleach-based products, we recommend keeping this product away from fabrics, glass, metals and old porcelain.</p><br><h6>Does this product kill mold &amp; mildew?</h6><p><strong>No.</strong> This product is one of the strongest mold &amp; mildew stain removers available on the market. It is 3x stronger than the leading bleach stain remover. However, we recommend using our Mold Killer to stop the growth of mold &amp; mildew. <a href=\"../mold-mildew-killer.html\" title=\"Mold Killer\" target=\"_self\">Moldex<span class=\"sup\">®</span> Mold Killer</a> is an EPA Registered product designed to kill and inhibit the growth of mold &amp; mildew. </p>",
             "labels": [
                 {
@@ -245,11 +245,11 @@
         "buy": "http://www.homedepot.com/p/Moldex-56-oz-Instant-House-Wash-7030/205973335",
         "tabs": {
             "instructions": "<strong>DIRECTIONS FOR USE:</strong><br>1. Spray surrounding plants with water.<br>2. Shake well before using.<br>3. Attach hose to nozzle with valve in OFF position. Turn on water.<br>4. With valve in “CLEAN” position, apply cleaner to surface liberally and evenly.  Allow to work up to 5-10<br>minutes.  Do not allow to dry on surface.<br>5. Rub with bristled brush (if necessary).<br>6. Rinse off treated surface with valve in “RINSE” position.<br>7.   If staining persists, a second application may be required.<br>8. Move to a new area and repeat.<br>9. To stop spraying, turn knob to OFF position.<br>10. Spray surrounding plants with water after use.",
-            "sds": {
+            "sds": [{
                 "name": "House Wash SDS",
                 "url": "https://www.moldexbrands.com/downloads/Moldex_Instant%20House_Wash_SDS.pdf",
                 "title": "House Wash MSDS"
-            },
+            }],
             "faq": "<h6>Does this product have bleach in it?</h6><p><strong>Yes.  </strong>It was formulated with Advanced Bleach Gel which helps controls overspray. Bleach is known to damage sensitive surfaces so we developed this technology to help you protect the areas surrounding the mold stains.</p><br><h6>Can this product be used outdoors?</h6><p><strong>Yes. </strong>This formula is safe to use indoors and outdoors. It can be used on almost any (colorsafe) hard non-porous surface.</p><br><h6>Is this product safe for use on fabrics or metal?</h6><p><strong>No.</strong> Like most bleach-based products, we recommend keeping this product away from fabrics, glass, metals and old porcelain.</p><br><h6>Does this product kill mold &amp; mildew?</h6> <p><strong>No.</strong> This product is one of the strongest mold &amp; mildew stain removers available on the market. It is 3x stronger than the leading bleach stain remover. However, we recommend using our Mold Killer to stop the growth of mold &amp; mildew. <a href=\"../mold-mildew-killer.html\" title=\"Mold Killer\" target=\"_self\">Moldex<span class=\"sup\">®</span> Mold Killer</a> is an EPA Registered product designed to kill and inhibit the growth of mold &amp; mildew. </p>",
             "labels": [
                 {
@@ -303,11 +303,11 @@
         "buy": "http://www.homedepot.com/p/Moldex-56-oz-Instant-Deck-and-Fence-Wash-7040/205973339",
         "tabs": {
             "instructions": "<strong>DIRECTIONS FOR USE:</strong><br>1. Spray surrounding plants with water.<br>2. Shake well before using.<br>3. Attach hose to nozzle with valve in OFF position. Turn on water.<br>4. With valve in “CLEAN” position, apply cleaner to surface liberally and evenly.  Allow to work up to 5-10<br>minutes.  Do not allow to dry on surface.<br>5. Rub with bristled brush (if necessary).<br>6. Rinse off treated surface with valve in “RINSE” position.<br>7.   If staining persists, a second application may be required.<br>8. Move to a new area and repeat.<br>9. To stop spraying, turn knob to OFF position.<br>10. Spray surrounding plants with water after use.</p>",
-            "sds": {
+            "sds": [{
                 "name": "Deck Wash SDS",
                 "url": "./downloads/Moldex_Instant_Deck_Wash_SDS.pdf",
                 "title": "Deck Wash SDS"
-            },
+            }],
             "faq": "<h6>Does this product have bleach in it?</h6><p><strong>Yes.  </strong>It was formulated with Advanced Bleach Gel which helps controls overspray. Bleach is known to damage sensitive surfaces so we developed this technology to help you protect the areas surrounding the mold stains.</p><br><h6>Can this product be used outdoors?</h6><p><strong>Yes. </strong>This formula is safe to use indoors and outdoors. It can be used on almost any (colorsafe) hard non-porous surface.</p><br><h6>Is this product safe for use on fabrics or metal?</h6><p><strong>No.</strong> Like most bleach-based products, we recommend keeping this product away from fabrics, glass, metals and old porcelain.</p><br><h6>Does this product kill mold &amp; mildew?</h6><p><strong>No.</strong> This product is one of the strongest mold &amp; mildew stain removers available on the market. It is 3x stronger than the leading bleach stain remover. However, we recommend using our Mold Killer to stop the growth of mold & mildew. <a href=\"../mold-mildew-killer.html\" title=\"Mold Killer\" target=\"_self\">Moldex<span class=\"sup\">®</span> Mold Killer</a> is an EPA Registered product designed to kill and inhibit the growth of mold &amp; mildew. </p>",
             "labels": [
                 {
@@ -340,45 +340,76 @@
         ]
     },
     "non-bleach-stain-remover": {
-        "name": "",
-        "headline": "",
+        "name": "Moldex<span class=\"sup\">®</span> Non-Bleach Stain Remover",
+        "headline": "<strong>Bleach-Free</strong> Mold &amp; Mildew Stain Remover.",
         "images": {
-            "factor": "",
-            "full": "",
+            "factor": "./images/factor_2.png",
+            "full": "./images/deep_stain_remover.jpg",
             "thumb": ""
         },
-        "desc": "",
-        "application": "",
-        "features": [],
-        "buy": "",
+        "desc": "Moldex<span class=\"sup\">®</span> Non-Bleach Stain Remover is a concentrated multi-surface cleaner that’s packed with Oxygen-Power for the removal of deeply seated mold and mildew stains. This product is perfect for mold remediation, flood disaster, housekeeping and property maintenance applications. When applied properly, it leaves behind a residual stain fighting technology on the surface that lasts for months. It is a safe, powerful, bleach-free alternative perfect for almost any surface. Try it today and learn how easy it can be to get rid of mold stains.",
+        "application": "<strong>Applications: </strong>Awnings, Shower Curtains, Walls, Tile, Grout, Plastic, Previously painted surfaces, Basements, Window frames, Sealed Wood, Tarps, Tents, Shingles, Roofs, Siding, Asphalt, Concrete, Foundations, Brick, Masonry, Walkways and Retaining Walls.<br><br>",
+        "features": [
+            "Safe, Powerful, Bleach-Free Alternative",
+            "2-in-1 Formula that Cleaner Plus Barrier",
+            "Fast Acting & Light Scrubbing",
+            "Indoor/Outdoor",
+            "No Ammonia, No Odor, Non-Toxic, Non-Corrosive",
+            "Will Not Harm Plants",
+            "Color Safe for Fabrics and Carpets",
+            "Hose End Cleans up to 3,000 sq. ft."
+        ],
+        "buy": "http://www.homedepot.com/p/Moldex-32-oz-Deep-Stain-Remover-5310/205176718",
         "tabs": {
-            "instructions": "",
-            "sds": {
-                "name": "",
-                "url": "",
-                "title": ""
-            },
-            "faq": "",
+            "instructions": "<p><strong>DIRECTIONS FOR USE:</strong><br>Spray on surface, allow to dwell 3-5 minutes. Rinse with clean water. Wipe dry.  Porous Surfaces: On extremely soiled or mildewed surfaces, it may be necessary to scrub with a bristle brush, and a second application may be needed. <br><strong>TILE AND GROUT:</strong> Spray on surface. Allow a few minutes dwell time. Rinse with clean water. Reapply if needed. <br><strong>CARPET &amp; FABRIC:</strong> Always test for color fastness before using any chemical on fabrics. Remove loose soil from surface. Spray area and allow to penetrate for 3-5 minutes. Blot with white cloth. Rinse cloth and repeat until clean.Do not use on leather or silk.</p>",
+            "sds": [
+                {
+                    "name": "Non-Bleach Stain Remover SDS",
+                    "url": "./downloads/Moldex_Non_Bleach_Stain_Remover_SDS.pdf",
+                    "title": ""
+                },
+                {
+                    "name": "Non-Bleach Outdoor Wash SDS",
+                    "url": "./downloads/Moldex_Non_Bleach_Stain_Remover_HE_SDS.pdf",
+                    "title": "Non-Bleach Outdoor Wash SDS"
+                }
+            ],
+            "faq": "<h6>Does this product have bleach in it?</h6><p><strong>No.  </strong>It was formulated with Oxygen Power Detergents which are safe on most surfaces. Bleach can be damaging to some sensitive surfaces so we developed this technology to help remove difficult mold and mildew stains on surfaces likecarpets, canvas, and materials.  Also perfect for those people who do not like cleaning with bleach chemicals.</p><br><h6>Can this product be used outdoors?</h6><p><strong>Yes. </strong>This formula is safe to use indoors and outdoors. It can be used on almost any (colorsafe) hard non-porous surface.</p><br><h6>Is this product safe for use on fabrics or metal?</h6><p><strong>Yes.</strong> </p><br><h6>Does this product kill mold &amp; mildew?</h6><p><strong>No.</strong> This product is a mildew stain remover.  It does not kill mold &amp; mildew.  We recommend using our Mold Killer to stop the growth of mold &amp; mildew before using this product. <a href=\"../mold-mildew-killer.html\"title=\"Mold Killer\" target=\"\">Moldex<span class=\"sup\">®</span> Mold Killer</a> is an EPA Registered product designed to kill and inhibit the growth of mold &amp; mildew. </p>",
             "labels": [
                 {
-                    "name": "",
-                    "image": ""
+                    "name": "32oz Trigger Bottle (Front & Back) Label",
+                    "image": "./downloads/32oz_Non_Bleach_Stain_Remover.pdf"
+                },
+                {
+                    "name": "56oz Hose End (Front & Back) Label",
+                    "image": "./56oz_Non_Bleach_Outdoor_Wash.pdf"
                 }
             ],
             "sizes": [
                 {
-                    "name": "",
-                    "image": ""
+                    "name": "32oz Trigger Bottle",
+                    "image": "./images/32oz_deep_stain_remover_800_600.jpg"
+                },
+                {
+                    "name": "56oz Hose End Sprayer",
+                    "image": "./images/32oz_deep_stain_remover_hose_end_800_600.jpg"
                 }
             ]
         },
         "similar": [
             {
-                "link": "",
-                "img": "",
-                "name": "",
-                "type": "",
-                "description": ""
+                "link": "/product/instant-house-wash.html",
+                "img": "./images/house_wash_bottom_sm.png",
+                "name": "Instant House Wash",
+                "type": "House End Sprayer",
+                "description": "Removes tough stains from, mildew, mold, algae, fungus and moss and restores the original look to wood, vinyl, brick and stone siding"
+            },
+            {
+                "link": "/products/instant-deck-fence-wash.html",
+                "img": "./images/deck_wash_bottom_sm.png",
+                "name": "Instant Deck Wash",
+                "type": "House End Sprayer",
+                "description": "Cleans & Brightens Decks & Fences and makes weathered old decks or fences look like new."
             }
         ]
     },

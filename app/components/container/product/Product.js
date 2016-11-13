@@ -67,7 +67,12 @@ class Product extends Component {
                                 </div>
                                 <div id="example-3-tab-2" className="tabs-panel3" style={{ display: 'none' }}>
                                     <p>Safety Data Sheet: </p>
-                                    <a href={this.state.product.tabs.sds.url} title={this.state.product.tabs.sds.title} target="new">{this.state.product.tabs.sds.name}</a>
+                                     {
+                                        this.state.product.tabs.sds.map((sds) => {
+                                            return <p key={sds.name} ><a href={sds.url}  title={sds.title} target="new">{sds.name}</a></p>
+                                        })
+                                    }
+                                    
                                 </div>
                                 <div id="example-3-tab-3" className="tabs-panel3" style={{ display: 'none' }} dangerouslySetInnerHTML={{ __html: this.state.product.tabs.faq }}>
                                 </div>

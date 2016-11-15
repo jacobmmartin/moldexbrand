@@ -34,7 +34,7 @@
     background-clip: initial;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 100% 0;
+    background-position: center;
 }
 
 .feature_section81 {
@@ -55,4 +55,16 @@
 
 .white {
     color: #fff;
+}
+
+.scrollup {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    position: fixed;
+    bottom: 22px;
+    right: 20px;
+    text-indent: -9999px;
+    background: url('/images/scroll-top-arrow.png') no-repeat left top;
+    z-index: 999;
 }

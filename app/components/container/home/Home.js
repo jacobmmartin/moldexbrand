@@ -22,12 +22,12 @@ const Home = () =>{
             <div className="container">
               <h2 dangerouslySetInnerHTML={{ __html: __("feaa6635")}}>
               </h2>
-              <FactorList />dh
+              <FactorList />
             </div>
           </div>
           <div className="green_section">
             <div className="container">
-                <h2 className="white" dangerouslySetInnerHTML={{ __html: __("009cb700")}}>         
+                <h2 className="white" dangerouslySetInnerHTML={{ __html: __("009cb700")}}>
                 </h2>
                 <Carousel />
             </div>
@@ -58,6 +58,7 @@ const Home = () =>{
               </div>
             </div>
           </div>
+          <a href="#" className="scrollup">Scroll</a>
         </div>
 
     )

@@ -7,7 +7,7 @@ class appFooter extends Component {
             <div>
                 <div className="footer1">
                     <div className="container">
-                        <div className="col-xs-3">
+                        <div className="one_fourth">
                             <ul className="faddress">
                                 <li><img src="https://www.moldexbrands.com/images/footer-logo.png" alt=""/></li>
                                 <li><i className="fa fa-map-marker fa-lg"></i> 866 Horan Drive
@@ -18,22 +18,22 @@ class appFooter extends Component {
                                 <li><a href="mailto:info@moldexbrands.com"><i className="fa fa-envelope"></i> info @moldexbrands.com</a></li>
                             </ul>
                         </div>
-                        <div className="col-xs-3">
+                        <div className="one_fourth">
                             <div className="qlinks">
                                 <h4 className="lmb">Useful Links</h4>
                                 <ul>
                                     <li><a href="mold_guide.html" dangerouslySetInnerHTML={{ __html: __('146b4a94') }}></a></li>
                                     <li><a href="https://www.moldexbrands.com/mold-mildew-killer.html" dangerouslySetInnerHTML={{ __html: __('9ddffdb1') }}></a></li>
-                                    <li><a href="products.html" dangerouslySetInnerHTML={{ __html: __('68bebeef')}}></a></li> 
-                                    <li><a href="https://www.convenienceproducts.com/" dangerouslySetInnerHTML={{ __html: __("6ec34033")}}></a></li> 
-                                    <li><a href="blog/" dangerouslySetInnerHTML={{ __html: __('5d93d5f7')}}></a></li> 
-                                    <li><a href="contact.html" dangerouslySetInnerHTML={{ __html: __('17ed278a')}}></a></li> 
+                                    <li><a href="products.html" dangerouslySetInnerHTML={{ __html: __('68bebeef')}}></a></li>
+                                    <li><a href="https://www.convenienceproducts.com/" dangerouslySetInnerHTML={{ __html: __("6ec34033")}}></a></li>
+                                    <li><a href="blog/" dangerouslySetInnerHTML={{ __html: __('5d93d5f7')}}></a></li>
+                                    <li><a href="contact.html" dangerouslySetInnerHTML={{ __html: __('17ed278a')}}></a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-xs-6">
+                        <div className="one_half last">
                             <div className="siteinfo">
-                                <h4 className="lmb">{__('39a1fddd')}</h4> 
+                                <h4 className="lmb">{__('39a1fddd')}</h4>
                                 <p dangerouslySetInnerHTML={{ __html: __('04620d77') }}>
                                 </p>
                             </div>

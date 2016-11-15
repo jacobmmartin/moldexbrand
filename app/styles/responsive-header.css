@@ -1,0 +1,26 @@
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px){
+  .right_links{
+  	float:none;
+  }
+  .right_links li.link{
+  	float:none;
+  	margin-bottom: 5px;
+  }
+  .right_links ul{
+  	float:none;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px){
+  #trueHeader{
+  	box-shadow:none !important;
+  }
+}
+
+@media only screen and (min-device-width : 1000px) and (max-device-width : 1170px)  {
+  .navbar-default .navbar-nav > li > a {
+      color: #575757;
+      font-size: 12px;
+      padding: 18px 13px;
+  }
+}

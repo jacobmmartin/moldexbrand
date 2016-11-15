@@ -21,7 +21,7 @@
 
 .navbar{
 	border: none;
-	margin-top: 0!important;
+	margin-top: 0;
 }
 
 .navbar-nav>li>a {
@@ -62,8 +62,8 @@
 
 @media only screen and (max-width: 999px) and (min-width: 768px){
   .container>.navbar-collapse li a {
-  	background-color: #fff!important;
-  	margin-left: 1px!important;
+  	background-color: #fff;
+  	margin-left: 1px;
   }
   .container{
   	padding: 0;
@@ -96,9 +96,6 @@
   }
   .logo{
   	width: 100%;
-  }
-  .right_links{
-  	display: none;
   }
 }
 

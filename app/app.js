@@ -5,7 +5,7 @@ import { Router, Route, Link, hashHistory, IndexRoute  } from 'react-router';
 
 
 //IMPORT NODE MODULES TODO: CHANGE THIS
-require('bootstrap');
+//require('bootstrap');
 
 //IMPORT FOR ANIMATIONS JS
 require("./js/animations/js/animations.js"); // TODO: FIX THIS IMPORT
@@ -31,7 +31,11 @@ require("./js/form/jquery.form.min.js");
 require("./js/form/jquery.validate.min.js");
 
 //IMPORT FOR MAINMENU
+require("./js/mainmenu/bootstrap.min.js");
 require("./js/mainmenu/stickytwo.css");
+require("./js/mainmenu/demo.css");
+require("./js/mainmenu/bootstrap.min.css");
+require("./js/mainmenu/menu.css");
 
 //IMPORT FOR TABS
 require("./js/tabs/assets/js/responsive-tabs.min.js");
@@ -42,6 +46,10 @@ require("./js/tabs/assets/css/responsive-tabs3.css");
 //IMPORT GENERAL CSS
 require("./styles/reset.css");
 require("./styles/yamm.css");
+require("./styles/responsive-leyouts.css");
+require("./styles/responsive-header.css");
+
+
 
 //IMPORT custom components
 import Home from './components/container/home/Home';

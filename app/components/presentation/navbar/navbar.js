@@ -2,10 +2,10 @@
 import React from 'react';
 import { Link } from 'react-router';
 import DropdownProduct from '../dropdownProduct/dropdownProduct';
+import DropdownLanguages from '../dropdownLanguages/dropdownLanguages';
 
 //Load CSS and images
 require("./navbar.css");
-require('./assets/opacity1.png');
 
 //Cretate Class
 var NavBar = React.createClass({
@@ -45,6 +45,10 @@ var NavBar = React.createClass({
                               <li><Link to="/retail" className={this.isActive('retail')} onClick={this.setFilter.bind(this, 'retail')} >Find our Products</Link></li>
                               <li><Link to="/blog" className={this.isActive('blog')} onClick={this.setFilter.bind(this, 'blog')} >News &amp; Blog</Link></li>
                               <li><Link to="/contact" className={this.isActive('contact')} onClick={this.setFilter.bind(this, 'contact')} >Contact</Link></li>
+                              <li className="dropdown yamm-fw">
+                                  <a href="#" className="dropdown-toggle" data-toggle="dropdown"  className={this.isActive('language')} onClick={this.setFilter.bind(this, 'language')} >Languages</a>
+                                  <DropdownLanguages />
+                              </li>
                           </ul>
                           <div id="wrap">
                           </div>
@@ -59,7 +63,3 @@ var NavBar = React.createClass({
 });
 
 export default NavBar;
-
-// <li className="dropdown yamm-fw"> <a onClick={this.onClickProducts}>Products</a>
-//   { this.state.showDropdown ?  : null }
-// </li>

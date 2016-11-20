@@ -2,7 +2,7 @@
     float: left;
     width: 100%;
     height: 61px;
-    background: url('./assets/opacity1.png') repeat left top;
+    background: url('/images/opacity1.png') repeat left top;
 }
 
 .navbar {
@@ -27,8 +27,7 @@
 .navbar-nav>li>a {
   line-height: 25px;
   margin-right: 1px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 18px 12px !important;
   text-transform: uppercase;
 }
 
@@ -80,7 +79,7 @@
   	padding: 5px;
   }
   ul.nav>li>a.active{
-  	color: #777!important;
+  	color: #777;
   }
   .navbar-collapse {
     padding:0!important;
@@ -89,7 +88,7 @@
 
 @media only screen and (max-width: 999px) and (min-width: 99px){
   li.dropdown ul.dropdown-menu li a {
-      color: #777!important;
+      color: #777;
   }
   .navbar-default{
   	z-index: 999;
@@ -98,7 +97,6 @@
   	width: 100%;
   }
 }
-
 
 /* CSS for fadein/fadeout product dropdown */
 @media (min-width: 999px) {

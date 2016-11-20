@@ -4,8 +4,6 @@ import { Link } from 'react-router';
 
 //Load CSS and images
 require("./logoHeader.css");
-var background = require('./assets/opacity2.png');
-var logo = require('./assets/logo.png');
 
 //Cretate Class
 var LogoHeader = React.createClass({

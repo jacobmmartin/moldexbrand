@@ -1,0 +1,15 @@
+.dropdown-languages {
+  left: 82% !important;
+  text-align: center;
+}
+
+.dropdown-languages .yamm-content {
+  padding: 20px 0px !important;
+}
+
+@media (max-width: 1000px) {
+  .dropdown-languages {
+    left: 0 !important;
+    text-align: center;
+  }
+}

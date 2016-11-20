@@ -12,17 +12,17 @@ var DropdownProduct = React.createClass({
           <li>
               <div className="yamm-content">
                   <div className="row">
-                      <ul className="col-sm-6 col-md-3 list-unstyled ">
+                      <aside className="col-sm-6 col-md-3 list-unstyled ">
                           <li>
                               <p>Our Products</p>
                           </li>
                           <li>
-                            <img src={require('./assets/3_factors.jpg')} alt="" className="img_left4" ></img>
+                            <img src='/images/3_factors.jpg' alt="" className="img_left4" ></img>
                             Our method is <strong>Kill, Clean</strong> and <strong>Prevent</strong>.
                             We call it the "3 Factors in Mold Fighting". Professional solutions made for you. Which one do you need?
                             <Link to="how-to-get-rid-of-mold-and-mildew.html"> Find out <i className="fa fa-long-arrow-right"></i></Link>
                           </li>
-                      </ul>
+                      </aside>
                       <ul className="col-sm-6 col-md-3 list-unstyled ">
                           <li>
                               <p>Mold Killers</p>

@@ -595,7 +595,7 @@ border-bottom-color: #fff;
 
 .container>.navbar-collapse {margin-left: 20px;}
 
-.container>.navbar-collapse li a {margin-left: 14px; background-color: #272727;}
+.container>.navbar-collapse li a {margin-left: 14px; background-color: #272727; font-size: 14px;}
 
 }
 
@@ -606,7 +606,7 @@ border-bottom-color: #fff;
 
 .container>.navbar-collapse {margin-left: 20px;}
 
-.container>.navbar-collapse li a {margin-left: 14px; background-color: #272727;}
+.container>.navbar-collapse li a {margin-left: 14px; background-color: #272727; font-size: 14px;}
 
 }
 
@@ -616,8 +616,8 @@ border-bottom-color: #fff;
     .container>.navbar-collapse {margin-left: 20px;}
 
     .container>.navbar-collapse li a {
-        /*margin-left: 14px;*/
         background-color: #272727;
+				font-size: 14px;
     }
 }
 

@@ -3,7 +3,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, Link, hashHistory, IndexRoute  } from 'react-router';
 
-
 //IMPORT NODE MODULES TODO: CHANGE THIS
 //require('bootstrap');
 

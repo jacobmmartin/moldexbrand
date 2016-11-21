@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
+import language from "../../../language.js";
 
-let Products = require("../../../products/products.json")
-
+let Products = language.Products;
 require("./product.css");
 
 class Product extends Component {
@@ -72,7 +72,7 @@ class Product extends Component {
                                             return <p key={sds.name} ><a href={sds.url}  title={sds.title} target="new">{sds.name}</a></p>
                                         })
                                     }
-                                    
+
                                 </div>
                                 <div id="example-3-tab-3" className="tabs-panel3" style={{ display: 'none' }} dangerouslySetInnerHTML={{ __html: this.state.product.tabs.faq }}>
                                 </div>
@@ -101,7 +101,7 @@ class Product extends Component {
                             <ul className="list_4">
                                 {
                                     this.state.product.features.map((feature) => {
-                                        return <li key={this.state.product.name + feature}><i className="fa fa-arrow-circle-o-right"></i> {feature}</li>
+                                        return <li key={this.state.product.name + feature}><i className="fa fa-arrow-circle-o-right"></i> <div dangerouslySetInnerHTML={{ __html: feature}}></div></li>
                                     })
                                 }
                             </ul>

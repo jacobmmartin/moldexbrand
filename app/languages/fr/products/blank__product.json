@@ -1,0 +1,131 @@
+{
+    "disinfectant-conc": {
+        "name": "",
+        "headline": "",
+        "images": {
+            "factor": "",
+            "full": "",
+            "thumb": ""
+        },
+        "desc": "",
+        "application": "",
+        "features": [],
+        "buy": "",
+        "tabs": {
+            "instructions": "",
+            "sds": {
+                "name":"",
+                "url":"",
+                "title":""
+            },
+            "faq": "",
+             "labels": [
+                 {
+                    "name": "",
+                    "image": ""
+                }     
+            ],
+            "sizes": [
+                {
+                    "name": "",
+                    "image": ""
+                }
+            ]
+        },
+        "similar": [
+            {
+                "link": "",
+                "img": "",
+                "name": "",
+                "type": "",
+                "description": ""
+            }
+        ]
+    }
+}
+
+
+    "disinfectant-conc": {
+        "name": "Moldex<span class=\"sup\">®</span> Disinfectant Concentrate",
+        "headline": "Cleans, Disinfects, and Deodorizes Surfaces by Killing Odor-Causing Microorganisms and Prevents the Growth of Mold and Mildew.",
+        "images": {
+            "factor": "./images/factor_1.png",
+            "full": "./images/products_desc/mold_disinfectant.jpg",
+            "thumb": ""
+        },
+        "desc": "Moldex<span class=\"sup\">®</span> Disinfectant Concentrate is a one-step germicidal, disinfectant cleaner and odor neutralizer designed for general cleaning, disinfecting, deodorizing, and controlling mold and mildew on hard, non-porous inanimate surfaces in the house and around businesses. Quickly removes dirt, grime, mold, mildew, food residue, blood and other organic matter commonly found in hospitals. It also eliminates odors leaving surfaces smelling clean and fresh. Use where odors are a problem. It cleans, disinfects, and deodorizes surfaces by killing odor-causing microorganisms and prevents the growth of mold and mildew.",
+        "application": "<strong>Its non-abrasive formula is designed for use on:</strong> glass, glazed ceramic bathroom surfaces, glazed tile, glazed porcelain, chrome, stainless steel, and plastic surfaces associated with floors, walls, fixtures, toilets, urinals, sinks, shower rooms, and locker rooms. It is easy to apply mold prevention that dries clear and fast.",
+        "features": [
+            "Inhibits the Growth of Mold & Mildew",
+            "Cleans, Disinfects and Deodorizes",
+            "EPA Registered",
+            "Bleach-Free",
+            "Contains No Phosphates",
+            "Leaves a Clean Fresh Scent",
+            "Kills Household Germs",
+            "Non-Scratch Formula",
+            "Hospital Grade Disinfectant"
+        ],
+        "buy": "http://www.homedepot.com/p/Moldex-64-oz-Disinfectant-Concentrate-Cleaner-5510/205176710",
+        "tabs": {
+            "instructions": "<p><strong>DIRECTIONS FOR USE</strong> </p><p><strong>DISINFECTION</strong> - To disinfect inanimate, hard non-porous surfaces add 2 ounces of this product per gallon of water (or equivalent dilution). Apply solution with a mop, cloth, sponge, hand pump trigger sprayer or low pressure coarse sprayer so as to wet all surfaces thoroughly. Allow to remain wet for 10 minutes, then remove excess liquid. For sprayer applications, spray 6-8 inches from surface, rub with brush, sponge or cloth. Do not breathe spray mist. For heavily soiled areas, a pre-cleaning step is required. Prepare a fresh solution for each use.</p><p><strong>BACTERICIDAL ACTIVITY </strong>- At the 2 ounce per gallon (or equivalent dilution) dilution this product demonstrates effective disinfectant activity against the organisms: Pseudomonas aeruginosa PRD-10, Salmonella (choleraesuis) enterica, Staphylococcus aureus, Escherichia coli, Escherichia coli O111:H8, Fusobacterium necrophorum, Vancomycin resistant Enterococcus faecalis (VRE), Methicillin resistant Staphylococcus aureus (MRSA), and Vancomycin intermediate resistant Staphylococcus aureus (VISA).               </p><p><strong>FUNGICIDAL ACTIVITY</strong> - At the 2 ounce per gallon (or equivalent dilution) dilution, this product is fungicidal against the pathogenic fungi, Trichophyton mentagrophytes (Athlete’s Foot Fungus) and Candida albicans. Apply solution with a cloth, sponge or hand pump trigger sprayer to hard, non-porous surfaces found in bathrooms, shower stalls, locker rooms, exercise facilities or other clean, hard non-porous surfaces commonly contacted by bare feet. Allow the surface to remain wet for 10 minutes, then remove excess liquid. Diluted product should be applied daily or more frequently with heavy facility use. </p><p><strong>GENERAL CLEANING</strong> - Apply this product to soiled area with a mop, cloth, sponge, hand pump trigger sprayer or low pressure coarse sprayer. This product can be diluted at 2 ounces per gallon (or equivalent dilution) or applied at full strength. Thoroughly wet soiled surface and scrub as necessary.<br><strong>DEODORIZATION </strong>- To deodorize, apply this product as indicated under the heading DISINFECTION.<br><strong>MILDEWSTAT</strong> - To control mold and mildew (Aspergillus niger) and the odors they cause on pre-cleaned, hard, non-porous inanimate surfaces add 2 ounces of this product per gallon of water (or equivalent dilution). Apply solution with a cloth, mop, sponge or hand pump trigger sprayer making sure to wet all surfaces completely. Let air dry. Prepare a fresh solution for each use. Repeat application at weekly intervals or when mildew growth appears.<br><strong>Note:</strong> Refer to product label for additional directions for use, a full list of pathogens, and safety information.</p>",
+            "sds": {
+                "name": "Disinfectant Concentrate SDS",
+                "url": "https://www.moldexbrands.com/downloads/Moldex_Disinfectant_Concentrate_SDS.pdf",
+                "title": "Stain Remover SDS"
+            },
+            "faq": "<h6>Does this product kill mold &amp; mildew?</h6><p><strong>Yes.</strong> Moldex<span class=\"sup\">®</span> Mold Killer is effective against a broad spectrum of bacteria, is virucidal*, fungicidal, and inhibits the growth of mildew and their odors when used as directed.</p><br><h6>Does this product have bleach in it?</h6><p><strong>No.  </strong>Moldex<span class=\"sup\">®</span> Mold Killer is an EPA registered quaternary ammonium solution.  Quaternary ammonium chlorides, or “quats,” are noncorrosive, making them gentler on  equipment and surfaces.  Bleach (active ingredient Sodium Hypochloride) is very effective in removing the discoloration caused by mold, but may leave the microflora that enables the mold to grow.</p><br><h6>Does Moldex<span class=\"sup\">®</span> Mold Killer remove mold stains? </h6><p><strong>Yes &amp; No. </strong>Mold &amp; Mildew, if left untreated, can result in deeply embedded ugly black mold stains.  In some cases, it will remove the stain. In other cases, a more aggressive stain remover will be required. Moldex<span class=\"sup\">®</span> Mold Killer is a great cleaner that delivers non-acid cleaning performance.  It removes   dirt, grease, grime, food stains, soap scum, fingerprints,  crayon / pencil marks and heel marks, but it does NOT contain bleach or whitening agents. If difficult mold stains are present, we recommend using one of our stain removers. Non-Bleach - <a href=\"deep_stain_remover.html\">Non-Bleach Stain Remover</a> or Bleach-based - <a href=\"../instant-mold-mildew-stain-remover.html\">Instant Mold &amp; Mildew Stain Remover</a>.</p><br><h6>What surfaces can I use this product on? Can it be used outdoors?</h6><p>This formula was approved by the EPA for use on a variety of surfaces.  For a complete list of EPA approved surfaces, you can view them <a href=\"downloads/approved_surfaces.pdf\">here</a>.</p><br>",
+            "labels": [
+                {
+                    "name": "32oz Trigger Bottle (Front & Back) Labels",
+                    "image": "https://www.moldexbrands.com/downloads/32oz_Moldex_Mold_Killer.pdf"
+                },
+                {
+                    "name": "22oz Trigger Bottle (Front & Back) Labels",
+                    "image": "https://www.moldexbrands.com/downloads/22oz_Moldex_Mold_Killer.pdf"
+                },
+                {
+                    "name": "1 Gallon Bottle Label",
+                    "image": "https://www.moldexbrands.com/downloads/1Gal_Moldex_Mold_Killer.pdf"
+                },
+                {
+                    "name": "5 Gallon Bottle Label",
+                    "image": "https://www.moldexbrands.com/downloads/5Gal_Moldex_Mold_Killer.pdf"
+                }
+            ],
+            "sizes": [
+                {
+                    "name": "32oz Trigger Sprayer",
+                    "image": "32oz_mold_killer_800_600.jpg"
+                },
+                {
+                    "name": "22oz Trigger Sprayer",
+                    "image": "22oz_mold_killer_800_600.jpg"
+                },
+                {
+                    "name": "1 Gallon Bottle",
+                    "image": "1Gal_mold_killer_800_600.jpg"
+                },
+                {
+                    "name": "5 Gallon Pail",
+                    "image": "5Gal_mold_killer_800_600.jpg"
+                }
+            ]
+        },
+        "similar": [
+              {
+                "link": "/product/instant-house-wash",
+                "img": "./images/similar/house_wash_bottom_sm.png",
+                "name": "Instant House Wash",
+                "type": "House End Sprayer",
+                "description": "Removes tough stains from, mildew, mold, algae, fungus and moss and restores the original look to wood, vinyl, brick and stone siding"
+            },
+            {
+                "link": "/product/instant-deck-fence-wash",
+                "img": "./images/similar/deck_wash_bottom_sm.png",
+                "name": "Instant Deck Wash",
+                "type": "House End Sprayer",
+                "description": "Cleans & Brightens Decks & Fences and makes  weathered old decks or fences look like new."
+            }
+        ]
+    },

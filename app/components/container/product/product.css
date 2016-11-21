@@ -13,6 +13,14 @@ ul.list_4 {
     margin: 0px;
 }
 
+.list_4 li i {
+    margin-right: 8px;
+}
+
+.list_4 li div {
+  display: inline;
+}
+
 .content_fullwidth3 {
     float: left;
     width: 100%;

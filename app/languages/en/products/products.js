@@ -1,4 +1,4 @@
-{
+export const Products = {
     "mold-mildew-killer": {
         "name": "Moldex<span className=\"sup\">®</span> Mold &amp; Mildew Killer",
         "headline": "Kills Mold &amp; Mildew.  Inhibits the Growth of Mold &amp; Mildew. <br> Fungicide, Mildewstat, Virucide*, Deodorizer and Disinfectant.",

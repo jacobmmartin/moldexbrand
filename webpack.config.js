@@ -5,7 +5,8 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 var webpack = require("webpack")
 
 var languages = {
-    "en": require("./en.json"),
+    "en": require("./locales/en.json"),
+    "fr": require("./locales/fr.json"),
 };
 module.exports = Object.keys(languages).map(function (language) {
     return {

@@ -9,7 +9,7 @@ var opts = {
 };
 
 gulp.task('extract-locales', function () {
-  return gulp.src('app/**/*.html')
+  return gulp.src('english/**/*.html')
     .pipe(l10n.extract(opts))
     .pipe(gulp.dest('locales'));
 });

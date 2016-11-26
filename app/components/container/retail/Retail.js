@@ -134,10 +134,10 @@ class Retail extends Component {
         </div>
 
         <div className="container">
-          <div className="content_fullwidth">
-            <p>All Moldex<span className="sup">®</span> Brand products <strong>are available for purchase </strong>on this website.To purchase or to see a full list of all Moldex<span className="sup">®</span> Brand products, <a href="products.html"><strong>click here</strong></a><strong>.</strong></p>
+          <div className="content_fullwidth" >
+            <p dangerouslySetInnerHTML={{ __html: __("40fb2f11")}}></p>
             <p>&nbsp; </p>
-            <p>If you prefer to buy them elsewhere, you will find them in these fine retailers...</p>
+            <p dangerouslySetInnerHTML={{ __html: __("b7d2acf7")}}></p>
             <div className="clearfix divider_dashed6"></div>
             <div className="big_text1">Retail Locations: </div>
             <div className="clearfix margin_top2"></div>
@@ -147,7 +147,7 @@ class Retail extends Component {
                 return <div key={retail.title} className="one_fourth animate fadeInUp" data-anim-type="fadeInUp">
                   <div className="box">
                     <img src={retail.img} alt="" className="rimg" />
-                    <p><a href={retail.link} title={retail.title} target="new">Visit their website</a></p>
+                    <p><a href={retail.link} title={retail.title} target="new" dangerouslySetInnerHTML={{ __html: __("66024a82")}}></a></p>
                   </div>
                 </div>
               })
@@ -162,7 +162,7 @@ class Retail extends Component {
                 return <div  key={retail.title} className="one_fourth animate fadeInUp" data-anim-type="fadeInUp">
                   <div className="box">
                     <img src={retail.img} alt="" className="rimg" />
-                    <p><a href={retail.link} title={retail.title} target="new">Visit their website</a></p>
+                    <p><a href={retail.link} title={retail.title} target="new" dangerouslySetInnerHTML={{ __html: __("66024a82")}}></a></p>
                   </div>
                 </div>
               })
@@ -177,7 +177,7 @@ class Retail extends Component {
                 return <div key={retail.title} className="one_fourth animate fadeInUp" data-anim-type="fadeInUp">
                   <div className="box">
                     <img src={retail.img} alt="" className="rimg" />
-                    <p><a href={retail.link} title={retail.title} target="new">Visit their website</a></p>
+                    <p><a href={retail.link} title={retail.title} target="new" dangerouslySetInnerHTML={{ __html: __("66024a82")}}></a></p>
                   </div>
                 </div>
               })
@@ -187,7 +187,7 @@ class Retail extends Component {
           <div className="clearfix margin_top3"></div>
 
           <div className="content_fullwidth">
-            <p>If you cannot find a retail store near you, please email us at <a href="mailto:info@moldexbrands.com">info @moldexbrands.com</a> or call us <strong>toll-free at 1.877.463.2628.</strong></p>
+            <p dangerouslySetInnerHTML={{ __html: __("6121169c")}}></p>
           </div>
 
           <div className="clearfix divider_dashed6"></div>
@@ -201,7 +201,7 @@ class Retail extends Component {
                 return <div key={retail.title} className="one_fourth animate fadeInUp" data-anim-type="fadeInUp">
                   <div className="box">
                     <img src={retail.img} alt="" className="rimg" />
-                    <p><a href={retail.link} title={retail.title} target="new">Visit their website</a></p>
+                    <p><a href={retail.link} title={retail.title} target="new" dangerouslySetInnerHTML={{ __html: __("66024a82")}}></a></p>
                   </div>
                 </div>
               })
@@ -220,7 +220,7 @@ class Retail extends Component {
                 return <div key={retail.title} className="one_fourth animate fadeInUp" data-anim-type="fadeInUp">
                   <div className="box">
                     <img src={retail.img} alt="" className="rimg" />
-                    <p><a href={retail.link} title={retail.title} target="new">Visit their website</a></p>
+                    <p><a href={retail.link} title={retail.title} target="new" dangerouslySetInnerHTML={{ __html: __("66024a82")}}></a></p>
                   </div>
                 </div>
               })
@@ -233,7 +233,7 @@ class Retail extends Component {
                 return <div key={retail.title} className="one_fourth animate fadeInUp" data-anim-type="fadeInUp">
                   <div className="box">
                     <img src={retail.img} alt="" className="rimg" />
-                    <p><a href={retail.link} title={retail.title} target="new">Visit their website</a></p>
+                    <p><a href={retail.link} title={retail.title} target="new" dangerouslySetInnerHTML={{ __html: __("66024a82")}}></a></p>
                   </div>
                 </div>
               })

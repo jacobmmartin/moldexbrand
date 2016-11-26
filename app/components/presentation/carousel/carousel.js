@@ -36,14 +36,14 @@ class Carousel extends React.Component {
                             <img src="https://www.moldexbrands.com/images/products_images/32oz_instant_stain_remover_circle.jpg" data-src="images/products_images/32oz_instant_stain_remover_circle.jpg" alt="" />
                             <div className="ms-info">
                                 <h4>{__('77d15d59') }</h4>
-                                <p dangerouslySetInnerHTML={{ __html: __('0114a1b5')}}></p>
+                                <p dangerouslySetInnerHTML={{ __html: __('bdee1a46')}}></p>
                             </div>
                         </div>
                         <div className="ms-slide">
                             <img src="https://www.moldexbrands.com/images/products_images/64oz_house_wash_circle.jpg" data-src="images/products_images/64oz_house_wash_circle.jpg" alt="" />
                             <div className="ms-info">
                                 <h4>{__('89c5daac')}</h4>
-                                <p dangerouslySetInnerHTML={{ __html: __('bf60b074')}}></p>
+                                <p dangerouslySetInnerHTML={{ __html: __('a958c416')}}></p>
                             </div>
                         </div>
                         <div className="ms-slide">

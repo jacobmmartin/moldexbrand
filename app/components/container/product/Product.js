@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import language from "../../../language.js";
 
 let Products = language.Products;
+let Labels = language.ProductsLabels;
+
 require("./product.css");
 
 class Product extends Component {
@@ -9,7 +11,8 @@ class Product extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            product: Products[this.props.params.id]
+            product: Products[this.props.params.id],
+            labels: Labels
         };
     }
     componentWillReceiveProps(nexProps) {
@@ -47,7 +50,7 @@ class Product extends Component {
                             <div className="clearfix"></div>
                             <div className="content_fullwidth3">
                                 <ul className="list_empty">
-                                    <li><a href={this.state.product.buy} target="new" className="but_shopping_cart"><i className="fa fa-shopping-cart fa-lg"></i> Buy Online</a></li>
+                                    <li><a href={this.state.product.buy} target="new" className="but_shopping_cart"><i className="fa fa-shopping-cart fa-lg"></i> {this.state.labels.buy} </a></li>
                                 </ul>
                             </div>
 
@@ -55,18 +58,17 @@ class Product extends Component {
                         <div className="clearfix divider_dashed2"></div>
                         <div className="two_third">
                             <ul className="tabs3 two">
-                                <li className="active"><a href="#example-3-tab-1" target="_self">Instructions</a></li>
-                                <li></li>
-                                <li><a href="#example-3-tab-2" target="_self">SDS</a></li>
-                                <li><a href="#example-3-tab-3" target="_self">FAQ</a></li>
-                                <li><a href="#example-3-tab-4" target="_self">Product Label</a></li>
-                                <li><a href="#example-3-tab-5" target="_self">Available Sizes</a></li>
+                                <li className="active"><a href="#example-3-tab-1" target="_self">{this.state.labels.tab1}</a></li>
+                                <li><a href="#example-3-tab-2" target="_self">{this.state.labels.tab2}</a></li>
+                                <li><a href="#example-3-tab-3" target="_self">{this.state.labels.tab3}</a></li>
+                                <li><a href="#example-3-tab-4" target="_self">{this.state.labels.tab4}</a></li>
+                                <li><a href="#example-3-tab-5" target="_self">{this.state.labels.tab5}</a></li>
                             </ul>
                             <div className="tabs-content3 two">
                                 <div id="example-3-tab-1" className="tabs-panel3" dangerouslySetInnerHTML={{ __html: this.state.product.tabs.instructions }}>
                                 </div>
                                 <div id="example-3-tab-2" className="tabs-panel3" style={{ display: 'none' }}>
-                                    <p>Safety Data Sheet: </p>
+                                    <p> {this.state.labels.safety} </p>
                                      {
                                         this.state.product.tabs.sds.map((sds) => {
                                             return <p key={sds.name} ><a href={sds.url}  title={sds.title} target="new">{sds.name}</a></p>
@@ -77,7 +79,7 @@ class Product extends Component {
                                 <div id="example-3-tab-3" className="tabs-panel3" style={{ display: 'none' }} dangerouslySetInnerHTML={{ __html: this.state.product.tabs.faq }}>
                                 </div>
                                 <div id="example-3-tab-4" className="tabs-panel3" style={{ display: 'none' }}>
-                                    <p>Product Labels: </p>
+                                    <p> {this.state.labels.product}  </p>
                                     {
                                         this.state.product.tabs.labels.map((label) => {
                                             return <p key={this.state.product.name + label.name}><a href={label.image} target="new" className="cbp-lightbox">{label.name}</a></p>
@@ -85,7 +87,7 @@ class Product extends Component {
                                     }
                                 </div>
                                 <div id="example-3-tab-5" className="tabs-panel3" style={{ display: 'none' }} >
-                                    <p>This product is available in: </p>
+                                    <p> {this.state.labels.available} </p>
                                     {
                                         this.state.product.tabs.sizes.map((size) => {
                                             return <p key={this.state.product.name + size.name}><a href={"images/" + size.image } target="new" className="cbp-lightbox">{size.name}</a></p>
@@ -97,7 +99,7 @@ class Product extends Component {
                         </div>
 
                         <div className="one_third last">
-                            <h3>Features / <strong>Benefits</strong></h3>
+                            <h3 dangerouslySetInnerHTML={{ __html: this.state.labels.features}}></h3>
                             <ul className="list_4">
                                 {
                                     this.state.product.features.map((feature) => {
@@ -112,7 +114,7 @@ class Product extends Component {
                     <div className="clearfix margin_top3"></div>
                     <div className="features_sec43 two three">
                         <div className="container">
-                            <h3><strong>Similar</strong> Products</h3>
+                            <h3 dangerouslySetInnerHTML={{ __html: this.state.labels.similar}}></h3>
                             <br/>
                             {
                                 this.state.product.similar.map((product) => {

@@ -82,10 +82,9 @@ class Contact extends Component {
                     <div className="content_fullwidth">
 
                         <div className="two_third">
-
-                            <p>Thank You for visiting Moldex Brands.We welcome your feedback, questions, and comments.Please send us a message using the feedback form below or contact us using the information provided on this web page</p>
+                            <p dangerouslySetInnerHTML={{ __html: __("a1a4d07c")}}></p>
                             <br/>
-                            <p>Please be patient while waiting for a response.Give us at least 24 hours.<strong>General Inquiries: 1.800.325.6180</strong></p>
+                            <p dangerouslySetInnerHTML={{ __html: __("54a477f6")}}></p>
                             <br/><br/>
 
                             <div className="cforms">
@@ -126,7 +125,7 @@ class Contact extends Component {
                                         </section>
                                     </fieldset>
                                     <footer>
-                                        <button type="submit" className="button">Send message</button>
+                                        <button type="submit" className="button" dangerouslySetInnerHTML={{ __html: __("747c6a35")}}></button>
                                     </footer>
                                     <div className="message"> <i className="icon-ok"></i>
                                         <p>Your message was successfully sent!</p>
@@ -141,7 +140,7 @@ class Contact extends Component {
 
                             <div className="address_info two">
 
-                                <h4>Company <strong>Address</strong></h4>
+                                <h4 dangerouslySetInnerHTML={{ __html: __("9daf5f79")}}></h4>
                                 <ul>
                                     <li> <strong>Moldex Brands</strong><br/>
                                         866 Horan Drive<br/>

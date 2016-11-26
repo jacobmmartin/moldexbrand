@@ -16,7 +16,7 @@ class CarouselRetailers extends React.Component {
   render() {
     return (
       <div>
-        <h3>Available at these<strong> FINE RETAILERS:</strong></h3>
+        <h3 dangerouslySetInnerHTML={{ __html: __("140676b4")}}></h3>
         <br/>
         <ul id="mycarouselthree" className="jcarousel-skin-tango">
             <li><img src="./images/retailers/ace_hwardware.png" alt="Ace Hardware" /></li>

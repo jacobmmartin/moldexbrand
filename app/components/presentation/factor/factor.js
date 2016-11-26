@@ -21,7 +21,7 @@ class Factor extends React.Component {
         <p>{this.props.model.info}</p>
         <br></br>
         <br></br>
-        <Link to={this.props.model.link} className="readmore_button">See Products</Link>
+        <Link to={this.props.model.link} className="readmore_button" dangerouslySetInnerHTML={{ __html: __("3b268add")}}></Link>
       </div>
     );
   }

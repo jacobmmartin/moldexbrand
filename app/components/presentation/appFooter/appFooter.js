@@ -34,7 +34,7 @@ class appFooter extends Component {
                         <div className="one_half last">
                             <div className="siteinfo">
                                 <h4 className="lmb">{__('39a1fddd')}</h4>
-                                <p dangerouslySetInnerHTML={{ __html: __('04620d77') }}>
+                                <p dangerouslySetInnerHTML={{ __html: __('5bbc213c') }}>
                                 </p>
                             </div>
                         </div>

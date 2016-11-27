@@ -2,10 +2,9 @@ var gulp = require('gulp');
 var l10n = require('gulp-l10n');
 
 var opts = {
-  attributes: [],
-  directives: 'translate=yes',
-  attributeSetter: 'translate-attrs',
-  elements: ['title', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'small', 'a', 'button', 'li', 'header', 'label']
+  attributes: ['alt', 'title'],
+  directives: 's18n',
+  attributeSetter: 'translate-attrs'
 };
 
 gulp.task('extract-locales', function () {
@@ -13,3 +12,4 @@ gulp.task('extract-locales', function () {
     .pipe(l10n.extract(opts))
     .pipe(gulp.dest('locales'));
 });
+

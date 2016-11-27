@@ -10,12 +10,11 @@ class appFooter extends Component {
                         <div className="one_fourth">
                             <ul className="faddress">
                                 <li><img src="https://www.moldexbrands.com/images/footer-logo.png" alt=""/></li>
-                                <li><i className="fa fa-map-marker fa-lg"></i> 866 Horan Drive
-                                    <br/> Fenton, Missouri 63026</li>
-                                <li><i className="fa fa-phone"></i>&nbsp; Toll Free: 1.800.325.6180</li>
-                                <li><i className="fa fa-phone"></i>&nbsp; Phone: 1.636.349.5855</li>
-                                <li><i className="fa fa-print"></i>&nbsp; Fax: 1.636.349.5335</li>
-                                <li><a href="mailto:info@moldexbrands.com"><i className="fa fa-envelope"></i> info @moldexbrands.com</a></li>
+                                <li dangerouslySetInnerHTML={{ __html: __('7ca3e4e6') }}></li>
+                                <li dangerouslySetInnerHTML={{ __html: __('a603d52d') }}></li>
+                                <li dangerouslySetInnerHTML={{ __html: __('a0fe41c0') }}></li>
+                                <li dangerouslySetInnerHTML={{ __html: __('c46a7cfd') }}></li>
+                                <li dangerouslySetInnerHTML={{ __html: __('ac651eef') }}></li>
                             </ul>
                         </div>
                         <div className="one_fourth">
@@ -34,7 +33,7 @@ class appFooter extends Component {
                         <div className="one_half last">
                             <div className="siteinfo">
                                 <h4 className="lmb">{__('39a1fddd')}</h4>
-                                <p dangerouslySetInnerHTML={{ __html: __('5bbc213c') }}>
+                                <p dangerouslySetInnerHTML={{ __html: __('04620d77') }}>
                                 </p>
                             </div>
                         </div>

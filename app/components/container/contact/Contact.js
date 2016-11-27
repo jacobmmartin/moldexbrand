@@ -142,14 +142,7 @@ class Contact extends Component {
 
                                 <h4 dangerouslySetInnerHTML={{ __html: __("9daf5f79")}}></h4>
                                 <ul>
-                                    <li> <strong>Moldex Brands</strong><br/>
-                                        866 Horan Drive<br/>
-                                        Fenton, MO 63026<br/>
-                                        Toll Free: 1.800.325.6180<br/>
-                                        Telephone: 1.636.349.5855<br/>
-                                        Fax: 1.636.349.5335<br/>
-                                        E-mail: <a href="mailto:orders@convenienceproducts.com">orders @convenienceproducts.com</a><br/>
-                                        Website: <a href="index.html">www.moldexbrands.com</a> </li>
+                                    <li dangerouslySetInnerHTML={{ __html: __("de387bb8")}} ></li>
                                 </ul>
 
                             </div>

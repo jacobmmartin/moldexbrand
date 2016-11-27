@@ -11,7 +11,7 @@ const MoldGuide = () =>{
                 <div className="content_fullwidth">
                         <div className="one_full">
                             <div className="big_text1">Mold &amp; Mildew Basic Training:</div>
-                            <p dangerouslySetInnerHTML={{ __html: __("bce1469e")}}></p>
+                            <p dangerouslySetInnerHTML={{ __html: __("41b4785c")}}></p>
                         </div>
 
                         <div className="clearfix"></div>
@@ -62,16 +62,16 @@ const MoldGuide = () =>{
                     <p dangerouslySetInnerHTML={{ __html: __("e22fe1db")}} ></p>
                     <div className="clearfix divider_dashed6"></div>
                     <div className="big_text1" >Resources &amp; Links:
-                        <p dangerouslySetInnerHTML={{ __html: __("e969e3d2")}}></p>
-                        <p dangerouslySetInnerHTML={{ __html: __("077012da")}}></p>
+                        <p dangerouslySetInnerHTML={{ __html: __("b34cd8ff")}}></p>
+                        <p dangerouslySetInnerHTML={{ __html: __("80205114")}}></p>
                     </div>
                     <div className="clearfix margin_top2"></div>
                     <div className="big_text1">Flood Support &amp; Information:
-                        <p dangerouslySetInnerHTML={{ __html: __("43acc856")}}></p>
+                        <p dangerouslySetInnerHTML={{ __html: __("15ca4922")}}></p>
                     </div>
                     <div className="clearfix margin_top2"></div>
                     <div className="big_text1">Cleaning &amp; Prevention:
-                        <p dangerouslySetInnerHTML={{ __html: __("8c86fbcb")}}></p>
+                        <p dangerouslySetInnerHTML={{ __html: __("3820092c")}}></p>
                     </div>
                     <div className="clearfix margin_top2"></div>
                   </div>

@@ -20,7 +20,7 @@ const Home = () =>{
           </div>
           <div className="fusection5">
             <div className="container">
-              <h2 dangerouslySetInnerHTML={{ __html: __("52f1f10b")}}>
+              <h2 dangerouslySetInnerHTML={{ __html: __("feaa6635")}}>
               </h2>
               <FactorList />
             </div>

@@ -15,7 +15,7 @@ class Factors extends Component {
                     <div className="one_full center">
                         <img src="https://www.moldexbrands.com/images/3_factors_lg.png" width="396" height="201" className="img_size2" alt=""/></div>
                     <br/>
-                    <p dangerouslySetInnerHTML={{ __html: __("19961677")}}></p>
+                    <p dangerouslySetInnerHTML={{ __html: __("5aa105f4")}}></p>
                 </div>
 
                 <div className="clearfix"></div>
@@ -24,7 +24,7 @@ class Factors extends Component {
 
                 <div className="one_half last">
                     <h3 dangerouslySetInnerHTML={{ __html: __("aaa414b3")}}></h3>
-                    <p dangerouslySetInnerHTML={{ __html: __("55131be7")}}></p>
+                    <p dangerouslySetInnerHTML={{ __html: __("d96da27f")}}></p>
                 </div>
 
                 <div className="clearfix margin_top6"></div>
@@ -32,7 +32,7 @@ class Factors extends Component {
 
                 <div className="one_half last">
                     <h3 dangerouslySetInnerHTML={{ __html: __("a171eadb")}}></h3>
-                    <p dangerouslySetInnerHTML={{ __html: __("f8631610")}}></p>
+                    <p dangerouslySetInnerHTML={{ __html: __("d86d721c")}}></p>
                 </div>
 
                 <div className="clearfix margin_top6"></div>
@@ -40,12 +40,12 @@ class Factors extends Component {
 
                 <div className="one_half last">
                     <h3 dangerouslySetInnerHTML={{ __html: __("9977b9c8")}}></h3>
-                    <p dangerouslySetInnerHTML={{ __html: __("b7c137a3")}}></p>
+                    <p dangerouslySetInnerHTML={{ __html: __("b1320f41")}}></p>
                 </div>
             </div>
             <div className="clearfix divider_dashed6"></div>
             <div className="one_full">
-                <p dangerouslySetInnerHTML={{ __html: __("16a72764")}}></p>
+                <p dangerouslySetInnerHTML={{ __html: __("76b0e5f4")}}></p>
             </div>
             <div className="big_text1 center">Like professional <i>mold remediators</i>, we believe this is the best way to approach mold &amp; mildew.
                 <br/>

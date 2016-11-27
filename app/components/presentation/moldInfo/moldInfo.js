@@ -14,8 +14,8 @@ class MoldInfo extends React.Component {
         <div className="one_half">
             <br/>
             <br/>
-            <h2 dangerouslySetInnerHTML={{ __html: __("8ff2a774")}}></h2>
-            <h6 className="grayc" dangerouslySetInnerHTML={{ __html: __("f158a79f")}}></h6>
+            <h2 dangerouslySetInnerHTML={{ __html: __("27bf363f")}}></h2>
+            <h6 className="grayc" dangerouslySetInnerHTML={{ __html: __("4185c795")}}></h6>
             <p dangerouslySetInnerHTML={{ __html: __("22494ff5")}}></p>
             <br/>
             <br/>

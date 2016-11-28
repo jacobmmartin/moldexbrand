@@ -15,7 +15,7 @@ class Factors extends Component {
                     <div className="one_full center">
                         <img src="https://www.moldexbrands.com/images/3_factors_lg.png" width="396" height="201" className="img_size2" alt=""/></div>
                     <br/>
-                    <p dangerouslySetInnerHTML={{ __html: __("5aa105f4")}}></p>
+                    <p dangerouslySetInnerHTML={{ __html: __("9e39f2ff")}}></p>
                 </div>
 
                 <div className="clearfix"></div>
@@ -24,7 +24,7 @@ class Factors extends Component {
 
                 <div className="one_half last">
                     <h3 dangerouslySetInnerHTML={{ __html: __("aaa414b3")}}></h3>
-                    <p dangerouslySetInnerHTML={{ __html: __("d96da27f")}}></p>
+                    <p dangerouslySetInnerHTML={{ __html: __("ae9a1375")}}></p>
                 </div>
 
                 <div className="clearfix margin_top6"></div>
@@ -32,7 +32,7 @@ class Factors extends Component {
 
                 <div className="one_half last">
                     <h3 dangerouslySetInnerHTML={{ __html: __("a171eadb")}}></h3>
-                    <p dangerouslySetInnerHTML={{ __html: __("d86d721c")}}></p>
+                    <p dangerouslySetInnerHTML={{ __html: __("4a579bc7")}}></p>
                 </div>
 
                 <div className="clearfix margin_top6"></div>
@@ -40,16 +40,15 @@ class Factors extends Component {
 
                 <div className="one_half last">
                     <h3 dangerouslySetInnerHTML={{ __html: __("9977b9c8")}}></h3>
-                    <p dangerouslySetInnerHTML={{ __html: __("b1320f41")}}></p>
+                    <p dangerouslySetInnerHTML={{ __html: __("7b4e4316")}}></p>
                 </div>
             </div>
             <div className="clearfix divider_dashed6"></div>
             <div className="one_full">
-                <p dangerouslySetInnerHTML={{ __html: __("76b0e5f4")}}></p>
+                <p dangerouslySetInnerHTML={{ __html: __("f651bfc0")}}></p>
             </div>
-            <div className="big_text1 center">Like professional <i>mold remediators</i>, we believe this is the best way to approach mold &amp; mildew.
-                <br/>
-                <strong><i>1.</i> KILL <i> 2.</i> CLEAN <i>3.</i> PREVENT</strong></div>
+            <div className="big_text1 center" dangerouslySetInnerHTML={{ __html: __("5d42f9fa")}}>
+            </div>
             </div>
             <div className="clearfix margin_top7"></div>
             </div>

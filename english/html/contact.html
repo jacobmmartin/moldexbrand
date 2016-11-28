@@ -145,7 +145,7 @@
                         </div>
                     </div>
 
-                
+
                     </div>
                     <!-- end menu -->
 
@@ -183,45 +183,46 @@
                     <div class="cforms">
 
                         <form action="demo-contacts.php" method="post" id="sky-form" class="sky-form">
-                            <header>Send Us a <strong>Message!</strong></header>
+                            <header s18n>Send Us a <strong>Message!</strong></header>
                             <fieldset>
                                 <div class="row">
                                     <section class="col col-6">
-                                        <label class="label">Name</label>
+                                        <label class="label" s18n>Name</label>
                                         <label class="input"> <i class="icon-append icon-user"></i>
                   <input type="text" name="name" id="name">
                 </label>
                                     </section>
                                     <section class="col col-6">
-                                        <label class="label">E-mail</label>
+                                        <label class="label" s18n>E-mail</label>
                                         <label class="input"> <i class="icon-append icon-envelope-alt"></i>
                   <input type="email" name="email" id="email">
                 </label>
                                     </section>
                                 </div>
                                 <section>
-                                    <label class="label">Subject</label>
+                                    <label class="label" s18n>Subject</label>
                                     <label class="input"> <i class="icon-append icon-tag"></i>
                 <input type="text" name="subject" id="subject">
               </label>
                                 </section>
                                 <section>
-                                    <label class="label">Message</label>
+                                    <label class="label" s18n>Message</label>
                                     <label class="textarea"> <i class="icon-append icon-comment"></i>
                 <textarea rows="4" name="message" id="message"></textarea>
               </label>
                                 </section>
                                 <section>
-                                    <label class="checkbox">
-                <input type="checkbox" name="copy" id="copy">
-                <i></i>Send a copy to my e-mail address</label>
+                                    <label class="checkbox" s18n>
+                                        <input type="checkbox" name="copy" id="copy">
+                                        Send a copy to my e-mail address
+                                    </label>
                                 </section>
                             </fieldset>
                             <footer>
                                 <button type="submit" class="button">Send message</button>
                             </footer>
                             <div class="message"> <i class="icon-ok"></i>
-                                <p>Your message was successfully sent!</p>
+                                <p >Your message was successfully sent!</p>
                             </div>
                         </form>
 
@@ -236,10 +237,16 @@
 
                         <h4>Company <strong>Address</strong></h4>
                         <ul>
-                            <li> <strong>Moldex Brands</strong><br /> 866 Horan Drive<br /> Fenton, MO 63026<br /> Toll Free:
-                                1.800.325.6180<br /> Telephone: 1.636.349.5855<br /> Fax: 1.636.349.5335<br /> E-mail:
-                                <a
-                                    href="mailto:orders@convenienceproducts.com">orders@convenienceproducts.com</a><br /> Website: <a href="index.html">www.moldexbrands.com</a>                                    </li>
+                            <li s18n>
+                              <strong>Moldex Brands</strong><br />
+                              866 Horan Drive<br />
+                              Fenton, MO 63026<br />
+                              Toll Free: 1.800.325.6180<br />
+                              Telephone: 1.636.349.5855<br />
+                              Fax: 1.636.349.5335<br />
+                              E-mail:
+                              <a href="mailto:orders@convenienceproducts.com">orders@convenienceproducts.com</a><br /> Website: <a href="index.html">www.moldexbrands.com</a>
+                            </li>
                         </ul>
 
                     </div>
@@ -303,37 +310,37 @@
                             font: 14px Helvetica, Arial, sans-serif;
                         }
                         /* MailChimp Form Embed Code - Slim - 08/17/2011 */
-                        
+
                         #mc_embed_signup form {
                             display: block;
                             position: relative;
                             text-align: left;
                         }
-                        
+
                         #mc_embed_signup h2 {
                             font-weight: bold;
                             padding: 0;
                             margin: 15px 0;
                             font-size: 1.4em;
                         }
-                        
+
                         #mc_embed_signup input {
                             border: 1px solid #999;
                             -webkit-appearance: none;
                         }
-                        
+
                         #mc_embed_signup input[type=checkbox] {
                             -webkit-appearance: checkbox;
                         }
-                        
+
                         #mc_embed_signup input[type=radio] {
                             -webkit-appearance: radio;
                         }
-                        
+
                         #mc_embed_signup input:focus {
                             border-color: #333;
                         }
-                        
+
                         #mc_embed_signup .button {
                             clear: both;
                             background-color: #7ab700;
@@ -354,31 +361,31 @@
                             white-space: nowrap;
                             width: auto;
                         }
-                        
+
                         #mc_embed_signup .button:hover {
                             background-color: #777;
                         }
-                        
+
                         #mc_embed_signup .small-meta {
                             font-size: 11px;
                         }
-                        
+
                         #mc_embed_signup .nowrap {
                             white-space: nowrap;
                         }
-                        
+
                         #mc_embed_signup .clear {
                             clear: none;
                             display: inline;
                         }
-                        
+
                         #mc_embed_signup label {
                             display: block;
                             font-size: 16px;
                             padding-bottom: 10px;
                             font-weight: bold;
                         }
-                        
+
                         #mc_embed_signup input.email {
                             display: block;
                             padding: 8px 0;
@@ -387,14 +394,14 @@
                             width: 100%;
                             min-width: 160px;
                         }
-                        
+
                         #mc_embed_signup input.button {
                             display: block;
                             width: 35%;
                             margin: 0 0 10px 0;
                             min-width: 90px;
                         }
-                        
+
                         #mc_embed_signup div#mce-responses {
                             float: left;
                             top: -1.4em;
@@ -404,7 +411,7 @@
                             margin: 0 5%;
                             clear: both;
                         }
-                        
+
                         #mc_embed_signup div.response {
                             margin: 1em 0;
                             padding: 1em .5em .5em 0;
@@ -414,16 +421,16 @@
                             z-index: 1;
                             width: 80%;
                         }
-                        
+
                         #mc_embed_signup #mce-error-response {
                             display: none;
                         }
-                        
+
                         #mc_embed_signup #mce-success-response {
                             color: #529214;
                             display: none;
                         }
-                        
+
                         #mc_embed_signup label.error {
                             display: block;
                             float: none;
@@ -525,7 +532,7 @@
 	jQuery(document).ready(function() {
 			jQuery('#mycarouselthree').jcarousel();
 	});
-	
+
 })(jQuery);
 </script>
 
@@ -546,7 +553,7 @@
 	{
 		// Validation
 		$("#sky-form").validate(
-		{					
+		{
 			// Rules for form validation
 			rules:
 			{
@@ -565,7 +572,7 @@
 					minlength: 10
 				}
 			},
-								
+
 			// Messages for form validation
 			messages:
 			{
@@ -583,8 +590,8 @@
 					required: 'Please enter your message'
 				}
 			},
-								
-			// Ajax form submition					
+
+			// Ajax form submition
 			submitHandler: function(form)
 			{
 				$(form).ajaxSubmit(
@@ -595,14 +602,14 @@
 					}
 				});
 			},
-			
+
 			// Do not change code below
 			errorPlacement: function(error, element)
 			{
 				error.insertAfter(element.parent());
 			}
 		});
-	});			
+	});
 
 })(jQuery);
 </script>

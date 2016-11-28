@@ -135,11 +135,11 @@ class Retail extends Component {
 
         <div className="container">
           <div className="content_fullwidth" >
-            <p dangerouslySetInnerHTML={{ __html: __("40fb2f11")}}></p>
+            <p dangerouslySetInnerHTML={{ __html: __("ea5b76a8")}}></p>
             <p>&nbsp; </p>
             <p dangerouslySetInnerHTML={{ __html: __("b7d2acf7")}}></p>
             <div className="clearfix divider_dashed6"></div>
-            <div className="big_text1">Retail Locations: </div>
+            <div className="big_text1" dangerouslySetInnerHTML={{ __html: __("a648a763")}}></div>
             <div className="clearfix margin_top2"></div>
 
             {
@@ -187,13 +187,13 @@ class Retail extends Component {
           <div className="clearfix margin_top3"></div>
 
           <div className="content_fullwidth">
-            <p dangerouslySetInnerHTML={{ __html: __("6121169c")}}></p>
+            <p dangerouslySetInnerHTML={{ __html: __("959fa1b4")}}></p>
           </div>
 
           <div className="clearfix divider_dashed6"></div>
 
           <div className="content_fullwidth">
-            <div className="big_text1">Online Retailers: </div>
+            <div className="big_text1" dangerouslySetInnerHTML={{ __html: __("4afb0d21")}}></div>
             <div className="clearfix margin_top2"></div>
 
             {
@@ -212,7 +212,7 @@ class Retail extends Component {
 
 
           <div className="content_fullwidth">
-            <div className="big_text1">Industrial Suppliers &amp; Distributors: </div>
+            <div className="big_text1" dangerouslySetInnerHTML={{ __html: __("f21a6817")}}></div>
             <div className="clearfix margin_top2"></div>
 
             {

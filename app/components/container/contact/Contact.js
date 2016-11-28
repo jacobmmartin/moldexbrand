@@ -29,20 +29,38 @@ require("../../../js/form/sky-forms.css");
 			},
 
 			// Messages for form validation
+      // FRENCH
+			// messages:
+			// {
+			// 	name:
+			// 	{
+			// 		required: 'Veuillez inscrire votre nom',
+			// 	},
+			// 	email:
+			// 	{
+			// 		required: 'Veuillez inscrire une adresse courriel valable',
+			// 		email: 'Veuillez inscrire une adresse courriel valable'
+			// 	},
+			// 	message:
+			// 	{
+			// 		required: 'Veuillez inclure un message'
+			// 	}
+			// },
+
 			messages:
 			{
 				name:
 				{
-					required: 'Veuillez inscrire votre nom',
+					required: 'Please enter your name',
 				},
 				email:
 				{
-					required: 'Veuillez inscrire une adresse courriel valable',
-					email: 'Veuillez inscrire une adresse courriel valable'
+					required: 'Please enter your email address',
+					email: 'Please enter a VALID email address'
 				},
 				message:
 				{
-					required: 'Veuillez inclure un message'
+					required: 'Please enter your message'
 				}
 			},
 
@@ -82,7 +100,7 @@ class Contact extends Component {
                     <div className="content_fullwidth">
 
                         <div className="two_third">
-                            <p dangerouslySetInnerHTML={{ __html: __("a1a4d07c")}}></p>
+                            <p dangerouslySetInnerHTML={{ __html: __("0ce81919")}}></p>
                             <br/>
                             <p dangerouslySetInnerHTML={{ __html: __("54a477f6")}}></p>
                             <br/><br/>
@@ -90,45 +108,44 @@ class Contact extends Component {
                             <div className="cforms">
 
                                 <form action="demo-contacts.php" method="post" id="sky-form" className="sky-form" noValidate="novalidate">
-                                    <header>Send Us a <strong>Message!</strong></header>
+                                    <header dangerouslySetInnerHTML={{ __html: __("9aa1b7f8")}} ></header>
                                     <fieldset>
                                         <div className="row">
-                                            <section className="col col-6">
-                                                <label className="label">Name</label>
-                                                <label className="input"> <i className="icon-append icon-user"></i>
-                                                    <input type="text" name="name" id="name"/>
-                                                </label>
-                                            </section>
-                                            <section className="col col-6">
-                                                <label className="label">E-mail</label>
-                                                <label className="input"> <i className="icon-append icon-envelope-alt"></i>
-                                                    <input type="email" name="email" id="email"/>
-                                                </label>
-                                            </section>
+                                          <section className="col col-6">
+                                              <label className="label" dangerouslySetInnerHTML={{ __html: __("49ee3087")}} ></label>
+                                              <label className="input"> <i className="icon-append icon-user"></i>
+                                                  <input type="text" name="name" id="name"/>
+                                              </label>
+                                          </section>
+                                          <section className="col col-6">
+                                              <label className="label" dangerouslySetInnerHTML={{ __html: __("1e884e30")}} ></label>
+                                              <label className="input"> <i className="icon-append icon-envelope-alt"></i>
+                                                  <input type="email" name="email" id="email"/>
+                                              </label>
+                                          </section>
                                         </div>
                                         <section>
-                                            <label className="label">Subject</label>
+                                            <label className="label" dangerouslySetInnerHTML={{ __html: __("c7892ebb")}}></label>
                                             <label className="input"> <i className="icon-append icon-tag"></i>
                                                 <input type="text" name="subject" id="subject"/>
                                             </label>
                                         </section>
                                         <section>
-                                            <label className="label">Message</label>
+                                            <label className="label" dangerouslySetInnerHTML={{ __html: __("4c2a8fe7")}} ></label>
                                             <label className="textarea"> <i className="icon-append icon-comment"></i>
                                                 <textarea rows="4" name="message" id="message"></textarea>
                                             </label>
                                         </section>
                                         <section>
-                                            <label className="checkbox">
-                                                <input type="checkbox" name="copy" id="copy"/>
-                                                <i></i>Send a copy to my e-mail address</label>
+                                            <label className="checkbox" dangerouslySetInnerHTML={{ __html: __("8d171474")}}>
+                                            </label>
                                         </section>
                                     </fieldset>
                                     <footer>
                                         <button type="submit" className="button" dangerouslySetInnerHTML={{ __html: __("747c6a35")}}></button>
                                     </footer>
                                     <div className="message"> <i className="icon-ok"></i>
-                                        <p>Your message was successfully sent!</p>
+                                        <p dangerouslySetInnerHTML={{ __html: __("7a8dfbf8")}}></p>
                                     </div>
                                 </form>
 
@@ -142,7 +159,7 @@ class Contact extends Component {
 
                                 <h4 dangerouslySetInnerHTML={{ __html: __("9daf5f79")}}></h4>
                                 <ul>
-                                    <li dangerouslySetInnerHTML={{ __html: __("de387bb8")}} ></li>
+                                    <li dangerouslySetInnerHTML={{ __html: __("d535f379")}} ></li>
                                 </ul>
 
                             </div>

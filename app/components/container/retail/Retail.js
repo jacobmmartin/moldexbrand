@@ -128,7 +128,8 @@ class Retail extends Component {
         <div className="page_title2">
           <div className="container">
             <div className="title">
-              <h1>Find Our Products</h1><br></br>
+              <h1 dangerouslySetInnerHTML={{ __html: __("0992ad9b")}}></h1>
+              <br></br>
             </div>
           </div>
         </div>

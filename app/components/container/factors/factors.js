@@ -10,7 +10,7 @@ class Factors extends Component {
             <div className="container">
             <div className="content_fullwidth">
                 <div className="one_full">
-                    <div className="big_text1">Our method is <i>Kill, Clean, and Prevent</i>. It is simple really. We call it the "3 Factors in Mold Fighting™". It works because each proprietary formula targets a specific step in mold growth and builds on the previous.</div>
+                    <div className="big_text1" dangerouslySetInnerHTML={{ __html: __("12c724ef")}}></div>
                     <div className="clearfix margin_top2"></div>
                     <div className="one_full center">
                         <img src="https://www.moldexbrands.com/images/3_factors_lg.png" width="396" height="201" className="img_size2" alt=""/></div>

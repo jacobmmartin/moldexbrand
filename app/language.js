@@ -1,4 +1,4 @@
-var language = 'fr'; // en/fr/es
+var language = 'en'; // en/fr/es
 
 exports.Factors = require("./languages/" + language + "/factors/factors.js").Factors;
 exports.Products = require("./languages/" + language + "/products/products.js").Products;

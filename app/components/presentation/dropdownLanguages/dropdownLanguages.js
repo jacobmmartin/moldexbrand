@@ -16,8 +16,8 @@ var DropdownLanguages = React.createClass({
                         <li>
                             <p>Languages</p>
                         </li>
-                        <li> <a href="https://www.moldexbrands.com/"><i className="fa fa-angle-right"></i> English </a> </li>
-                        <li> <a href="https://www.moldexbrands.ca"><i className="fa fa-angle-right"></i> French </a> </li>
+                        <li> <a href="https://www.moldexbrands.ca/"><i className="fa fa-angle-right"></i> English </a> </li>
+                        <li> <a href="https://www.moldexbrands.ca/fr"><i className="fa fa-angle-right"></i> French </a> </li>
                     </ul>
                     </div>
                 </div>

@@ -58,13 +58,15 @@ import Contact from './components/container/contact/Contact';
 import Factors from './components/container/factors/Factors';
 import Retail from './components/container/retail/Retail';
 import Product from './components/container/product/Product';
+import Refund from './components/container/refund/Refund';
+import Terms from './components/container/terms/Terms';
+import Privacy from './components/container/privacy/Privacy';
 
 
 import MainHeader from './components/presentation/mainHeader/mainHeader';
 import AppFooter from './components/presentation/appFooter/appFooter';
 
 
-// console.log(__(aa33343c))
 class App extends React.Component {
   render() {
     return (
@@ -92,6 +94,9 @@ ReactDOM.render((
          <Route path = "contact" component = {Contact} />
          <Route path = "factors" component = {Factors} />
          <Route path = "retail" component = {Retail} />
+         <Route path = "refund" component = {Refund} />
+         <Route path = "terms" component = {Terms} />
+         <Route path = "privacy" component = {Privacy} />
       </Route>
    </Router>
 

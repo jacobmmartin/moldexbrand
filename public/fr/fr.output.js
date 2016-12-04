@@ -24779,7 +24779,7 @@ webpackJsonp([0],[
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'container' },
-	        _react2.default.createElement('h2', { dangerouslySetInnerHTML: { __html: "3 Factors in <strong>MOLD FIGHTING</strong>\n                <b>Products we offer. Solutions made easy. Which one is for you? Find out.</b>" } }),
+	        _react2.default.createElement('h2', { dangerouslySetInnerHTML: { __html: "3 Facteurs pour  <strong>LUTTER CONTRE LA MOISISSURE</strong>\n                <b>Nos produits vous faciliteront la vie. À vous de déterminer lequel réglera votre problème.</b>" } }),
 	        _react2.default.createElement(_factorList2.default, null)
 	      )
 	    ),
@@ -26891,7 +26891,7 @@ webpackJsonp([0],[
 	                                    null,
 	                                    "INSTANT STAIN REMOVER"
 	                                ),
-	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Removes Mold, Mildew, Algae Stains. No Scrubbing. Provides Instant Results.\n                                    <a href=\"../instant-mold-mildew-stain-remover.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Learn more.</a>" } })
+	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Removes Mold, Mildew, Algae Stains. No Scrubbing. Provides Instant Results.\n                                    <a href=\"../instant-mold-mildew-stain-remover.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Plus d’informations</a>" } })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -26906,7 +26906,7 @@ webpackJsonp([0],[
 	                                    null,
 	                                    "INSTANT HOUSE WASH"
 	                                ),
-	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "No Ladder, No Scrubbing, No Problem. Spray on, Wash off. Instant Results.\n                                    <a href=\"../instant-house-wash.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Learn more.</a>" } })
+	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "No Ladder, No Scrubbing, No Problem. Spray on, Wash off. Instant Results.\n                                    <a href=\"../instant-house-wash.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Plus d’informations</a>" } })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -26921,7 +26921,7 @@ webpackJsonp([0],[
 	                                    null,
 	                                    "INSTANT DECK WASH"
 	                                ),
-	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Cleans & Brightens Decks & Fences. No Scrubbing. Spray on, Wash off.\n                                    <a href=\"../instant-deck-fence-wash.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Learn more.</a>" } })
+	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Cleans & Brightens Decks & Fences. No Scrubbing. Spray on, Wash off.\n                                    <a href=\"../instant-deck-fence-wash.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Plus d’informations</a>" } })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -26936,7 +26936,7 @@ webpackJsonp([0],[
 	                                    null,
 	                                    "Non-Bleach Stain Remover"
 	                                ),
-	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "<strong>Bleach-Free / Oxy-Power</strong> Mold & Mildew Stain Remover\n                                    <a href=\"../non-bleach-stain-remover.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Learn more.</a>" } })
+	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "<strong>Bleach-Free / Oxy-Power</strong> Mold & Mildew Stain Remover\n                                    <a href=\"../non-bleach-stain-remover.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Plus d’informations</a>" } })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -26952,7 +26952,7 @@ webpackJsonp([0],[
 	                                    "Non-Bleach Stain Remover",
 	                                    ' '
 	                                ),
-	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Multi-Surface <strong>Bleach-Free</strong> Outdoor Cleaner. Cleans up to 3,000 sq. ft. Easy-Peasy <a href=\"../non-bleach-stain-remover.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Learn more.</a>" } })
+	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Multi-Surface <strong>Bleach-Free</strong> Outdoor Cleaner. Cleans up to 3,000 sq. ft. Easy-Peasy <a href=\"../non-bleach-stain-remover.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Plus d’informations</a>" } })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -26967,7 +26967,7 @@ webpackJsonp([0],[
 	                                    null,
 	                                    "SEALANT"
 	                                ),
-	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Clear Water-Based Film. Resists Mold & Mildew Stains. Provides Long-lasting Resistance to Mold Discoloration.\n                                    <a href=\"../sealant-mold-mildew-blocker.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Learn more.</a>" } })
+	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Clear Water-Based Film. Resists Mold & Mildew Stains. Provides Long-lasting Resistance to Mold Discoloration.\n                                    <a href=\"../sealant-mold-mildew-blocker.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Plus d’informations</a>" } })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -26982,7 +26982,7 @@ webpackJsonp([0],[
 	                                    null,
 	                                    "SEALANT (HOSE END)"
 	                                ),
-	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Multi-Surface Outdoor Blocker that Resists Mold & Mildew Stains. Covers up to 3,000 sq. ft.\n                                    <a href=\"../sealant-mold-mildew-blocker.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Learn more.</a>" } })
+	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Multi-Surface Outdoor Blocker that Resists Mold & Mildew Stains. Covers up to 3,000 sq. ft.\n                                    <a href=\"../sealant-mold-mildew-blocker.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Plus d’informations</a>" } })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -26997,7 +26997,7 @@ webpackJsonp([0],[
 	                                    null,
 	                                    "PAINT PREP"
 	                                ),
-	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Hard Surface Cleaner / TSP Alternative. Cleans and Deglosses to Improve Paint Adhesion.\n                                    <a href=\"../paint-preparation.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Learn more.</a>" } })
+	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Hard Surface Cleaner / TSP Alternative. Cleans and Deglosses to Improve Paint Adhesion.\n                                    <a href=\"../paint-preparation.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Plus d’informations</a>" } })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -27012,7 +27012,7 @@ webpackJsonp([0],[
 	                                    null,
 	                                    "POWER OUTDOOR"
 	                                ),
-	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Multi-Purpose Outdoor Cleaner & Power Washer Concentrate.\n                                    <a href=\"../power-outdoor-cleaner.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Learn more.</a>" } })
+	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Multi-Purpose Outdoor Cleaner & Power Washer Concentrate.\n                                    <a href=\"../power-outdoor-cleaner.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Plus d’informations</a>" } })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -27027,7 +27027,7 @@ webpackJsonp([0],[
 	                                    null,
 	                                    "PATIO FURNITURE CLEANER"
 	                                ),
-	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Removes Mold, Mildew, Dirt and More! 2-in-1 Formula that Cleans & Protects.\n                                    <a href=\"../cleaning-mold-on-patio-furniture.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Learn more.</a>" } })
+	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Removes Mold, Mildew, Dirt and More! 2-in-1 Formula that Cleans & Protects.\n                                    <a href=\"../cleaning-mold-on-patio-furniture.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Plus d’informations</a>" } })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -27042,7 +27042,7 @@ webpackJsonp([0],[
 	                                    null,
 	                                    "MOLD DISINFECTANT (CONCENTRATE)"
 	                                ),
-	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "cleans, disinfects, and deodorizes surfaces by killing odor-causing microorganisms and prevents the growth of mold and mildew.\n                                    <a href=\"../disinfectant-conc.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Learn more.</a>" } })
+	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "cleans, disinfects, and deodorizes surfaces by killing odor-causing microorganisms and prevents the growth of mold and mildew.\n                                    <a href=\"../disinfectant-conc.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Plus d’informations</a>" } })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -27058,7 +27058,7 @@ webpackJsonp([0],[
 	                                    "PATIO FURNITURE CLEANER",
 	                                    'MOLD KILLER'
 	                                ),
-	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Kills Mold & Mildew. Destroys and Neutralizes Mold, Mildew, Bacteria, Fungus and Odors at their source\n                                    <a href=\"https://www.moldexbrands.com/mold-mildew-killer.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Learn more.</a>" } })
+	                                _react2.default.createElement('p', { dangerouslySetInnerHTML: { __html: "Kills Mold & Mildew. Destroys and Neutralizes Mold, Mildew, Bacteria, Fungus and Odors at their source\n                                    <a href=\"https://www.moldexbrands.com/mold-mildew-killer.html\" class=\"readmore_but11 margin_top2\" data-anim-type=\"zoomIn\" data-anim-delay=\"750\"> Plus d’informations</a>" } })
 	                            )
 	                        )
 	                    ),
@@ -27169,11 +27169,11 @@ webpackJsonp([0],[
 	          _react2.default.createElement("br", null),
 	          _react2.default.createElement("br", null),
 	          _react2.default.createElement("h2", { dangerouslySetInnerHTML: { __html: "Mold Killer vs.<br>\n                Mold Stain Remover" } }),
-	          _react2.default.createElement("h6", { className: "grayc", dangerouslySetInnerHTML: { __html: "People ask us all the time... &quot;What is the difference between a <em>Mold Killer</em>\n                and <em>Mold Stain Remover?</em> We aim to answer." } }),
+	          _react2.default.createElement("h6", { className: "grayc", dangerouslySetInnerHTML: { __html: "People ask us all the time... &quot;What is the difference between a <em>Tueur de moisissures</em>\n                and <em>Mold Stain Remover?</em> We aim to answer." } }),
 	          _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "The goal of the clean-up process is to eliminate the mold and fungal growth and restore the surface to its original beauty. Killing the mold &amp; mildew growth with an EPA registered biocide is preferred. Biocides can be good cleaners, but are not the best stain removers. In contrast, stain removers lack the ability to effectively kill the living organisms that cause mold &amp; mildew. A combination of a biocide mold cleaner and a non-biocide mold remover is best." } }),
 	          _react2.default.createElement("br", null),
 	          _react2.default.createElement("br", null),
-	          _react2.default.createElement("a", { href: "https://moldexbrands.com/blog/", className: "readmore_but9", dangerouslySetInnerHTML: { __html: "Learn More." } })
+	          _react2.default.createElement("a", { href: "https://moldexbrands.com/blog/", className: "readmore_but9", dangerouslySetInnerHTML: { __html: "Plus d’informations" } })
 	        ),
 	        _react2.default.createElement(
 	          "div",
@@ -27284,28 +27284,28 @@ webpackJsonp([0],[
 	          "div",
 	          { className: "one_third animate", "data-anim-type": "fadeIn", "data-anim-delay": "200" },
 	          _react2.default.createElement("img", { src: "images/patio_home_bottom.jpg", alt: "", className: "img_left1" }),
-	          _react2.default.createElement("h4", { dangerouslySetInnerHTML: { __html: "Moldex<span class=\"sup\">&reg;</span> Patio Furniture Cleaner" } }),
+	          _react2.default.createElement("h4", { dangerouslySetInnerHTML: { __html: "Nettoyant pour les meubles de jardin Moldex<span class=\"sup\">®</span>" } }),
 	          _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Unique two-in-one formula gently cleans furniture and provides residual stain fighters on the surface. Whitens stains without abrasives, and will cleans furniture surfaces, fabrics, and upholstery without harming expensive plants or landscaping." } }),
 	          _react2.default.createElement("br", null),
-	          _react2.default.createElement("a", { href: "../cleaning-mold-on-patio-furniture.html", className: "lfive", dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-chevron-circle-right\"></i>&nbsp; Read More" } })
+	          _react2.default.createElement("a", { href: "../cleaning-mold-on-patio-furniture.html", className: "lfive", dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-chevron-circle-right\"></i>&nbsp; Plus d’informations" } })
 	        ),
 	        _react2.default.createElement(
 	          "div",
 	          { className: "one_third animate", "data-anim-type": "fadeIn", "data-anim-delay": "300" },
 	          _react2.default.createElement("img", { src: "images/paint_prep_home_bottom.jpg", alt: "", className: "img_left1" }),
-	          _react2.default.createElement("h4", { dangerouslySetInnerHTML: { __html: "Moldex<span class=\"sup\">&reg;</span> Paint Prep" } }),
+	          _react2.default.createElement("h4", { dangerouslySetInnerHTML: { __html: "Préparation à peinture Moldex<span class=\"sup\">®</span>" } }),
 	          _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "This TSP alternative cleaner is bleach-free and safer to use around children and pets. It removes dirt, grease, grime, smoke, mildew stains, food stains, heel marks, crayon, old wallpaper paste, and wax from painted or unpainted wood, metal, or vinyl wallpaper." } }),
 	          _react2.default.createElement("br", null),
-	          _react2.default.createElement("a", { href: "../paint-preparation.html", className: "lfive", dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-chevron-circle-right\"></i>&nbsp; Read More" } })
+	          _react2.default.createElement("a", { href: "../paint-preparation.html", className: "lfive", dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-chevron-circle-right\"></i>&nbsp; Plus d’informations" } })
 	        ),
 	        _react2.default.createElement(
 	          "div",
 	          { className: "one_third last animate", "data-anim-type": "fadeIn", "data-anim-delay": "400" },
 	          _react2.default.createElement("img", { src: "images/power_home_bottom.jpg", alt: "", className: "img_left1" }),
-	          _react2.default.createElement("h4", { dangerouslySetInnerHTML: { __html: "Moldex<span class=\"sup\">&reg;</span> Power Cleaner" } }),
+	          _react2.default.createElement("h4", { dangerouslySetInnerHTML: { __html: "Nettoyant extérieur Moldex<span class=\"sup\">®</span> Power&nbsp;!" } }),
 	          _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Commercial strength multi-surface outdoor cleaner designed to clean dirt, grime and remove mold, mildew, algae stains from almost any surface. Designed as a Power-washer concentrate formula, but makes 11 ready-to-use gallons of powerful cleaner!" } }),
 	          _react2.default.createElement("br", null),
-	          _react2.default.createElement("a", { href: "../power-outdoor-cleaner.html", className: "lfive", dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-chevron-circle-right\"></i>&nbsp; Read More" } })
+	          _react2.default.createElement("a", { href: "../power-outdoor-cleaner.html", className: "lfive", dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-chevron-circle-right\"></i>&nbsp; Plus d’informations" } })
 	        )
 	      );
 	    }
@@ -27413,7 +27413,7 @@ webpackJsonp([0],[
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement('h3', { dangerouslySetInnerHTML: { __html: "Available at these<strong> FINE RETAILERS:</strong>" } }),
+	        _react2.default.createElement('h3', { dangerouslySetInnerHTML: { __html: "Nos produits sont disponibles auprès des <strong> détaillants suivants :</strong>" } }),
 	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
 	          'ul',
@@ -27581,8 +27581,8 @@ webpackJsonp([0],[
 	            _react2.default.createElement(
 	                "div",
 	                { className: "col-md-6" },
-	                _react2.default.createElement("h3", { dangerouslySetInnerHTML: { __html: "We grew <strong>tired of cleaning mold & mildew</strong> only to watch it grow back." } }),
-	                _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "It seemed to be a never-ending. WHY? What makes mold grow back? Why can't you get rid of it? Once we figured\n                    it out, we wanted to share it with the world. We set out to change the way people view mold & mildew.\n                    <br>\n                    <br> In 1996, a group of scientists and entrepreneurs used private funds to research a problem that at\n                    first glance might not have seemed as important as global warming or finding a cure for cancer. But at\n                    a closer look, as studies showed, this was a serious health and economic problem.<strong><em> Dangerous Mold</em></strong>.\n                    Many people believe that scrubbing hard with bleach is enough for a mold and mildew remover. Many people\n                    are wrong. Bleach is little more than a cosmetic fix. As the twentieth century ended, many studies showed\n                    mold and mildew to be a major health hazard. The need for powerful mildew-removal and inhibiting products\n                    became increasingly clear." } }),
+	                _react2.default.createElement("h3", { dangerouslySetInnerHTML: { __html: "Vous est-il déjà arrivé de bien nettoyer la moisissure pour ensuite la voir réapparaître ? C’était notre problème." } }),
+	                _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Cette situation semblait interminable. <strong>Pourquoi la moisissure réapparaissait-elle&nbsp;?</strong> Pourquoi ne pouvions-nous pas nous en débarrasser&nbsp;? Après avoir finalement trouvé la réponse à ces questions, nous avons voulu partager notre solution avec le monde entier afin que les gens voient la moisissure différemment. <br><br>Bien qu’à première vue notre problème ne semblait pas aussi important que le réchauffement planétaire ou la recherche contre le cancer, des études ont démontré que la moisissure était tout de même un grave problème pour la santé et l’économie. C’est pourquoi, en 1996, un groupe de scientifiques et d'entrepreneurs utilisèrent des fonds privés pour trouver une solution contre les moisissures dangereuses. Bien des gens croient que frotter la moisissure avec de l'eau de Javel est suffisant pour éliminer les moisissures, mais ces gens ont tort. Le javellisant n’est rien de plus qu’une solution cosmétique. À la fin du XXe siècle, de nombreuses études ont démontré que la <strong><em>moisissure était un vrai danger pour la santé</em></strong>. Nous étions donc de plus en plus intéressés à trouver des produits puissants pour enlever la moisissure et l’empêcher de réapparaître. " } }),
 	                _react2.default.createElement("br", null)
 	            ),
 	            _react2.default.createElement(
@@ -27594,11 +27594,11 @@ webpackJsonp([0],[
 	            _react2.default.createElement(
 	                "div",
 	                { className: "one_full" },
-	                _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "After three years of successful R&D came the <a href=\"https://www.envirocarecorp.com\">EnviroCare Corporation</a>.\n                    Initially, the company targeted professional builders of new construction who needed anti-mold coatings\n                    for treating lumber and other materials likely to fall prey to toxic mold. After successfully launching\n                    a product line for new buildings, the question was asked, “What about existing buildings that have mold\n                    problems or are in need of mold remediation?” The answer was a second product called Moldex<span class=\"sup\">&reg;</span>.\n                    Moldex<span class=\"sup\">&reg;</span> was created for professionals and certified applicators for use\n                    in commercial and residential structures. Moldex<span class=\"sup\">&reg;</span> cleans, kills and disinfects\n                    to get rid of mold &amp; mildew before surfaces are coated with a mold-proof barrier.\n                    <br>\n                    <br> Now, with the exploding do-it-yourself market, EnviroCare is offering an extensive line of professional\n                    grade mold solutions called Moldex<span class=\"sup\">&reg;</span> Brands. The Moldex<span class=\"sup\">&reg;</span>                    Brand was designed specifically for the individual homeowner who wants to get rid of mold and keep the\n                    dangerous hazard from returning. It offers retailers a comprehensive, low-cost, easy to use, consumer-friendly\n                    line of professional strength products that utilize the same methods and technologies trusted by “the\n                    pros” for years.\n                    <br>" } })
+	                _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Après trois ans de recherche et de développement, l’entreprise <a href=\"https://www.envirocarecorp.com\" target=\"_blank\">EnviroCare Corporation</a> est née. Dans un premier temps, l'entreprise cibla les constructeurs professionnels qui bâtissaient de nouveaux édifices et qui avaient besoin de revêtements anti-moisissures pour traiter le bois et autres matériaux susceptibles de tomber proie aux moisissures toxiques. Suite au succès de leur gamme de produits pour les bâtiments neufs, la question suivante fut posée&nbsp;: «&nbsp;Que pouvons-nous faire avec les bâtiments existants qui ont déjà des problèmes de moisissures&nbsp;?&nbsp;» La réponse fut la création d’un second produit appelé Moldex<span class=\"sup\">®</span>. Moldex<span class=\"sup\">®</span> a été créé pour les professionnels dans le but d’être appliqué dans les structures résidentielles et commerciales par du personnel certifié. Moldex<span class=\"sup\">®</span> nettoie et désinfecte les surfaces, tue les moisissures et protège les surfaces en les couvrant d’une barrière à l’épreuve des moisissures.  <br><br>Afin de satisfaire aux personnes de plus en plus nombreuses qui prennent en main leurs projets de réparation et d’entretien, EnviroCare offre maintenant les marques Moldex<span class=\"sup\">®</span>&nbsp;: une vaste gamme de solutions professionnelles contre la moisissure. Les marques Moldex<span class=\"sup\">®</span> ont été conçues spécifiquement pour les propriétaires qui veulent se débarrasser des moisissures dangereuses une fois pour toute. Grâce aux marques Moldex<span class=\"sup\">®</span>, les détaillants peuvent maintenant offrir à leur consommateurs une ligne complète de produits puissants contre la moisissure qui sont de qualité professionnelle, abordables, faciles à utiliser et qui sont basés sur les mêmes méthodes et technologies auxquelles les professionnels font confiance depuis des années. <br>" } })
 	            ),
 	            _react2.default.createElement("div", { className: "clearfix" }),
 	            _react2.default.createElement("div", { className: "clearfix divider_dashed6" }),
-	            _react2.default.createElement("div", { className: "big_text1 center", dangerouslySetInnerHTML: { __html: "Using the <i><a href=\"how-to-get-rid-of-mold-and-mildew.html\">3 Factors in Mold Fighting</a></i> approach, the\n                Moldex<span class=\"sup\">&reg;</span> Brand is empowering consumers and encouraging people to solve mold problems\n                the right way. Don’t be fooled by “all-in-one” products and find out why millions of homeowners, DIY'ers,\n                and professional mold & mildew remediators trust the Moldex<span class=\"sup\">&reg;</span> Brand.\n                <br>\n                <br><a href=\"products.html\" class=\"readmore_but3\">View All Our Products</a>" } })
+	            _react2.default.createElement("div", { className: "big_text1 center", dangerouslySetInnerHTML: { __html: "Avec une approche reposant sur <i><a href=\"how-to-get-rid-of-mold-and-mildew.html\">trois facteurs pour lutter contre la moisissure</a></i>, les marques Moldex<span class=\"sup\">®</span> mettent les consommateurs en contrôle et encouragent les gens à résoudre correctement leurs problèmes de moisissures. Ne vous laissez pas berner par les produits tout-en-un et découvrez pourquoi des millions de propriétaires, de bricoleurs et de professionnels en élimination de moisissures font confiance aux produits de marque Moldex<span class=\"sup\">®</span>.<br><br><a href=\"products.html\" class=\"readmore_but3\">Voir tous nos produits</a>" } })
 	        ),
 	        _react2.default.createElement("div", { className: "clearfix margin_top7" })
 	    );
@@ -27730,7 +27730,7 @@ webpackJsonp([0],[
 	                        return _react2.default.createElement(
 	                                                "div",
 	                                                null,
-	                                                _react2.default.createElement(_pageTitle2.default, { title: "Mold & Nildew Guide" }),
+	                                                _react2.default.createElement(_pageTitle2.default, { title: "Mold & Mildew Guide" }),
 	                                                _react2.default.createElement(
 	                                                                        "div",
 	                                                                        { className: "container" },
@@ -27740,8 +27740,8 @@ webpackJsonp([0],[
 	                                                                                                _react2.default.createElement(
 	                                                                                                                        "div",
 	                                                                                                                        { className: "one_full" },
-	                                                                                                                        _react2.default.createElement("div", { className: "big_text1", dangerouslySetInnerHTML: { __html: "9e964aae" } }),
-	                                                                                                                        _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Mold comes in many forms – try more than 100,000 types. Alternaria, Aspergillus, Cladosporium, and Penicillium are the types of mold commonly found in homes. Black mold (also known as Stachybotrys chartarum, Stachybotrys atra, or SC) is a hazardous house mold that made headlines when a school was shut down and an unusual number of babies in Cleveland suffering from pulmonary hemorrhage were found to be living in homes hosting SC.\n                        <br>\n                        <br> Although known as black mold, stachybotrys may also be white or greenish-black. It grows on material with a high cellulose content (drywall, cardboard, wood, paper, drop-ceiling tiles) that has been wet for several days. Sometimes, Stachybotrys, like other molds, can produce chemicals called mycotoxins (myco from the Greek for fungus) that may cause asthma and lung diseases.\n                        <br>\n                        <br> Here’s a rundown on common household molds, where to look for them, and the ill effects they bring..." } })
+	                                                                                                                        _react2.default.createElement("div", { className: "big_text1", dangerouslySetInnerHTML: { __html: "Introduction aux moisissures" } }),
+	                                                                                                                        _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Il existe plusieurs types de moisissures. En effet, il y en a environ 100&nbsp;000 souches, y compris celles qui sont couramment relevées dans les maisons et les bâtiments : <em>Alternaria</em>, <em>Aspergillus</em>, <em>Cladosporum</em> et <em>Penicillium</em>. La moisissure noire (aussi appelée <em>Stachybotrys chartarum</em>, <em>Stachybotrys atra</em> ou <em>SC</em>) est une moisissure dangereuse qui affecte les bâtiments et qui a fait la manchette lorsqu'une école a été fermée à Cleveland, aux États-Unis, et lorsqu’on a découvert un nombre inhabituel de bébés souffrant d'hémorragies pulmonaires qui vivaient dans des maisons qui étaient contaminées avec de la moisissure noire. <br><br> Bien qu’on l’appelle la moisissure noire, le <em>Stachybotrys</em> peut être blanc, noir ou verdâtre foncé. Il se forme sur les matières avec une haute teneur en cellulose (les cloisons sèches ou panneaux de gypse, le carton, le bois, le papier, les carreaux de plafond, etc.) qui sont restées humides pendant plusieurs jours. Parfois, le <em>Stachybotrys</em>, tout comme les autres types de moisissures, peut produire des produits chimiques appelés mycotoxines (du grec «&nbsp;<em>myco</em>&nbsp;» qui signifie champignons) qui peuvent occasionner des maladies pulmonaires et l'asthme.<br><br> Voici un aperçu des moisissures qui sont couramment relevées dans les maisons et les bâtiments, y compris les endroits où vous pourrez les trouver et les effets néfastes qu'ils pourraient occasionner. " } })
 	                                                                                                ),
 	                                                                                                _react2.default.createElement("div", { className: "clearfix" }),
 	                                                                                                _react2.default.createElement("div", { className: "clearfix divider_dashed6" }),
@@ -27762,7 +27762,7 @@ webpackJsonp([0],[
 	                                                                                                                                                                        "Alternaria"
 	                                                                                                                                                )
 	                                                                                                                        ),
-	                                                                                                                        _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "A large spore mold that can deposit in the nose, mouth and upper respiratory tract causing an allergic response. Indoors, it is often found in carpets, textiles, house dust and potentially damp areas like window frames and showers. It can also be found in plant soil." } })
+	                                                                                                                        _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Cette moisissure à spores de grande taille peut se déposer dans le nez, dans la bouche et dans les voies respiratoires supérieures et provoquer une réaction allergique. À l’intérieur, on la retrouve souvent dans les tapis, les tissus, la poussière et les zones humides comme les cadres de fenêtres et les douches. Cette moisissure peut également se trouver dans la terre de vos plantes et pots de fleurs." } })
 	                                                                                                ),
 	                                                                                                _react2.default.createElement("div", { className: "clearfix margin_top6" }),
 	                                                                                                _react2.default.createElement(
@@ -27782,7 +27782,7 @@ webpackJsonp([0],[
 	                                                                                                                                                                        "Aspergillus"
 	                                                                                                                                                )
 	                                                                                                                        ),
-	                                                                                                                        _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Usually found in warmer climates in areas of water damage or extreme dampness. Aspergillus species are also commonly found in house dust. Many species produce mycotoxins which may be associated with disease in humans and some animals. Also found in building materials and in fall leaves and other decomposing matter like compost piles." } })
+	                                                                                                                        _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Cette moisissure existe normalement dans des climats plus chauds et dans des zones avec des dégâts d'eau ou une humidité extrême. Les moisissures Aspergillus se retrouvent également souvent dans la poussière de maison. De nombreuses espèces d’Aspergillus produisent des mycotoxines qui peuvent être associés à des maladies chez l'homme et chez certains animaux. On retrouve également ces moisissures dans les matériaux de construction, dans les feuilles mortes à l'automne et dans d'autres matières en décomposition comme les piles de compost." } })
 	                                                                                                ),
 	                                                                                                _react2.default.createElement("div", { className: "clearfix margin_top6" }),
 	                                                                                                _react2.default.createElement(
@@ -27802,7 +27802,7 @@ webpackJsonp([0],[
 	                                                                                                                                                                        "Cladosporium"
 	                                                                                                                                                )
 	                                                                                                                        ),
-	                                                                                                                        _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "The most commonly identified outdoor fungus, but it can easily enter into the house through the HVAC and other airflow entryways. Cladosporium also has an indoor species that grows on textiles, wood and other porous, damp areas. Both indoor and outdoor species are triggers for hay fever and asthma symptoms." } })
+	                                                                                                                        _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Il s’agit du champignon extérieur le plus couramment identifié, mais il peut facilement entrer dans la maison par les voies de climatisation et autres entrées d'air. Il existe aussi une variété intérieure de Cladosporum qui se forme sur les tissus, le bois et autres surfaces poreuses et humides. Les souches intérieures et extérieures peuvent déclencher le rhume des foins et les symptômes de l'asthme." } })
 	                                                                                                ),
 	                                                                                                _react2.default.createElement("div", { className: "clearfix margin_top6" }),
 	                                                                                                _react2.default.createElement(
@@ -27822,7 +27822,7 @@ webpackJsonp([0],[
 	                                                                                                                                                                        "Penicillium"
 	                                                                                                                                                )
 	                                                                                                                        ),
-	                                                                                                                        _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "A very common mold known to cause allergies, hay fever and asthma. Species may be found growing on wallpaper, wallpaper glue and decaying fabrics in water-damaged buildings or homes. It is also found in carpet and in interior fiberglass duct insulation. Some species can produce mycotoxins." } })
+	                                                                                                                        _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Cette moisissure très commune peut provoquer des allergies, le rhume des foins et l'asthme. Des espèces de Penicillium peuvent se former sur le papier peint, sur la colle à papier peint et sur les tissus en décomposition dans les maisons et bâtiments qui ont été endommagés par l'eau. On trouve aussi ce type de moisissure dans les tapis et à l'intérieur des gaines d'isolation en fibre de verre. Certaines souches de Penicillium peuvent produire des mycotoxines." } })
 	                                                                                                ),
 	                                                                                                _react2.default.createElement("div", { className: "clearfix margin_top6" }),
 	                                                                                                _react2.default.createElement(
@@ -27842,20 +27842,20 @@ webpackJsonp([0],[
 	                                                                                                                                                                        "Stachybotrys"
 	                                                                                                                                                )
 	                                                                                                                        ),
-	                                                                                                                        _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Pronounced (stack-ee-BOT-ris), this is an especially toxic black mold that produces airborne toxins (mycotoxins) that can cause serious breathing difficulties, memory and hearing loss, dizziness, flu-like symptoms and bleeding in the lungs. Stachybotrys requires excessive moisture to thrive (usually running water) and is a slimy black mold. Fortunately, stachybotrys is not found in homes as often as the other molds listed above." } })
+	                                                                                                                        _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Cette moisissure noire particulièrement toxique produit des toxines atmosphériques (mycotoxines) qui peuvent provoquer des difficultés respiratoires graves, des pertes de mémoire, des pertes auditives, des étourdissements, des symptômes semblables à ceux de la grippe et des saignements dans les poumons. Les moisissures Stachybotrys sont noires et visqueuses et elles exigent une humidité excessive pour prospérer (comme de l’eau courante). Heureusement, les souches de Stachybotrys ne se retrouvent pas dans les maisons aussi fréquemment que les autres moisissures énumérées ci-dessus." } })
 	                                                                                                )
 	                                                                        ),
 	                                                                        _react2.default.createElement(
 	                                                                                                "div",
 	                                                                                                { className: "one_full" },
 	                                                                                                _react2.default.createElement("div", { className: "clearfix margin_top2" }),
-	                                                                                                _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "It is important to remember that not all black molds are SC and that SC does not always produce mycotoxins. While alive, SC is slimy and does not release many spores. Exposure is greatest when SC dries and spores or bits of the mold growth are released into the air." } }),
+	                                                                                                _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Il est important de se rappeler que la moisissure noire n’est pas nécessairement une souche de Stachybotrys et que certaines souches de Stachybotrys ne produisent pas toujours des mycotoxines. Bien que ce soit un organisme vivant, le Stachybotrys est visqueux et ne libère pas beaucoup de spores. Le risque est plus élevé lorsque cette moisissure s’assèche et que ses spores ou des petits morceaux de moisissures sont libérés dans l'air." } }),
 	                                                                                                _react2.default.createElement("div", { className: "clearfix divider_dashed6" }),
-	                                                                                                _react2.default.createElement("div", { className: "big_text1", dangerouslySetInnerHTML: { __html: "41cced65" } }),
+	                                                                                                _react2.default.createElement("div", { className: "big_text1", dangerouslySetInnerHTML: { __html: "Ressources et liens utiles&nbsp;:<p><a href=\"https://www.inspq.qc.ca/moisissures/fiches\" target=\"_blank\">Fiches sur les moisissures </a> - Institut national de santé publique du Québec</p><p><a href=\"http://canadiensensante.gc.ca/healthy-living-vie-saine/environment-environnement/air/contaminants/mould-moisissures-fra.php\" target=\"_blank\">Réduire l’humidité et les moisissures</a> - Gouvernement du Canada</p><p><a href=\"http://www.cchst.ca/oshanswers/biol_hazards/iaq_mold.html\" target=\"_blank\">Qualité de l’air intérieur - moisissures et champignons</a> - Centre canadien d’hygiène et de sécurité au travail</p><p><a href=\"http://sante.gouv.qc.ca/problemes-de-sante/problemes-de-sante-causes-par-les-moisissures/\" target=\"_blank\">Problèmes de santé causés par les moisissures</a> - Santé mieux-être Québec</p>" } }),
 	                                                                                                _react2.default.createElement("div", { className: "clearfix margin_top2" }),
-	                                                                                                _react2.default.createElement("div", { className: "big_text1", dangerouslySetInnerHTML: { __html: "51288d0d" } }),
+	                                                                                                _react2.default.createElement("div", { className: "big_text1", dangerouslySetInnerHTML: { __html: "Informations et aide en cas d’inondations &nbsp;:<p><a href=\"http://www.preparez-vous.gc.ca/cnt/rsrcs/pblctns/flds-wtd/index-fr.aspx\" target=\"_blank\">Inondations – Que faire &nbsp;?</a> - Gouvernement du Canada<br><a href=\"http://www.securitepublique.gouv.qc.ca/securite-civile/se-preparer-aux-sinistres/sinistres/inondation.html\" target=\"_blank\">Inondation</a> - Sécurité publique du Québec<br></p>" } }),
 	                                                                                                _react2.default.createElement("div", { className: "clearfix margin_top2" }),
-	                                                                                                _react2.default.createElement("div", { className: "big_text1", dangerouslySetInnerHTML: { __html: "f008a920" } }),
+	                                                                                                _react2.default.createElement("div", { className: "big_text1", dangerouslySetInnerHTML: { __html: "Nettoyage et prévention &nbsp;: <p><a href=\"http://www.hc-sc.gc.ca/fniah-spnia/promotion/public-publique/home-maison/mould-moisissure-fra.php\" target=\"_blank\">Les moisissures et votre santé</a> - Santé Canada</p><p><a href=\"http://sante.gouv.qc.ca/conseils-et-prevention/reconnaitre-et-eliminer-les-moisissures-dans-la-maison\" target=\"_blank\">Reconnaître et éliminer les moisissures dans la maison</a> - Santé mieux-être Québec</p>" } }),
 	                                                                                                _react2.default.createElement("div", { className: "clearfix margin_top2" })
 	                                                                        )
 	                                                ),
@@ -28029,9 +28029,9 @@ webpackJsonp([0],[
 																									_react2.default.createElement(
 																													"div",
 																													{ className: "two_third" },
-																													_react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Thank You for visiting Moldex Brands. We welcome your feedback, questions, and comments. Please send\n                        us a message using the feedback form below or contact us using the information provided on this web\n                        page" } }),
+																													_react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Merci d’avoir visité notre site. Nous vous invitons à partager avec nous vos commentaires et vos questions. Vous pouvez nous joindre en utilisant le formulaire ci-dessous ou en utilisant les coordonnées fournies sur cette page." } }),
 																													_react2.default.createElement("br", null),
-																													_react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Please be patient while waiting for a response. Give us at least 24 hours. <strong>General Inquiries: 1.800.325.6180</strong>" } }),
+																													_react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Nous apprécions votre patience. Nous vous répondrons dès que possible, mais veuillez nous accorder un minimum de 24 heures. Pour des renseignements généraux, vous pouvez nous joindre au <strong>General Inquiries: 1-877-463-2628</strong>" } }),
 																													_react2.default.createElement("br", null),
 																													_react2.default.createElement("br", null),
 																													_react2.default.createElement(
@@ -28040,7 +28040,7 @@ webpackJsonp([0],[
 																																	_react2.default.createElement(
 																																					"form",
 																																					{ action: "demo-contacts.php", method: "post", id: "sky-form", className: "sky-form", noValidate: "novalidate" },
-																																					_react2.default.createElement("header", { dangerouslySetInnerHTML: { __html: "Send Us a <strong>Message!</strong>" } }),
+																																					_react2.default.createElement("header", { dangerouslySetInnerHTML: { __html: "Envoyez-nous un <strong>message</strong>" } }),
 																																					_react2.default.createElement(
 																																									"fieldset",
 																																									null,
@@ -28099,7 +28099,7 @@ webpackJsonp([0],[
 																																									_react2.default.createElement(
 																																													"section",
 																																													null,
-																																													_react2.default.createElement("label", { className: "checkbox", dangerouslySetInnerHTML: { __html: "<input type=\"checkbox\" name=\"copy\" id=\"copy\">\n                                        Send a copy to my e-mail address" } })
+																																													_react2.default.createElement("label", { className: "checkbox", dangerouslySetInnerHTML: { __html: "<input type=\"checkbox\" name=\"copy\" id=\"copy\">\n                                        Je désire recevoir une copie de mon message." } })
 																																									)
 																																					),
 																																					_react2.default.createElement(
@@ -28123,11 +28123,11 @@ webpackJsonp([0],[
 																													_react2.default.createElement(
 																																	"div",
 																																	{ className: "address_info two" },
-																																	_react2.default.createElement("h4", { dangerouslySetInnerHTML: { __html: "Company <strong>Address</strong>" } }),
+																																	_react2.default.createElement("h4", { dangerouslySetInnerHTML: { __html: "<strong>Adresse postale</strong>" } }),
 																																	_react2.default.createElement(
 																																					"ul",
 																																					null,
-																																					_react2.default.createElement("li", { dangerouslySetInnerHTML: { __html: "<strong>Moldex Brands</strong><br>\n                              866 Horan Drive<br>\n                              Fenton, MO 63026<br>\n                              Toll Free: 1.800.325.6180<br>\n                              Telephone: 1.636.349.5855<br>\n                              Fax: 1.636.349.5335<br>\n                              E-mail:\n                              <a href=\"mailto:orders@convenienceproducts.com\">orders@convenienceproducts.com</a><br> Website: <a href=\"index.html\">www.moldexbrands.com</a>" } })
+																																					_react2.default.createElement("li", { dangerouslySetInnerHTML: { __html: "<strong>Les marques Moldex</strong><br>\n                              866 Horan Drive<br>\n                              Fenton, MO 63026<br>\n                              Toll Free: 1.800.325.6180<br>\n                              Telephone: 1.636.349.5855<br>\n                              Fax: 1.636.349.5335<br>\n                              E-mail:\n                              <a href=\"mailto:orders@convenienceproducts.com\">orders@convenienceproducts.com</a><br> Website: <a href=\"index.html\">www.moldexbrands.com</a>" } })
 																																	)
 																													)
 																									)
@@ -28234,7 +28234,7 @@ webpackJsonp([0],[
 	                        _react2.default.createElement(
 	                            "div",
 	                            { className: "one_full" },
-	                            _react2.default.createElement("div", { className: "big_text1", dangerouslySetInnerHTML: { __html: "12c724ef" } }),
+	                            _react2.default.createElement("div", { className: "big_text1", dangerouslySetInnerHTML: { __html: "Notre méthode pour se débarrasser des moisissures est simple. Nous tuons la moisissure, nous nettoyons la surface et puis nous la protégeons. C’est pourquoi nous l’appelons les «&nbsp;3 facteurs pour lutter contre la moisissure&nbsp;<sup>MC</sup>». Notre approche fonctionne parce que chaque formule brevetée cible une étape spécifique dans la croissance des moisissures et chaque produit rajoute à l’efficacité du produit précédent." } }),
 	                            _react2.default.createElement("div", { className: "clearfix margin_top2" }),
 	                            _react2.default.createElement(
 	                                "div",
@@ -28242,7 +28242,7 @@ webpackJsonp([0],[
 	                                _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/3_factors_lg.png", width: "396", height: "201", className: "img_size2", alt: "" })
 	                            ),
 	                            _react2.default.createElement("br", null),
-	                            _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "We know mold, and we know mildew. And we know what it takes to properly deal with this stuff and prevent\n                        it from coming back.\n                        <br>\n                        <br> We also know that mold begins with the spore, launched by a \"perfect storm\" of microscopic\n                        events - fungus, water, heat, energy and ultimately, a surface to grow on.\n                        <br>\n                        <br> The Moldex \"3 Factors in Mold Fighting&#8482;\" approach addresses all the events that lead\n                        to mold growth and provide you with the best results for each step. The system was formulated not\n                        only to kill and inhibit the growth of mold &amp; mildew, but also help diminish any evidence of\n                        past infestations, ugly staining or black spots and restore surfaces back to its original appearance.\n                        Here's how to get rid of mold and mildew:" } })
+	                            _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "La moisissure, on s’y connaît&nbsp;!  Nous savons ce qu'il faut faire pour l’éliminer correctement et l'empêcher de revenir.<br><br>Nous savons aussi que le cycle de la moisissure commence avec la spore, qui est lancée dans une «&nbsp;tempête parfaite&nbsp;» d’événements microscopiques&nbsp;: des champignons, de l'eau, de la chaleur, de l'énergie et une surface sur laquelle cette spore pourra s’attacher et croître.<br><br> Les produits Moldex<span class=\"sup\">®</span>, avec leurs 3 facteurs dans la lutte contre la moisissure, s’attaquent à toutes les étapes de croissance des moisissures. Notre approche vous donne les meilleurs résultats à chaque étape. Notre système a été formulé non seulement pour tuer et empêcher la croissance de moisissures, mais aussi pour vous aider à faire disparaître toute preuve des infestations passées, en enlevant la décoloration et les taches laides ou noires et en restaurant l’apparence d’origine de vos surfaces. <br><br>Voici comment vous débarrasser de la moisissure&nbsp;: " } })
 	                        ),
 	                        _react2.default.createElement("div", { className: "clearfix" }),
 	                        _react2.default.createElement("div", { className: "clearfix divider_dashed6" }),
@@ -28254,8 +28254,8 @@ webpackJsonp([0],[
 	                        _react2.default.createElement(
 	                            "div",
 	                            { className: "one_half last" },
-	                            _react2.default.createElement("h3", { dangerouslySetInnerHTML: { __html: "<strong><span style=\"color: #7ab700\">Factor 1:</span></strong> Kill the Mold & Mildew" } }),
-	                            _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Molds reproduce by means of tiny spores; the spores are invisible to the naked eye and float through\n                        the air. Molds begin growing when spores land on moist surfaces and find food. “Food” means any organic\n                        substance, such as wood, paper, carpet, food, plastic, vinyl, and insulation. It is important to\n                        understand that mold & mildew are living organisms and in order to effectively remove something that\n                        grows, you must disrupt its life cycle (including its root structure) by using an EPA registered\n                        biocide that gets rid of mold.\n                        <br>\n                        <br>\n                        <a href=\"killers.html\">View Factor 1 Products</a>" } })
+	                            _react2.default.createElement("h3", { dangerouslySetInnerHTML: { __html: "<strong><span style=\"color: #7ab700\">Facteur 1 ::</span></strong> Tuer les moisissures" } }),
+	                            _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Les moisissures se reproduisent grâce à leurs spores minuscules. Ces spores sont invisibles à l'œil nu et flottent dans l'air. La moisissure se forme lorsque les spores atterrissent sur des surfaces humides où elles trouvent de la nourriture. Leur «&nbsp;nourriture&nbsp;» peut être toutes sortes de substances organiques comme le bois, le papier, les tapis, la nourriture, le plastique, le vinyle et les matériaux isolants. Il est important de comprendre que les moisissures sont des organismes vivants. Afin d'éliminer efficacement quelque chose qui est en pleine croissancenous devons interrompre son cycle de vie (y compris ses racines) en utilisant un biocide enregistré auprès de l’Agence américaine de protection de l’environnement qui tue les moisissures.<br><br><a href=\"killers.html\">Voir les produits pour le facteur 1</a>" } })
 	                        ),
 	                        _react2.default.createElement("div", { className: "clearfix margin_top6" }),
 	                        _react2.default.createElement(
@@ -28266,8 +28266,8 @@ webpackJsonp([0],[
 	                        _react2.default.createElement(
 	                            "div",
 	                            { className: "one_half last" },
-	                            _react2.default.createElement("h3", { dangerouslySetInnerHTML: { __html: "<strong><span style=\"color: #7ab700\">Factor 2:</span></strong> Clean the Stain" } }),
-	                            _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "After you kill the mold & mildew, the roots leave behind root-remnants and ugly staining that can go\n                        deep below the surface. Ordinary cleaners maybe not be able to remove these tough mildew stains so\n                        a powerful mold stain lifter is required to do the job. Our mold stain cleaners utilize special surfactants,\n                        hydrogen peroxide and bleach to create deep-cleaning action that breaks apart stains, dissolving\n                        them quickly and easily, while removing the ugly mold/mildew stain color.\n                        <br>\n                        <br>\n                        <a href=\"stain_removers.html\">View Factor 2 Products</a>" } })
+	                            _react2.default.createElement("h3", { dangerouslySetInnerHTML: { __html: "<strong><span style=\"color: #7ab700\">Facteur 2:</span></strong> Enlever les taches" } }),
+	                            _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Après avoir tué la moisissure, les racines laissent derrière elles des restants de racines et de laides taches qui peuvent se rendre bien profondément sous la surface. Parce que les nettoyants ordinaires ne peuvent souvent pas éliminer ces taches de moisissures bien incrustées, un détachant puissant est nécessaire pour faire disparaître ces taches tenaces. Nos nettoyants contre la moisissure utilisent des surfactants spéciaux, du peroxyde d'hydrogène et/ou du javellisant pour désincruster les taches en profondeur. Les taches de moisissures laides disparaissent rapidement et facilement. <br><br><a href=\"stain_removers.html\">Voir les produits pour le facteur 2</a>" } })
 	                        ),
 	                        _react2.default.createElement("div", { className: "clearfix margin_top6" }),
 	                        _react2.default.createElement(
@@ -28278,17 +28278,17 @@ webpackJsonp([0],[
 	                        _react2.default.createElement(
 	                            "div",
 	                            { className: "one_half last" },
-	                            _react2.default.createElement("h3", { dangerouslySetInnerHTML: { __html: "<strong><span style=\"color: #7ab700\">Factor 3:</span></strong> Seal the Surface" } }),
-	                            _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Sealing the surface with a clear acrylic polymer coating will block mold & mildew on the surface at microscopic\n                        levels. A ultra-thin layer of protection is created by bonding molecules that are far more dense\n                        than water molecules or mold particles. The result is a water-resistant, invisible, barrier that\n                        protects against mold & mildew damage, staining, and discoloration. Factor 3 is our secret weapon\n                        in the fight against mold & mildew because it aims to stop problems before they even happen.\n                        <br>\n                        <br>\n                        <a href=\"prevention.html\">View Factor 3 Products</a>" } })
+	                            _react2.default.createElement("h3", { dangerouslySetInnerHTML: { __html: "<strong><span style=\"color: #7ab700\">Facteur 3:</span></strong> Sceller la surface" } }),
+	                            _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "En protégeant la surface avec une couche de polymère acrylique transparent, ce produit empêche la moisissure de se former à des niveaux microscopiques sur la surface. Une couche ultra-mince de protection est créée en liant les molécules qui sont plus denses que les molécules d’eau ou les particules de moisissures. Ceci crée donc une barrière invisible et résistante à l'eau qui protège contre les taches, la décoloration et les autres dommages que peuvent occasionner les moisissures. Le facteur 3 est notre arme secrète dans la lutte contre la moisissure car il vise à arrêter les problèmes avant qu'ils ne surviennent.<br><br><a href=\"prevention.html\">Voir les produits pour le facteur 3</a>" } })
 	                        )
 	                    ),
 	                    _react2.default.createElement("div", { className: "clearfix divider_dashed6" }),
 	                    _react2.default.createElement(
 	                        "div",
 	                        { className: "one_full" },
-	                        _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Moldex<span class=\"sup\">&reg;</span> works because of our unique formulations and this overall regimented\n                    approach. Each proprietary formula targets a specific step in the mold growth process and builds on the\n                    previous step. Taken as a whole, the 3 factor system provides everything you need to kill mold, help\n                    reduce growth, and seal the surface so future mold doesn't take hold.\n                    <br>\n                    <br>" } })
+	                        _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Les produits Moldex<span class=\"sup\">®</span> fonctionnent grâce à nos formulations uniques et à notre approche globale et stricte. Chacune de nos formules exclusives vise une étape spécifique dans le processus de croissance des moisissures et chaque produit rajoute à l’efficacité du produit précédent. Lorsqu’utilisé dans son ensemble, notre système à 3 facteurs vous donne tout ce dont vous avez besoin pour tuer les moisissures, nuire à leur croissance et protéger la surface de sorte que les moisissures futures ne puissent pas s’y rattacher. <br><br>" } })
 	                    ),
-	                    _react2.default.createElement("div", { className: "big_text1 center", dangerouslySetInnerHTML: { __html: "Like professional <i>mold remediators</i>, we believe this is the best way to approach mold & mildew.\n                <br>\n                <strong><i>1.</i> KILL <i> 2.</i> CLEAN <i>3.</i> PREVENT</strong>" } })
+	                    _react2.default.createElement("div", { className: "big_text1 center", dangerouslySetInnerHTML: { __html: "Tout comme les professionnels en élimination de moisissures, nous croyons que la meilleure façon de se débarrasser des moisissures est d’utiliser les trois facteurs suivants <br><br> <strong><i>1.</i> TUEUR DE MOISISSURES <i> 2.</i> DÉTACHANT &nbsp;&nbsp;&nbsp; <i>3.</i> PROTECTION&nbsp;</strong>" } })
 	                ),
 	                _react2.default.createElement("div", { className: "clearfix margin_top7" })
 	            );
@@ -29951,9 +29951,9 @@ webpackJsonp([0],[
 	                                    _react2.default.createElement("img", { src: "https://www.moldexbrands.com/images/footer-logo.png", alt: "" })
 	                                ),
 	                                _react2.default.createElement("li", { dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-map-marker fa-lg\"></i> 866 Horan Drive\n                            <br> Fenton, Missouri 63026" } }),
-	                                _react2.default.createElement("li", { dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-phone\"></i>&nbsp; Toll Free: 1.800.325.6180" } }),
-	                                _react2.default.createElement("li", { dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-phone\"></i>&nbsp; Phone: 1.636.349.5855" } }),
-	                                _react2.default.createElement("li", { dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-print\"></i>&nbsp; Fax: 1.636.349.5335" } }),
+	                                _react2.default.createElement("li", { dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-phone\"></i>&nbsp; Numéro sans frais : 1.800.325.6180" } }),
+	                                _react2.default.createElement("li", { dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-phone\"></i>&nbsp; Téléphone : 1.636.349.5855" } }),
+	                                _react2.default.createElement("li", { dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-print\"></i>&nbsp; Télécopieur : 1.636.349.5335" } }),
 	                                _react2.default.createElement("li", { dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-envelope\"></i>info@moldexbrands.com" } })
 	                            )
 	                        ),
@@ -29966,7 +29966,7 @@ webpackJsonp([0],[
 	                                _react2.default.createElement(
 	                                    "h4",
 	                                    { className: "lmb" },
-	                                    "Useful Links"
+	                                    "Pages populaires"
 	                                ),
 	                                _react2.default.createElement(
 	                                    "ul",
@@ -29974,17 +29974,17 @@ webpackJsonp([0],[
 	                                    _react2.default.createElement(
 	                                        "li",
 	                                        null,
-	                                        _react2.default.createElement("a", { href: "mold_guide.html", dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-angle-right\"></i> Mold &amp; Mildew Guide" } })
+	                                        _react2.default.createElement("a", { href: "mold_guide.html", dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-angle-right\"></i> Guide de moisissures" } })
 	                                    ),
 	                                    _react2.default.createElement(
 	                                        "li",
 	                                        null,
-	                                        _react2.default.createElement("a", { href: "https://www.moldexbrands.com/mold-mildew-killer.html", dangerouslySetInnerHTML: { __html: "<em class=\"fa fa-angle-right\"></em> Mold Killer" } })
+	                                        _react2.default.createElement("a", { href: "https://www.moldexbrands.com/mold-mildew-killer.html", dangerouslySetInnerHTML: { __html: "<em class=\"fa fa-angle-right\"></em> Tueur de moisissures" } })
 	                                    ),
 	                                    _react2.default.createElement(
 	                                        "li",
 	                                        null,
-	                                        _react2.default.createElement("a", { href: "products.html", dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-angle-right\"></i> Our Products" } })
+	                                        _react2.default.createElement("a", { href: "products.html", dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-angle-right\"></i> Nos produits" } })
 	                                    ),
 	                                    _react2.default.createElement(
 	                                        "li",
@@ -29994,12 +29994,12 @@ webpackJsonp([0],[
 	                                    _react2.default.createElement(
 	                                        "li",
 	                                        null,
-	                                        _react2.default.createElement("a", { href: "blog/", dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-angle-right\"></i> Recent Blogs or News" } })
+	                                        _react2.default.createElement("a", { href: "blog/", dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-angle-right\"></i> Blogue et nouvelles" } })
 	                                    ),
 	                                    _react2.default.createElement(
 	                                        "li",
 	                                        null,
-	                                        _react2.default.createElement("a", { href: "contact.html", dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-angle-right\"></i> Contact Us" } })
+	                                        _react2.default.createElement("a", { href: "contact.html", dangerouslySetInnerHTML: { __html: "<i class=\"fa fa-angle-right\"></i> Pour nous joindre" } })
 	                                    )
 	                                )
 	                            )
@@ -30013,9 +30013,9 @@ webpackJsonp([0],[
 	                                _react2.default.createElement(
 	                                    "h4",
 	                                    { className: "lmb" },
-	                                    "Our Story..."
+	                                    "Notre histoire..."
 	                                ),
-	                                _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "We were tired of cleaning only to watch it grow back. It seemed to be a never-ending. Why? What makes mold grow back? Why can't you get rid of it? Once we figure it out, we wanted to share it with the world. We set out to change the way people view mold & mildew...\n                            <a href=\"about-mold-and-mildew-remover.html\">Read more <i class=\"fa fa-long-arrow-right\"></i></a>" } })
+	                                _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: "Vous est-il déjà arrivé de bien nettoyer la moisissure pour ensuite la voir réapparaître ? C’était notre problème. Cette situation semblait interminable. Pourquoi la moisissure réapparaissait-elle ? Pourquoi ne pouvions-nous pas nous en débarrasser ? Après avoir finalement trouvé la réponse à ces questions, nous avons voulu partager notre solution avec le monde entier afin que les gens voient la moisissure différemment...<a href=\"about-mold-and-mildew-remover.html\"> Lire la suite <i class=\"fa fa-long-arrow-right\"></i></a>" } })
 	                            )
 	                        )
 	                    )
@@ -30034,7 +30034,7 @@ webpackJsonp([0],[
 	                                "a",
 	                                { href: "terms.html" },
 	                                " ",
-	                                "Terms of Use",
+	                                "Conditions d'utilisation",
 	                                " "
 	                            ),
 	                            " | ",
@@ -30042,14 +30042,14 @@ webpackJsonp([0],[
 	                                "a",
 	                                { href: "privacy.html" },
 	                                " ",
-	                                "Privacy Policy",
+	                                "Politique de confidentialité",
 	                                " "
 	                            ),
 	                            " | ",
 	                            _react2.default.createElement(
 	                                "a",
 	                                { href: "refund.html" },
-	                                "Refund Policy"
+	                                "Politique de remboursement"
 	                            )
 	                        ),
 	                        _react2.default.createElement(

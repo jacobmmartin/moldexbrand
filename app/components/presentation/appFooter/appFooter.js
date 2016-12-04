@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router';
 import "./appFooter.css"
 
 class appFooter extends Component {
@@ -42,7 +43,7 @@ class appFooter extends Component {
                 <div className="copyright_info four">
                     <div className="container">
                         <div className="one_half">
-                            Copyright © 2015 Moldex Brands.All rights reserved.<a href="terms.html"> {__('985a4b72')} </a> | <a href="privacy.html"> {__('fa2ead69')} </a> | <a href="refund.html">{__('b3966088') }</a>
+                            Copyright © 2015 Moldex Brands.All rights reserved.<Link to="terms"> {__('985a4b72')} </Link> | <Link to="privacy"> {__('fa2ead69')} </Link> | <Link to="refund">{__('b3966088') }</Link>
                         </div>
                         <div className="one_half last">
                             <ul className="footer_social_links three">

@@ -6,7 +6,7 @@ require("./moldGuide.css");
 const MoldGuide = () =>{
     return(
             <div>
-              <PageTitle  title="Mold & Nildew Guide"/>
+              <PageTitle  title="Mold & Mildew Guide"/>
               <div className="container">
                 <div className="content_fullwidth">
                         <div className="one_full">

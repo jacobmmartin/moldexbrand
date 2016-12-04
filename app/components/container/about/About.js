@@ -3,7 +3,6 @@ import PageTitle from "../../presentation/pageTitle/pageTitle"
 
 require("./about.css");
 
-
 const About = () =>{
     return(
         <div>

@@ -8,8 +8,8 @@ var opts = {
 };
 
 gulp.task('extract-locales', function () {
-  return gulp.src('french/**/*.html')
+  return gulp.src('english/**/*.html')
     .pipe(l10n.extract(opts))
-    .pipe(gulp.dest('extract-french'));
+    .pipe(gulp.dest('en'));
 });
 

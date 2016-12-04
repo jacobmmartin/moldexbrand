@@ -10,7 +10,7 @@ class Factors extends Component {
             <div className="container">
             <div className="content_fullwidth">
                 <div className="one_full">
-                    <div className="big_text1" dangerouslySetInnerHTML={{ __html: __("12c724ef")}}></div>
+                    <div className="big_text1" dangerouslySetInnerHTML={{ __html: __("82482c8b")}}></div>
                     <div className="clearfix margin_top2"></div>
                     <div className="one_full center">
                         <img src="https://www.moldexbrands.com/images/3_factors_lg.png" width="396" height="201" className="img_size2" alt=""/></div>

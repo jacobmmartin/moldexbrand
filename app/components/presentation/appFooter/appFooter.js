@@ -19,7 +19,7 @@ class appFooter extends Component {
                         </div>
                         <div className="one_fourth">
                             <div className="qlinks">
-                                <h4 className="lmb">Useful Links</h4>
+                                <h4 className="lmb">{__('831d4455')}</h4>
                                 <ul>
                                     <li><a href="mold_guide.html" dangerouslySetInnerHTML={{ __html: __('146b4a94') }}></a></li>
                                     <li><a href="https://www.moldexbrands.com/mold-mildew-killer.html" dangerouslySetInnerHTML={{ __html: __('9ddffdb1') }}></a></li>

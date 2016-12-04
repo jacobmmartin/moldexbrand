@@ -7,7 +7,7 @@ class Refund extends Component {
 
                 <div className="content_fullwidth">
                     <div className="one_full">
-                        <div className="big_text1" dangerouslySetInnerHTML={{ __html: __("14bbdb8e")}}></div>
+                        <div className="big_text1" dangerouslySetInnerHTML={{ __html: __("c771dd44")}}></div>
                         <br/>
                         <p dangerouslySetInnerHTML={{ __html: __("cec6d98b")}}>
                         </p>

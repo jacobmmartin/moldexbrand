@@ -18,7 +18,7 @@ class Factor extends React.Component {
       <div>
         <img src={this.props.model.img}  />
         <h4><strong>{this.props.model.title}</strong></h4>
-        <p>{this.props.model.info}</p>
+        <p className="factor_desc">{this.props.model.info}</p>
         <br></br>
         <br></br>
         <Link to={this.props.model.link} className="readmore_button" dangerouslySetInnerHTML={{ __html: __("3b268add")}}></Link>

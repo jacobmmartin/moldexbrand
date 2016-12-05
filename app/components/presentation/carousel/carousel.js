@@ -112,7 +112,7 @@ class Carousel extends React.Component {
                         <div className="ms-slide">
                             <img src="https://www.moldexbrands.com/images/products_images/32oz_mold_killer_circle.jpg" data-src="images/products_images/32oz_mold_killer_circle.jpg" alt="" />
                             <div className="ms-info">
-                                <h4>{__('9b2443dc')}MOLD KILLER</h4>
+                                <h4>{__('9b2443dc')}</h4>
                                 <p dangerouslySetInnerHTML={{ __html: __('a7de7c97')}}></p>
                             </div>
                         </div>

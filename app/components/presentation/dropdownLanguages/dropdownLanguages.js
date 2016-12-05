@@ -5,8 +5,8 @@ import React from 'react';
 require("./dropdownLanguages.css");
 
 //Cretate Class
-var DropdownLanguages = React.createClass({
-  render: function() {
+class DropdownLanguages extends React.Component {
+  render() {
     return (
         <ul className="dropdown-menu dropdown-languages">
             <li>
@@ -16,8 +16,8 @@ var DropdownLanguages = React.createClass({
                         <li>
                             <p>Languages</p>
                         </li>
-                        <li> <a href="./"><i className="fa fa-angle-right"></i> English </a> </li>
-                        <li> <a href="./fr"><i className="fa fa-angle-right"></i> French </a> </li>
+                        <li> <a href={location.origin} ><i className="fa fa-angle-right"></i> English </a> </li>
+                        <li> <a href={location.origin + "/fr"}><i className="fa fa-angle-right"></i> French </a> </li>
                     </ul>
                     </div>
                 </div>
@@ -25,7 +25,6 @@ var DropdownLanguages = React.createClass({
         </ul>
     );
   }
-
-});
+}
 
 export default DropdownLanguages;

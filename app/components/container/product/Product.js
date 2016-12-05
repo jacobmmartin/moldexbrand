@@ -4,6 +4,10 @@ import language from "../../../language.js";
 let Products = language.Products;
 let Labels = language.ProductsLabels;
 
+//IMPORT FOR TABS
+require("../../../js/tabs/assets/css/responsive-tabs.css");
+var tabs = require("../../../js/tabs/assets/js/responsive-tabs.js");
+
 require("./product.css");
 
 class Product extends Component {
@@ -17,6 +21,9 @@ class Product extends Component {
     }
     componentWillReceiveProps(nexProps) {
         this.setState({ product: Products[nexProps.params.id] });
+    }
+    componentDidMount() {
+       tabs.jQueryTabs();
     }
     render() {
         return (
@@ -57,7 +64,7 @@ class Product extends Component {
                         </div>
                         <div className="clearfix divider_dashed2"></div>
                         <div className="two_third">
-                            <ul className="tabs3 two">
+                            <ul className="tabs two">
                                 <li className="active"><a href="#example-3-tab-1" target="_self">{this.state.labels.tab1}</a></li>
                                 <li><a href="#example-3-tab-2" target="_self">{this.state.labels.tab2}</a></li>
                                 <li><a href="#example-3-tab-3" target="_self">{this.state.labels.tab3}</a></li>
@@ -65,9 +72,9 @@ class Product extends Component {
                                 <li><a href="#example-3-tab-5" target="_self">{this.state.labels.tab5}</a></li>
                             </ul>
                             <div className="tabs-content3 two">
-                                <div id="example-3-tab-1" className="tabs-panel3" dangerouslySetInnerHTML={{ __html: this.state.product.tabs.instructions }}>
+                                <div id="example-3-tab-1" className="tabs-panel" dangerouslySetInnerHTML={{ __html: this.state.product.tabs.instructions }}>
                                 </div>
-                                <div id="example-3-tab-2" className="tabs-panel3" style={{ display: 'none' }}>
+                                <div id="example-3-tab-2" className="tabs-panel" style={{ display: 'none' }}>
                                     <p> {this.state.labels.safety} </p>
                                      {
                                         this.state.product.tabs.sds.map((sds) => {
@@ -76,9 +83,9 @@ class Product extends Component {
                                     }
 
                                 </div>
-                                <div id="example-3-tab-3" className="tabs-panel3" style={{ display: 'none' }} dangerouslySetInnerHTML={{ __html: this.state.product.tabs.faq }}>
+                                <div id="example-3-tab-3" className="tabs-panel" style={{ display: 'none' }} dangerouslySetInnerHTML={{ __html: this.state.product.tabs.faq }}>
                                 </div>
-                                <div id="example-3-tab-4" className="tabs-panel3" style={{ display: 'none' }}>
+                                <div id="example-3-tab-4" className="tabs-panel" style={{ display: 'none' }}>
                                     <p> {this.state.labels.product}  </p>
                                     {
                                         this.state.product.tabs.labels.map((label) => {
@@ -86,7 +93,7 @@ class Product extends Component {
                                         })
                                     }
                                 </div>
-                                <div id="example-3-tab-5" className="tabs-panel3" style={{ display: 'none' }} >
+                                <div id="example-3-tab-5" className="tabs-panel" style={{ display: 'none' }} >
                                     <p> {this.state.labels.available} </p>
                                     {
                                         this.state.product.tabs.sizes.map((size) => {

@@ -36,12 +36,6 @@ require("./js/mainmenu/demo.css");
 require("./js/mainmenu/bootstrap.min.css");
 require("./js/mainmenu/menu.css");
 
-//IMPORT FOR TABS
-require("./js/tabs/assets/js/responsive-tabs.min.js");
-require("./js/tabs/assets/css/responsive-tabs.css");
-require("./js/tabs/assets/css/responsive-tabs2.css");
-require("./js/tabs/assets/css/responsive-tabs3.css");
-
 //IMPORT GENERAL CSS
 require("./styles/reset.css");
 require("./styles/yamm.css");
